@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['adif_file'])) {
     $callsign = $result['callsign'];
 
     // Determine award tier
-    $awardTier = "No award";
+    $awardTier = "Participation";
     if ($uniqueAddresses >= 1000000000000000000) {
         $awardTier = "Exa Elite";
     }

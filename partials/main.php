@@ -90,6 +90,30 @@
         <p>Yes, you can operate from your own house or another location with permission.</p>
         <h3>Are there awards for HOTA participants?</h3>
         <p>Yes, there are awards and contests for HOTA participants based on their activations and contacts.</p>
+        <h3>How do I earn awards in HOTA?</h3>
+        <p>You can earn awards by activating unique house locations and making contacts with other operators.</p>
+        <h3>What is an ADIF file?</h3>
+        <p>An ADIF file is a standard format for logging amateur radio contacts.</p>
+        <h3>How do I upload my ADIF file?</h3>
+        <p>You can upload your ADIF file on the website to check for awards based on unique addresses.</p>
+        <h3>What is the process for checking awards?</h3>
+        <p>Upload your ADIF file to check for unique addresses and determine your award tier.</p>
+        <h3>How do I download my award certificate?</h3>
+        <p>After checking your awards, you can download a certificate based on your tier.</p>
+        <h3>Can I participate in HOTA contests?</h3>
+        <p>Yes, you can participate in HOTA contests and earn awards for your achievements.</p>
+        <h3>What is the best time to operate in HOTA?</h3>
+        <p>The best time to operate in HOTA depends on band conditions and your location.</p>
+        <h3>How do I log my HOTA activations?</h3>
+        <p>You can log your activations manually or use logging software to track your contacts.</p>
+        <h3>What equipment do I need for HOTA?</h3>
+        <p>You will need a transceiver, antenna, power source, and other accessories for portable operation.</p>
+        <h3>Can I participate in HOTA remotely?</h3>
+        <p>Remote participation is not allowed.</p>
+        <h3>How do I find HOTA stations to contact?</h3>
+        <p>You can listen for HOTA stations calling CQ or search for them on the bands.</p>
+        <h3>What bands and modes are used in HOTA?</h3>
+        <p>HOTA participants can operate on various bands and modes, including HF, VHF, UHF, and digital modes.</p>
         <h3>How can I get involved in HOTA?</h3>
         <p>To get involved in HOTA, set up your station at a house location, make contacts, and log your activations.</p>
         <h3>How can I contact HOTA?</h3>

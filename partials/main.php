@@ -68,7 +68,8 @@
                     let resultDiv = document.getElementById('upload-result');
                     resultDiv.innerHTML = `<h2>Results</h2>
                                         <p>Unique Addresses Found: ${data.unique_addresses}</p>
-                                        <p>Award Tier: ${data.award_tier}</p>`;
+                                        <p>Award Tier: ${data.award_tier}</p>
+                                        <p><a href="award.php?callsign=${data.callsign}&tier=${data.award_tier}" target="_blank">Download Certificate</a></p>`;
                 })
                 .catch(error => {
                     console.error('Error:', error);

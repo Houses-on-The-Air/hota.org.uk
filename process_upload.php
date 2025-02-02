@@ -15,7 +15,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['adif_file'])) {
     $fileContent = file_get_contents($file['tmp_name']);
 
     require_once __DIR__ . '/includes/adif_processor.php';
-    $uniqueAddresses = processAdif($fileContent);
+    $result = processAdif($fileContent);
+
+    $uniqueAddresses = $result['uniqueAddressCount'];
+    $callsign = $result['callsign'];
 
     // Determine award tier
     $awardTier = "No award";
@@ -30,10 +33,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['adif_file'])) {
     // Return JSON response
     echo json_encode([
         "unique_addresses" => $uniqueAddresses,
-        "award_tier" => $awardTier
+        "award_tier" => $awardTier,
+        "callsign" => $callsign
     ]);
+    // Save the uploaded ADIF file to the uploads directory
+    $uploadsDir = __DIR__ . '/uploads/';
+    if (!is_dir($uploadsDir)) {
+        mkdir($uploadsDir, 0777, true);
+    }
+
+    $filename = $callsign . '_' . date('Ymd_His') . '.adif';
+    $filePath = $uploadsDir . $filename;
+
+    file_put_contents($filePath, $fileContent);
     exit;
 }
 
-echo json_encode(["error" => "Invalid request."]);
-?>

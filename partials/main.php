@@ -10,6 +10,8 @@
             <li><a href="?page=house-activations">House activations</a></li>
             <li>Contests and <a href="?page=awards">awards</a></li>
             <li><a href="?page=community-events">Community events</a></li>
+            <li><a href="?page=operating-guidelines">Operating guidelines</a></li>
+            <li><a href="?page=rules">Rules and regulations</a></li>
         </ul>
     </section>
     <section id="how-to-call-cq" class="section">
@@ -37,6 +39,7 @@
     <section id="upload" class="section">
         <h2>Upload Your ADIF File</h2>
         <p>Upload an ADIF log file to check for awards based on unique addresses.</p>
+        <p>Supported file formats: .adi, .adif</p>
 
         <form id="adif-upload-form" enctype="multipart/form-data">
             <input type="file" name="adif_file" id="adif-file" accept=".adi,.adif" required>
@@ -82,6 +85,8 @@
         <h2>Frequently Asked Questions (FAQ)</h2>
         <h3>What is HOTA?</h3>
         <p>HOTA is an amateur radio activity encouraging operators to set up from various houses.</p>
+        <h3>What are the rules of HOTA?</h3>
+        <p>Rules include eligibility, registration, event guidelines, code of conduct, and contact information. They are available on our <a href="?page=rules">Rules Page</a>.</p>
         <h3>Do I need a special license?</h3>
         <p>No special license is required, but you must have a valid amateur radio license.</p>
         <h3>How do you identify HOTA stations?</h3>

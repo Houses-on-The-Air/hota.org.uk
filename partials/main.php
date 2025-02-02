@@ -93,6 +93,10 @@
         <p>You can uniquely identify your house by its address or using a UPRN if available in your location.</p>
         <h3 id="what-is-uprn">What is a UPRN?</h3>
         <p>A UPRN is a unique property reference number assigned to each address in the UK.</p>
+        <h3 id="what-three-words">Can I use What3Words to identify my house?</h3>
+        <p>Yes, you can use What3Words to identify your house location.</p>
+        <h3 id="what-is-what-three-words">What is What3Words?</h3>
+        <p>What3Words is a geocoding system that divides the world into 3m x 3m squares, each with a unique three-word address.</p>
         <h3 id="what-is-activation">What is an activation?</h3>
         <p>An activation is when an operator sets up and operates from a house location.</p>
         <h3 id="contacts-for-activation">How many contacts do I need to make for a successful activation?</h3>

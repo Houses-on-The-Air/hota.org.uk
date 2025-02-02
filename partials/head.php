@@ -26,4 +26,6 @@
         .section { margin-bottom: 2rem; }
         .btn { background-color: #8e8d8a; color: #fff; }
     </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2002090586659609"
+        crossorigin="anonymous"></script>
 </head>

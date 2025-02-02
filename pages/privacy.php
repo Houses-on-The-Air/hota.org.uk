@@ -43,12 +43,12 @@
         <li>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</li>
         <li>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
         <li>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</li>
-        <li>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+        <li>The right to data portability – You have the right to request that we transfer the data that we have collected to another organisation, or directly to you, under certain conditions.</li>
     </ul>
     <p>To exercise any of these rights, please contact us at <a href="mailto:info@hota.org.uk">info@hota.org.uk</a>.</p>
 
     <h3>Security</h3>
-    <p>We take the security of your personal data seriously and use appropriate technical and organizational measures to protect it against unauthorized or unlawful processing and against accidental loss, destruction, or damage.</p>
+    <p>We take the security of your personal data seriously and use appropriate technical and organisational measures to protect it against unauthoris  ed or unlawful processing and against accidental loss, destruction, or damage.</p>
 
     <h3>Changes to This Policy</h3>
     <p>We may update this policy from time to time. Any changes will be posted on this page, and where appropriate, notified to you by email.</p>

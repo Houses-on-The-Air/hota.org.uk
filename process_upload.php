@@ -22,36 +22,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['adif_file'])) {
 
     // Determine award tier
     $awardTier = "Participation";
-    if ($uniqueAddresses >= 1000000000000000000) {
-        $awardTier = "Exa Elite";
-    }
-    elseif ($uniqueAddresses >= 1000000000000000) {
-        $awardTier = "Peta Elite";
-    }
-    elseif ($uniqueAddresses >= 1000000000000) {
-        $awardTier = "Tera Elite";
-    } elseif ($uniqueAddresses >= 1000000000) {
-        $awardTier = "Giga Elite";
-    } elseif ($uniqueAddresses >= 100000000) {
-        $awardTier = "Mega Elite";
-    } elseif ($uniqueAddresses >= 10000000) {
-        $awardTier = "Super Elite";
-    } elseif ($uniqueAddresses >= 1000000) {
-        $awardTier = "Elite";
-    }if ($uniqueAddresses >= 500000) {
-        $awardTier = "Double Diamond";
-    } elseif ($uniqueAddresses >= 250000) {
-        $awardTier = "Diamond";
-    } elseif ($uniqueAddresses >= 100000) {
-        $awardTier = "Platinum";
-    } elseif ($uniqueAddresses >= 10000) {
-        $awardTier = "Gold";
-    } elseif ($uniqueAddresses >= 1000) {
-        $awardTier = "Silver";
-    } elseif ($uniqueAddresses >= 500) {
-        $awardTier = "Bronze";
-    } elseif ($uniqueAddresses >= 100) {
-        $awardTier = "Copper";
+    $tiers = [
+        1e60 => "Uda Elite",
+        1e57 => "Vunda Elite",
+        1e54 => "Weka Elite",
+        1e51 => "Xona Elite",
+        1e48 => "Yotta Elite",
+        1e45 => "Zetta Elite",
+        1e42 => "Exa Elite",
+        1e39 => "Peta Elite",
+        1e36 => "Tera Elite",
+        1e33 => "Giga Elite",
+        1e30 => "Mega Elite",
+        1e27 => "Super Elite",
+        1e24 => "Elite",
+        1e21 => "Double Diamond",
+        1e18 => "Diamond",
+        1e15 => "Platinum",
+        1e12 => "Gold",
+        1e9  => "Silver",
+        1e6  => "Bronze",
+        1e3  => "Copper"
+    ];
+
+    foreach ($tiers as $threshold => $tier) {
+        if ($uniqueAddresses >= $threshold) {
+            $awardTier = $tier;
+            break;
+        }
     }
 
     // Return JSON response

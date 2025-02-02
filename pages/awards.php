@@ -66,6 +66,30 @@
             <td><strong>Exa Elite</strong></td>
             <td style="text-align: right;">1,000,000,000,000,000,000</td>
         </tr>
+        <tr>
+            <td><strong>Zetta Elite</strong></td>
+            <td style="text-align: right;">1,000,000,000,000,000,000,000</td>
+        </tr>
+        <tr>
+            <td><strong>Yotta Elite</strong></td>
+            <td style="text-align: right;">1,000,000,000,000,000,000,000,000</td>
+        </tr>
+        <tr>
+            <td><strong>Xona Elite</strong></td>
+            <td style="text-align: right;">1,000,000,000,000,000,000,000,000,000</td>
+        </tr>
+        <tr>
+            <td><strong>Weka Elite</strong></td>
+            <td style="text-align: right;">1,000,000,000,000,000,000,000,000,000,000</td>
+        </tr>
+        <tr>
+            <td><strong>Vunda Elite</strong></td>
+            <td style="text-align: right;">1,000,000,000,000,000,000,000,000,000,000,000</td>
+        </tr>
+        <tr>
+            <td><strong>Uda Elite</strong></td>
+            <td style="text-align: right;">1,000,000,000,000,000,000,000,000,000,000,000,000</td>
+        </tr>
     </table>
 
     <p>Each tier comes with its own unique certificate and badge that you can proudly display. Keep participating in our events to climb the tiers and earn more prestigious awards!</p>

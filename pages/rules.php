@@ -7,7 +7,7 @@
     <ul>
         <li>Be located in a residential area.</li>
         <li>Have a valid address and be registered with the local authorities.</li>
-        <li>Be accessible to visitors during the event hours.
+        <li>Be accessible to contactors during the event hours.
     </ul>
 
     <h3>Registration</h3>
@@ -15,15 +15,15 @@
     <ul>
         <li>Providing your contact information.</li>
         <li>Submit a description and photos of your house.</li>
-        <li>Indicate the date and time you will be available for visitors.</li>
+        <li>Indicate the date and time you will be available for contact.</li>
     </ul>
 
     <h3>Event Guidelines</h3>
     <p>During the event, participants must adhere to the following guidelines:</p>
     <ul>
         <li>Ensure your house is clean and presentable.</li>
-        <li>Be available to answer questions from visitors.</li>
-        <li>Respect the privacy and property of your neighbors.</li>
+        <li>Be available to answer questions from contactors.</li>
+        <li>Respect the privacy and property of your neighbours.</li>
         <li>Follow all local laws and regulations.</li>
     </ul>
 

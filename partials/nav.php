@@ -3,6 +3,7 @@
         <a href="#about" class="black-text btn">About</a>
         <a href="#activities" class="black-text btn">Activities</a>
         <a href="#how-to-call-cq" class="black-text btn">How to Call CQ</a>
+        <a href="#upload" class="black-text btn">Upload LogFile</a>
         <a href="#faq" class="black-text btn">FAQ</a>
     </div>
 </nav>

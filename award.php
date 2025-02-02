@@ -14,7 +14,8 @@ class PDF extends FPDF
     function Header()
     {
         $this->SetFont('Arial', 'B', 16);
-        $this->Ln(10); // Adjusted from 10 to 20 to bring the header down slightly
+        $this->SetTextColor(51, 51, 51); // Set text color to #333
+        $this->Ln(20); // Adjusted from 10 to 20 to bring the header down slightly
     }
 
     function Footer()
@@ -36,6 +37,7 @@ $pdf = new PDF('L', 'mm', 'A4');
 $pdf->AddPage();
 $pdf->DecorativeBorder();
 $pdf->SetFont('Arial', 'B', 24);
+$pdf->SetTextColor(51, 51, 51); // Set text color to #333
 
 $pdf->Cell(0, 20, "Houses On The Air", 0, 1, 'C');
 $pdf->Ln(20);

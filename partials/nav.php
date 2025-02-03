@@ -2,6 +2,6 @@
     <div class="nav-wrapper">
         <a href="/#upload" class="black-text btn">Upload Log</a>
         <a href="?page=rules" class="black-text btn">Rules</a>
-        <a href="/#faq" class="black-text btn">FAQ</a>
+        <a href="?page=faq" class="black-text btn">FAQ</a>
     </div>
 </nav>

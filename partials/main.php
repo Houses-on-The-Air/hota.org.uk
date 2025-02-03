@@ -111,12 +111,16 @@
         <p>Yes, there are awards and contests for HOTA participants based on their activations and contacts.</p>
         <h3 id="earn-awards">How do I earn awards in HOTA?</h3>
         <p>You can earn awards by activating unique house locations and making contacts with other operators.</p>
+        <h3 id="tier-system">What is the tier system for awards?</h3>
+        <p>The tier system includes different award levels based on the number of unique addresses activated. You can view the tiers on our <a href="?page=awards">Awards Page</a></p>
         <h3 id="what-is-adif">What is an ADIF file?</h3>
         <p>An ADIF file is a standard format for logging amateur radio contacts.</p>
         <h3 id="upload-adif">How do I upload my ADIF file?</h3>
         <p>You can upload your ADIF file on the website to check for awards based on unique addresses.</p>
         <h3 id="check-awards">What is the process for checking awards?</h3>
         <p>Upload your ADIF file to check for unique addresses and determine your award tier.</p>
+        <h3>What field in the ADIF file is used to identify the house location?</h3>
+        <p>The ADIF file uses the "ADDRESS" field to identify the house location.</p>
         <h3 id="download-certificate">How do I download my award certificate?</h3>
         <p>After checking your awards, you can download a certificate based on your tier.</p>
         <h3 id="participate-in-contests">Can I participate in HOTA contests?</h3>
@@ -135,6 +139,8 @@
         <p>HOTA participants can operate on various bands and modes, including HF, VHF, UHF, and digital modes.</p>
         <h3 id="get-involved">How can I get involved in HOTA?</h3>
         <p>To get involved in HOTA, set up your station at a house location, make contacts, and log your activations.</p>
+        <h3>Does HOTA store a copy of my ADIF file?</h3>
+        <p>HOTA does store a copy of your ADIF file after processing it for awards. This is used for generating metrics and future functionality.</p>
         <h3 id="contact-hota">How can I contact HOTA?</h3>
         <p>Email us at <a href="mailto:info@hota.org.uk">info@hota.org.uk</a>.</p>
     </section>

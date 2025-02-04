@@ -15,8 +15,8 @@
     <p>Participating in HOTA events is easy and fun! Follow these steps to get started:</p>
     <ul>
         <li>Check the event schedule and choose an event that interests you.</li>
-        <li>Register for the event through our website or contact the event organizer.</li>
-        <li>Prepare your equipment and familiarize yourself with the event rules.</li>
+        <li>Register for the event through our website or contact the event organiser.</li>
+        <li>Prepare your equipment and familiarise yourself with the event rules.</li>
         <li>On the day of the event, set up your station at the designated location and start broadcasting!</li>
     </ul>
 

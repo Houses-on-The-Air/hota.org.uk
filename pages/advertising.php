@@ -18,7 +18,7 @@
     </ul>
 
     <h3>How to Get Started</h3>
-    <p>To discuss advertising opportunities, please contact us at <a href="mailto:<?php echo $ADVERTISING_EMAIL_ADDRESS; ?>"><?php echo $ADVERTISING_EMAIL_ADDRESS; ?></a>. Provide us with the following information:</p>
+    <p>To discuss advertising opportunities, please contact us at <a href="mailto:info@hota.org.uk">info@hota.org.uk</a>. Provide us with the following information:</p>
     <ul>
         <li>Your name and company.</li>
         <li>Contact details.</li>

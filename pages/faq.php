@@ -1,4 +1,4 @@
-<section id="faq" class="section">
+<section class="container">
         <h2>Frequently Asked Questions (FAQ)</h2>
         <h3 id="what-is-hota">What is HOTA?</h3>
         <p>HOTA is an amateur radio activity encouraging operators to set up from various houses.</p>
@@ -36,7 +36,7 @@
         <p>You can upload your ADIF file on the website to check for awards based on unique addresses.</p>
         <h3 id="check-awards">What is the process for checking awards?</h3>
         <p>Upload your ADIF file to check for unique addresses and determine your award tier.</p>
-        <h3>What field in the ADIF file is used to identify the house location?</h3>
+        <h3 id="what-field-adif">What field in the ADIF file is used to identify the house location?</h3>
         <p>The ADIF file uses the "ADDRESS" field to identify the house location.</p>
         <h3 id="download-certificate">How do I download my award certificate?</h3>
         <p>After checking your awards, you can download a certificate based on your tier.</p>
@@ -56,8 +56,10 @@
         <p>HOTA participants can operate on various bands and modes, including HF, VHF, UHF, and digital modes.</p>
         <h3 id="get-involved">How can I get involved in HOTA?</h3>
         <p>To get involved in HOTA, set up your station at a house location, make contacts, and log your activations.</p>
-        <h3>Does HOTA store a copy of my ADIF file?</h3>
+        <h3 id="does-hota-store">Does HOTA store a copy of my ADIF file?</h3>
         <p>HOTA does store a copy of your ADIF file after processing it for awards. This is used for generating metrics and future functionality.</p>
+        <h3 id="how can-i-advertise">How can I advertise on the site?</h3>
+        <p>If you are interested in advertising on the site, please see our <a href="?page=advertising">Advertising Page</a> for more information.</p>
         <h3 id="contact-hota">How can I contact HOTA?</h3>
         <p>Email us at <a href="mailto:info@hota.org.uk">info@hota.org.uk</a>.</p>
     </section>

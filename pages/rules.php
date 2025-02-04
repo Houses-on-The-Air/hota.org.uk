@@ -7,7 +7,8 @@
     <ul>
         <li>Be located in a residential area.</li>
         <li>Have a valid address and be registered with the local authorities.</li>
-        <li>Be accessible to contactors during the event hours.
+        <li>Have a suitable location for setting up an amateur radio station.</li>
+        <li>Be open to sharing information about your house and location.</li>
     </ul>
 
     <h3>Registration</h3>

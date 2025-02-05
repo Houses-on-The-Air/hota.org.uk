@@ -10,6 +10,7 @@
         <li>Follow all local laws and regulations.</li>
         <li>Operate within the designated frequencies and power limits.</li>
         <li>Maintain a courteous and professional demeanor at all times.</li>
+        <li>Report any violations of these guidelines to the event organisers.</li>
     </ul>
 
     <h3>Equipment and Setup</h3>
@@ -18,6 +19,12 @@
         <li>Use appropriate antennas and power sources.</li>
         <li>Set up your station in a safe and secure location.</li>
         <li>Test your equipment before starting operations.</li>
+        <li>Keep your station clean and organised.</li>
+        <li>Use headphones to avoid disturbing others.</li>
+        <li>Use surge protectors to safeguard your equipment.</li>
+        <li>Comply with all safety guidelines and best practices.</li>
+        <li>Be prepared for adverse weather conditions.</li>
+        <li>Have a backup plan in case of equipment failure.</li>
     </ul>
 
     <h3>Operating Procedures</h3>
@@ -26,6 +33,8 @@
         <li>Log all contacts accurately and promptly.</li>
         <li>Follow established calling and response protocols.</li>
         <li>Be prepared to provide information about your location and setup.</li>
+        <li>Respect the operating preferences of other participants.</li>
+        <li>Monitor the frequency for ongoing activities and announcements.</li>
     </ul>
 
     <h3>Safety and Emergency Procedures</h3>

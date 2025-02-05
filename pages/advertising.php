@@ -15,6 +15,7 @@
         <li>Sponsored Content: Collaborate with us to create content that highlights your brand.</li>
         <li>Email Newsletters: Reach our subscribers directly with your message.</li>
         <li>Social Media Promotions: Leverage our social media channels to amplify your reach.</li>
+        <li>Custom Solutions: Discuss your unique requirements with us for a tailored advertising solution.</li>
     </ul>
 
     <h3>How to Get Started</h3>

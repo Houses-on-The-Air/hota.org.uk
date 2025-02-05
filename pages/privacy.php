@@ -24,6 +24,13 @@
         <li>To communicate with you regarding updates and offers.</li>
         <li>To ensure the security of our platform.</li>
         <li>To comply with legal obligations.</li>
+        <li>To protect the rights and interests of our users.</li>
+        <li>To prevent and investigate fraud and other illegal activities.</li>
+        <li>To enforce our Terms of Service.</li>
+        <li>To respond to your requests and inquiries.</li>
+        <li>To personalise your experience on our platform.</li>
+        <li>To conduct research and analysis to better understand our users.</li>
+        <li>To provide you with relevant advertising and marketing.</li>
     </ul>
 
     <h3>Data Retention</h3>
@@ -44,6 +51,9 @@
         <li>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
         <li>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</li>
         <li>The right to data portability – You have the right to request that we transfer the data that we have collected to another organisation, or directly to you, under certain conditions.</li>
+        <li>The right to withdraw consent – You have the right to withdraw your consent at any time, where we rely on your consent to process your personal data.</li>
+        <li>The right to lodge a complaint – You have the right to lodge a complaint with a supervisory authority if you believe we have violated your rights.</li>
+        <li>The right to be informed – You have the right to be informed about the collection and use of your personal data.</li>
     </ul>
     <p>To exercise any of these rights, please contact us at <a href="mailto:info@hota.org.uk">info@hota.org.uk</a>.</p>
 

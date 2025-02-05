@@ -17,6 +17,7 @@
         <li>Providing your contact information.</li>
         <li>Submit a description and photos of your house.</li>
         <li>Indicate the date and time you will be available for contact.</li>
+        <li>Specify any special requirements or restrictions.</li>
     </ul>
 
     <h3>Event Guidelines</h3>
@@ -26,6 +27,8 @@
         <li>Be available to answer questions from contactors.</li>
         <li>Respect the privacy and property of your neighbours.</li>
         <li>Follow all local laws and regulations.</li>
+        <li>Report any issues or concerns to the event organisers.</li>
+        <li>Have fun and enjoy the experience!</li>
     </ul>
 
     <h3>Code of Conduct</h3>
@@ -34,6 +37,8 @@
         <li>Treating all visitors with courtesy and respect.</li>
         <li>Refraining from any form of harassment or discrimination.</li>
         <li>Maintaining a safe and welcoming environment for everyone.</li>
+        <li>Following the instructions of the event organisers.</li>
+        <li>Reporting any violations of these rules to the event organisers.</li>
     </ul>
 
     <h3>Contact Information</h3>

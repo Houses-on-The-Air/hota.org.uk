@@ -90,6 +90,18 @@
             <td><strong>Uda Elite</strong></td>
             <td style="text-align: right;">1,000,000,000,000,000,000,000,000,000,000,000,000</td>
         </tr>
+        <tr>
+            <td><strong>Treda Elite</strong></td>
+            <td style="text-align: right;">1,000,000,000,000,000,000,000,000,000,000,000,000,000</td>
+        </tr>
+        <tr>
+            <td><strong>Sorta Elite</strong></td>
+            <td style="text-align: right;">1,000,000,000,000,000,000,000,000,000,000,000,000,000,000</td>
+        </tr>
+        <tr>
+            <td><strong>Rinta Elite</strong></td>
+            <td style="text-align: right;">1,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000</td>
+        </tr>
     </table>
 
     <p>Each tier comes with its own unique certificate and badge that you can proudly display. Keep participating in our events to climb the tiers and earn more prestigious awards!</p>

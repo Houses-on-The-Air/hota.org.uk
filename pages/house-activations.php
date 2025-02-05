@@ -15,6 +15,9 @@
         <li><strong>Power Supply:</strong> Ensure you have a reliable power source for your equipment.</li>
         <li><strong>Microphone and Key:</strong> For voice and Morse code communications, respectively.</li>
         <li><strong>Coaxial Cables:</strong> To connect your transceiver to the antenna.</li>
+        <li><strong>Surge Protectors:</strong> To protect your equipment from power surges and lightning strikes.</li>
+        <li><strong>Logging Software:</strong> To keep track of your contacts and log your activations.</li>
+        <li><strong>Other Accessories:</strong> Such as headphones, a tuner, and a SWR meter.</li>
     </ul>
 
     <h3>Step 3: Set Up Your Station</h3>
@@ -25,6 +28,9 @@
         <li>Connect your transceiver to the antenna using coaxial cables.</li>
         <li>Set up your power supply and connect it to your transceiver.</li>
         <li>Connect your microphone and key to the transceiver.</li>
+        <li>Install and configure your logging software on your computer.</li>
+        <li>Test your equipment to ensure everything is working correctly.</li>
+        <li>Check the band conditions and operating frequencies to plan your activations.</li>
     </ul>
 
     <h3>Step 4: Get On the Air</h3>
@@ -43,6 +49,9 @@
         <li>Ensure your antenna is properly grounded to prevent lightning damage.</li>
         <li>Avoid overloading your power supply and use surge protectors.</li>
         <li>Keep your operating area clean and free of clutter to prevent accidents.</li>
+        <li>Take regular breaks to avoid fatigue and eye strain.</li>
+        <li>Stay informed about local weather conditions and be prepared for emergencies.</li>
+        <li>Have a first aid kit and fire extinguisher on hand in case of accidents.</li>
     </ul>
 
     <h3>Contact Us</h3>

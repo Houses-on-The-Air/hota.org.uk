@@ -17,6 +17,8 @@
         <li>Check the event schedule and choose an event that interests you.</li>
         <li>Register for the event through our website or contact the event organiser.</li>
         <li>Prepare your equipment and familiarise yourself with the event rules.</li>
+        <li>Choose a house location to set up your station and make contacts.</li>
+        <li>Log your contacts accurately and submit your log after the event.</li>
         <li>On the day of the event, set up your station at the designated location and start broadcasting!</li>
     </ul>
 
@@ -26,6 +28,7 @@
         <li>Follow all local regulations and guidelines for amateur radio operations.</li>
         <li>Respect other participants and avoid causing interference.</li>
         <li>Log your contacts accurately and submit your log after the event.</li>
+        <li>Use your call sign followed by "/HOTA" to identify your participation in the activity.</li>
         <li>Have fun and promote good sportsmanship!</li>
     </ul>
 

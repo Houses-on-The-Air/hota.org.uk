@@ -23,26 +23,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['adif_file'])) {
     // Determine award tier
     $awardTier = "Participation";
     $tiers = [
-        1e60 => "Uda Elite",
-        1e57 => "Vunda Elite",
-        1e54 => "Weka Elite",
-        1e51 => "Xona Elite",
-        1e48 => "Yotta Elite",
-        1e45 => "Zetta Elite",
-        1e42 => "Exa Elite",
-        1e39 => "Peta Elite",
-        1e36 => "Tera Elite",
-        1e33 => "Giga Elite",
-        1e30 => "Mega Elite",
-        1e27 => "Super Elite",
-        1e24 => "Elite",
-        1e21 => "Double Diamond",
-        1e18 => "Diamond",
-        1e15 => "Platinum",
-        1e12 => "Gold",
-        1e9  => "Silver",
-        1e6  => "Bronze",
-        1e3  => "Copper"
+        1000000 => "Elite",
+        500000 => "Double Diamond",
+        250000 => "Diamond",
+        100000 => "Platinum",
+        10000 => "Gold",
+        1000  => "Silver",
+        500  => "Bronze",
+        100  => "Copper"
     ];
 
     foreach ($tiers as $threshold => $tier) {

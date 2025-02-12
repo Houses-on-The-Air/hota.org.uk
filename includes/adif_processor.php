@@ -1,6 +1,13 @@
 <?php
 
 function processAdif($fileContent) {
+    // Check if the file contains the ADIF header
+    if (stripos($fileContent, '<EOH>') === false) {
+        return [
+            'error' => 'Invalid ADIF file'
+        ];
+    }
+
     $uniqueAddresses = [];
     $callsign = '';
 

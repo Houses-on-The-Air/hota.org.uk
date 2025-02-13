@@ -6,3 +6,6 @@ Disallow: /pages
 Disallow: /partials/
 Disallow: /fpdf/
 Disallow: /classes/
+Disallow: index.php
+Disallow: process_upload.php
+Disallow: award.php

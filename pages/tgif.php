@@ -36,15 +36,15 @@
         <li>Join the TGIF Network Facebook group or online forums to connect with other users and stay informed about network updates.</li>
     </ul>
 
-    <h3>Connecting to Talkgroup 666</h3>
-    <p>To connect to the specific talkgroup 666 on the TGIF network, follow these additional steps:</p>
+    <h3>Connecting to Talkgroup 86915</h3>
+    <p>To connect to the specific talkgroup 86915 on the TGIF network, follow these additional steps:</p>
     <ul>
         <li>In the programming software, add a new channel for talkgroup 666.</li>
-        <li>Set the talkgroup ID to 666.</li>
+        <li>Set the talkgroup ID to 86915.</li>
         <li>Configure the frequency, color code, and time slot settings as required for your local DMR repeater or hotspot.</li>
         <li>Write the configuration to your radio.</li>
-        <li>Select the channel for talkgroup 666 on your radio.</li>
-        <li>Key up your radio and announce your call sign and location to join the conversation on talkgroup 666.</li>
+        <li>Select the channel for talkgroup 86915 on your radio.</li>
+        <li>Key up your radio and announce your call sign and location to join the conversation on talkgroup 86915.</li>
     </ul>
 
     <h3>Safety Tips</h3>

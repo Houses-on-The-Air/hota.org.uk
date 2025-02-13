@@ -65,11 +65,19 @@
         <h3 id="report-issues">How do I report issues with the HOTA website?</h3>
         <p>If you encounter any issues with the HOTA website, please contact us at <a href="mailto:info@hota.org.uk">info@hota.org.uk</a></p>
         <h3 id="digital-modes">Can I operate in digital modes for HOTA?</h3>
-        <p>Yes, you can operate in digital modes for HOTA activations and contests. We currently have a <a href="?page=tgif">TGIF Talkgroup</a></p>
+        <p>Yes, you can operate in digital modes for HOTA activations and contests. We currently have a <a href="?page=tgif">TGIF Talkgroup</a> if you would like to talk to other HOTA operators.</p>
         <h3 id="remote-participation">Can I participate in HOTA remotely?</h3>
         <p>Remote participation is not allowed.</p>
         <h3 id="find-hota-stations">How do I find HOTA stations to contact?</h3>
         <p>You can listen for HOTA stations calling CQ or search for them on the bands.</p>
+        <h3 id="what-is-cq">What does "CQ" mean?</h3>
+        <p>"CQ" is a general call for any station to respond and make contact.</p>
+        <h3 id="what-is-qso">What is a "QSO"?</h3>
+        <p>A "QSO" is a contact or conversation between two amateur radio stations.</p>
+        <h3 id="what-is-qsl">What is a "QSL" card?</h3>
+        <p>A "QSL" card is a confirmation of a contact between two amateur radio stations.</p>
+        <h3 id="how-to-qsl">How do I exchange QSL cards?</h3>
+        <p>You can exchange QSL cards directly, through a QSL bureau, or electronically using services like eQSL or LOTW.</p>
         <h3 id="bands-and-modes">What bands and modes are used in HOTA?</h3>
         <p>HOTA participants can operate on various bands and modes, including HF, VHF, UHF, and digital modes.</p>
         <h3 id="get-involved">How can I get involved in HOTA?</h3>
@@ -79,5 +87,15 @@
         <h3 id="how can-i-advertise">How can I advertise on the site?</h3>
         <p>If you are interested in advertising on the site, please see our <a href="?page=advertising">Advertising Page</a> for more information.</p>
         <h3 id="contact-hota">How can I contact HOTA?</h3>
-        <p>Email us at <a href="mailto:info@hota.org.uk">info@hota.org.uk</a> or <a href="?page=discord">join us on Discord</a>.</p>
+        <p>Email us at <a href="mailto:info@hota.org.uk">info@hota.org.uk</a> or join us on <a href="?page=discord">Discord</a>.</p>
+        <h3 id="join-discord">How can I join the HOTA Discord server?</h3>
+        <p>You can join the HOTA Discord server by following the link on our <a href="?page=discord">Discord Page</a>.</p>
+        <h3 id="what-is-discord">What is Discord?</h3>
+        <p>Discord is a communication platform for communities to chat, share, and connect.</p>
+        <h3 id="what-is-tgif">What is TGIF?</h3>
+        <p>TGIF is a DMR network for amateur radio operators.</p>
+        <h3 id="join-tgif">How can I join the TGIF network?</h3>
+        <p>You can join the TGIF network by following the instructions on our <a href="?page=tgif">TGIF Page</a>.</p>
+        <h3 id="what-is-tgif-talkgroup">What is the TGIF Talkgroup?</h3>
+        <p>The TGIF Talkgroup is a place for HOTA operators to connect and chat on the TGIF network.</p>
     </section>

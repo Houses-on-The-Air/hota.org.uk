@@ -5,7 +5,7 @@
     <p>Last updated: <?= date('F j, Y'); ?></p>
 
     <h3>Step 1: Obtain a License</h3>
-    <p>Before you can start operating an amateur radio station, you need to obtain an amateur radio license. This involves passing an exam that tests your knowledge of radio theory, regulations, and operating practices. Check with your local amateur radio organisation for information on how to get licensed.</p>
+    <p>Before you can start operating an amateur radio station, you need to obtain an amateur radio license. This involves passing an exam that tests your knowledge of radio theory, regulations, and operating practices. Check with your local amateur radio organisation for information on how to get licensed or visit our <a href="?page=getting-licenced">Getting Licenced</a> guide.</p>
 
     <h3>Step 2: Choose Your Equipment</h3>
     <p>Selecting the right equipment is crucial for a successful amateur radio station. Here are the basic components you'll need:</p>

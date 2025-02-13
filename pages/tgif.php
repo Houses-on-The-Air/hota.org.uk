@@ -21,7 +21,7 @@
         <li>Install the programming software for your DMR radio on your computer.</li>
         <li>Connect your radio to the computer using the programming cable.</li>
         <li>Enter your DMR ID and other required information into the programming software.</li>
-        <li>Add the TGIF network talkgroups you want to connect to. You can find a list of TGIF talkgroups on the <a href="https://tgif.network/talkgroups.php">TGIF Network Talkgroups</a> page.</li>
+        <li>Add the TGIF network talkgroups you want to connect to. You can find a list of TGIF talkgroups on the <a href="https://tgif.network/talkgroups.php" rel="nofollow">TGIF Network Talkgroups</a> page.</li>
         <li>Configure the frequency, color code, and time slot settings for your local DMR repeater or hotspot.</li>
         <li>Write the configuration to your radio.</li>
     </ul>

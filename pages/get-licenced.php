@@ -13,7 +13,7 @@
     <h3>Step 2: Study for the Exam</h3>
     <p>To obtain a licence, you must pass an exam. Here’s how to prepare:</p>
     <ul>
-        <li>Get the official study book from the <a href="https://rsgb.org/main/clubs-training/training-resources/">RSGB</a>.</li>
+        <li>Get the official study book from the <a href="https://rsgb.org/main/clubs-training/training-resources/" rel="nofollow">RSGB</a>.</li>
         <li>Join a local amateur radio club for support and training.</li>
         <li>Use online resources like mock exams and video tutorials.</li>
         <li>Practice using amateur radio equipment if possible.</li>
@@ -46,8 +46,8 @@
     <h3>Resources and Support</h3>
     <p>For more information and training, visit:</p>
     <ul>
-        <li><a href="https://www.rsgb.org">Radio Society of Great Britain (RSGB)</a></li>
-        <li><a href="https://www.ofcom.org.uk">Ofcom Licensing</a></li>
+        <li><a href="https://www.rsgb.org" rel="nofollow">Radio Society of Great Britain (RSGB)</a></li>
+        <li><a href="https://www.ofcom.org.uk" rel="nofollow">Ofcom Licensing</a></li>
         <li>Local amateur radio clubs</li>
     </ul>
 

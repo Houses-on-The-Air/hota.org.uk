@@ -18,10 +18,10 @@
     <h3>How to Manage Cookies</h3>
     <p>You can manage your cookie preferences through your browser settings. Most browsers allow you to refuse to accept cookies and to delete cookies. The methods for doing so vary from browser to browser, and from version to version. You can obtain up-to-date information about blocking and deleting cookies via these links:</p>
     <ul>
-        <li><a href="https://support.google.com/chrome/answer/95647?hl=en">Chrome</a></li>
-        <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences">Firefox</a></li>
-        <li><a href="https://support.apple.com/kb/PH21411?locale=en_US">Safari</a></li>
-        <li><a href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies">Internet Explorer</a></li>
+        <li><a href="https://support.google.com/chrome/answer/95647?hl=en" rel="nofollow">Chrome</a></li>
+        <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" rel="nofollow">Firefox</a></li>
+        <li><a href="https://support.apple.com/kb/PH21411?locale=en_US" rel="nofollow">Safari</a></li>
+        <li><a href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies" rel="nofollow">Internet Explorer</a></li>
     </ul>
 
     <h3>Changes to This Cookie Policy</h3>

@@ -26,12 +26,12 @@
     <p>After passing the exam:</p>
     <ul>
         <li>You will receive a certificate confirming your pass.</li>
-        <li>Register with Ofcom’s licensing portal to obtain your callsign.</li>
+        <li>Register with Ofcom’s licencing portal to obtain your callsign.</li>
         <li>Your Foundation callsign will typically begin with the prefix <strong>M7</strong>.</li>
     </ul>
 
     <h3>Step 5: Get Your Equipment and Get on the Air</h3>
-    <p>Now that you’re licensed, you need the right equipment:</p>
+    <p>Now that you’re licenced, you need the right equipment:</p>
     <ul>
         <li><strong>Transceiver:</strong> A radio capable of operating on the allowed bands.</li>
         <li><strong>Antenna:</strong> Suitable for your chosen frequencies.</li>

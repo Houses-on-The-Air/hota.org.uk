@@ -10,6 +10,5 @@
     <p>
         <a href="?page=team">Meet Our Team</a> | <a href="?page=join-our-team">Join Our Team</a> | <a href="?page=privacy">Privacy Policy</a> | <a href="?page=cookies">Cookie Policy</a>
     </p>
-    <p>
 </footer>
 <?php include __DIR__ . '/foot.php'; ?>

@@ -20,7 +20,7 @@
     <ul>
         <li><a href="https://support.google.com/chrome/answer/95647?hl=en" rel="nofollow">Chrome</a></li>
         <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" rel="nofollow">Firefox</a></li>
-        <li><a href="https://support.apple.com/kb/PH21411?locale=en_US" rel="nofollow">Safari</a></li>
+        <li><a href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac" rel="nofollow">Safari</a></li>
         <li><a href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies" rel="nofollow">Internet Explorer</a></li>
     </ul>
 

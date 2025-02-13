@@ -9,9 +9,9 @@
     <h3>How to Join</h3>
     <p>Joining our Discord community is simple and free! Follow these steps to get started:</p>
     <ul>
-        <li>Download the Discord app from the <a href="https://discord.com/download">official website</a> or use the web version.</li>
+        <li>Download the Discord app from the <a href="https://discord.com/download" rel="nofollow">official website</a> or use the web version.</li>
         <li>Create a Discord account if you don't already have one.</li>
-        <li>Click on our invite link: <a href="https://discord.gg/MurHvvkc4W">Join HOTA Discord</a>.</li>
+        <li>Click on our invite link: <a href="https://discord.gg/MurHvvkc4W" rel="nofollow">Join HOTA Discord</a>.</li>
         <li>Follow the instructions to verify your account and gain access to the server.</li>
     </ul>
 

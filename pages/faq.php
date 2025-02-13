@@ -14,6 +14,8 @@
         <p>Yes, you can use What3Words to identify your house location.</p>
         <h3 id="what-is-what-three-words">What is What3Words?</h3>
         <p>What3Words is a geocoding system that divides the world into 3m x 3m squares, each with a unique three-word address.</p>
+        <h3 id="how-to-get-licenced">How do I get licenced for Amateur Radio?</h3>
+        <p>You can get licenced for Amateur Radio by passing an exam and obtaining a licence from Ofcom. For more information, see our <a href="?page=get-licenced">Get Licenced Page</a></p>
         <h3 id="what-is-activation">What is an activation?</h3>
         <p>An activation is when an operator sets up and operates from a house location.</p>
         <h3 id="contacts-for-activation">How many contacts do I need to make for a successful activation?</h3>

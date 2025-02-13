@@ -48,6 +48,22 @@
         <p>You can log your activations manually or use logging software to track your contacts.</p>
         <h3 id="equipment-needed">What equipment do I need for HOTA?</h3>
         <p>You will need a transceiver, antenna, power source, and other accessories for portable operation.</p>
+        <h3 id="set-up-station">How do I set up my station for HOTA?</h3>
+        <p>Set up your station at a house location with a suitable antenna and equipment for making contacts.</p>
+        <h3 id="share-photos">Can I share photos of my station?</h3>
+        <p>Yes, you can share photos of your station setup and activations with the HOTA community.</p>
+        <h3 id="get-feedback">How can I get feedback on my station setup?</h3>
+        <p>You can share your station setup on the HOTA website or social media channels to get feedback from other operators.</p>
+        <h3 id="join-hota-community">How can I join the HOTA community?</h3>
+        <p>You can join the HOTA community by participating in activations, contests, and events.</p>
+        <h3 id="share-experiences">Can I share my HOTA experiences with others?</h3>
+        <p>Yes, you can share your HOTA experiences with the community through social media, forums, and other channels.</p>
+        <h3 id="get-support">How can I get support for my HOTA activities?</h3>
+        <p>You can get support for your HOTA activities by contacting the HOTA team or community members for assistance.</p>
+        <h3 id="report-issues">How do I report issues with the HOTA website?</h3>
+        <p>If you encounter any issues with the HOTA website, please contact us at <a href="mailto:info@hota.org.uk">info@hota.org.uk</a></p>
+        <h3 id="digital-modes">Can I operate in digital modes for HOTA?</h3>
+        <p>Yes, you can operate in digital modes for HOTA activations and contests. We currently have a <a href="?page=tgif">TGIF Talkgroup</a></p>
         <h3 id="remote-participation">Can I participate in HOTA remotely?</h3>
         <p>Remote participation is not allowed.</p>
         <h3 id="find-hota-stations">How do I find HOTA stations to contact?</h3>

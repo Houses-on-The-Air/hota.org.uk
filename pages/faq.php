@@ -61,5 +61,5 @@
         <h3 id="how can-i-advertise">How can I advertise on the site?</h3>
         <p>If you are interested in advertising on the site, please see our <a href="?page=advertising">Advertising Page</a> for more information.</p>
         <h3 id="contact-hota">How can I contact HOTA?</h3>
-        <p>Email us at <a href="mailto:info@hota.org.uk">info@hota.org.uk</a>.</p>
+        <p>Email us at <a href="mailto:info@hota.org.uk">info@hota.org.uk</a> or <a href="?page=discord">join us on Discord</a>.</p>
     </section>

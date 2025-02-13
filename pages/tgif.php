@@ -3,7 +3,7 @@
     <p>Last updated: <?= date('F j, Y'); ?></p>
 
     <h3>Step 1: Obtain a DMR ID</h3>
-    <p>Before you can start using the TGIF DMR network, you need to obtain a DMR ID. This unique identifier is required for all DMR users. You can register for a DMR ID at <a href="https://www.radioid.net/register">RadioID.net</a>.</p>
+    <p>Before you can start using the TGIF DMR network, you need to obtain a DMR ID. This unique identifier is required for all DMR users. You can register for a DMR ID at <a href="https://www.radioid.net/register" rel="nofollow">RadioID.net</a>.</p>
 
     <h3>Step 2: Choose Your Equipment</h3>
     <p>To connect to the TGIF DMR network, you'll need the following equipment:</p>

@@ -97,5 +97,5 @@
         <h3 id="join-tgif">How can I join the TGIF network?</h3>
         <p>You can join the TGIF network by following the instructions on our <a href="?page=tgif">TGIF Page</a>.</p>
         <h3 id="what-is-tgif-talkgroup">What is the TGIF Talkgroup?</h3>
-        <p>The TGIF Talkgroup is a place for HOTA operators to connect and chat on the TGIF network.</p>
+        <p>86915.</p>
     </section>

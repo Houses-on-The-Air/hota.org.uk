@@ -91,16 +91,7 @@
     <link rel="canonical" href="https://hota.org.uk<?php echo ($_SERVER['REQUEST_URI']); ?>" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #eae7dc; color: #333; }
-        footer { background-color: #8e8d8a; color: #fff; text-align: center; padding: 1rem 0; width: 100%; bottom: 0; font-size: 1.2rem; }
-        header, nav, main, footer { padding: 0 1rem; }
-        .nav-wrapper a { margin: 0 0.5rem; }
-        .section { margin-bottom: 2rem; }
-        .btn { background-color: #8e8d8a; color: #fff; }
-        a { color: #007BFF; } /* Better visibility for text links */
-        a:hover { color: #0056b3; } /* Better visibility for text links */
-    </style>
+    <link href="stylesheets/main.css" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2002090586659609"
         crossorigin="anonymous"></script>
 </head>

@@ -23,6 +23,7 @@
         <li>Use appropriate channels for different topics and discussions.</li>
         <li>Follow all Discord terms of service and community guidelines.</li>
         <li>Report any issues or concerns to the moderators.</li>
+        <li>Have fun and enjoy your time in the community!</li>
     </ul>
 
     <h3>Benefits of Joining</h3>
@@ -33,6 +34,12 @@
         <li>Participate in discussions, share tips, and ask questions.</li>
         <li>Access exclusive content and resources.</li>
         <li>Receive support and assistance from experienced operators.</li>
+        <li>Stay engaged and motivated in pursuing your amateur radio hobby.</li>
+        <li>Make new friends and build lasting connections in the HOTA community.</li>
+        <li>Have fun and enjoy the camaraderie of like-minded individuals!</li>
+        <li>Participate in contests, giveaways, and special events.</li>
+        <li>Learn new skills, techniques, and best practices from seasoned operators.</li>
+        <li>Share your achievements, QSL cards, and station setups with others.</li>
     </ul>
 
     <h3>Contact Us</h3>

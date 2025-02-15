@@ -92,13 +92,12 @@
     <meta name="twitter:title" content="Houses on The Air - Amateur Radio Activities">
     <meta name="twitter:description" content="Houses on The Air (HOTA) is an amateur radio activity that encourages operators to set up and operate from various houses.">
     <meta name="twitter:image" content="https://hota.org.uk/images/hota-banner.png">
-    <meta name="twitter:creator" content="@hotaradio">
-    <meta name="twitter:site" content="@hotaradio">
+    <meta name="twitter:creator" content="@housesontheair">
+    <meta name="twitter:site" content="@housesontheair">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Houses on The Air">
     <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="canonical" href="https://hota.org.uk<?php echo ($_SERVER['REQUEST_URI']); ?>" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/hota-banner.png">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -106,4 +105,5 @@
     <link href="stylesheets/main.css" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2002090586659609"
         crossorigin="anonymous"></script>
+    <script src="javascripts/materialize-v2.2.1/js/materialize.min.js"></script>
 </head>

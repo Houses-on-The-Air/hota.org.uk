@@ -1,3 +1,4 @@
 **.adif
 *.DS_Store
 /uploads/*.adif
+/config/db.php

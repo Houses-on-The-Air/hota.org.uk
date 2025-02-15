@@ -23,7 +23,7 @@
             <td>Join us for our Summer Activation Contest and compete to see who can activate the most house locations. Earn awards based on the number of contacts you make and the unique addresses you activate.</td>
         </tr>
         <tr>
-            <td>24st of September, 2025</td>
+            <td>14th of September, 2025</td>
             <td>Autumn Activation Contest</td>
             <td>Get ready for our Autumn Activation Contest and showcase your operating skills. Make contacts with other operators and earn awards for your participation.</td>
         </tr>

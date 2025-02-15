@@ -1,7 +1,8 @@
 <section class="container">
-    <h3>Join Our Team</h3>
+    <h2>Join Our Team</h2>
+    <p>Last updated: <?= date('F j, Y'); ?></p>
     <p>We are always looking for talented individuals to join our team. If you are passionate about technology and community, we would love to hear from you.</p>
-    <h4>Current Openings</h4>
+    <h3>Current Openings</h3>
     <ul>
         <li>No current roles open.</li>
     </ul>

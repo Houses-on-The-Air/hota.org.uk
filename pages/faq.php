@@ -1,5 +1,6 @@
 <section class="container">
         <h2>Frequently Asked Questions (FAQ)</h2>
+        <p>Last updated: <?= date('F j, Y'); ?></p>
         <h3 id="what-is-hota">What is HOTA?</h3>
         <p>HOTA is an amateur radio activity encouraging operators to set up from various houses.</p>
         <h3 id="rules-of-hota">What are the rules of HOTA?</h3>

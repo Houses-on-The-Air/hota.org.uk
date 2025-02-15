@@ -1,5 +1,8 @@
 <section class="container">
-    <h3>Contests</h3>
+    <h2>Contests</h2>
+    <p>Last updated: <?= date('F j, Y'); ?></p>
+
+    <h3>Participation</h3>
     <p>Participate in HOTA contests to earn awards and recognition for your achievements. Compete with other operators to see who can make the most contacts and activate the most house locations. Check out our upcoming contests and get ready to show off your skills!</p>
 
     <h4>Contest Schedule</h4>

@@ -1,5 +1,7 @@
 <section class="container">
-    <h3>Meet Our Team</h3>
+    <h2>Meet Our Team</h2>
+    <p>Last updated: <?= date('F j, Y'); ?></p>
+
     <div class="team-member">
         <h4>Antony Bailey</h4>
         <p><a href="https://www.qrz.com/db/M7FGZ" rel="nofollow">M7FGZ</a></p>

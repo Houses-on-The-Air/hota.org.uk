@@ -1,6 +1,9 @@
 <?php
 ?>
 <section class="container">
+    <h2>Awards</h2>
+    <p>Last updated: <?= date('F j, Y'); ?></p>
+
     <h3>Awards Tier System</h3>
     <p>We are excited to introduce our Awards Tier System! Earn awards based on the number of houses you contact during HOTA events. The more houses you contact, the higher the tier you achieve!</p>
 

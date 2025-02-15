@@ -107,4 +107,6 @@
         <p>You can contribute to the HOTA website by submitting bug reports, feature requests, or code contributions on our <a href="https://github.com/Houses-on-The-Air" target="_blank" rel="nofollow">GitHub</a> profile.</p>
         <h3 id="about-hota">Where can I find more information about HOTA?</h3>
         <p>For more information about HOTA, visit our <a href="?page=about">About Page</a>.
+        <h3 id="app-icons">Are there any app icons available for HOTA?</h3>
+        <p>Yes, you can download app icons for HOTA from our <a href="?page=appicons">App Icons Page</a>.</p>
     </section>

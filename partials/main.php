@@ -23,6 +23,7 @@
             <li><a href="?page=contests">Contests</a> and <a href="?page=awards">awards</a></li>
             <li><a href="?page=community-events">Community events</a></li>
             <li><a href="?page=operating-guidelines">Operating guidelines</a></li>
+            <li><a href="?page=nets">Nets</a></li>
             <li><a href="?page=rules">Rules and regulations</a></li>
         </ul>
     </section>

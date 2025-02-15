@@ -1,4 +1,4 @@
-<?php include __DIR__ . '/above-footer-ad.php'; ?>
+<?php //include __DIR__ . '/above-footer-ad.php'; ?>
 <?php include __DIR__ . '/socials.php'; ?>
 <footer>
     <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">

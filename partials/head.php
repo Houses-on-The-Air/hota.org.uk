@@ -74,6 +74,13 @@
             case '/?page=store':
                 $secondTitle = 'Merch Store';
                 break;
+            case '/?page=appicons':
+                $secondTitle = 'App Icons';
+                break;
+            case '/?page=nets':
+                $secondTitle = 'Join Our Amateur Radio Net';
+                break;
+
             default:
                 $secondTitle = 'Amateur Radio Activities';
             }

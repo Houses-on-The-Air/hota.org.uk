@@ -1,1 +1,3 @@
 **.adif
+*.DS_Store
+/uploads/*.adif

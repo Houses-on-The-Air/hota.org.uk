@@ -11,35 +11,35 @@
             <th style="text-align: right;">Houses Contacted</th>
         </tr>
         <tr>
-            <td><strong>Copper</strong></td>
+            <td><strong>Bedsit</strong></td>
             <td style="text-align: right;">100</td>
         </tr>
         <tr>
-            <td><strong>Bronze</strong></td>
+            <td><strong>Terraced House</strong></td>
             <td style="text-align: right;">500</td>
         </tr>
         <tr>
-            <td><strong>Silver</strong></td>
+            <td><strong>Semi-Detached House</strong></td>
             <td style="text-align: right;">1,000</td>
         </tr>
         <tr>
-            <td><strong>Gold</strong></td>
+            <td><strong>Detached House</strong></td>
             <td style="text-align: right;">10,000</td>
         </tr>
         <tr>
-            <td><strong>Platinum</strong></td>
+            <td><strong>Townhouse</strong></td>
             <td style="text-align: right;">100,000</td>
         </tr>
         <tr>
-            <td><strong>Diamond</strong></td>
+            <td><strong>Country Cottage</strong></td>
             <td style="text-align: right;">250,000</td>
         </tr>
         <tr>
-            <td><strong>Double Diamond</strong></td>
+            <td><strong>Victorian Villa</strong></td>
             <td style="text-align: right;">500,000</td>
         </tr>
         <tr>
-            <td><strong>Elite</strong></td>
+            <td><strong>Mansion</strong></td>
             <td style="text-align: right;">1,000,000</td>
         </tr>
     </table>

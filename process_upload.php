@@ -21,16 +21,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['adif_file'])) {
     $callsign = $result['callsign'];
 
     // Determine award tier
-    $awardTier = "Participation";
+    $awardTier = "Cardboard Box";
     $tiers = [
-        1000000 => "Elite",
-        500000 => "Double Diamond",
-        250000 => "Diamond",
-        100000 => "Platinum",
-        10000 => "Gold",
-        1000  => "Silver",
-        500  => "Bronze",
-        100  => "Copper"
+        1000000 => "Mansion",
+        500000 => "Victorian Villa",
+        250000 => "Country Cottage",
+        100000 => "Townhouse",
+        10000 => "Detached House",
+        1000  => "Semi-Detached House",
+        500  => "Terraced House",
+        100  => "Bedsit"
     ];
 
     foreach ($tiers as $threshold => $tier) {

@@ -9,6 +9,7 @@
     <h3>Upcoming Events</h3>
     <ul>
         <li>No upcoming events. Please check back soon.</li>
+        <li>Check out our <a href="?page=contests">Contests</a> and <a href="?page=house-activations">House Activations</a> for more opportunities to participate in HOTA activities.</li>
     </ul>
 
     <h3>How to Participate</h3>

@@ -6,6 +6,8 @@
         <p>Rules include eligibility, registration, event guidelines, code of conduct, and contact information. They are available on our <a href="?page=rules">Rules Page</a>.</p>
         <h3 id="how-to-participate">How do I participate in HOTA?</h3>
         <p>To participate in HOTA, set up your station at a house location, make contacts, and log your activations.</p>
+        <h3>Do you have a merch store?</h3>
+        <p>Yes, we have a merch store. You can visit our <a href="?page=store">Merch Store</a> to view our products.</p>
         <h3 id="identify-house">How do I uniquely identify my house?</h3>
         <p>You can uniquely identify your house by its address or using a UPRN if available in your location.</p>
         <h3 id="what-is-uprn">What is a UPRN?</h3>
@@ -98,4 +100,10 @@
         <p>You can join the TGIF network by following the instructions on our <a href="?page=tgif">TGIF Page</a>.</p>
         <h3 id="what-is-tgif-talkgroup">What is the TGIF Talkgroup?</h3>
         <p>86915.</p>
+        <h3 id="open-source">Is the HOTA website open source?</h3>
+        <p>Yes, the HOTA website is open source. You can view the code on our <a href="https://github.com/Houses-on-The-Air" target="_blank" rel="nofollow">GitHub</a> profile.</p>
+        <h3 id="how-to-contribute">How can I contribute to the HOTA website?</h3>
+        <p>You can contribute to the HOTA website by submitting bug reports, feature requests, or code contributions on our <a href="https://github.com/Houses-on-The-Air" target="_blank" rel="nofollow">GitHub</a> profile.</p>
+        <h3 id="about-hota">Where can I find more information about HOTA?</h3>
+        <p>For more information about HOTA, visit our <a href="?page=about">About Page</a>.
     </section>

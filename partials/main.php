@@ -4,11 +4,23 @@
         <p>Houses on The Air (HOTA) is an amateur radio activity that encourages operators to set up and operate from various houses. The goal is to promote fixed operations and to make contacts with other amateur radio operators from unique house locations. Participants can enjoy the challenge of setting up their equipment in different environments and can earn awards based on the number of unique house locations they activate and the number of contacts they make.</p>
         <p>HOTA is a great way to explore new places, meet new people, and improve your operating skills. Whether you are a seasoned operator or a newcomer to amateur radio, HOTA offers a fun and rewarding experience. Join the HOTA community today and start making contacts from houses around the world!</p>
     </section>
+    <section id="get-started" class="section">
+        <h2>Get Started with HOTA</h2>
+        <p>Ready to get started with Houses on The Air? Follow these steps to begin your HOTA adventure:</p>
+        <ol>
+            <li>Get your <a href="?page=get-licenced">UK Amateur Radio Licence</a>.</li>
+            <li>Set up your station at a house location of your choice.</li>
+            <li>Choose a band and frequency to operate on.</li>
+            <li>Call CQ for HOTA and make contacts with other operators.</li>
+            <li>Log your contacts and upload your ADIF file to check for awards.</li>
+        </ol>
+        <p>Get on the air today and start exploring the world of Houses on The Air!</p>
+    </section>
     <section id="activities" class="section">
         <h2>HOTA Activities</h2>
         <ul>
             <li><a href="?page=house-activations">House activations</a></li>
-            <li>Contests and <a href="?page=awards">awards</a></li>
+            <li><a href="?page=contests">Contests</a> and <a href="?page=awards">awards</a></li>
             <li><a href="?page=community-events">Community events</a></li>
             <li><a href="?page=operating-guidelines">Operating guidelines</a></li>
             <li><a href="?page=rules">Rules and regulations</a></li>

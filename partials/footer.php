@@ -1,3 +1,4 @@
+<?php include __DIR__ . '/above-footer-ad.php'; ?>
 <footer>
     <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
         &copy; <?php echo date("Y"); ?> <a property="dct:title" rel="cc:attributionURL" href="https://hota.org.uk">Houses on The Air</a> is licensed under
@@ -8,7 +9,7 @@
         </a>
     </p>
     <p>
-        <a href="?page=team">Meet Our Team</a> | <a href="?page=join-our-team">Join Our Team</a> | <a href="?page=privacy">Privacy Policy</a> | <a href="?page=cookies">Cookie Policy</a>
+        <a href="?page=team">Meet Our Team</a> | <a href="?page=join-our-team">Join Our Team</a> | <a href="?page=store">Merch Store</a> | <a href="?page=privacy">Privacy Policy</a> | <a href="?page=cookies">Cookie Policy</a>
     </p>
 </footer>
 <?php include __DIR__ . '/foot.php'; ?>

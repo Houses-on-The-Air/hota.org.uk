@@ -13,5 +13,10 @@
         <li><a href="https://rsgb.org/" rel="nofollow" target="_blank">RSGB</a></li>
         <li><a href="https://www.qrz.com" rel="nofollow" target="_blank">QRZ</a></li>
         <li><a href="https://www.arrl.org/" rel="nofollow" target="_blank">ARRL</a></li>
+        <li><a href="https://www.ofcom.org.uk/" rel="nofollow" target="_blank">Ofcom</a></li>
+    </ul>
+    <h3>Others</h3>
+    <ul>
+        <li><a href="https://www.buryradiosociety.org.uk/" rel="nofollow" target="_blank">Bury Radio Society</a></li>
     </ul>
 </section>

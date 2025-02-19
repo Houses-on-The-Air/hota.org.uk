@@ -9,3 +9,4 @@ Disallow: /classes/
 Disallow: /index.php
 Disallow: /process_upload.php
 Disallow: /award.php
+Disallow: /cdn-cgi/l/email-protection

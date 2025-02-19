@@ -80,7 +80,9 @@
             case '/?page=nets':
                 $secondTitle = 'Join Our Amateur Radio Net';
                 break;
-
+            case '/?page=resources':
+                    $secondTitle = 'Useful Amateur Radio Resources';
+                    break;
             default:
                 $secondTitle = 'Amateur Radio Activities';
             }
@@ -105,7 +107,7 @@
     <meta name="author" content="Houses on The Air">
     <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="https://hota.org.uk<?php echo ($_SERVER['REQUEST_URI']); ?>" />
+    <link rel="canonical" href="https://hota.org.uk<?php echo ($_SERVER['REQUEST_URI']); ?>">
     <link rel="apple-touch-icon" sizes="180x180" href="images/hota-banner.png">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="stylesheets/materialize-v2.2.1/css/materialize.min.css" rel="stylesheet">

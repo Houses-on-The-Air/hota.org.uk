@@ -44,11 +44,6 @@
     <p>If you wish to gain more privileges, you can progress to Intermediate and Full licences by taking further exams.</p>
 
     <h3>Resources and Support</h3>
-    <p>For more information and training, visit:</p>
-    <ul>
-        <li><a href="https://www.rsgb.org" rel="nofollow">Radio Society of Great Britain (RSGB)</a></li>
-        <li><a href="https://www.ofcom.org.uk" rel="nofollow">Ofcom Licensing</a></li>
-        <li>Local amateur radio clubs</li>
-    </ul>
+    <p>For more information and training, visit our <a href="?page=resources">Useful Amateur Radio Resources</a> Page.</p>
 
 </section>

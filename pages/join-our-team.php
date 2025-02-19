@@ -4,7 +4,8 @@
     <p>We are always looking for talented individuals to join our team. If you are passionate about technology and community, we would love to hear from you.</p>
     <h3>Current Openings</h3>
     <ul>
-        <li>No current roles open.</li>
+        <li>Net Controllers Wanted - Worldwide</li>
+        <li>Events Organisers Wanted - Worldwide</li>
     </ul>
     <h4>How to Apply</h4>
     <p>If you are interested in any of the positions listed above, please send your resume and a cover letter to <a href="mailto:info@hota.org.uk">info@hota.org.uk</a>.</p>

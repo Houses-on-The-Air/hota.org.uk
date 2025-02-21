@@ -14,13 +14,13 @@
 The project is also available as a Docker container. You can pull the image from the GitHub Container Registry:
 
 ```bash
-docker pull ghcr.io/Houses-on-The-Air/hota:latest
+docker pull ghcr.io/Houses-on-The-Air/hota.org.uk:latest
 ```
 
 Run the container:
 
 ```bash
-docker run -p 8000:80 ghcr.io/Houses-on-The-Air/hota:latest
+docker run -p 8000:80 ghcr.io/Houses-on-The-Air/hota.org.uk:latest
 ```
 
 ## Contributing

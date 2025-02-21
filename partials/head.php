@@ -15,78 +15,7 @@
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="fa1072f7-4400-4afa-9791-4a7415340d9b" type="text/javascript" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php
-        switch ($_SERVER['REQUEST_URI']) {
-            case '/':
-                $secondTitle = 'Amateur Radio Activities';
-                break;
-            case '/?page=about':
-                $secondTitle = 'About Us';
-                break;
-            case '/?page=contact':
-                $secondTitle = 'Contact Us';
-                break;
-            case '/?page=rules':
-                $secondTitle = 'Rules';
-                break;
-            case '/?page=advertising':
-                $secondTitle = 'Advertise With Us';
-                break;
-            case '/?page=awards':
-                $secondTitle = 'See Available Awards';
-                break;
-            case '/?page=community-events':
-                $secondTitle = 'Community Events';
-                break;
-            case '/?page=cookies':
-                $secondTitle = 'Cookies Policy';
-                break;
-            case '/?page=privacy':
-                $secondTitle = 'Privacy Policy';
-                break;
-            case '/?page=discord':
-                $secondTitle = 'Join Our Discord Server';
-                break;
-            case '/?page=faq':
-                $secondTitle = 'Frequently Asked Questions';
-                break;
-            case '/?page=get-licenced':
-                $secondTitle = 'Get a UK Amateur Radio License for Free';
-                break;
-            case '/?page=house-activations':
-                $secondTitle = 'House Activations';
-                break;
-            case '/?page=join-our-team':
-                $secondTitle = 'Join Our Team';
-                break;
-            case '/?page=operating-guidelines':
-                $secondTitle = 'Operating Guidelines';
-                break;
-            case '/?page=team':
-                $secondTitle = 'Meet The Team';
-                break;
-            case '/?page=tgif':
-                $secondTitle = 'TGIF DMR Network';
-                break;
-            case '/?page=contests':
-                $secondTitle = 'Amateur Radio Contests';
-                break;
-            case '/?page=store':
-                $secondTitle = 'Merch Store';
-                break;
-            case '/?page=appicons':
-                $secondTitle = 'App Icons';
-                break;
-            case '/?page=nets':
-                $secondTitle = 'Join Our Amateur Radio Net';
-                break;
-            case '/?page=resources':
-                    $secondTitle = 'Useful Amateur Radio Resources';
-                    break;
-            default:
-                $secondTitle = 'Amateur Radio Activities';
-            }
-    ?>
+    <?php require_once __DIR__ . '/title.php'; ?>
     <title>Houses on The Air - <?php echo $secondTitle ?></title>
     <meta name="description" content="Houses on The Air (HOTA) is an amateur radio activity that encourages operators to set up and operate from various houses.">
     <meta name="keywords" content="Houses on The Air, HOTA, amateur radio, house activations, radio contests, community events">

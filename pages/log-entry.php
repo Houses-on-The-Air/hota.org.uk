@@ -1,8 +1,8 @@
-userCallsign: userCallsign,
-
 <section class="container">
     <h2>Log Entry</h2>
 
+    <p>Use the form below to generate an ADIF file for your logbook. Fill in your callsign and the callsign, date, time, band, mode, and RST sent and received for each station you contacted. Click "Add Another Entry" to add more contacts to your logbook. When you're finished, click "Generate ADIF" to download your logbook in ADIF format.</p>
+    <p>For more information on ADIF, see the <a href="https://adif.org/" rel="nofollow" target="_blank">ADIF website</a>.</p>
     <form id="logEntryForm">
         <div>
             <label for="userCallsign">Your Callsign:</label>

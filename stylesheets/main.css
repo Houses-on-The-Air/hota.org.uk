@@ -6,3 +6,4 @@ header, nav, main, footer { padding: 0 1rem; }
 .btn { background-color: #8e8d8a; color: #fff; }
 a { color: #007BFF; } /* Better visibility for text links */
 a:hover { color: #0056b3; } /* Better visibility for text links */
+label { font-size: 1.2em; color: #333; font-weight: bold; }

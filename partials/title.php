@@ -72,6 +72,9 @@
         case '/?page=mailing-list':
             $secondTitle = 'Join Our Mailing List';
             break;
+        case '/?page=log-entry':
+            $secondTitle = 'Log Your Amateur Radio Contacts';
+            break;
         default:
             $secondTitle = 'Amateur Radio Activities';
         }

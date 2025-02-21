@@ -53,6 +53,11 @@
         <h2>Upload Your ADIF File</h2>
         <p>Upload an ADIF log file to check for awards based on unique addresses.</p>
         <p>Supported file formats: .adi, .adif</p>
+        <p>Maximum file size: 5MB</p>
+        <p>Results will display the number of unique addresses found and the award tier achieved.</p>
+        <p>Download your award certificate after processing the file.</p>
+        <p>For best results, ensure your log file contains accurate and complete contact information.</p>
+        <p><a href="?page=log-entry">Need to log your contacts? Click here to enter your log manually.</a></p>
 
         <form id="adif-upload-form" enctype="multipart/form-data">
             <input type="file" name="adif_file" id="adif-file" accept=".adi,.adif" required>

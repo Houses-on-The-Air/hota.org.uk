@@ -75,6 +75,15 @@
         case '/?page=log-entry':
             $secondTitle = 'Log Your Amateur Radio Contacts';
             break;
+        case '/?page=gdpr':
+            $secondTitle = 'General Data Protection Regulation (GDPR)';
+            break;
+        case '/?page=modern-slavery':
+            $secondTitle = 'Modern Slavery Statement';
+            break;
+        case '/?page=glossary':
+            $secondTitle = 'Amateur Radio Glossary';
+            break;
         default:
             $secondTitle = 'Amateur Radio Activities';
         }

@@ -10,7 +10,14 @@
         </a>
     </p>
     <p>
-        <a href="?page=team">Meet Our Team</a> | <a href="?page=join-our-team">Join Our Team</a> | <a href="?page=store">Merch Store</a> | <a href="?page=privacy">Privacy Policy</a> | <a href="?page=cookies">Cookie Policy</a> | <a href="?page=terms">Terms of Service</a> | <a href="?page=mailing-list">Mailing List</a>
+        <a href="?page=team">Meet Our Team</a> |
+        <a href="?page=join-our-team">Join Our Team</a> |
+        <a href="?page=store">Merch Store</a> |
+        <a href="?page=privacy">Privacy Policy</a> |
+        <a href="?page=cookies">Cookie Policy</a> |
+        <a href="?page=terms">Terms of Service</a> |
+        <a href="?page=mailing-list">Mailing List</a> |
+        <a href="?page=modern-slavery">Modern Slavery Statement</a>
     </p>
 </footer>
 <?php include __DIR__ . '/foot.php'; ?>

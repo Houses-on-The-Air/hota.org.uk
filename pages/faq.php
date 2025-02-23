@@ -111,4 +111,6 @@
     <p>For more information about HOTA, visit our <a href="?page=about">About Page</a>.
     <h3>Are there any app icons available for HOTA?</h3>
     <p>Yes, you can download app icons for HOTA from our <a href="?page=appicons">App Icons Page</a>.</p>
+    <h3>Can you explain what the terms used in Amateur Radio mean?</h3>
+    <p>Yes, we have a glossary of terms available on our <a href="?page=glossary">Glossary Page</a>.</p>
 </section>

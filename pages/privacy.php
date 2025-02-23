@@ -31,6 +31,7 @@
         <li>To personalise your experience on our platform.</li>
         <li>To conduct research and analysis to better understand our users.</li>
         <li>To provide you with relevant advertising and marketing.</li>
+        <li>To work with third-party service providers to perform tasks on our behalf.</li>
     </ul>
 
     <h3>Data Retention</h3>
@@ -45,16 +46,17 @@
     <h3>Your Rights</h3>
     <p>You have the following rights regarding your personal data:</p>
     <ul>
-        <li>The right to access – You have the right to request copies of your personal data.</li>
-        <li>The right to rectification – You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete.</li>
-        <li>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</li>
-        <li>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
-        <li>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</li>
-        <li>The right to data portability – You have the right to request that we transfer the data that we have collected to another organisation, or directly to you, under certain conditions.</li>
-        <li>The right to withdraw consent – You have the right to withdraw your consent at any time, where we rely on your consent to process your personal data.</li>
-        <li>The right to lodge a complaint – You have the right to lodge a complaint with a supervisory authority if you believe we have violated your rights.</li>
-        <li>The right to be informed – You have the right to be informed about the collection and use of your personal data.</li>
+        <li>The right to access - You have the right to request copies of your personal data.</li>
+        <li>The right to rectification - You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete.</li>
+        <li>The right to erasure - You have the right to request that we erase your personal data, under certain conditions.</li>
+        <li>The right to restrict processing - You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
+        <li>The right to object to processing - You have the right to object to our processing of your personal data, under certain conditions.</li>
+        <li>The right to data portability - You have the right to request that we transfer the data that we have collected to another organisation, or directly to you, under certain conditions.</li>
+        <li>The right to withdraw consent - You have the right to withdraw your consent at any time, where we rely on your consent to process your personal data.</li>
+        <li>The right to lodge a complaint - You have the right to lodge a complaint with a supervisory authority if you believe we have violated your rights.</li>
+        <li>The right to be informed - You have the right to be informed about the collection and use of your personal data.</li>
     </ul>
+    <p>For more information on your rights under GDPR, visit our <a href="?page=gdpr"">GDPR Page</a>.</p>
     <p>To exercise any of these rights, please contact us at <a href="mailto:info@hota.org.uk">info@hota.org.uk</a>.</p>
 
     <h3>Security</h3>

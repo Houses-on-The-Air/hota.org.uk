@@ -1,7 +1,7 @@
 <section class="container">
     <h2>Log Entry</h2>
 
-    <p>Use the form below to generate an ADIF file for your logbook. Fill in your callsign and the callsign, date, time, band, mode, and RST sent and received for each station you contacted. Click "Add Another Entry" to add more contacts to your logbook. When you're finished, click "Generate ADIF" to download your logbook in ADIF format.</p>
+    <p>Use the form below to generate an ADIF file for your logbook. Fill in your callsign and the callsign, date, time, band, mode, RST sent and received, and address for each station you contacted. Click "Add Another Entry" to add more contacts to your logbook. When you're finished, click "Generate ADIF" to download your logbook in ADIF format.</p>
     <p>For more information on ADIF, see the <a href="https://adif.org/" rel="nofollow" target="_blank">ADIF website</a>.</p>
     <form id="logEntryForm">
         <div>
@@ -85,6 +85,8 @@
                         <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
                     <?php endfor; ?>
                 </select>
+                <label for="address">Station Address:</label>
+                <input type="text" name="address[]" required>
             </div>
         </div>
         <button type="button" onclick="addEntry()">Add Another Entry</button>
@@ -110,13 +112,14 @@
                 band: formData.getAll('band[]')[i],
                 mode: formData.getAll('mode[]')[i],
                 rst_sent: formData.getAll('rst_sent[]')[i],
-                rst_rcvd: formData.getAll('rst_rcvd[]')[i]
+                rst_rcvd: formData.getAll('rst_rcvd[]')[i],
+                address: formData.getAll('address[]')[i]
             });
         }
-        generateADIF(entries);
+        generateADIF(entries, userCallsign);
     });
 
-    function generateADIF(entries) {
+    function generateADIF(entries, userCallsign) {
         let adif = '';
         entries.forEach(entry => {
             adif += `<CALL:${entry.call.length}>${entry.call} `;
@@ -126,7 +129,8 @@
             adif += `<MODE:${entry.mode.length}>${entry.mode} `;
             adif += `<RST_SENT:${entry.rst_sent.length}>${entry.rst_sent} `;
             adif += `<RST_RCVD:${entry.rst_rcvd.length}>${entry.rst_rcvd} `;
-            adif += `<STATION_CALLSIGN:${entry.userCallsign.length}>${entry.userCallsign} `;
+            adif += `<ADDRESS:${entry.address.length}>${entry.address} `;
+            adif += `<STATION_CALLSIGN:${userCallsign.length}>${userCallsign} `;
             adif += '<EOR>\n';
         });
         downloadADIF(adif);

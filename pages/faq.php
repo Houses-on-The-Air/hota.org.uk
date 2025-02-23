@@ -3,6 +3,8 @@
     <p>Last updated: <?= date('F j, Y'); ?></p>
     <h3>What is HOTA?</h3>
     <p>HOTA is an amateur radio activity encouraging operators to set up from various houses.</p>
+    <h3>How do I register for HOTA?</h3>
+    <p>Registration is not required for HOTA. Simply set up your station and start making contacts.</p>
     <h3>What are the rules of HOTA?</h3>
     <p>Rules include eligibility, registration, event guidelines, code of conduct, and contact information. They are available on our <a href="?page=rules">Rules Page</a>.</p>
     <h3>How do I participate in HOTA?</h3>

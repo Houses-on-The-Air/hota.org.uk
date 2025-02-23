@@ -84,6 +84,9 @@
         case '/?page=glossary':
             $secondTitle = 'Amateur Radio Glossary';
             break;
+        case '/?page=band-plans':
+            $secondTitle = 'Amateur Radio Band Plans';
+            break;
         default:
             $secondTitle = 'Amateur Radio Activities';
         }

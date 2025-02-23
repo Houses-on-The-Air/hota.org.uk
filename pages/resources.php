@@ -14,6 +14,7 @@
         <li><a href="https://www.qrz.com" rel="nofollow" target="_blank">QRZ</a></li>
         <li><a href="https://www.arrl.org/" rel="nofollow" target="_blank">ARRL</a></li>
         <li><a href="https://www.ofcom.org.uk/" rel="nofollow" target="_blank">Ofcom</a></li>
+        <li><a href="https://eqsl.cc" rel="nofollow" target="_blank">eQSL</a></li>
     </ul>
     <h3>Others</h3>
     <ul>

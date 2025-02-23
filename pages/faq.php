@@ -113,4 +113,6 @@
     <p>Yes, you can download app icons for HOTA from our <a href="?page=appicons">App Icons Page</a>.</p>
     <h3>Can you explain what the terms used in Amateur Radio mean?</h3>
     <p>Yes, we have a glossary of terms available on our <a href="?page=glossary">Glossary Page</a>.</p>
+    <h3>How are bands allocated?</h3>
+    <p>Bands are allocated by frequency range and mode of operation to ensure efficient use of the radio spectrum. For more information visit our <a href="?page=band-plans">Band Plans</a> page.</p>
 </section>

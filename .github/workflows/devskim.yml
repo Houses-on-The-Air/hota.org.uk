@@ -7,11 +7,11 @@ name: DevSkim
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ master ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ master ]
   schedule:
-    - cron: '35 9 * * 2'
+    - cron: 35 9 * * 2
 
 jobs:
   lint:
@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          submodules: true
 
       - name: Run DevSkim scanner
         uses: microsoft/DevSkim-Action@v1

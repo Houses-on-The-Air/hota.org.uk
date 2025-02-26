@@ -17,18 +17,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php require_once __DIR__ . '/title.php'; ?>
     <title>Houses on The Air - <?php echo $secondTitle ?></title>
-    <meta name="description" content="Houses on The Air (HOTA) is an amateur radio activity that encourages operators to set up and operate from various houses.">
+    <?php require_once __DIR__ . '/description.php'; ?>
+    <meta name="description" content="<?php echo $description ?>">
     <meta name="keywords" content="Houses on The Air, HOTA, amateur radio, house activations, radio contests, community events">
-    <meta property="og:title" content="Houses on The Air - Amateur Radio Activities">
-    <meta property="og:description" content="Houses on The Air (HOTA) is an amateur radio activity that encourages operators to set up and operate from various houses.">
+    <meta property="og:title" content="Houses on The Air - <?php echo $secondTitle ?>">
+    <meta property="og:description" content="<?php echo $description ?>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hota.org.uk">
     <meta property="og:image" content="https://hota.org.uk/images/hota-banner.png">
     <meta property="og:site_name" content="Houses on The Air">
     <meta property="og:locale" content="en_GB">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Houses on The Air - Amateur Radio Activities">
-    <meta name="twitter:description" content="Houses on The Air (HOTA) is an amateur radio activity that encourages operators to set up and operate from various houses.">
+    <meta name="twitter:title" content="Houses on The Air - <?php echo $secondTitle ?>">
+    <meta name="twitter:description" content="<?php echo $description ?>">
     <meta name="twitter:image" content="https://hota.org.uk/images/hota-banner.png">
     <meta name="twitter:creator" content="@housesontheair">
     <meta name="twitter:site" content="@housesontheair">

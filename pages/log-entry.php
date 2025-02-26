@@ -1,7 +1,7 @@
 <section class="container">
     <h2>Log Entry</h2>
 
-    <p>Use the form below to generate an ADIF file for your logbook. Fill in your callsign and the callsign, date, time, band, mode, RST sent and received, and address for each station you contacted. Click "Add Another Entry" to add more contacts to your logbook. When you're finished, click "Generate ADIF" to download your logbook in ADIF format.</p>
+    <p>Use the form below to generate an ADIF file for your logbook. Fill in your callsign and the callsign, date, time, band, mode, RST sent and received, frequency, and address for each station you contacted. Click "Add Another Entry" to add more contacts to your logbook. When you're finished, click "Generate ADIF" to download your logbook in ADIF format.</p>
     <p>For more information on ADIF, see the <a href="https://adif.org/" rel="nofollow" target="_blank">ADIF website</a>.</p>
     <form id="logEntryForm">
         <div>
@@ -24,6 +24,8 @@
                 <input type="text" name="rst_sent[]" required>
                 <label for="rst_rcvd">RST Received:</label>
                 <input type="text" name="rst_rcvd[]" required>
+                <label for="frequency">Frequency:</label>
+                <input type="text" name="frequency[]" required>
                 <label for="address">Station Address:</label>
                 <input type="text" name="address[]" required>
                 <hr>
@@ -53,6 +55,7 @@
                 mode: formData.getAll('mode[]')[i],
                 rst_sent: formData.getAll('rst_sent[]')[i],
                 rst_rcvd: formData.getAll('rst_rcvd[]')[i],
+                frequency: formData.getAll('frequency[]')[i],
                 address: formData.getAll('address[]')[i]
             });
         }
@@ -69,7 +72,7 @@
             adif += `<MODE:${entry.mode.length}>${entry.mode} `;
             adif += `<RST_SENT:${entry.rst_sent.length}>${entry.rst_sent} `;
             adif += `<RST_RCVD:${entry.rst_rcvd.length}>${entry.rst_rcvd} `;
-            adif += `<ADDRESS:${entry.address.length}>${entry.address} `;
+            adif += `<FREQ:${entry.frequency.length}>${entry.frequency} `;
             adif += `<STATION_CALLSIGN:${userCallsign.length}>${userCallsign} `;
             adif += '<EOR>\n';
         });

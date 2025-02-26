@@ -40,7 +40,7 @@
     <link rel="canonical" href="https://hota.org.uk<?php echo ($_SERVER['REQUEST_URI']); ?>">
     <link rel="apple-touch-icon" sizes="180x180" href="images/hota-banner.png">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link href="node_modules/@materializecss/materialize/dist/css/materialize.min.css" rel="stylesheet">
+    <link href="node_modules/%40materializecss/materialize/dist/css/materialize.min.css" rel="stylesheet">
     <link href="stylesheets/main.css" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2002090586659609"
         crossorigin="anonymous"></script>

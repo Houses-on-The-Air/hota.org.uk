@@ -153,6 +153,24 @@
         <dd>A band plan frequency usage is the allocation of specific frequencies within an amateur radio band for different types of communication or activities. Band plan frequency usage helps operators organize their contacts and avoid interference.</dd>
         <dt>Bandwidth Efficiency Ratio</dt>
         <dd>Bandwidth efficiency ratio is a measure of how efficiently a radio signal uses the available frequency spectrum. Bandwidth efficiency ratios help operators optimize their communication systems for reliable and interference-free communication.</dd>
+        <dt>Base Station Antenna System</dt>
+        <dd>A base station antenna system is the collection of antennas used at a fixed amateur radio station located at a specific location, such as a home or office. Base station antenna systems are designed to optimize performance and minimize interference.</dd>
+        <dt>Beacon Signal Propagation Analysis</dt>
+        <dd>Beacon signal propagation analysis is the study of how beacon signals are transmitted through the Earth's atmosphere. Beacon signal propagation analysis helps operators assess radio conditions and plan their communication strategies.</dd>
+        <dt>Band Plan Frequency Assignment</dt>
+        <dd>A band plan frequency assignment is the allocation of specific frequencies within an amateur radio band for different types of communication or activities. Band plan frequency assignments help operators organize their contacts and avoid interference.</dd>
+        <dt>Bandwidth Utilization Efficiency</dt>
+        <dd>Bandwidth utilization efficiency is the efficient use of available frequency spectrum for communication within an amateur radio band. Bandwidth utilization efficiency helps operators maximize communication capacity and minimize interference.</dd>
+        <dt>Base Station Antenna Installation</dt>
+        <dd>A base station antenna installation is the process of setting up and configuring antennas at a fixed amateur radio station located at a specific location, such as a home or office. Base station antenna installations are critical for optimizing performance and minimizing interference.</dd>
+        <dt>Beacon Signal Propagation Characteristics</dt>
+        <dd>Beacon signal propagation characteristics are the properties of how beacon signals are transmitted through the Earth's atmosphere. Beacon signal propagation characteristics help operators assess radio conditions and plan their communication strategies.</dd>
+        <dt>Band Plan Frequency Coordination Process</dt>
+        <dd>Band plan frequency coordination process is the procedure for organizing and assigning specific frequencies within an amateur radio band for different types of communication or activities. Band plan frequency coordination processes help operators avoid interference and make efficient use of the available spectrum.</dd>
+        <dt>Bandwidth Utilization Optimization</dt>
+        <dd>Bandwidth utilization optimization is the process of maximizing the efficiency of a radio signal within the available frequency spectrum. Bandwidth utilization optimization helps operators achieve reliable communication and minimize interference.</dd>
+        <dt>Base Station Antenna Configuration</dt>
+        <dd>A base station antenna configuration is the arrangement of antennas used at a fixed amateur radio station located at a specific location, such as a home or office. Base station antenna configurations are designed to optimize performance and minimize interference.</dd>
     </dl>
 
     <h3>C</h3>
@@ -213,6 +231,25 @@
             between two amateur radio operators during a contest. Confirmation may include signal reports, callsigns, and other relevant details.</dd>
         <dt>Contest Rules Enforcement</dt>
         <dd>Contest rules enforcement is the application of guidelines and regulations that govern amateur radio contests. Enforcement ensures fair play and accurate scoring for all participants.</dd>
+        <dt>Contest Software Functionality</dt>
+        <dd>Contest software functionality is the set of functions and capabilities of computer programs used by amateur radio operators to assist with contesting activities. Functionality may include logging, scoring, and station automation.</dd>
+        <dt>Contest Station Configuration</dt>
+        <dd>Contest station configuration is the arrangement of radio transmitters, receivers, antennas, and accessories used at a specialized amateur radio station designed for contesting activities. Configurations are optimized for high-performance operation.</dd>
+        <dt>Contest Strategy Implementation</dt>
+        <dd>Contest strategy implementation is the execution of a plan of action to maximize performance during an amateur radio contest. Strategies may include band selection, operating times, and contact priorities.</dd>
+        <dt>Contest Time Management</dt>
+        <dd>Contest time management is the effective use of time during an amateur radio contest to maximize contact rates and scores. Time management is critical for achieving success in competitive events.</dd>
+        <dt>Contestant Performance Evaluation</dt>
+        <dd>Contestant performance evaluation is the assessment of an amateur radio operator's performance during a contest. Evaluations may include contact rates, scores, and adherence to contest rules.</dd>
+        <dt>Contest Exchange Information Protocol</dt>
+        <dd>Contest exchange information protocol is the procedure for exchanging data between operators during an amateur radio contest. Exchange protocols ensure accurate and efficient communication between participants.</dd>
+        <dt>Contest Logging Software Functionality</dt>
+        <dd>Contest logging software functionality is the set of functions and capabilities of computer programs used by amateur radio operators to log contacts during contests. Functionality may include logging, scoring, and station automation.</dd>
+        <dt>Contest QSO Confirmation Procedure</dt>
+        <dd>A contest QSO confirmation procedure is the acknowledgment of a radio contact made
+            between two amateur radio operators during a contest. Confirmation may include signal reports, callsigns, and other relevant details.</dd>
+        <dt>Contest Rules Interpretation</dt>
+        <dd>Contest rules interpretation is the understanding and application of guidelines and regulations that govern amateur radio contests. Interpretation ensures fair play and accurate scoring for all participants.</dd>
     </dl>
 
     <h3>D</h3>
@@ -266,6 +303,18 @@
         <dt>DXCC Entity Recognition Criteria</dt>
         <dd>DXCC entity recognition criteria are the guidelines used to determine which political entities and geographical locations
             are recognized for amateur radio purposes. Criteria are based on international agreements and regulations.</dd>
+        <dt>DXCC List Update</dt>
+        <dd>DXCC list update is the process of revising and modifying the list of DXCC entities recognized for amateur radio purposes. Updates are made to accommodate changes in political boundaries and geographical locations.</dd>
+        <dt>DXCC Challenge Award Program</dt>
+        <dd>The DXCC challenge award program is a prestigious award given by the ARRL to operators who have made contacts with a large number of DXCC entities around the world. The program recognizes operators for their achievements in DXing.</dd>
+        <dt>Digital Voice Mode Operation Procedure</dt>
+        <dd>Digital voice mode operation procedure is the method of using digital modulation techniques to transmit voice signals over radio waves. Digital voice modes offer improved audio quality and reliability compared to traditional analog voice modes.</dd>
+        <dt>DXCC Entity Verification Process</dt>
+        <dd>DXCC entity verification process is the procedure for confirming contacts with political entities and geographical locations for amateur radio purposes. Verification is required to qualify for the DXCC award and other recognition programs.</dd>
+        <dt>DXCC Award Requirements Criteria</dt>
+        <dd>The DXCC award requirements criteria are the guidelines that operators must meet to qualify for the DXCC award. Requirements typically include making contacts with a specific number of DXCC entities around the world.</dd>
+        <dt>Digital Voice Communication System Operation</dt>
+        <dd>Digital voice communication system operation is the use of a radio system that uses digital modulation techniques to transmit voice signals over radio waves. Digital voice systems offer improved audio quality and reliability compared to traditional analog voice modes.</dd>
     </dl>
 
     <h3>E</h3>
@@ -304,6 +353,18 @@
         <dd>Electromagnetic interference suppression is the process of reducing or eliminating unwanted electromagnetic signals that can disrupt radio communication. Suppression techniques include shielding, filtering, and grounding.</dd>
         <dt>Emergency Communications System</dt>
         <dd>An emergency communications system is a network of amateur radio operators who provide critical communication support during emergencies and disasters. Systems are organized to ensure reliable communication when other systems fail.</dd>
+        <dt>Elmering Assistance</dt>
+        <dd>Elmering assistance is the guidance and support provided by experienced amateur radio operators to help new operators learn the ropes of the hobby. Elmering assistance can include mentoring, training, and resources.</dd>
+        <dt>EME Contact Procedure</dt>
+        <dd>An EME contact procedure is the method of making radio contacts using Earth-Moon-Earth communication. EME contacts are challenging and require specialized equipment and techniques to bounce signals off the moon.</dd>
+        <dt>Electromagnetic Interference Reduction</dt>
+        <dd>Electromagnetic interference reduction is the process of reducing or eliminating unwanted electromagnetic signals that can disrupt radio communication. Reduction techniques include shielding, filtering, and grounding.</dd>
+        <dt>Emergency Communications Network Operation</dt>
+        <dd>An emergency communications network operation is the use of a system of amateur radio operators who provide critical communication support during emergencies and disasters. Networks are organized to ensure reliable communication when other systems fail.</dd>
+        <dt>Elmering Program Development</dt>
+        <dd>An Elmering program development is the creation of a structured mentoring program for new amateur radio operators. Elmering programs provide guidance, support, and resources to help newcomers succeed in the hobby.</dd>
+        <dt>EME Operation Procedure</dt>
+        <dd>EME operation procedure is the method of bouncing radio signals off the moon for long-distance communication. EME operators use specialized equipment and techniques to make contacts with stations in distant locations.</dd>
     </dl>
 
     <h3>F</h3>

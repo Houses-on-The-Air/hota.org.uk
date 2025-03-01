@@ -11,3 +11,4 @@ Disallow: /process_upload.php
 Disallow: /award.php
 Disallow: /cdn-cgi/l/email-protection
 Disallow: /node_modules/
+Disallow: /cache/

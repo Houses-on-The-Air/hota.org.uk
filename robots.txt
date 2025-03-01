@@ -12,3 +12,9 @@ Disallow: /award.php
 Disallow: /cdn-cgi/l/email-protection
 Disallow: /node_modules/
 Disallow: /cache/
+
+Sitemap: https://hota.org.uk/sitemap.xml
+Sitemap: https://hota.org.uk/sitemap.html
+Sitemap: https://hota.org.uk/sitemap.xml.gz
+Sitemap: https://hota.org.uk/ror.xml
+Sitemap: https://hota.org.uk/urllist.txt

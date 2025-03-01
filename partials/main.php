@@ -18,13 +18,13 @@
     </section>
     <section id="activities" class="section">
         <h2>HOTA Activities</h2>
-        <ul>
-            <li><a href="?page=house-activations">House activations</a></li>
-            <li><a href="?page=contests">Contests</a> and <a href="?page=awards">awards</a></li>
-            <li><a href="?page=community-events">Community events</a></li>
-            <li><a href="?page=operating-guidelines">Operating guidelines</a></li>
-            <li><a href="?page=nets">Nets</a></li>
-            <li><a href="?page=rules">Rules and regulations</a></li>
+        <ul style="padding-left: 0; list-style-type: none;">
+            <li style="margin-bottom: 10px;"><a href="?page=house-activations">House activations</a></li>
+            <li style="margin-bottom: 10px;"><a href="?page=contests">Contests</a> and <a href="?page=awards">awards</a></li>
+            <li style="margin-bottom: 10px;"><a href="?page=community-events">Community events</a></li>
+            <li style="margin-bottom: 10px;"><a href="?page=operating-guidelines">Operating guidelines</a></li>
+            <li style="margin-bottom: 10px;"><a href="?page=nets">Nets</a></li>
+            <li style="margin-bottom: 10px;"><a href="?page=rules">Rules and regulations</a></li>
         </ul>
     </section>
     <section id="how-to-call-cq" class="section">

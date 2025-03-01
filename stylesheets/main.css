@@ -5,6 +5,7 @@ body {
   background-color: #eae7dc;
   color: #333;
 }
+
 footer {
   background-color: #8e8d8a;
   color: #fff;
@@ -14,40 +15,56 @@ footer {
   bottom: 0;
   font-size: 1.2rem;
 }
+
 header,
 nav,
 main,
 footer {
   padding: 0 1rem;
 }
+
 .nav-wrapper a {
   margin: 0 0.5rem;
 }
+
 .section {
   margin-bottom: 2rem;
 }
+
 .btn {
   background-color: #8e8d8a;
   color: #fff;
 }
+
 a {
   color: #007bff;
 } /* Better visibility for text links */
+
 a:hover {
   color: #0056b3;
 } /* Better visibility for text links */
+
 label {
   font-size: 1.2em;
   color: #333;
   font-weight: bold;
 }
-select {
-    /* modern browsers */
-    appearance: menulist;
-    border-radius: 0;
-    padding: 0.5rem;
-    font-size: 1.2rem;
-    border: 1px solid #ccc;
-    width: 100%;
 
-  }
+select {
+  /* modern browsers */
+  appearance: menulist;
+  border-radius: 0;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 10px;
+}

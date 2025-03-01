@@ -2,12 +2,22 @@
 
 class PageRenderer {
     private $page;
+    private $cacheDir;
 
-    public function __construct($page = 'home') {
+    public function __construct($page = 'home', $cacheDir = __DIR__ . '/../cache/') {
         $this->page = $page;
+        $this->cacheDir = $cacheDir;
     }
 
     public function render() {
+        $cacheFile = $this->cacheDir . md5($this->page) . '.html';
+
+        if (file_exists($cacheFile) && (time() - filemtime($cacheFile)) < 3600) {
+            // Serve cached content if it exists and is less than 1 hour old
+            echo file_get_contents($cacheFile);
+            return;
+        }
+
         ob_start(); // Start output buffering
         include __DIR__ . '/../partials/header.php';
         $this->renderPage();
@@ -16,6 +26,9 @@ class PageRenderer {
 
         // Minify the content
         $minifiedContent = $this->minify($content);
+
+        // Save the minified content to cache
+        file_put_contents($cacheFile, $minifiedContent);
 
         echo $minifiedContent; // Output the minified content
     }

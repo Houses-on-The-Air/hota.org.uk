@@ -18,3 +18,16 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 5
   targetCPUUtilizationPercentage: 50
+ingress:
+  enabled: true
+  annotations: {}
+  hosts:
+    - host: hota.org.uk
+      paths: /
+  tls:
+    - secretName: hota-org-uk-tls
+      hosts:
+        - hota.org.uk
+secret:
+  tlsCert: "" # work out where to save these
+  tlsKey: "" # base64 encode

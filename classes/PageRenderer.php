@@ -10,12 +10,17 @@ class PageRenderer {
     }
 
     public function render() {
-        $cacheFile = $this->cacheDir . md5($this->page) . '.html';
+        $cacheFile = $this->cacheDir . md5($this->page) . '.html.gz';
 
-        if (file_exists($cacheFile) && (time() - filemtime($cacheFile)) < 3600) {
-            // Serve cached content if it exists and is less than 1 hour old
-            echo file_get_contents($cacheFile);
-            return;
+        if (file_exists($cacheFile)) {
+            if ((time() - filemtime($cacheFile)) < 3600) {
+                // Serve cached content if it exists and is less than 1 hour old
+                echo gzdecode(file_get_contents($cacheFile));
+                return;
+            } else {
+                // Delete the cache file if it is over an hour old
+                unlink($cacheFile);
+            }
         }
 
         ob_start(); // Start output buffering
@@ -27,8 +32,8 @@ class PageRenderer {
         // Minify the content
         $minifiedContent = $this->minify($content);
 
-        // Save the minified content to cache
-        file_put_contents($cacheFile, $minifiedContent);
+        // Compress and save the minified content to cache
+        file_put_contents($cacheFile, gzencode($minifiedContent));
 
         echo $minifiedContent; // Output the minified content
     }
@@ -47,6 +52,8 @@ class PageRenderer {
         // Remove whitespace, newlines, and comments
         $content = preg_replace('/\s+/', ' ', $content);
         $content = preg_replace('/<!--.*?-->/', '', $content);
+        // Remove spaces between tags
+        $content = preg_replace('/>\s+</', '><', $content);
         return $content;
     }
 }

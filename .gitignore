@@ -5,3 +5,4 @@
 /node_modules
 /cache/
 /uploads/
+/includes/db_config.php

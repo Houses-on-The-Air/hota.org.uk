@@ -44,7 +44,4 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2002090586659609"
         crossorigin="anonymous"></script>
     <script src="node_modules/%40materializecss/materialize/dist/js/materialize.min.js"></script>
-    <link rel="dns-prefetch" href="//www.googletagmanager.com">
-    <link rel="dns-prefetch" href="//consent.cookiebot.com">
-    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
 </head>

@@ -15,4 +15,7 @@
     <p>The future of Houses on The Air (HOTA) looks bright, with plans to expand the programme to include new activities, awards, and events. The HOTA community is growing rapidly, with operators from around the world joining in the fun and excitement of activating unique house locations and making contacts with other operators.</p>
     <p>Whether you are a seasoned operator or a newcomer to amateur radio, HOTA offers a unique opportunity to explore new places, meet new people, and improve your operating skills. Join the HOTA community today and start making contacts from houses around the world!</p>
     <p>For more information about Houses on The Air (HOTA), please contact us at <a href="mailto:info@hota.org.uk">info@hota.org.uk</a>.</p>
+
+    <h3>Our Commitment to Open Source</h3>
+    <p>At HOTA, we are committed to the principles of open source. We believe in the power of collaboration and the importance of sharing knowledge and resources to drive innovation and improve our community. For more information about our open source initiatives, please visit our <a href="?page=opensource">Open Source</a> page.</p>
 </section>

@@ -84,6 +84,9 @@
         case '/?page=band-plans':
             $description = 'Amateur Radio Band Plans from Houses on The Air the Amateur Radio Activity that Encourages Operators to Set Up and Operate from Various Houses';
             break;
+        case '/?page=opensource':
+            $description = 'Houses on The Air is committed to Open Source for the advancement of Amateur Radio Activities.';
+            break;
         default:
             $description = 'Houses on The Air (HOTA) is an amateur radio activity that encourages operators to set up and operate from various houses';
         }

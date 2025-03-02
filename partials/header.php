@@ -3,7 +3,7 @@
 <header class="blue-grey darken-1 white-text center-align py-3">
     <h1 style="display: flex; align-items: center; justify-content: center;">
         <a href="/" style="display: flex; align-items: center;">
-            <img src="images/logo-100x100.png" alt="HOTA Logo" style="margin-right: 10px;">
+            <img src="images/logo-100x100.png" alt="HOTA Logo" style="margin-right: 10px;" width="100" height="100">
             Houses on The Air (HOTA)
         </a>
     </h1>

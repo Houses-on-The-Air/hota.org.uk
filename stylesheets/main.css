@@ -2,13 +2,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #eae7dc;
-  color: #333;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 footer {
-  background-color: #8e8d8a;
-  color: #fff;
+  background-color: #4a4a4a;
+  color: #ffffff;
   text-align: center;
   padding: 1rem 0;
   width: 100%;
@@ -24,16 +24,19 @@ footer {
 }
 
 .nav-wrapper a {
-  margin: 0 0.5rem;
+  margin: 0 0.75rem;
+  padding: 0.5rem;
 }
 
 .section {
   margin-bottom: 2rem;
 }
-
 .btn {
   background-color: #8e8d8a;
   color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem 0;
+}
 }
 
 a {
@@ -48,6 +51,7 @@ label {
   font-size: 1.2em;
   color: #333;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 select {
@@ -66,5 +70,10 @@ ul {
 }
 
 li {
+button {
+  margin-bottom: 10px;
+  padding: 0.75rem 1.5rem;
+}
+button {
   margin-bottom: 10px;
 }

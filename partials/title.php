@@ -87,6 +87,9 @@
         case '/?page=band-plans':
             $secondTitle = 'Amateur Radio Band Plans';
             break;
+        case '/?page=opensource':
+            $secondTitle = 'We Love Open Source';
+            break;
         default:
             $secondTitle = 'Amateur Radio Activities';
         }

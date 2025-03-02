@@ -49,12 +49,27 @@ class PageRenderer {
     }
 
     private function minify($content) {
-        // Remove whitespace, newlines, and comments
+        // Remove whitespace, newlines, and comments from HTML
         $content = preg_replace('/\s+/', ' ', $content);
         $content = preg_replace('/<!--.*?-->/', '', $content);
         // Remove spaces between tags
         $content = preg_replace('/>\s+</', '><', $content);
+
+        // Minify inline CSS
+        $content = preg_replace_callback('/<style\b[^>]*>(.*?)<\/style>/is', function($matches) {
+            return '<style>' . $this->minifyCSS($matches[1]) . '</style>';
+        }, $content);
+
         return $content;
+    }
+
+    private function minifyCSS($css) {
+        // Remove comments, whitespace, and newlines from CSS
+        $css = preg_replace('/\/\*.*?\*\//s', '', $css);
+        $css = preg_replace('/\s+/', ' ', $css);
+        $css = preg_replace('/\s*([{}|:;,])\s*/', '$1', $css);
+        $css = preg_replace('/;}/', '}', $css);
+        return $css;
     }
 }
 

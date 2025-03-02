@@ -44,5 +44,5 @@
     <link href="stylesheets/main.css" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2002090586659609"
         crossorigin="anonymous"></script>
-    <script src="javascripts/materialize-v2.2.1/js/materialize.min.js"></script>
+    <script src="node_modules/%40materializecss/materialize/dist/js/materialize.min.js"></script>
 </head>

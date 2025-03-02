@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . '/includes/autoload.php';
 require_once __DIR__ . '/includes/constants.php';
+require_once __DIR__ . '/includes/autoload.php';
 
 $page = isset($_GET['page']) ? preg_replace('/[^a-z0-9_-]/i', '', $_GET['page']) : 'home';
 

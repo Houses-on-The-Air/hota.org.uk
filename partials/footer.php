@@ -1,5 +1,6 @@
 <?php //include __DIR__ . '/above-footer-ad.php'; ?>
 <?php include __DIR__ . '/socials.php'; ?>
+<?php include __DIR__ . '/translate.php'; ?>
 <footer>
     <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
         &copy; <?php echo date("Y"); ?> <a property="dct:title" rel="cc:attributionURL" href="https://hota.org.uk">Houses on The Air</a> is licensed under

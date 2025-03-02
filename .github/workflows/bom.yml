@@ -11,22 +11,18 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-          - name: Checkout repository
-            uses: actions/checkout@v4
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+              with:
+                node-version: '16'
+            - run: npm install
+            - name: Create SBOM with CycloneDX
+              uses: CycloneDX/gh-node-module-generatebom@v1
+              with:
+                output: ./bom.xml
 
-          - name: Set up Node.js
-            uses: actions/setup-node@v4
-            with:
-              node-version: '14'
-
-          - name: Install CycloneDX CLI
-            run: npm install -g @cyclonedx/cyclonedx-npm
-
-          - name: Generate SBOM
-            run: cyclonedx-npm --output bom.xml
-
-          - name: Upload SBOM artifact
-            uses: actions/upload-artifact@v4
-            with:
-              name: sbom
-              path: bom.xml
+            - name: Upload SBOM artifact
+              uses: actions/upload-artifact@v4
+              with:
+                name: sbom
+                path: bom.xml

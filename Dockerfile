@@ -6,7 +6,14 @@ WORKDIR /usr/src/hota
 COPY package*.json ./
 RUN npm install
 
+# Install html-minifier and clean-css-cli
+RUN npm install -g html-minifier clean-css-cli
+
 COPY . .
+
+# Minify HTML and CSS files
+RUN find . -name "*.html" -exec html-minifier --collapse-whitespace --remove-comments --minify-css true --minify-js true -o {} {} \;
+RUN find . -name "*.css" -exec cleancss -o {} {} \;
 
 # Stage 2: Production
 FROM php:8.4.4-zts-alpine3.21

@@ -16,7 +16,7 @@ class PageRenderer {
             if ((time() - filemtime($cacheFile)) < 3600) {
                 // Serve cached content if it exists and is less than 1 hour old
                 header('Content-Encoding: gzip');
-                header('Cache-Control: max-age=3600');
+                header('Cache-Control: max-age=3600, must-revalidate');
                 echo file_get_contents($cacheFile);
                 return;
             } else {
@@ -38,7 +38,7 @@ class PageRenderer {
         file_put_contents($cacheFile, gzencode($minifiedContent));
 
         header('Content-Encoding: gzip');
-        header('Cache-Control: max-age=3600');
+        header('Cache-Control: max-age=3600, must-revalidate');
         echo gzencode($minifiedContent); // Output the minified content
     }
 

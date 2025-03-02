@@ -15,7 +15,9 @@ class PageRenderer {
         if (file_exists($cacheFile)) {
             if ((time() - filemtime($cacheFile)) < 3600) {
                 // Serve cached content if it exists and is less than 1 hour old
-                echo gzdecode(file_get_contents($cacheFile));
+                header('Content-Encoding: gzip');
+                header('Cache-Control: max-age=3600');
+                echo file_get_contents($cacheFile);
                 return;
             } else {
                 // Delete the cache file if it is over an hour old
@@ -35,7 +37,9 @@ class PageRenderer {
         // Compress and save the minified content to cache
         file_put_contents($cacheFile, gzencode($minifiedContent));
 
-        echo $minifiedContent; // Output the minified content
+        header('Content-Encoding: gzip');
+        header('Cache-Control: max-age=3600');
+        echo gzencode($minifiedContent); // Output the minified content
     }
 
     private function renderPage() {
@@ -60,6 +64,11 @@ class PageRenderer {
             return '<style>' . $this->minifyCSS($matches[1]) . '</style>';
         }, $content);
 
+        // Minify inline JS
+        $content = preg_replace_callback('/<script\b[^>]*>(.*?)<\/script>/is', function($matches) {
+            return '<script>' . $this->minifyJS($matches[1]) . '</script>';
+        }, $content);
+
         return $content;
     }
 
@@ -70,6 +79,15 @@ class PageRenderer {
         $css = preg_replace('/\s*([{}|:;,])\s*/', '$1', $css);
         $css = preg_replace('/;}/', '}', $css);
         return $css;
+    }
+
+    private function minifyJS($js) {
+        // Remove comments, whitespace, and newlines from JS
+        $js = preg_replace('/\/\*.*?\*\//s', '', $js);
+        $js = preg_replace('/\s+/', ' ', $js);
+        $js = preg_replace('/\s*([{}|:;,])\s*/', '$1', $js);
+        $js = preg_replace('/;}/', '}', $js);
+        return $js;
     }
 }
 

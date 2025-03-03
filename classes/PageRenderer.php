@@ -12,7 +12,7 @@ class PageRenderer {
     public function render() {
         $cacheFile = $this->getCacheFilePath();
         if ($this->isCacheValid($cacheFile)) {
-            echo file_get_contents($cacheFile);
+            $output = file_get_contents($cacheFile);
         } else {
             ob_start();
             include __DIR__ . '/../partials/header.php';
@@ -21,8 +21,13 @@ class PageRenderer {
             $output = ob_get_clean();
             $minifiedOutput = $this->minifyHtml($output);
             file_put_contents($cacheFile, $minifiedOutput);
-            echo $minifiedOutput;
+            $output = $minifiedOutput;
         }
+
+        $gzippedOutput = gzencode($output);
+        header('Content-Encoding: gzip');
+        header('Content-Length: ' . strlen($gzippedOutput));
+        echo $gzippedOutput;
     }
 
     private function renderPage() {

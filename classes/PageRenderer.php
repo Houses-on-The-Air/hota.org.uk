@@ -2,25 +2,59 @@
 
 class PageRenderer {
     private $page;
+    private $cacheDir;
 
-    public function __construct($page = 'home') {
+    public function __construct($page = 'home', $cacheDir = __DIR__ . '/../cache/') {
         $this->page = $page;
+        $this->cacheDir = $cacheDir;
     }
 
     public function render() {
-        include __DIR__ . '/../partials/header.php';
-        $this->renderPage();
-        include __DIR__ . '/../partials/footer.php';
+        $cacheFile = $this->getCacheFilePath();
+        if ($this->isCacheValid($cacheFile)) {
+            echo file_get_contents($cacheFile);
+        } else {
+            ob_start();
+            include __DIR__ . '/../partials/header.php';
+            $this->renderPage();
+            include __DIR__ . '/../partials/footer.php';
+            $output = ob_get_clean();
+            $minifiedOutput = $this->minifyHtml($output);
+            file_put_contents($cacheFile, $minifiedOutput);
+            echo $minifiedOutput;
+        }
     }
 
     private function renderPage() {
         $pagePath = __DIR__ . '/../pages/' . $this->page . '.php';
-
         if (file_exists($pagePath)) {
             include $pagePath;
         } else {
-            include __DIR__ . '/../pages/404.php';  // A fallback for unknown pages
+            include __DIR__ . '/../pages/404.php';
         }
+    }
+
+    private function getCacheFilePath() {
+        return $this->cacheDir . md5($this->page) . '.html';
+    }
+
+    private function isCacheValid($cacheFile) {
+        $cacheTime = 3600;
+        return file_exists($cacheFile) && (time() - filemtime($cacheFile) < $cacheTime);
+    }
+
+    private function minifyHtml($html) {
+        $search = [
+            '/\>[^\S ]+/s',  // Remove whitespaces after tags, except space
+            '/[^\S ]+\</s',  // Remove whitespaces before tags, except space
+            '/(\s)+/s'       // Shorten multiple whitespace sequences
+        ];
+        $replace = [
+            '>',
+            '<',
+            '\\1'
+        ];
+        return preg_replace($search, $replace, $html);
     }
 }
 

@@ -87,6 +87,9 @@
         case '/?page=opensource':
             $description = 'Houses on The Air is committed to Open Source for the advancement of Amateur Radio Activities.';
             break;
+        case '/?page=support-us':
+            $description = 'We rely on the support of our community to continue creating amazing content and fostering a vibrant community. By supporting us, you can help us achieve our goals and gain access to exclusive rewards.';
+            break;
         default:
             $description = 'Houses on The Air (HOTA) is an amateur radio activity that encourages operators to set up and operate from various houses';
         }

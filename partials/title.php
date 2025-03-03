@@ -90,6 +90,9 @@
         case '/?page=opensource':
             $secondTitle = 'We Love Open Source';
             break;
+        case '/?page=support-us':
+            $secondTitle = 'Support Us';
+            break;
         default:
             $secondTitle = 'Amateur Radio Activities';
         }

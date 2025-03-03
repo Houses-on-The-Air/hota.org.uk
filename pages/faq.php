@@ -115,4 +115,6 @@
     <p>Yes, we have a glossary of terms available on our <a href="?page=glossary">Glossary Page</a>.</p>
     <h3>How are bands allocated?</h3>
     <p>Bands are allocated by frequency range and mode of operation to ensure efficient use of the radio spectrum. For more information visit our <a href="?page=band-plans">Band Plans</a> page.</p>
+    <h3>How can I support Houses on The Air?</h3>
+    <p>You can view our support options on our <a href="?page=support-us">Support Us</a> Page.
 </section>

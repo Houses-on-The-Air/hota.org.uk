@@ -40,7 +40,14 @@ class PageRenderer {
 
     private function isCacheValid($cacheFile) {
         $cacheTime = 3600;
-        return file_exists($cacheFile) && (time() - filemtime($cacheFile) < $cacheTime);
+        if (file_exists($cacheFile)) {
+            if (time() - filemtime($cacheFile) < $cacheTime) {
+                return true;
+            } else {
+                unlink($cacheFile);
+            }
+        }
+        return false;
     }
 
     private function minifyHtml($html) {

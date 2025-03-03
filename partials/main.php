@@ -10,9 +10,9 @@
         <ol>
             <li>Get your <a href="?page=get-licenced">UK Amateur Radio Licence</a>.</li>
             <li>Set up your station at a house location of your choice.</li>
-            <li>Choose a band and frequency to operate on.</li>
+            <li>Choose a <a href="?page=band-plans">band</a> and frequency to operate on.</li>
             <li>Call CQ for HOTA and make contacts with other operators.</li>
-            <li>Log your contacts and upload your ADIF file to check for awards.</li>
+            <li><a href="?page=log-entry">Log your contacts</a> and <a href="#upload">upload your ADIF file</a> to check for <a href="?page=awards">awards</a>.</li>
         </ol>
         <p>Get on the air today and start exploring the world of Houses on The Air!</p>
     </section>

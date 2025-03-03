@@ -1,6 +1,4 @@
 <?php
-// db_connect.php
-
 // Include the database configuration file
 require_once  __DIR__ . 'db_config.php';
 

@@ -2,7 +2,7 @@
 // db_connect.php
 
 // Include the database configuration file
-require_once 'db_config.php';
+require_once  __DIR__ . 'db_config.php';
 
 try {
     // Create a new PDO instance

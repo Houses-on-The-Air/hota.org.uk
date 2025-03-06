@@ -30,14 +30,14 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Houses on The Air - <?php echo htmlspecialchars($secondTitle, ENT_QUOTES, 'UTF-8'); ?>">
     <meta name="twitter:description" content="<?php echo htmlspecialchars($description, ENT_QUOTES, 'UTF-8'); ?>">
-    <meta name="twitter:image" content="https://hota.org.uk/images/hota-banner.png">
+    <meta name="twitter:image" content="https://hota.org.uk/images/hota-banner.svg">
     <meta name="twitter:creator" content="@housesontheair">
     <meta name="twitter:site" content="@housesontheair">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Houses on The Air">
     <meta name="referrer" content="no-referrer">
     <link rel="canonical" href="https://hota.org.uk<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8'); ?>">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/hota-banner.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/hota-banner.svg">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="node_modules/%40materializecss/materialize/dist/css/materialize.min.css" rel="stylesheet">
     <link href="stylesheets/main.css" rel="stylesheet">

@@ -1,5 +1,6 @@
 <section class="container">
     <h1>Terms of Service</h1>
+    <p>Last updated: <?= date('F j, Y'); ?></p>
     <p>Welcome to Houses on The Air. By accessing or using our website, you agree to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern Houses on The Air's relationship with you in relation to this website.</p>
 
     <h2>Acceptance of Terms</h2>

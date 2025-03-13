@@ -51,50 +51,145 @@
     </section>
     <section id="upload" class="section">
         <h2>Upload Your ADIF File</h2>
-        <p>Upload an ADIF log file to check for awards based on unique addresses.</p>
-        <p>Supported file formats: .adi, .adif</p>
-        <p>Maximum file size: 5MB</p>
-        <p>Results will display the number of unique addresses found and the award tier achieved.</p>
-        <p>Download your award certificate after processing the file.</p>
-        <p>For best results, ensure your log file contains accurate and complete contact information.</p>
-        <p><a href="?page=log-entry">Need to log your contacts? Click here to enter your log manually.</a></p>
+        <div class="card-panel blue-grey lighten-4">
+            <p>Upload an ADIF log file to check for awards based on unique addresses.</p>
+            <p><strong>Important:</strong> Your ADIF file must include the <code>ADDRESS</code> field for each contact to be counted toward HOTA awards.</p>
+            <p>Supported file formats: .adi, .adif</p>
+            <p>Maximum file size: 5MB</p>
+            <p>Results will display the number of unique addresses found and the award tier achieved.</p>
+            <p>Download your award certificate after processing the file.</p>
+        </div>
+        <p><a href="?page=log-entry" class="btn blue-grey lighten-1">Need to log your contacts? Click here</a></p>
 
-        <form id="adif-upload-form" enctype="multipart/form-data">
-            <input type="file" name="adif_file" id="adif-file" accept=".adi,.adif" required>
-            <button type="submit">Upload</button>
+        <form id="adif-upload-form" enctype="multipart/form-data" class="row">
+            <div class="file-field input-field col s12 m8">
+                <div class="btn blue-grey">
+                    <span>Select ADIF File</span>
+                    <input type="file" name="adif_file" id="adif-file" accept=".adi,.adif" required>
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Upload your ADIF file">
+                </div>
+            </div>
+            <div class="input-field col s12 m4">
+                <button type="submit" class="btn blue-grey darken-1 waves-effect waves-light">
+                    <i class="material-icons left"></i>Upload
+                </button>
+            </div>
         </form>
 
         <div id="upload-result"></div>
+        <div id="upload-error" class="card-panel red lighten-4 red-text text-darken-4" style="display:none;"></div>
+        <div id="upload-loading" class="center-align" style="display:none;">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue-grey">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Processing your ADIF file...</p>
+        </div>
 
         <script>
-            document.getElementById('adif-upload-form').addEventListener('submit', function (event) {
-                event.preventDefault();
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('adif-upload-form').addEventListener('submit', function (event) {
+                    event.preventDefault();
 
-                let formData = new FormData();
-                let fileInput = document.getElementById('adif-file');
+                    // Clear previous results and errors
+                    document.getElementById('upload-result').innerHTML = '';
+                    const errorEl = document.getElementById('upload-error');
+                    errorEl.innerHTML = '';
+                    errorEl.style.display = 'none';
 
-                if (fileInput.files.length === 0) {
-                    alert("Please select a file.");
-                    return;
-                }
+                    // Show loading indicator
+                    document.getElementById('upload-loading').style.display = 'block';
 
-                formData.append("adif_file", fileInput.files[0]);
+                    let formData = new FormData();
+                    let fileInput = document.getElementById('adif-file');
 
-                fetch('process_upload.php', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => response.json())
-                .then(data => {
-                    let resultDiv = document.getElementById('upload-result');
-                    resultDiv.innerHTML = `<h2>Results</h2>
-                                        <p>Unique Addresses Found: ${data.unique_addresses}</p>
-                                        <p>Award Tier: ${data.award_tier}</p>
-                                        <p><a href="award.php?callsign=${data.callsign}&tier=${data.award_tier}" target="_blank">Download Certificate</a></p>`;
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    document.getElementById('upload-result').innerHTML = "<p>There was an error processing your file.</p>";
+                    if (fileInput.files.length === 0) {
+                        errorEl.innerHTML = "Please select a file.";
+                        errorEl.style.display = 'block';
+                        document.getElementById('upload-loading').style.display = 'none';
+                        return;
+                    }
+
+                    formData.append("adif_file", fileInput.files[0]);
+
+                    fetch('process_upload.php', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            return response.json().then(data => {
+                                throw new Error(data.error || `Server error: ${response.status}`);
+                            });
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // Hide loading indicator
+                        document.getElementById('upload-loading').style.display = 'none';
+
+                        // Check for error in the response
+                        if (data.error) {
+                            errorEl.innerHTML = `<p>Error: ${data.error}</p>`;
+                            errorEl.style.display = 'block';
+                            return;
+                        }
+
+                        // Ensure all required data exists
+                        if (typeof data.unique_addresses === 'undefined' || typeof data.award_tier === 'undefined') {
+                            errorEl.innerHTML = `<p>Error: Incomplete data received from server</p>`;
+                            errorEl.style.display = 'block';
+                            console.error('Server response missing data:', data);
+                            return;
+                        }
+
+                        // Display results
+                        let resultDiv = document.getElementById('upload-result');
+                        resultDiv.innerHTML = `
+                            <div class="card-panel blue-grey lighten-4">
+                                <h3>Results</h3>
+                                <div class="row">
+                                    <div class="col s12 m6">
+                                        <h5>Unique Addresses Found:</h5>
+                                        <p class="flow-text">${data.unique_addresses}</p>
+                                    </div>
+                                    <div class="col s12 m6">
+                                        <h5>Award Tier:</h5>
+                                        <p class="flow-text">${data.award_tier}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <a href="award.php?callsign=${encodeURIComponent(data.callsign)}&tier=${encodeURIComponent(data.award_tier)}"
+                                          target="_blank" class="btn blue-grey darken-1 waves-effect waves-light">
+                                          <i class="material-icons left"></i>Download Certificate
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>`;
+
+                        // Scroll to results
+                        resultDiv.scrollIntoView({ behavior: 'smooth' });
+                    })
+                    .catch(error => {
+                        // Hide loading indicator
+                        document.getElementById('upload-loading').style.display = 'none';
+
+                        console.error('Error:', error);
+                        errorEl.innerHTML = `<p>Error processing your file: ${error.message}</p>`;
+                        errorEl.style.display = 'block';
+                    });
                 });
             });
         </script>

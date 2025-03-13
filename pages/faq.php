@@ -1,6 +1,12 @@
 <section class="container">
-    <h2>Frequently Asked Questions (FAQ)</h2>
+    <h2>Frequently Asked Questions</h2>
     <p>Last updated: <?= date('F j, Y'); ?></p>
+
+    <div class="card-panel blue-grey lighten-4">
+        <p>Find answers to common questions about HOTA participation, awards, and technical requirements.</p>
+    </div>
+
+    <h3>General Questions</h3>
     <h3>What is HOTA?</h3>
     <p>HOTA is an amateur radio activity encouraging operators to set up from various houses.</p>
     <h3>How do I register for HOTA?</h3>
@@ -38,25 +44,48 @@
     <h3>What is the tier system for awards?</h3>
     <p>The tier system includes different award levels based on the number of unique addresses activated. You can view the tiers on our <a href="?page=awards">Awards Page</a></p>
     <h3>What is an ADIF file?</h3>
-    <p>An ADIF file is a standard format for logging amateur radio contacts.</p>
+    <p>An ADIF (Amateur Data Interchange Format) file is a standard format for logging amateur radio contacts. It contains details of each contact, including callsigns, dates, times, signal reports, and most importantly for HOTA - addresses.</p>
     <h3>How do I upload my ADIF file?</h3>
-    <p>You can upload your ADIF file on the website to check for awards based on unique addresses.</p>
+    <p>You can upload your ADIF file on our <a href="/#upload">upload section</a> to check for awards based on unique addresses. Simply click the "Choose File" button, select your ADIF file, and click "Upload".</p>
     <h3>What is the process for checking awards?</h3>
-    <p>Upload your ADIF file to check for unique addresses and determine your award tier.</p>
+    <p>Upload your ADIF file to check for unique addresses and determine your award tier. Our system will analyze your file and show your results immediately.</p>
     <h3>What field in the ADIF file is used to identify the house location?</h3>
-    <p>The ADIF file uses the "ADDRESS" field to identify the house location.</p>
+    <p>The ADIF file uses the <code>ADDRESS</code> field to identify house locations. This field is essential for HOTA awards. If your ADIF file doesn't have this field, you can <a href="?page=log-entry">use our log entry form</a> to create a properly formatted file.</p>
+    <h3>Can my logger add ADDRESS fields to my QSOs?</h3>
+    <p>Many logging programs allow you to add address information to your QSOs. Look for a field labeled "Address" or "QTH" in your logging software. You can also use our <a href="?page=log-entry">log entry form</a> to create ADIF files with address fields.</p>
     <h3>How do I download my award certificate?</h3>
-    <p>After checking your awards, you can download a certificate based on your tier.</p>
+    <p>After uploading your ADIF file and checking your awards, you can click the "Download Certificate" button that appears with your results to get a personalized certificate based on your tier.</p>
     <h3>Can I participate in HOTA contests?</h3>
     <p>Yes, you can participate in HOTA contests and earn awards for your achievements.</p>
     <h3>What is the best time to operate in HOTA?</h3>
     <p>The best time to operate in HOTA depends on band conditions and your location.</p>
     <h3>How do I log my HOTA activations?</h3>
-    <p>You can log your activations manually or use logging software to track your contacts.</p>
+    <p>You can log your activations manually or use logging software to track your contacts. Be sure to include the station address in your logs.</p>
     <h3>What equipment do I need for HOTA?</h3>
     <p>You will need a transceiver, antenna, power source, and other accessories for portable operation.</p>
-    <h3>How do I set up my station for HOTA?</h3>
-    <p>Set up your station at a house location with a suitable antenna and equipment for making contacts.</p>
+
+    <h3>Technical Questions</h3>
+    <h4>I get an error when uploading my ADIF file. What should I do?</h4>
+    <p>Here are some common solutions:</p>
+    <ul>
+        <li>Check that your file has the <code>.adi</code> or <code>.adif</code> extension</li>
+        <li>Ensure your file is under 5MB in size</li>
+        <li>Verify your file contains proper ADIF formatting with <code>&lt;EOH&gt;</code> and <code>&lt;EOR&gt;</code> markers</li>
+        <li>Make sure your file includes <code>&lt;ADDRESS:</code> fields for your contacts</li>
+        <li>Try creating a new ADIF file using our <a href="?page=log-entry">log entry form</a></li>
+    </ul>
+
+    <h4>How do I create an ADIF file with address information?</h4>
+    <p>You can create an ADIF file with address information in several ways:</p>
+    <ol>
+        <li>Use our <a href="?page=log-entry">log entry form</a> to create an ADIF file with required fields</li>
+        <li>Configure your logging software to include the ADDRESS field in your logs</li>
+        <li>Manually edit your existing ADIF file to add ADDRESS fields for each contact</li>
+    </ol>
+
+    <h4>What format should addresses be in?</h4>
+    <p>Addresses can be in any text format, but should ideally include enough information to uniquely identify the location. For example: "123 Main Street, London, SW1A 1AA" or "47 Elm Avenue, Manchester, M1 1AA".</p>
+
     <h3>Can I share photos of my station?</h3>
     <p>Yes, you can share photos of your station setup and activations with the HOTA community.</p>
     <h3>How can I get feedback on my station setup?</h3>

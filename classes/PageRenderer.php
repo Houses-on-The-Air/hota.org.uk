@@ -1,72 +1,86 @@
 <?php
 
+/**
+ * PageRenderer - Handles rendering of pages
+ */
 class PageRenderer {
+    /**
+     * @var string Page name
+     */
     private $page;
-    private $cacheDir;
 
-    public function __construct($page = 'home', $cacheDir = __DIR__ . '/../cache/') {
-        $this->page = $page;
-        $this->cacheDir = $cacheDir;
+    /**
+     * @var array Allowed pages
+     */
+    private $allowedPages;
+
+    /**
+     * @var string Default page to render
+     */
+    private $defaultPage = 'home';
+
+    /**
+     * Constructor
+     *
+     * @param string $page Page name
+     */
+    public function __construct($page) {
+        $this->page = $this->sanitizePage($page);
+        $this->allowedPages = $this->getAllowedPages();
     }
 
-    public function render() {
-        $cacheFile = $this->getCacheFilePath();
-        if ($this->isCacheValid($cacheFile)) {
-            $output = file_get_contents($cacheFile);
-        } else {
-            ob_start();
-            include __DIR__ . '/../partials/header.php';
-            $this->renderPage();
-            include __DIR__ . '/../partials/footer.php';
-            $output = ob_get_clean();
-            $minifiedOutput = $this->minifyHtml($output);
-            file_put_contents($cacheFile, $minifiedOutput);
-            $output = $minifiedOutput;
-        }
-
-        $gzippedOutput = gzencode($output);
-        header('Content-Encoding: gzip');
-        header('Content-Length: ' . strlen($gzippedOutput));
-        echo $gzippedOutput;
+    /**
+     * Sanitize page name
+     *
+     * @param string $page Page name
+     * @return string Sanitized page name
+     */
+    private function sanitizePage($page) {
+        return preg_replace('/[^a-z0-9_-]/i', '', $page);
     }
 
-    private function renderPage() {
-        $pagePath = __DIR__ . '/../pages/' . $this->page . '.php';
-        if (file_exists($pagePath)) {
-            include $pagePath;
-        } else {
-            include __DIR__ . '/../pages/404.php';
-        }
+    /**
+     * Get allowed pages
+     *
+     * @return array List of allowed pages
+     */
+    private function getAllowedPages() {
+        return [
+            'home', 'about', 'awards', 'mailing-list', 'nets',
+            'rules', 'faq', 'contact', 'advertising', 'community-events',
+            'cookies', 'privacy', 'discord', 'get-licenced',
+            'house-activations', 'join-our-team', 'operating-guidelines',
+            'team', 'tgif', 'contests', 'store', 'appicons', 'resources',
+            'terms', 'log-entry', 'gdpr', 'modern-slavery', 'glossary',
+            'band-plans', 'opensource', 'support-us', '404'
+        ];
     }
 
-    private function getCacheFilePath() {
-        return $this->cacheDir . md5($this->page) . '.html';
-    }
-
-    private function isCacheValid($cacheFile) {
-        $cacheTime = 86400; // One day
-        if (file_exists($cacheFile)) {
-            if (time() - filemtime($cacheFile) < $cacheTime) {
-                return true;
-            } else {
-                unlink($cacheFile);
-            }
+    /**
+     * Check if page exists
+     *
+     * @return bool True if page exists, false otherwise
+     */
+    private function pageExists() {
+        if (in_array($this->page, $this->allowedPages)) {
+            return file_exists(__DIR__ . '/../pages/' . $this->page . '.php');
         }
         return false;
     }
 
-    private function minifyHtml($html) {
-        $search = [
-            '/\>[^\S ]+/s',  // Remove whitespaces after tags, except space
-            '/[^\S ]+\</s',  // Remove whitespaces before tags, except space
-            '/(\s)+/s'       // Shorten multiple whitespace sequences
-        ];
-        $replace = [
-            '>',
-            '<',
-            '\\1'
-        ];
-        return preg_replace($search, $replace, $html);
+    /**
+     * Render the page
+     */
+    public function render() {
+        if (!$this->pageExists()) {
+            // If page doesn't exist, render 404 page
+            $this->page = '404';
+            http_response_code(404);
+        }
+
+        include __DIR__ . '/../partials/header.php';
+        include __DIR__ . '/../pages/' . $this->page . '.php';
+        include __DIR__ . '/../partials/footer.php';
     }
 }
 

@@ -1,7 +1,10 @@
 <?php
+$pageTitle = "Community Events - HOTA";
+include_once('../includes/header.php');
 ?>
-<section class="container">
-    <h2>Community Events</h2>
+
+<div class="container">
+    <h1>Community Events</h1>
     <p>Last updated: <?= date('F j, Y'); ?></p>
 
     <p>Welcome to our Community Events page! Here you can find information about upcoming events and activities related to Houses On The Air (HOTA), an exciting amateur radio activity where operators broadcast from various locations for a set period.</p>
@@ -38,4 +41,6 @@
 
     <h3>Changes to This Information</h3>
     <p>We may update this information from time to time. Any changes will be posted on this page, and where appropriate, notified to you by email.</p>
-</section>
+</div>
+
+<?php include_once('../includes/footer.php'); ?>

@@ -15,33 +15,64 @@
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="fa1072f7-4400-4afa-9791-4a7415340d9b" type="text/javascript" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php require_once __DIR__ . '/title.php'; ?>
-    <title>Houses on The Air - <?php echo htmlspecialchars($secondTitle, ENT_QUOTES, 'UTF-8'); ?></title>
-    <?php require_once __DIR__ . '/description.php'; ?>
-    <meta name="description" content="<?php echo htmlspecialchars($description, ENT_QUOTES, 'UTF-8'); ?>">
-    <meta name="keywords" content="Houses on The Air, HOTA, amateur radio, house activations, radio contests, community events">
-    <meta property="og:title" content="Houses on The Air - <?php echo htmlspecialchars($secondTitle, ENT_QUOTES, 'UTF-8'); ?>">
-    <meta property="og:description" content="<?php echo htmlspecialchars($description, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Improve SEO with better meta description -->
+    <meta name="description" content="Houses on The Air (HOTA) is an amateur radio activity that encourages operators to set up and operate from various houses">
+
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Houses on The Air (HOTA) - Amateur Radio Activity">
+    <meta property="og:description" content="<?php include __DIR__ . '/description.php'; ?>">
+    <meta property="og:image" content="<?= ConfigManager::get('app.url') ?>/images/hota-dualcolor.svg">
+    <meta property="og:url" content="<?= ConfigManager::get('app.url') ?>">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hota.org.uk">
-    <meta property="og:image" content="https://hota.org.uk/images/hota-banner.png">
-    <meta property="og:site_name" content="Houses on The Air">
-    <meta property="og:locale" content="en_GB">
+
+    <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Houses on The Air - <?php echo htmlspecialchars($secondTitle, ENT_QUOTES, 'UTF-8'); ?>">
-    <meta name="twitter:description" content="<?php echo htmlspecialchars($description, ENT_QUOTES, 'UTF-8'); ?>">
-    <meta name="twitter:image" content="https://hota.org.uk/images/hota-banner.svg">
-    <meta name="twitter:creator" content="@housesontheair">
-    <meta name="twitter:site" content="@housesontheair">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Houses on The Air">
-    <meta name="referrer" content="no-referrer">
-    <link rel="canonical" href="https://hota.org.uk<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8'); ?>">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/hota-banner.svg">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link href="node_modules/%40materializecss/materialize/dist/css/materialize.min.css" rel="stylesheet">
-    <link href="stylesheets/main.css" rel="stylesheet">
+    <meta name="twitter:title" content="Houses on The Air (HOTA)">
+    <meta name="twitter:description" content="<?php include __DIR__ . '/description.php'; ?>">
+    <meta name="twitter:image" content="<?= ConfigManager::get('app.url') ?>/images/hota-dualcolor.svg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#455a64">
+    <meta name="msapplication-TileColor" content="#455a64">
+    <meta name="theme-color" content="#455a64">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/stylesheets/custom.css">
+
+    <title>Houses on The Air - HOTA</title>
+
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Houses on The Air",
+      "url": "<?= ConfigManager::get('app.url') ?>",
+      "logo": "<?= ConfigManager::get('app.url') ?>/images/hota-dualcolor.svg",
+      "sameAs": [
+        "<?= ConfigManager::get('social.facebook') ?>",
+        "<?= ConfigManager::get('social.twitter') ?>",
+        "<?= ConfigManager::get('social.bluesky') ?>"
+      ]
+    }
+    </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2002090586659609"
         crossorigin="anonymous"></script>
     <script src="node_modules/%40materializecss/materialize/dist/js/materialize.min.js"></script>
 </head>
+</html>

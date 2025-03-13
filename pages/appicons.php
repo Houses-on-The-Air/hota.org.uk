@@ -1,4 +1,10 @@
-<section class="container">
+<?php
+$pageTitle = "App Icons - HOTA";
+include_once('../includes/header.php');
+?>
+
+<div class="container">
+    <h1>App Icons</h1>
     <h2>App Icons</h2>
     <p>Last updated: <?= date('F j, Y'); ?></p>
 
@@ -43,4 +49,6 @@
 
     <h3>Changes to This Information</h3>
     <p>We may update this information from time to time. Any changes will be posted on this page, and where appropriate, notified to you by email.</p>
-</section>
+</div>
+
+<?php include_once('../includes/footer.php'); ?>

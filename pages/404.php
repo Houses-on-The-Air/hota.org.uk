@@ -1,3 +1,8 @@
+<?php
+$pageTitle = "Page Not Found - HOTA";
+include_once('../includes/header.php');
+?>
+
 <section class="container">
     <div class="row">
         <div class="col s12 center">
@@ -31,3 +36,5 @@
         </div>
     </div>
 </section>
+
+<?php include_once('../includes/footer.php'); ?>

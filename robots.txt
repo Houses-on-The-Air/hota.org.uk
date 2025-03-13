@@ -1,20 +1,20 @@
 User-agent: *
-Disallow: /uploads/
-Disallow: /images/
+Allow: /
+
+# Disallow server directories
 Disallow: /includes/
-Disallow: /pages
-Disallow: /partials/
-Disallow: /fpdf/
 Disallow: /classes/
-Disallow: /index.php
-Disallow: /process_upload.php
-Disallow: /award.php
-Disallow: /cdn-cgi/l/email-protection
-Disallow: /node_modules/
+Disallow: /templates/
+Disallow: /partials/
 Disallow: /cache/
+Disallow: /uploads/
+
+# Allow crawling of important files
+Allow: /sitemap.xml
+Allow: /sitemap.html
+Allow: /ror.xml
+
+# Add delay between crawls
+Crawl-delay: 10
 
 Sitemap: https://hota.org.uk/sitemap.xml
-Sitemap: https://hota.org.uk/sitemap.html
-Sitemap: https://hota.org.uk/sitemap.xml.gz
-Sitemap: https://hota.org.uk/ror.xml
-Sitemap: https://hota.org.uk/urllist.txt

@@ -1,4 +1,9 @@
-<section class="container">
+<?php
+$pageTitle = "Band Plans - HOTA";
+include_once('../includes/header.php');
+?>
+
+<div class="container">
     <h1>Band Plans</h1>
     <p>Last updated: <?= date('F j, Y'); ?></p>
     <p>Band plans are a set of guidelines for using the radio spectrum within a particular frequency band. They are created by national amateur radio societies and are designed to ensure that all users of the band have an opportunity to use it without causing interference to other users.</p>
@@ -39,4 +44,6 @@
         <li>Band plan guides, which explain the operating practices and guidelines for each band</li>
         <li>Band plan software, which can help amateur radio operators track their frequency usage and avoid interference with other users</li>
     </ul>
-</section>
+</div>
+
+<?php include_once('../includes/footer.php'); ?>

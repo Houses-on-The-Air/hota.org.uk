@@ -5,3 +5,9 @@
 /node_modules
 /cache/*
 /uploads/
+**/error*
+*.tar.gz
+*.zip
+.litespeed_flag
+.well-known/*
+**.log

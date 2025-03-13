@@ -1,3 +1,22 @@
 /* TEAM */
-Thanks to Antony Bailey for the role of Lead Developer.
-Thanks to James Attkinson for the role of Community Outreach Manager.
+	Project Lead: HOTA Admin
+	Contact: info@hota.org.uk
+	From: United Kingdom
+
+	Developer: HOTA Tech Team
+	Contact: webmaster@hota.org.uk
+	From: United Kingdom
+
+	UX Designer: HOTA Design Team
+	Contact: info@hota.org.uk
+	From: United Kingdom
+
+/* THANKS */
+	To all amateur radio operators worldwide who support and participate in Houses on The Air
+
+/* SITE */
+	Last update: 2025/03/13
+	Language: English
+	Doctype: HTML5
+	IDE: Visual Studio Code, Sublime Text, Various
+	Technologies: PHP, HTML5, CSS3, JavaScript, Node.js

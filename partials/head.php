@@ -75,4 +75,3 @@
         crossorigin="anonymous"></script>
     <script src="node_modules/%40materializecss/materialize/dist/js/materialize.min.js"></script>
 </head>
-</html>

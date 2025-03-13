@@ -10,9 +10,6 @@ include_once('../includes/header.php');
         <div class="hero-text">
             <h2>Welcome to Houses on The Air</h2>
             <p class="flow-text">The amateur radio activity connecting operators through unique house locations.</p>
-            <a href="?page=get-started" class="btn-large white blue-grey-text text-darken-3 waves-effect waves-light">
-                Start Your HOTA Journey Today
-            </a>
         </div>
     </div>
 </div>

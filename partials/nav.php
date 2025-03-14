@@ -14,9 +14,7 @@
       <ul class="right hide-on-med-and-down">
         <li><a href="/" <?php echo (empty($_GET['page']) || $_GET['page'] == 'home') ? 'class="active"' : ''; ?>><i class="material-icons left">home</i>Home</a></li>
         <li><a href="?page=about" <?php echo (isset($_GET['page']) && $_GET['page'] == 'about') ? 'class="active"' : ''; ?>><i class="material-icons left">info</i>About</a></li>
-        <li class="dropdown-trigger" data-target="dropdown-participate">
-          <a href="#!"><i class="material-icons left">radio</i>Participate<i class="material-icons right">arrow_drop_down</i></a>
-        </li>
+        <li><a href="?page=participate" <?php echo (isset($_GET['page']) && $_GET['page'] == 'participate') ? 'class="active"' : ''; ?>><i class="material-icons left">radio</i>Participate</a></li>
         <li><a href="?page=awards" <?php echo (isset($_GET['page']) && $_GET['page'] == 'awards') ? 'class="active"' : ''; ?>><i class="material-icons left">emoji_events</i>Awards</a></li>
         <li><a href="?page=resources" <?php echo (isset($_GET['page']) && $_GET['page'] == 'resources') ? 'class="active"' : ''; ?>><i class="material-icons left">library_books</i>Resources</a></li>
         <li><a href="?page=faq" <?php echo (isset($_GET['page']) && $_GET['page'] == 'faq') ? 'class="active"' : ''; ?>><i class="material-icons left">help</i>FAQ</a></li>

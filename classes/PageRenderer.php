@@ -52,7 +52,7 @@ class PageRenderer {
             'house-activations', 'join-our-team', 'operating-guidelines',
             'team', 'tgif', 'contests', 'store', 'appicons', 'resources',
             'terms', 'log-entry', 'gdpr', 'modern-slavery', 'glossary',
-            'band-plans', 'opensource', 'support-us', '404'
+            'band-plans', 'opensource', 'support-us', '404', 'participate'
         ];
     }
 

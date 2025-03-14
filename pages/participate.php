@@ -23,11 +23,11 @@ include_once('../includes/header.php');
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-content">
-                    <span class="card-title">Get Started</span>
-                    <p>New to HOTA? Learn how to begin participating in this exciting amateur radio activity.</p>
+                    <span class="card-title">Get Licenced</span>
+                    <p>New to Amateur Radio? Learn how to begin participating in this exciting activity.</p>
                 </div>
                 <div class="card-action">
-                    <a href="?page=get-started">Read Guide</a>
+                    <a href="?page=get-licenced">Read Guide</a>
                 </div>
             </div>
         </div>

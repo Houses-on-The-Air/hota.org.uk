@@ -57,9 +57,11 @@ $pageDescription = "Houses on the Air (HOTA) is an amateur radio activity that e
         </div>
     </section>
 
-    <section class="section journey-section">
-        <div class="journey-overlay"></div>
-        <div class="container center-align">
+    <!-- Fixed Journey Section with inline background -->
+    <section class="section journey-section" style="position: relative; background: url('/images/backgrounds/radio-landscape.jpg') center center no-repeat; background-size: cover; padding: 80px 0; color: white; margin: 40px 0;">
+        <!-- Explicit overlay with guaranteed coverage -->
+        <div class="journey-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
+        <div class="container center-align" style="position: relative; z-index: 2;">
             <div class="journey-content">
                 <h2 class="white-text text-shadow">Start Your HOTA Journey Today</h2>
                 <p class="flow-text white-text text-shadow">Join amateur radio operators around the world in this exciting activity</p>
@@ -68,27 +70,27 @@ $pageDescription = "Houses on the Air (HOTA) is an amateur radio activity that e
                     <div class="col s12 m4 center-align">
                         <div class="journey-step">
                             <i class="material-icons large white-text">home</i>
-                            <h4 class="white-text text-shadow">Activate</h4>
-                            <p class="white-text text-shadow">Set up your station at a house location</p>
+                            <h5 class="white-text">Activate</h5>
+                            <p class="white-text">Set up your station at different houses</p>
                         </div>
                     </div>
                     <div class="col s12 m4 center-align">
                         <div class="journey-step">
-                            <i class="material-icons large white-text">settings_input_antenna</i>
-                            <h4 class="white-text text-shadow">Operate</h4>
-                            <p class="white-text text-shadow">Make contacts with other stations</p>
+                            <i class="material-icons large white-text">record_voice_over</i>
+                            <h5 class="white-text">Connect</h5>
+                            <p class="white-text">Make contacts with operators worldwide</p>
                         </div>
                     </div>
                     <div class="col s12 m4 center-align">
                         <div class="journey-step">
                             <i class="material-icons large white-text">emoji_events</i>
-                            <h4 class="white-text text-shadow">Earn Awards</h4>
-                            <p class="white-text text-shadow">Upload your logs and earn certificates</p>
+                            <h5 class="white-text">Achieve</h5>
+                            <p class="white-text">Earn awards and recognition</p>
                         </div>
                     </div>
                 </div>
 
-                <a href="?page=log-entry" class="btn-large orange darken-2 waves-effect waves-light mt-4">Upload Your ADIF File</a>
+                <a href="?page=log-entry" class="btn-large orange darken-2 waves-effect waves-light mt-4" style="margin-top: 30px;">Upload Your ADIF File</a>
             </div>
         </div>
     </section>
@@ -168,3 +170,30 @@ $pageDescription = "Houses on the Air (HOTA) is an amateur radio activity that e
         </div>
     </section>
 </div>
+
+<!-- Add these important styles inline to ensure they're always available -->
+<style>
+    /* Essential styles to ensure journey section displays correctly */
+    .text-shadow {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    .journey-step {
+        padding: 20px;
+    }
+
+    .journey-step .material-icons.large {
+        font-size: 4rem;
+        margin-bottom: 15px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    .mt-4 {
+        margin-top: 2rem;
+    }
+
+    /* Fallback background color in case image fails to load */
+    .journey-section {
+        background-color: #455a64 !important;
+    }
+</style>

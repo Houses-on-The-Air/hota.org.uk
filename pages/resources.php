@@ -21,7 +21,6 @@ $pageDescription = "Access a comprehensive collection of Houses on the Air resou
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image">
-                    <img src="/images/resources/activation-guide.jpg" alt="House Activation Guide">
                     <span class="card-title">House Activation Guide</span>
                 </div>
                 <div class="card-content">
@@ -36,7 +35,6 @@ $pageDescription = "Access a comprehensive collection of Houses on the Air resou
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image">
-                    <img src="/images/resources/adif-guide.jpg" alt="ADIF Guide">
                     <span class="card-title">ADIF Guide</span>
                 </div>
                 <div class="card-content">
@@ -51,7 +49,6 @@ $pageDescription = "Access a comprehensive collection of Houses on the Air resou
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image">
-                    <img src="/images/resources/portable-antennas.jpg" alt="Portable Antenna Solutions">
                     <span class="card-title">Portable Antennas</span>
                 </div>
                 <div class="card-content">
@@ -124,48 +121,6 @@ $pageDescription = "Access a comprehensive collection of Houses on the Air resou
                         <li><a href="?page=nets">Net Schedule</a></li>
                         <li><a href="?page=mailing-list">Subscribe to Mailing List</a></li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Downloadable Resources -->
-    <div class="card mt-4">
-        <div class="card-content">
-            <span class="card-title"><i class="material-icons left">file_download</i>Downloadable Resources</span>
-            <p>Access printable guides, checklists, and reference materials:</p>
-
-            <div class="row">
-                <div class="col s12 m4 l3">
-                    <div class="card-panel center-align">
-                        <i class="material-icons medium">picture_as_pdf</i>
-                        <h5>HOTA Field Guide</h5>
-                        <a href="/downloads/hota-field-guide.pdf" class="btn blue-grey darken-2" target="_blank"><i class="material-icons left">file_download</i>Download</a>
-                    </div>
-                </div>
-
-                <div class="col s12 m4 l3">
-                    <div class="card-panel center-align">
-                        <i class="material-icons medium">picture_as_pdf</i>
-                        <h5>Activation Checklist</h5>
-                        <a href="/downloads/activation-checklist.pdf" class="btn blue-grey darken-2" target="_blank"><i class="material-icons left">file_download</i>Download</a>
-                    </div>
-                </div>
-
-                <div class="col s12 m4 l3">
-                    <div class="card-panel center-align">
-                        <i class="material-icons medium">description</i>
-                        <h5>Paper Log Template</h5>
-                        <a href="/downloads/paper-log-template.pdf" class="btn blue-grey darken-2" target="_blank"><i class="material-icons left">file_download</i>Download</a>
-                    </div>
-                </div>
-
-                <div class="col s12 m4 l3">
-                    <div class="card-panel center-align">
-                        <i class="material-icons medium">speed</i>
-                        <h5>Freq. Reference</h5>
-                        <a href="/downloads/hota-frequency-reference.pdf" class="btn blue-grey darken-2" target="_blank"><i class="material-icons left">file_download</i>Download</a>
-                    </div>
                 </div>
             </div>
         </div>

@@ -31,7 +31,7 @@
             $description = 'Frequently Asked Questions for Houses on The Air the Amateur Radio Activity that Encourages Operators to Set Up and Operate from Various Houses';
             break;
         case '/?page=get-licenced':
-            $description = 'Get a UK Amateur Radio License for Free';
+            $description = 'Get a UK Amateur Radio licence for Free';
             break;
         case '/?page=house-activations':
             $description = 'House Activations from Houses on The Air the Amateur Radio Activity that Encourages Operators to Set Up and Operate from Various Houses';

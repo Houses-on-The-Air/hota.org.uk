@@ -34,7 +34,7 @@
             $secondTitle = 'Frequently Asked Questions';
             break;
         case '/?page=get-licenced':
-            $secondTitle = 'Get a UK Amateur Radio License for Free';
+            $secondTitle = 'Get a UK Amateur Radio licence for Free';
             break;
         case '/?page=house-activations':
             $secondTitle = 'House Activations';

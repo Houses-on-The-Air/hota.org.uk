@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Get Licensed as a Radio Amateur - HOTA";
+$pageTitle = "Get Licenced as a Radio Amateur - HOTA";
 $pageDescription = "Learn how to get your amateur radio licence in the UK and around the world. Find resources, study guides, and information on licence examinations.";
 ?>
 
@@ -11,7 +11,7 @@ $pageDescription = "Learn how to get your amateur radio licence in the UK and ar
         <ul class="breadcrumbs">
             <li><a href="/">Home</a></li>
             <li><a href="?page=resources">Resources</a></li>
-            <li>Get Licensed</li>
+            <li>Get Licenced</li>
         </ul>
     </div>
 
@@ -30,8 +30,8 @@ $pageDescription = "Learn how to get your amateur radio licence in the UK and ar
                         <h4>Foundation Licence</h4>
                         <ul class="browser-default">
                             <li>Entry-level licence</li>
-                            <li>10W power limit</li>
-                            <li>Simple exam with practical assessments</li>
+                            <li>25W power limit</li>
+                            <li>Simple exam with no practical assessments</li>
                             <li>Perfect for beginners</li>
                             <li>Foundation callsign (e.g., M7ABC)</li>
                         </ul>
@@ -42,9 +42,9 @@ $pageDescription = "Learn how to get your amateur radio licence in the UK and ar
                         <h4>Intermediate Licence</h4>
                         <ul class="browser-default">
                             <li>Mid-level licence</li>
-                            <li>50W power limit</li>
+                            <li>400W power limit</li>
                             <li>More complex theory exam</li>
-                            <li>Additional practical assessments</li>
+                            <li>No additional practical assessments</li>
                             <li>Intermediate callsign (e.g., 2E0ABC)</li>
                         </ul>
                     </div>
@@ -54,7 +54,7 @@ $pageDescription = "Learn how to get your amateur radio licence in the UK and ar
                         <h4>Full Licence</h4>
                         <ul class="browser-default">
                             <li>Advanced level licence</li>
-                            <li>400W power limit</li>
+                            <li>1,000W power limit</li>
                             <li>Comprehensive written examination</li>
                             <li>Full amateur radio privileges</li>
                             <li>Full callsign (e.g., M0ABC)</li>
@@ -68,7 +68,7 @@ $pageDescription = "Learn how to get your amateur radio licence in the UK and ar
                 <p>The RSGB has implemented online remote invigilation for all levels of amateur radio examinations during the COVID-19 pandemic. This allows candidates to take exams from home under supervised conditions.</p>
             </div>
 
-            <h4>Steps to Get Licensed in the UK</h4>
+            <h4>Steps to Get Licenced in the UK</h4>
             <ol>
                 <li>
                     <strong>Study for the exam:</strong> Obtain study materials from the RSGB or join a local club offering training courses.
@@ -120,7 +120,7 @@ $pageDescription = "Learn how to get your amateur radio licence in the UK and ar
             <div class="card-panel light-blue lighten-5 mt-3">
                 <h5><i class="material-icons left">flight</i>Operating While Travelling</h5>
                 <p>If you plan to operate while visiting another country, you'll need to understand that country's reciprocal licensing agreements. Many countries honour foreign licences, but you may need to apply for a visitor's permit or use a specific callsign prefix.</p>
-                <p>The CEPT agreement allows UK licensees to operate in many European countries without additional paperwork, and similar arrangements exist worldwide.</p>
+                <p>The CEPT agreement allows UK licencees to operate in many European countries without additional paperwork, and similar arrangements exist worldwide.</p>
             </div>
         </div>
     </div>

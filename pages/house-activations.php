@@ -25,7 +25,7 @@ $pageDescription = "Learn how to activate houses for the Houses on the Air amate
 
             <h4>Basic Requirements</h4>
             <ul class="browser-default">
-                <li>A valid amateur radio license</li>
+                <li>A valid amateur radio licence</li>
                 <li>Portable radio equipment</li>
                 <li>Permission to operate at the location</li>
                 <li>A log for recording contacts</li>

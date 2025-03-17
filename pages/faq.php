@@ -340,7 +340,7 @@ $pageDescription = "Find answers to common questions about Houses on the Air (HO
                 <li>
                     <div class="collapsible-header"><i class="material-icons">question_answer</i>What power level should I use for HOTA?</div>
                     <div class="collapsible-body">
-                        <p>There are no specific power requirements for HOTA. You can use any power level permitted by your license. However:</p>
+                        <p>There are no specific power requirements for HOTA. You can use any power level permitted by your licence. However:</p>
                         <ul class="browser-default">
                             <li>Lower power (QRP) is often sufficient and helps conserve battery life for portable operations</li>
                             <li>100 watts is typically more than adequate for most HOTA operations</li>

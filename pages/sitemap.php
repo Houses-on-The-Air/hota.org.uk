@@ -45,7 +45,7 @@ $pageDescription = "Full sitemap of all pages available on the Houses on the Air
                 <h2>Participate</h2>
                 <ul class="sitemap-list">
                     <li><a href="?page=participate">How to Participate</a></li>
-                    <li><a href="?page=get-licenced">Get Licensed</a></li>
+                    <li><a href="?page=get-licenced">Get licenced</a></li>
                     <li><a href="?page=house-activations">House Activations</a></li>
                     <li><a href="?page=operating-guidelines">Operating Guidelines</a></li>
                     <li><a href="?page=log-entry">Log Entry</a></li>

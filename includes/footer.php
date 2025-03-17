@@ -36,7 +36,7 @@
                         <li><a class="grey-text text-lighten-3" href="?page=faq">FAQ</a></li>
                         <li><a class="grey-text text-lighten-3" href="?page=glossary">Glossary</a></li>
                         <li><a class="grey-text text-lighten-3" href="?page=band-plans">Band Plans</a></li>
-                        <li><a class="grey-text text-lighten-3" href="?page=get-licenced">Get Licensed</a></li>
+                        <li><a class="grey-text text-lighten-3" href="?page=get-licenced">Get Licenced</a></li>
                         <li><a class="grey-text text-lighten-3" href="?page=operating-guidelines">Guidelines</a></li>
                         <li><a class="grey-text text-lighten-3" href="?page=rules">Rules</a></li>
                     </ul>

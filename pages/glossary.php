@@ -28,13 +28,13 @@
         <dd>Automatic Packet Reporting System - A digital communications system used for transmitting data such as position information, weather data, and short messages over radio.</dd>
 
         <dt>ARRL</dt>
-        <dd>American Radio Relay League - The largest organization of amateur radio operators in the United States.</dd>
+        <dd>American Radio Relay League - The largest organisation of amateur radio operators in the United States.</dd>
 
         <dt>ARES</dt>
-        <dd>Amateur Radio Emergency Service - A group of licensed amateurs who volunteer their time and equipment to serve in the public interest during emergencies and disasters.</dd>
+        <dd>Amateur Radio Emergency Service - A group of licenced amateurs who volunteer their time and equipment to serve in the public interest during emergencies and disasters.</dd>
 
         <dt>Amateur Radio</dt>
-        <dd>Amateur radio, also known as ham radio, is a popular hobby and service that allows licensed operators to communicate with each other using various radio frequencies. Amateur radio operators use a variety of modes and bands to communicate locally, regionally, and globally.</dd>
+        <dd>Amateur radio, also known as ham radio, is a popular hobby and service that allows licenced operators to communicate with each other using various radio frequencies. Amateur radio operators use a variety of modes and bands to communicate locally, regionally, and globally.</dd>
         <dt>Antenna</dt>
         <dd>An antenna is a device used to transmit and receive radio waves. It is an essential component of any radio communication system.</dd>
         <dt>ARRL (American Radio Relay League)</dt>
@@ -42,25 +42,25 @@
         <dt>Amplitude Modulation (AM)</dt>
         <dd>Amplitude modulation is a method of transmitting information by varying the amplitude of a carrier signal. AM is commonly used for broadcasting and long-distance communication.</dd>
         <dt>Amateur Radio Operator</dt>
-        <dd>An amateur radio operator is an individual who has been licensed by a government authority to operate an amateur radio station. Operators use their licenses to communicate with other operators around the world.</dd>
+        <dd>An amateur radio operator is an individual who has been licenced by a government authority to operate an amateur radio station. Operators use their licences to communicate with other operators around the world.</dd>
         <dt>Antenna Tuner</dt>
         <dd>An antenna tuner is a device used to match the impedance of an antenna system to the impedance of a transmitter or receiver. It helps optimize the performance of the antenna system and reduce standing wave ratio (SWR).</dd>
         <dt>Amateur Radio Band Plan</dt>
         <dd>An amateur radio band plan is a set of guidelines and rules that define how different frequency bands are used by amateur radio operators. Band plans help organize and coordinate radio communication to minimize interference and maximize efficiency.</dd>
         <dt>Amateur Radio Emergency Service (ARES)</dt>
-        <dd>The Amateur Radio Emergency Service is a volunteer organization of licensed amateur radio operators who provide emergency communication support during disasters and other emergencies. ARES operators work closely with local agencies to ensure reliable communication when other systems fail.</dd>
+        <dd>The Amateur Radio Emergency Service is a volunteer organization of licenced amateur radio operators who provide emergency communication support during disasters and other emergencies. ARES operators work closely with local agencies to ensure reliable communication when other systems fail.</dd>
         <dt>Amateur Radio Satellite</dt>
         <dd>An amateur radio satellite is an artificial satellite designed to enable communication between amateur radio operators. Satellites provide a unique platform for long-distance communication and experimentation in the hobby.</dd>
         <dt>Amateur Radio Contest</dt>
         <dd>An amateur radio contest is an event in which operators compete to make as many contacts as possible within a specified time frame. Contests are popular among operators and provide an opportunity to test their skills and equipment.</dd>
-        <dt>Amateur Radio License</dt>
-        <dd>An amateur radio license is an authorization granted by a government authority that allows an individual to operate amateur radio equipment. Licenses are granted at different levels, each with its own set of operating privileges.</dd>
+        <dt>Amateur Radio licence</dt>
+        <dd>An amateur radio licence is an authorization granted by a government authority that allows an individual to operate amateur radio equipment. licences are granted at different levels, each with its own set of operating privileges.</dd>
         <dt>Amateur Radio Relay</dt>
         <dd>An amateur radio relay is a station that receives a signal from one station and retransmits it to another station. Relays are used to extend the range of communication and facilitate contacts between operators.</dd>
         <dt>Amateur Radio Repeater</dt>
         <dd>An amateur radio repeater is a station that receives a signal on one frequency and retransmits it on another frequency. Repeaters are commonly used to extend the range of communication and improve signal quality.</dd>
-        <dt>Amateur Radio Technician Class License</dt>
-        <dd>The Technician Class license is the entry-level license in amateur radio in the United States of America. It grants operators access to certain VHF and UHF frequencies and limited HF privileges.</dd>
+        <dt>Amateur Radio Technician Class licence</dt>
+        <dd>The Technician Class licence is the entry-level licence in amateur radio in the United States of America. It grants operators access to certain VHF and UHF frequencies and limited HF privileges.</dd>
         <dt>Amateur Radio Q Codes</dt>
         <dd>Q codes are a set of three-letter codes used in amateur radio communication to convey common messages and questions. Q codes help operators communicate quickly and efficiently, especially in Morse code.</dd>
         <dt>Amateur Radio DXing</dt>
@@ -279,25 +279,25 @@
         <dt>HF Band</dt>
         <dd>An HF band is a range of radio frequencies from 3 to 30 MHz allocated for long-distance communication. HF bands are used for voice, Morse code, and digital communication.</dd>
         <dt>Ham Radio</dt>
-        <dd>Ham radio is a popular term for amateur radio, a hobby and service that allows licensed operators to communicate with each other using radio waves.</dd>
+        <dd>Ham radio is a popular term for amateur radio, a hobby and service that allows licenced operators to communicate with each other using radio waves.</dd>
         <dt>Half-Wave Dipole Antenna</dt>
         <dd>A half-wave dipole antenna is a simple antenna consisting of two conductive elements that are each half the wavelength of the desired operating frequency. Half-wave dipoles are popular for their simplicity and efficiency.</dd>
         <dt>HF Propagation</dt>
         <dd>HF propagation is the behavior of radio waves in the high-frequency range as they travel through the Earth's atmosphere. Understanding HF propagation is essential for predicting how radio signals will travel and where they will be received.</dd>
-        <dt>Ham Radio License</dt>
-        <dd>A ham radio license is an authorization granted by a government authority that allows an individual to operate amateur radio equipment. Different license classes grant different operating privileges.</dd>
+        <dt>Ham Radio licence</dt>
+        <dd>A ham radio licence is an authorization granted by a government authority that allows an individual to operate amateur radio equipment. Different licence classes grant different operating privileges.</dd>
         <dt>Handheld Transceiver Operation</dt>
         <dd>Handheld transceiver operation is the use of a portable radio transceiver that can be carried and operated by hand. Handheld transceivers are popular for their compact size and versatility.</dd>
         <dt>HF Band Allocation</dt>
         <dd>An HF band allocation is the assignment of specific frequency ranges from 3 to 30 MHz for long-distance communication. HF bands are used for voice, Morse code, and digital communication.</dd>
         <dt>Ham Radio Operator</dt>
-        <dd>A ham radio operator is an individual who holds a license to operate amateur radio equipment. Ham radio operators communicate with each other using radio waves for personal, recreational, and emergency communication purposes.</dd>
+        <dd>A ham radio operator is an individual who holds a licence to operate amateur radio equipment. Ham radio operators communicate with each other using radio waves for personal, recreational, and emergency communication purposes.</dd>
         <dt>Half-Wave Dipole Antenna Design</dt>
         <dd>A half-wave dipole antenna design is a simple antenna configuration consisting of two conductive elements that are each half the wavelength of the desired operating frequency. Half-wave dipoles are popular for their simplicity and efficiency.</dd>
         <dt>HF Propagation Prediction</dt>
         <dd>HF propagation prediction is the process of forecasting how radio waves in the high-frequency range will travel through the Earth's atmosphere. Prediction helps operators optimize their communication systems for reliable and efficient operation.</dd>
-        <dt>Ham Radio License Class</dt>
-        <dd>A ham radio license class is a classification that determines an operator's operating privileges and responsibilities. License classes range from entry-level Technician to advanced Extra, each granting different privileges.</dd>
+        <dt>Ham Radio licence Class</dt>
+        <dd>A ham radio licence class is a classification that determines an operator's operating privileges and responsibilities. licence classes range from entry-level Technician to advanced Extra, each granting different privileges.</dd>
         <dt>Handheld Transceiver Features</dt>
         <dd>Handheld transceiver features are the functions and capabilities of a portable radio transceiver that can be carried and operated by hand. Features may include frequency coverage, power output, and modulation modes.</dd>
         <dt>HF Band Operation</dt>
@@ -308,8 +308,8 @@
         <dd>A half-wave dipole antenna performance is the ability of a simple antenna configuration consisting of two conductive elements that are each half the wavelength of the desired operating frequency. Half-wave dipoles are popular for their simplicity and efficiency.</dd>
         <dt>HF Propagation Forecasting</dt>
         <dd>HF propagation forecasting is the process of predicting how radio waves in the high-frequency range will travel through the Earth's atmosphere. Forecasting helps operators optimize their communication systems for reliable and efficient operation.</dd>
-        <dt>Ham Radio License Examination</dt>
-        <dd>A ham radio license examination is a written test that operators must pass to obtain a license to operate amateur radio equipment. The exam covers operating practices, regulations, and technical topics.</dd>
+        <dt>Ham Radio licence Examination</dt>
+        <dd>A ham radio licence examination is a written test that operators must pass to obtain a licence to operate amateur radio equipment. The exam covers operating practices, regulations, and technical topics.</dd>
     </dl>
 
     <!-- Related Pages Section - Adding deep linking -->
@@ -319,7 +319,7 @@
             <div class="col s12 m6">
                 <h4>Learn More About Amateur Radio</h4>
                 <ul class="browser-default">
-                    <li><a href="?page=get-licenced">How to Get Licensed in Amateur Radio</a></li>
+                    <li><a href="?page=get-licenced">How to Get licenced in Amateur Radio</a></li>
                     <li><a href="?page=band-plans">Understanding Band Plans</a></li>
                     <li><a href="?page=operating-guidelines">Operating Guidelines</a></li>
                 </ul>

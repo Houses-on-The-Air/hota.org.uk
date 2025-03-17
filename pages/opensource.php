@@ -86,15 +86,15 @@
 
     </div>
 
-    <h3>Open Source License</h3>
-    <p>Our projects are released under the MIT License, which allows you to:</p>
+    <h3>Open Source licence</h3>
+    <p>Our projects are released under the MIT licence, which allows you to:</p>
     <ul>
         <li>Use the code freely for personal and commercial purposes</li>
         <li>Modify the code to suit your needs</li>
         <li>Distribute modified versions</li>
         <li>Include the code in your own projects</li>
     </ul>
-    <p>All we ask is that you include the original copyright notice and license text.</p>
+    <p>All we ask is that you include the original copyright notice and licence text.</p>
 
     <div class="card-panel blue-grey lighten-4">
         <p class="center-align">

@@ -47,3 +47,5 @@
 
 <!-- Additional head elements can be added by setting $additionalHead variable before including this file -->
 <?php echo isset($additionalHead) ? $additionalHead : ''; ?>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2002090586659609"
+     crossorigin="anonymous"></script>

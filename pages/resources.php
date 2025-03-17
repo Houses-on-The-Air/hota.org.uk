@@ -72,7 +72,7 @@ $pageDescription = "Access a comprehensive collection of Houses on the Air resou
                 <div class="card-content">
                     <span class="card-title"><i class="material-icons left">school</i>Getting Started</span>
                     <ul class="browser-default">
-                        <li><a href="?page=get-licenced">Getting Your Amateur Radio License</a></li>
+                        <li><a href="?page=get-licenced">Getting Your Amateur Radio licence</a></li>
                         <li><a href="?page=house-activations">House Activation Guide</a></li>
                         <li><a href="?page=portable-antennas">Portable Antenna Solutions</a></li>
                         <li><a href="?page=log-entry">Log Submission Guide</a></li>
@@ -207,8 +207,8 @@ $pageDescription = "Access a comprehensive collection of Houses on the Air resou
                 <p>Understand what HOTA is and how it works</p>
             </li>
             <li>
-                <h4><a href="?page=get-licenced">Get Licensed</a></h4>
-                <p>Ensure you have your amateur radio license</p>
+                <h4><a href="?page=get-licenced">Get licenced</a></h4>
+                <p>Ensure you have your amateur radio licence</p>
             </li>
             <li>
                 <h4><a href="?page=house-activations">Study the House Activation Guide</a></h4>

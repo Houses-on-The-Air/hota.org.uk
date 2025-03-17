@@ -88,7 +88,7 @@ $pageDescription = "Houses on the Air (HOTA) is an amateur radio activity that e
                     </div>
                 </div>
 
-                <a href="#upload" class="btn-large orange darken-2 waves-effect waves-light mt-4">Upload Your ADIF File</a>
+                <a href="?page=log-entry" class="btn-large orange darken-2 waves-effect waves-light mt-4">Upload Your ADIF File</a>
             </div>
         </div>
     </section>

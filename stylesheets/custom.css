@@ -455,3 +455,99 @@ dl dd {
 .dropdown-content {
   z-index: 1000 !important;
 }
+
+/* Journey Section Styling */
+.journey-section {
+  position: relative;
+  background-color: var(--primary-color);
+  padding: 3rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.journey-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(38, 50, 56, 0.95) 0%, rgba(69, 90, 100, 0.85) 100%);
+  z-index: 1;
+}
+
+.journey-content {
+  position: relative;
+  z-index: 2;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.journey-steps {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.journey-step {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  height: 100%;
+}
+
+.journey-step:hover {
+  transform: translateY(-5px);
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.journey-step .material-icons.large {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.journey-section .white-text {
+  color: #fff !important;
+}
+
+.journey-section .btn-large {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 2rem;
+  height: 54px;
+  line-height: 54px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.journey-section .btn-large:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 992px) {
+  .journey-section {
+    padding: 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .journey-step {
+    padding: 1rem;
+  }
+
+  .journey-step .material-icons.large {
+    font-size: 2.5rem;
+  }
+
+  .journey-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .journey-section h4 {
+    font-size: 1.3rem;
+  }
+}

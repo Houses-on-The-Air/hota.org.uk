@@ -7,12 +7,19 @@ Disallow: /classes/
 Disallow: /templates/
 Disallow: /partials/
 Disallow: /cache/
-Disallow: /uploads/
+Disallow: /logs/
+
+# Allow uploads directory for award certificates
+Allow: /uploads/certificates/
+Disallow: /uploads/*.adif
+Disallow: /uploads/*.adi
 
 # Allow crawling of important files
 Allow: /sitemap.xml
 Allow: /sitemap.html
 Allow: /ror.xml
+Allow: /humans.txt
+Allow: /BingSiteAuth.xml
 
 # Add delay between crawls
 Crawl-delay: 10

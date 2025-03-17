@@ -312,24 +312,48 @@
         <dd>A ham radio license examination is a written test that operators must pass to obtain a license to operate amateur radio equipment. The exam covers operating practices, regulations, and technical topics.</dd>
     </dl>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add smooth scrolling for glossary navigation
-            document.querySelectorAll('.glossary-navigation a').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
+    <!-- Related Pages Section - Adding deep linking -->
+    <div class="card-panel blue-grey lighten-4 mt-4">
+        <h3>Related Pages</h3>
+        <div class="row">
+            <div class="col s12 m6">
+                <h4>Learn More About Amateur Radio</h4>
+                <ul class="browser-default">
+                    <li><a href="?page=get-licenced">How to Get Licensed in Amateur Radio</a></li>
+                    <li><a href="?page=band-plans">Understanding Band Plans</a></li>
+                    <li><a href="?page=operating-guidelines">Operating Guidelines</a></li>
+                </ul>
+            </div>
+            <div class="col s12 m6">
+                <h4>Get Involved with HOTA</h4>
+                <ul class="browser-default">
+                    <li><a href="?page=participate">How to Participate in HOTA</a></li>
+                    <li><a href="?page=house-activations">House Activation Guide</a></li>
+                    <li><a href="?page=discord">Join Our Discord Community</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add smooth scrolling for glossary navigation
+        document.querySelectorAll('.glossary-navigation a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 100,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
-    </script>
+    });
+</script>
 </section>

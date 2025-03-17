@@ -40,6 +40,19 @@ class ConfigManager {
             return;
         }
 
+        // Set default PDO options - check if PDO is available first
+        $pdoOptions = [];
+        if (class_exists('PDO')) {
+            $pdoOptions = [
+                \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
+                \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
+                \PDO::ATTR_EMULATE_PREPARES => false,
+            ];
+        } else {
+            // If PDO is not available, log a warning
+            error_log('WARNING: PDO extension is not available. Database features will not function properly.');
+        }
+
         // Define configuration
         self::$config = [
             // Database settings
@@ -51,11 +64,7 @@ class ConfigManager {
                 'pass' => self::getEnv('DB_PASS', ''),
                 'port' => self::getEnv('DB_PORT', 3306),
                 'charset' => 'utf8mb4',
-                'options' => [
-                    \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
-                    \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
-                    \PDO::ATTR_EMULATE_PREPARES => false,
-                ],
+                'options' => $pdoOptions,
             ],
 
             // Email addresses
@@ -253,5 +262,17 @@ class ConfigManager {
             return unlink(self::$cachePath);
         }
         return true;
+    }
+
+    /**
+     * Rebuild configuration cache
+     *
+     * @return bool True if cache was rebuilt successfully
+     */
+    public static function rebuildCache() {
+        // Clear and reload configuration
+        self::clearCache();
+        self::load(true);
+        return self::$loaded;
     }
 }

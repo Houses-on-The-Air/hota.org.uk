@@ -3,15 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Houses on The Air (HOTA) page content files for website sections">
+    <meta name="description" content="Houses on The Air page directory for website navigation">
+    <meta name="robots" content="noindex, nofollow">
     <title>HOTA - Pages Directory</title>
     <link rel="stylesheet" href="../stylesheets/main.css">
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .page-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .category {
+            flex: 1;
+            min-width: 300px;
+        }
+        .category h3 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .category ul {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+        .category li {
+            margin-bottom: 8px;
+        }
+        .category li a {
+            text-decoration: none;
+            color: #1976D2;
+        }
+        .category li a:hover {
+            text-decoration: underline;
+        }
+        .badge {
+            display: inline-block;
+            font-size: 0.8em;
+            background-color: #4CAF50;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 6px;
+        }
+        .badge.new {
+            background-color: #2196F3;
+        }
+        .badge.updated {
+            background-color: #FF9800;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Houses on The Air - Pages Directory</h1>
-        <p>This directory contains content files for the various pages of the Houses on The Air website.</p>
+        <p>This is a comprehensive list of pages for the Houses on the Air website. For development purposes only.</p>
         <p><a href="../">Return to main site</a></p>
+
+        <div class="page-list">
+            <div class="category">
+                <h3>Main Navigation</h3>
+                <ul>
+                    <li><a href="?page=home">Home Page</a></li>
+                    <li><a href="?page=about">About HOTA</a></li>
+                    <li><a href="?page=participate">How to Participate</a></li>
+                    <li><a href="?page=awards">Awards Program</a> <span class="badge updated">Updated</span></li>
+                    <li><a href="?page=resources">Resources</a> <span class="badge new">New</span></li>
+                    <li><a href="?page=store">HOTA Store</a></li>
+                    <li><a href="?page=contact">Contact Us</a></li>
+                </ul>
+
+                <h3>Participation</h3>
+                <ul>
+                    <li><a href="?page=house-activations">House Activations Guide</a> <span class="badge new">New</span></li>
+                    <li><a href="?page=operating-guidelines">Operating Guidelines</a></li>
+                    <li><a href="?page=log-entry">Log Entry</a> <span class="badge updated">Updated</span></li>
+                    <li><a href="?page=contests">Contests & Events</a> <span class="badge new">New</span></li>
+                    <li><a href="?page=portable-antennas">Portable Antenna Solutions</a> <span class="badge new">New</span></li>
+                </ul>
+            </div>
+
+            <div class="category">
+                <h3>Award System</h3>
+                <ul>
+                    <li><a href="?page=award-tiers">Award Tiers & Requirements</a> <span class="badge new">New</span></li>
+                    <li><a href="?page=certificates">Certificate Gallery</a> <span class="badge new">New</span></li>
+                    <li><a href="?page=profile">Amateur Radio Operator Profile</a> <span class="badge new">New</span></li>
+                </ul>
+
+                <h3>Technical Resources</h3>
+                <ul>
+                    <li><a href="?page=adif-guide">ADIF Format Guide</a> <span class="badge new">New</span></li>
+                    <li><a href="?page=logging-software">Logging Software</a> <span class="badge new">New</span></li>
+                    <li><a href="?page=band-plans">Band Plans</a> <span class="badge new">New</span></li>
+                    <li><a href="?page=glossary">Amateur Radio Glossary</a> <span class="badge updated">Updated</span></li>
+                </ul>
+            </div>
+
+            <div class="category">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="?page=discord">Discord Community</a></li>
+                    <li><a href="?page=community-events">Community Events</a></li>
+                    <li><a href="?page=nets">Net Schedule</a></li>
+                    <li><a href="?page=mailing-list">Mailing List</a></li>
+                    <li><a href="?page=tgif">TGIF Award</a></li>
+                    <li><a href="?page=team">Team Members</a></li>
+                    <li><a href="?page=join-our-team">Join Our Team</a></li>
+                </ul>
+
+                <h3>Site Pages</h3>
+                <ul>
+                    <li><a href="?page=404">404 Page Not Found</a></li>
+                    <li><a href="?page=500">500 Server Error</a></li>
+                    <li><a href="?page=privacy">Privacy Policy</a></li>
+                    <li><a href="?page=cookies">Cookie Policy</a></li>
+                    <li><a href="?page=terms">Terms & Conditions</a></li>
+                    <li><a href="?page=modern-slavery">Modern Slavery Statement</a></li>
+                    <li><a href="?page=sitemap">HTML Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+        <p><small>Last updated: <?php echo date('F j, Y'); ?></small></p>
     </div>
 </body>
 </html>

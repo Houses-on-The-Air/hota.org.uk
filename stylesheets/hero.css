@@ -1,69 +1,158 @@
-/* Hero section styling */
-.hero-banner {
-  padding: 4rem 0;
-  background: linear-gradient(to right, var(--primary-dark), var(--primary-color));
-  position: relative;
-  overflow: hidden;
-}
+/**
+ * Hero Section Styles for HOTA Website
+ * Contains styles for the prominent hero/banner sections used across the site
+ * Uses British English terminology and follows the HOTA design system
+ */
 
-.hero-banner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../images/pattern.svg');
-  background-size: cover;
-  opacity: 0.1;
-}
-
-.hero-banner h1 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 500;
-}
-
-.hero-banner .flow-text {
-  font-size: 1.5rem;
-  max-width: 600px;
-}
-
-.hero-actions {
-  margin-top: 2rem;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.hero-banner img {
-  max-width: 100%;
-  height: auto;
-}
-
-@media only screen and (max-width: 992px) {
-  .hero-banner {
-    padding: 3rem 0;
-  }
-
-  .hero-banner h1 {
-    font-size: 2.5rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .hero-banner {
-    padding: 2rem 0;
+/* Standard Hero Layout */
+.hero {
+    position: relative;
+    width: 100%;
+    padding: 80px 0;
+    background-color: var(--primary-color);
+    color: white;
     text-align: center;
-  }
+    overflow: hidden;
+}
 
-  .hero-banner h1 {
-    font-size: 2rem;
-  }
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-  .hero-actions {
-    justify-content: center;
-  }
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.hero p.lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.hero .btn {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    margin: 0 10px 10px 0;
+}
+
+/* Hero with Background Image */
+.hero-with-image {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+.hero-with-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Dark overlay for better text contrast */
+    z-index: 1;
+}
+
+/* Home Page Hero - Large style */
+.hero-large {
+    padding: 120px 0;
+}
+
+.hero-large h1 {
+    font-size: 3.5rem;
+}
+
+/* Compact Hero for Secondary Pages */
+.hero-compact {
+    padding: 40px 0;
+}
+
+/* Hero with Gradient Background */
+.hero-gradient {
+    background: linear-gradient(to right, var(--primary-dark), var(--primary-color));
+}
+
+/* Hero with Diagonal Cut */
+.hero-diagonal {
+    position: relative;
+    padding-bottom: 120px;
+}
+
+.hero-diagonal::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    clip-path: polygon(0 80%, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+}
+
+/* Hero Button Variants */
+.hero .btn-primary {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.hero .btn-outline {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.hero .btn-outline:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-large {
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-large h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero p.lead {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-large h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p.lead {
+        font-size: 1rem;
+    }
+
+    .hero .btn {
+        display: block;
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
 }

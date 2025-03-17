@@ -57,28 +57,90 @@ $pageDescription = "Houses on the Air (HOTA) is an amateur radio activity that e
         </div>
     </section>
 
-    <section class="section blue-grey darken-1 white-text">
+    <section class="section journey-section">
+        <div class="journey-overlay"></div>
         <div class="container center-align">
-            <h2>Start Your HOTA Journey Today</h2>
-            <p class="flow-text">Join amateur radio operators around the world in this exciting activity</p>
+            <div class="journey-content">
+                <h2 class="white-text text-shadow">Start Your HOTA Journey Today</h2>
+                <p class="flow-text white-text text-shadow">Join amateur radio operators around the world in this exciting activity</p>
+
+                <div class="row journey-steps">
+                    <div class="col s12 m4 center-align">
+                        <div class="journey-step">
+                            <i class="material-icons large white-text">home</i>
+                            <h4 class="white-text text-shadow">Activate</h4>
+                            <p class="white-text text-shadow">Set up your station at a house location</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 center-align">
+                        <div class="journey-step">
+                            <i class="material-icons large white-text">settings_input_antenna</i>
+                            <h4 class="white-text text-shadow">Operate</h4>
+                            <p class="white-text text-shadow">Make contacts with other stations</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 center-align">
+                        <div class="journey-step">
+                            <i class="material-icons large white-text">emoji_events</i>
+                            <h4 class="white-text text-shadow">Earn Awards</h4>
+                            <p class="white-text text-shadow">Upload your logs and earn certificates</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#upload" class="btn-large orange darken-2 waves-effect waves-light mt-4">Upload Your ADIF File</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Quick Links Section -->
+    <section id="quick-links" class="section bg-light">
+        <div class="container">
+            <h2 class="center-align">Popular Resources</h2>
             <div class="row">
-                <div class="col s12 m4 center-align">
-                    <i class="material-icons large">home</i>
-                    <h4>Activate</h4>
-                    <p>Set up your station at a house location</p>
+                <div class="col s12 m6 l4">
+                    <div class="card feature-card">
+                        <div class="card-content">
+                            <span class="card-title">Getting Started</span>
+                            <ul class="browser-default">
+                                <li><a href="?page=get-licenced">How to Get Licensed</a></li>
+                                <li><a href="?page=house-activations">House Activations Guide</a></li>
+                                <li><a href="?page=log-entry">Log Submission</a></li>
+                                <li><a href="?page=band-plans">Band Plans</a></li>
+                                <li><a href="?page=operating-guidelines">Operating Guidelines</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col s12 m4 center-align">
-                    <i class="material-icons large">settings_input_antenna</i>
-                    <h4>Operate</h4>
-                    <p>Make contacts with other stations</p>
+                <div class="col s12 m6 l4">
+                    <div class="card feature-card">
+                        <div class="card-content">
+                            <span class="card-title">Community</span>
+                            <ul class="browser-default">
+                                <li><a href="?page=discord">Join Discord</a></li>
+                                <li><a href="?page=contests">Upcoming Contests</a></li>
+                                <li><a href="?page=community-events">Community Events</a></li>
+                                <li><a href="?page=nets">Net Schedule</a></li>
+                                <li><a href="?page=support-us">Support HOTA</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col s12 m4 center-align">
-                    <i class="material-icons large">emoji_events</i>
-                    <h4>Earn Awards</h4>
-                    <p>Upload your logs and earn certificates</p>
+                <div class="col s12 m6 l4">
+                    <div class="card feature-card">
+                        <div class="card-content">
+                            <span class="card-title">Reference</span>
+                            <ul class="browser-default">
+                                <li><a href="?page=glossary">Radio Terminology Glossary</a></li>
+                                <li><a href="?page=faq">Frequently Asked Questions</a></li>
+                                <li><a href="?page=rules">HOTA Rules</a></li>
+                                <li><a href="?page=awards">Award Tiers</a></li>
+                                <li><a href="?page=sitemap">Site Map</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a href="#upload" class="btn-large orange waves-effect waves-light mt-4">Upload Your ADIF File</a>
         </div>
     </section>
 

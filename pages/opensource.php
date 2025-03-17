@@ -78,7 +78,12 @@
 
     <h3>Our Open Source Projects</h3>
     <div class="collection">
-        <a href="https://github.com/Houses-on-The-Air/hota.org.uk" class="collection-item">HOTA Website - The main website codebase</a>
+    <a href="https://github.com/Houses-on-The-Air/hota.org.uk" class="collection-item" rel="nofollow">HOTA Website - The main website codebase</a>
+    <a href="https://github.com/Houses-on-The-Air/adif-parser-service" class="collection-item" rel="nofollow">ADIF Parser Service - A Python FastAPI webservice designed to run in Kubernetes</a>
+    <a href="https://github.com/Houses-on-The-Air/Azure-Infra" class="collection-item" rel="nofollow">Azure Infra - Terraform for our Azure infrastructure</a>
+    <a href="https://github.com/Houses-on-The-Air/adif-combiner" class="collection-item" rel="nofollow">ADIF Combiner - Combine multiple ADIF files into one</a>
+    <a href="https://github.com/Houses-on-The-Air/ADIF-to-SQL-Parser" class="collection-item" rel="nofollow">ADIF to SQL Parser - Import ADIF files to a SQL Database (MariaDB, Oracle, Postgres, and MSSQL supported)</a>
+
     </div>
 
     <h3>Open Source License</h3>

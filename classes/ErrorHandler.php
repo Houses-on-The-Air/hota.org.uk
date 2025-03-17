@@ -25,6 +25,21 @@ class ErrorHandler {
     private $errorTemplates = [];
 
     /**
+     * @var string Default log file path
+     */
+    private static $defaultLogFile = '/logs/php_errors.log';
+
+    /**
+     * @var int Maximum log size before rotation (10 MB)
+     */
+    private static $maxLogSize = 10485760;
+
+    /**
+     * @var ErrorHandler Singleton instance
+     */
+    private static $instance = null;
+
+    /**
      * Constructor - Set up error handling
      *
      * @param string $logFile Path to error log file
@@ -43,10 +58,28 @@ class ErrorHandler {
             'generic' => __DIR__ . '/../templates/errors/generic.php',
         ];
 
-        // Register error handlers
-        set_error_handler([$this, 'handleError']);
-        set_exception_handler([$this, 'handleException']);
-        register_shutdown_function([$this, 'handleFatalError']);
+        // Store the instance for static access
+        self::$instance = $this;
+    }
+
+    /**
+     * Register error handlers - can be called statically or from an instance
+     *
+     * @return void
+     */
+    public static function register() {
+        // If called statically without an instance, create a default one
+        if (self::$instance === null) {
+            self::$instance = new self();
+        }
+
+        // Register handlers correctly using the instance methods
+        set_error_handler([self::$instance, 'handleError']);
+        set_exception_handler([self::$instance, 'handleException']);
+        register_shutdown_function([self::$instance, 'handleFatalError']);
+
+        // Check log file size and rotate if necessary
+        self::checkLogFileSize();
     }
 
     /**
@@ -151,6 +184,45 @@ class ErrorHandler {
             error_log($logMessage, 3, $this->logFile);
         } else {
             error_log($logMessage);
+        }
+    }
+
+    /**
+     * Write to log file (static method for use in static context)
+     *
+     * @param string $message Message to write
+     * @return void
+     */
+    private static function writeToLog($message) {
+        $logFile = dirname(__DIR__) . self::$defaultLogFile;
+        $logDir = dirname($logFile);
+
+        // Create log directory if it doesn't exist
+        if (!file_exists($logDir)) {
+            mkdir($logDir, 0755, true);
+        }
+
+        file_put_contents($logFile, $message, FILE_APPEND);
+    }
+
+    /**
+     * Check log file size and rotate if necessary
+     *
+     * @return void
+     */
+    private static function checkLogFileSize() {
+        $logFile = dirname(__DIR__) . self::$defaultLogFile;
+
+        if (file_exists($logFile) && filesize($logFile) > self::$maxLogSize) {
+            // Rotate log file - keep one backup
+            $backupFile = $logFile . '.1';
+            if (file_exists($backupFile)) {
+                unlink($backupFile);
+            }
+            rename($logFile, $backupFile);
+
+            // Create fresh log file
+            file_put_contents($logFile, date('[Y-m-d H:i:s]') . " Log file rotated\n");
         }
     }
 
@@ -282,3 +354,6 @@ class ErrorHandler {
         }
     }
 }
+
+// Register the error handler
+ErrorHandler::register();

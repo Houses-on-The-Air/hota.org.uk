@@ -1,78 +1,47 @@
-</main>
-    <!-- Main content ends -->
+</main> <!-- Properly close main tag -->
 
-    <!-- Footer -->
-    <footer class="page-footer blue-grey darken-3">
+    <footer class="page-footer blue-grey darken-2">
         <div class="container">
             <div class="row">
-                <div class="col l4 s12">
-                    <h5 class="white-text">Houses on The Air</h5>
-                    <p class="grey-text text-lighten-4">Amateur Radio Activity promoting fixed operations from unique house locations around the world.</p>
-                    <img src="/images/hota-singlecolor.svg" alt="HOTA Logo" height="80" class="mt-3">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Houses on the Air</h5>
+                    <p class="grey-text text-lighten-4">An amateur radio program celebrating architectural heritage through radio communication.</p>
                 </div>
-                <div class="col l4 s12">
-                    <h5 class="white-text">Quick Links</h5>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="?page=rules">Rules</a></li>
-                        <li><a class="grey-text text-lighten-3" href="?page=awards">Awards</a></li>
-                        <li><a class="grey-text text-lighten-3" href="?page=house-activations">Activations</a></li>
-                        <li><a class="grey-text text-lighten-3" href="?page=faq">FAQ</a></li>
+                        <li><a class="grey-text text-lighten-3" href="?page=privacy">Privacy Policy</a></li>
+                        <li><a class="grey-text text-lighten-3" href="?page=cookies">Cookies</a></li>
+                        <li><a class="grey-text text-lighten-3" href="?page=gdpr">GDPR</a></li>
                         <li><a class="grey-text text-lighten-3" href="?page=contact">Contact Us</a></li>
                     </ul>
-                </div>
-                <div class="col l4 s12">
-                    <h5 class="white-text">Connect With Us</h5>
-                    <div class="social-links mt-3">
-                        <a href="<?php echo ConfigManager::get('social.facebook', '#'); ?>" target="_blank" rel="nofollow" class="btn-floating blue-grey lighten-1 mr-2">
-                            <i class="material-icons">facebook</i>
-                        </a>
-                        <a href="<?php echo ConfigManager::get('social.twitter', '#'); ?>" target="_blank" rel="nofollow" class="btn-floating blue-grey lighten-1 mr-2">
-                            <i class="material-icons">twitter</i>
-                        </a>
-                        <a href="<?php echo ConfigManager::get('social.discord', '#'); ?>" target="_blank" rel="nofollow" class="btn-floating blue-grey lighten-1 mr-2">
-                            <i class="material-icons">forum</i>
-                        </a>
-                    </div>
-                    <p class="mt-3">
-                        <a class="grey-text text-lighten-3" href="?page=mailing-list">Join our mailing list</a>
-                    </p>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                © <?php echo date('Y'); ?> Houses on The Air (HOTA)
-                <a class="grey-text text-lighten-4 right" href="?page=privacy">Privacy Policy</a>
-                <a class="grey-text text-lighten-4 right mr-3" href="?page=terms">Terms of Service</a>
-                <a class="grey-text text-lighten-4 right mr-3" href="?page=cookies">Cookie Policy</a>
+                © <?php echo date('Y'); ?> Houses on the Air
+                <a class="grey-text text-lighten-4 right" href="?page=opensource">Open Source</a>
             </div>
         </div>
     </footer>
 
-    <!-- Initialize Additional Materialize Components -->
+    <!-- JavaScript at end of body for optimized loading -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        $(document).ready(function() {
-            // Initialize form selects
-            $('select').formSelect();
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize sidenav
+            var sidenavElems = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenavElems);
 
-            // Initialize tooltips
-            $('.tooltipped').tooltip();
+            // Initialize dropdowns
+            var dropdownElems = document.querySelectorAll('.dropdown-trigger');
+            M.Dropdown.init(dropdownElems, {
+                coverTrigger: false,
+                constrainWidth: false
+            });
         });
     </script>
-
-    <?php if(isset($pageSpecificJS)): ?>
-    <script src="<?php echo $pageSpecificJS; ?>"></script>
-    <?php endif; ?>
-
-    <!-- Google Analytics -->
-    <?php if(ConfigManager::get('analytics.enabled', false)): ?>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo ConfigManager::get('analytics.id'); ?>"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '<?php echo ConfigManager::get('analytics.id'); ?>');
-    </script>
-    <?php endif; ?>
 </body>
 </html>

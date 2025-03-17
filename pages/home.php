@@ -1,6 +1,7 @@
 <?php
-$pageTitle = "Houses on The Air - HOTA";
-include_once('../includes/header.php');
+// Set page variables
+$pageTitle = "Welcome to Houses on the Air";
+$pageDescription = "Houses on the Air (HOTA) is an amateur radio activity that encourages operators to set up from various houses.";
 ?>
 
 <!-- Hero Section -->
@@ -81,8 +82,6 @@ include_once('../includes/header.php');
         </div>
     </section>
 
-    <?php include __DIR__ . '/../partials/main.php'; ?>
-
     <section id="latest-news" class="section">
         <div class="container">
             <div class="row">
@@ -91,27 +90,16 @@ include_once('../includes/header.php');
                     <div class="card-panel">
                         <h5>HOTA Weekend Event - Coming Soon!</h5>
                         <p class="grey-text">Posted on <?= date('F j, Y', strtotime('-3 days')); ?></p>
-                        <p>Join us for a special HOTA weekend activation event! Operators around the world will be setting up from various house locations and making contacts. Special certificates will be available for participants.</p>
+                        <p>Join us for a special HOTA weekend activation event! Operators around the world will be setting up from various house locations and making contacts.</p>
                         <a href="?page=community-events" class="btn blue-grey">Learn More</a>
-                    </div>
-                    <div class="card-panel">
-                        <h5>New Award Tiers Announced</h5>
-                        <p class="grey-text">Posted on <?= date('F j, Y', strtotime('-10 days')); ?></p>
-                        <p>We've updated our award tiers to include more levels and opportunities for recognition. Check out the new award structure and start earning your certificates today!</p>
-                        <a href="?page=awards" class="btn blue-grey">View Awards</a>
                     </div>
                 </div>
                 <div class="col s12 m4">
                     <h2>Connect With Us</h2>
                     <div class="card-panel">
                         <h5>Join Our Community</h5>
-                        <p>Connect with other HOTA operators on Discord, share your experiences, and get help with your activations.</p>
+                        <p>Connect with other HOTA operators on Discord, share your experiences, and get help.</p>
                         <a href="?page=discord" class="btn blue-grey waves-effect waves-light">Join Discord</a>
-                    </div>
-                    <div class="card-panel">
-                        <h5>Newsletter</h5>
-                        <p>Subscribe to our newsletter for updates on events, contests, and new features.</p>
-                        <a href="?page=mailing-list" class="btn blue-grey waves-effect waves-light">Subscribe</a>
                     </div>
                 </div>
             </div>

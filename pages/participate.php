@@ -1,5 +1,7 @@
 <?php
+// Set page variables
 $pageTitle = "Participate - HOTA";
+$pageDescription = "Learn how to participate in Houses on The Air (HOTA) amateur radio activations.";
 include_once('../includes/header.php');
 ?>
 

@@ -81,7 +81,7 @@ include_once('../includes/header.php');
 
                 <div id="form-error" class="card-panel red lighten-4 red-text text-darken-4" style="display:none;">
                     <h5><i class="material-icons left">error</i> Error</h5>
-                    <p>There was a problem sending your message. Please try again later or contact us directly at <a href="mailto:info@hota.org.uk">info@hota.org.uk</a>.</p>
+                    <p>There was a problem sending your message. Please try again later or contact us directly at  <a href="mailto:<?= ConfigManager::get('email.info'); ?>"><?= ConfigManager::get('email.info'); ?></a>.</p>
                 </div>
             </div>
         </div>
@@ -126,7 +126,7 @@ include_once('../includes/header.php');
                         <i class="material-icons">facebook</i>
                     </a>
                     <a href="<?= ConfigManager::get('social.twitter') ?>" target="_blank" rel="nofollow" class="btn-floating blue-grey">
-                        <i class="material-icons">twitter</i>
+                        <i class="material-icons">X</i>
                     </a>
                     <a href="<?= ConfigManager::get('social.reddit') ?>" target="_blank" rel="nofollow" class="btn-floating blue-grey">
                         <i class="material-icons">forum</i>

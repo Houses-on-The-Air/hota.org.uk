@@ -7,49 +7,60 @@
  * handling page routing and rendering.
  */
 
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 0);
+ini_set('log_errors', 1);
+ini_set('error_log', __DIR__ . '/logs/php_errors.log');
+
+// Ensure the logs directory exists
+if (!file_exists(__DIR__ . '/logs')) {
+    mkdir(__DIR__ . '/logs', 0755, true);
+}
+
+// Session cleanup - prevent session files from accumulating
+ini_set('session.gc_probability', 1);
+ini_set('session.gc_divisor', 100);
+ini_set('session.gc_maxlifetime', 1440); // 24 minutes
+
+// Start session if needed
+session_start();
+
 // Start output buffering for better performance and error handling
 ob_start();
 
-// Load required files
+// Load required files - constants first, then autoloader
 require_once __DIR__ . '/includes/constants.php';
 require_once __DIR__ . '/includes/autoload.php';
-
-// Set error reporting based on environment
-$isProduction = ConfigManager::get('app.environment', 'production') === 'production';
-
-// Initialize logger
-Logger::init(
-    __DIR__ . '/logs/app_' . date('Y-m-d') . '.log',
-    $isProduction ? 'INFO' : 'DEBUG'
-);
-
-// Initialize error handler
-$errorHandler = new ErrorHandler(
-    __DIR__ . '/logs/error_' . date('Y-m-d') . '.log',
-    !$isProduction,
-    !$isProduction
-);
-
-// Set default timezone
-date_default_timezone_set(ConfigManager::get('app.timezone', 'UTC'));
+require_once __DIR__ . '/includes/helper.php';
 
 try {
-    Logger::info('Request started: ' . $_SERVER['REQUEST_URI']);
+    // Get requested page name with validation
+    $page = isset($_GET['page']) ? filter_var($_GET['page'], FILTER_SANITIZE_SPECIAL_CHARS) : 'home';
+    $page = preg_replace('/[^a-zA-Z0-9_-]/', '', $page);
 
-    // Get requested page with validation
-    $page = filter_input(INPUT_GET, 'page', FILTER_SANITIZE_SPECIAL_CHARS) ?: 'home';
+    // Define file path
+    $filePath = __DIR__ . '/pages/' . $page . '.php';
 
-    // Create page renderer and render the page
-    $renderer = new PageRenderer($page);
-    $renderer->render();
+    // Check if file exists, otherwise use 404
+    if (!file_exists($filePath)) {
+        $page = '404';
+        $filePath = __DIR__ . '/pages/404.php';
+        http_response_code(404);
+    }
 
-    Logger::info('Request completed: ' . $_SERVER['REQUEST_URI']);
+    // Include header with proper variables
+    include __DIR__ . '/includes/header.php';
+
+    // Include the requested page content
+    include $filePath;
+
+    // Include footer
+    include __DIR__ . '/includes/footer.php';
+
 } catch (Exception $e) {
     // Log the error
-    Logger::error('Error rendering page: ' . $e->getMessage(), [
-        'uri' => $_SERVER['REQUEST_URI'],
-        'trace' => $e->getTraceAsString()
-    ]);
+    error_log('Error rendering page: ' . $e->getMessage());
 
     // Clear the output buffer
     ob_clean();
@@ -58,12 +69,7 @@ try {
     http_response_code(500);
 
     // Display error page
-    $errorHandler->displayErrorPage('500', [
-        'code' => 500,
-        'message' => $isProduction
-            ? 'We\'re sorry, but an unexpected error has occurred. Please try again later.'
-            : $e->getMessage()
-    ]);
+    include __DIR__ . '/pages/500.php';
 }
 
 // Flush the output buffer

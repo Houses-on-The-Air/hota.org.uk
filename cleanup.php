@@ -1,43 +1,74 @@
 <?php
 /**
- * Cleanup script to remove unused FPDF tutorial files
+ * Cleanup script to manage files and resources
+ * This script should be run via cron job every hour
+ * Example cron: 0 * * * * php /path/to/cleanup.php
  */
 
-// Files to be removed
-$filesToRemove = [
-    __DIR__ . '/fpdf/tutorial/tuto1.htm',
-    __DIR__ . '/fpdf/tutorial/tuto3.php',
-    __DIR__ . '/fpdf/tutorial/tuto5.htm',
-    __DIR__ . '/fpdf/tutorial/tuto7.htm'
-];
+// Define base path
+$basePath = __DIR__;
 
-echo "Starting cleanup process...\n";
+// Set maximum age for files (in seconds)
+$maxAge = 86400; // 24 hours
 
-foreach ($filesToRemove as $file) {
-    if (file_exists($file)) {
-        if (unlink($file)) {
-            echo "Removed: $file\n";
-        } else {
-            echo "Failed to remove: $file\n";
+// Function to delete old files in a directory
+function cleanDirectory($dir, $maxAge, $extensions = null) {
+    if (!is_dir($dir)) {
+        return;
+    }
+
+    $now = time();
+    $files = scandir($dir);
+
+    foreach ($files as $file) {
+        if ($file == '.' || $file == '..' || $file == '.htaccess' || $file == 'index.html') {
+            continue;
         }
-    } else {
-        echo "File not found: $file\n";
+
+        $path = $dir . '/' . $file;
+
+        // Skip if directory
+        if (is_dir($path)) {
+            continue;
+        }
+
+        // Skip if not matching extension (if specified)
+        if ($extensions !== null) {
+            $ext = pathinfo($path, PATHINFO_EXTENSION);
+            if (!in_array($ext, $extensions)) {
+                continue;
+            }
+        }
+
+        // Delete if older than max age
+        if ($now - filemtime($path) > $maxAge) {
+            @unlink($path);
+        }
     }
 }
 
-// Also clean up any empty directories
-$directoriesToCheck = [
-    __DIR__ . '/fpdf/tutorial'
-];
+// Clean log files > 7 days old
+cleanDirectory($basePath . '/logs', 604800); // 7 days
 
-foreach ($directoriesToCheck as $dir) {
-    if (is_dir($dir) && count(scandir($dir)) <= 2) { // Only . and .. entries
-        if (rmdir($dir)) {
-            echo "Removed empty directory: $dir\n";
-        } else {
-            echo "Failed to remove directory: $dir\n";
+// Clean PHP session files
+$sessionPath = session_save_path();
+if (!empty($sessionPath) && is_dir($sessionPath)) {
+    cleanDirectory($sessionPath, 86400, ['sess']);
+}
+
+// Rebuild cache files if needed
+if (file_exists($basePath . '/cache/config.cache.php')) {
+    // Only rebuild if older than 24 hours
+    if (time() - filemtime($basePath . '/cache/config.cache.php') > 86400) {
+        // Include config rebuild logic here
+        if (file_exists($basePath . '/classes/ConfigManager.php')) {
+            include_once $basePath . '/classes/ConfigManager.php';
+            if (method_exists('ConfigManager', 'rebuildCache')) {
+                ConfigManager::rebuildCache();
+            }
         }
     }
 }
 
-echo "Cleanup completed.\n";
+// Output result - useful for debugging cron jobs
+echo "Cleanup completed: " . date('Y-m-d H:i:s') . "\n";

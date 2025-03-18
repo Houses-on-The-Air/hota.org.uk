@@ -1,104 +1,270 @@
-<section class="container">
-    <h2>Embracing Open Source Software</h2>
-    <p>Last updated: <?= date('F j, Y'); ?></p>
+<?php
+$pageTitle = "Open Source - Houses on The Air";
+$pageDescription = "Learn about the open source technologies behind Houses on the Air (HOTA), how we contribute to the open source community, and how you can get involved.";
+?>
 
-    <div class="card">
+<div class="container">
+    <h1>Open Source at HOTA</h1>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumb-wrapper">
+        <ul class="breadcrumbs">
+            <li><a href="/">Home</a></li>
+            <li>Open Source</li>
+        </ul>
+    </div>
+
+    <!-- Introduction -->
+    <p class="flow-text">Houses on The Air is built on and committed to open source technologies. We believe in transparency, collaboration, and giving back to the community that makes our platform possible.</p>
+
+    <!-- Open Source Commitment -->
+    <div class="card mt-4">
         <div class="card-content">
-            <span class="card-title">Our Open Source Philosophy</span>
-            <p>At Houses on The Air, we believe in the power of open collaboration and transparency.
-               That's why we've embraced open source principles throughout our organization. We're committed
-               to sharing our code, encouraging community contributions, and building on the foundation
-               laid by other open source projects.</p>
+            <span class="card-title"><i class="material-icons left">handshake</i>Our Open Source Commitment</span>
+            <p>At HOTA, we're committed to the principles of open source development:</p>
+            <ul class="browser-default">
+                <li>Transparency in our development process</li>
+                <li>Collaboration with the broader community</li>
+                <li>Sharing code and resources that can benefit others</li>
+                <li>Using and supporting open source technologies</li>
+                <li>Contributing improvements back to the projects we use</li>
+            </ul>
+            <p>Our website, tools, and resources are built on open source technologies, and we actively contribute back to the open source community whenever possible.</p>
         </div>
     </div>
 
-    <h3>Step 1: Understanding Open Source</h3>
-    <p>Open source software is software with source code that anyone can inspect, modify, and enhance. By using and contributing to open source software, we can foster a collaborative community and drive innovation.</p>
+    <!-- Our GitHub Repository -->
+    <div class="card mt-4">
+        <div class="card-content">
+            <span class="card-title"><i class="material-icons left">code</i>HOTA GitHub Repository</span>
 
-    <h3>Step 2: Benefits of Open Source</h3>
-    <p>Using open source software for HOTA offers numerous benefits:</p>
-    <ul>
-        <li><strong>Transparency:</strong> Anyone can review the code, ensuring security and reliability.</li>
-        <li><strong>Collaboration:</strong> Developers from around the world can contribute, improving the software.</li>
-        <li><strong>Cost-effective:</strong> Open source software is often free to use, reducing costs.</li>
-        <li><strong>Flexibility:</strong> The software can be customised to meet specific needs.</li>
-    </ul>
+            <div class="row">
+                <div class="col s12 m8">
+                    <p>Our codebase is publicly available on GitHub, where you can:</p>
+                    <ul class="browser-default">
+                        <li>Browse our source code</li>
+                        <li>Report issues and suggest improvements</li>
+                        <li>Fork the repository to create your own version</li>
+                        <li>Submit pull requests to help improve the project</li>
+                        <li>Review our development history and roadmap</li>
+                    </ul>
+                </div>
+                <div class="col s12 m4 center-align">
+                    <a href="https://github.com/Houses-on-The-Air/hota.org.uk/" target="_blank" rel="noopener" class="btn-large blue-grey darken-1 waves-effect waves-light">
+                        <i class="material-icons left">launch</i>Visit GitHub Repo
+                    </a>
+                </div>
+            </div>
 
-    <h3>Step 3: Publishing HOTA Software as Open Source</h3>
-    <p>We are committed to publishing all software developed for HOTA as open source. This allows the community to:</p>
-    <ul>
-        <li>Review and improve the code through peer review</li>
-        <li>Create new features and fix bugs to benefit everyone</li>
-        <li>Adapt the software for other amateur radio events and purposes</li>
-        <li>Share knowledge and best practices across the radio community</li>
-        <li>Build upon each other's work rather than reinventing the wheel</li>
-    </ul>
-
-    <h3>Step 4: How to Contribute</h3>
-    <p>If you want to contribute to HoTA's open source projects, here's how you can get involved:</p>
-    <div class="row">
-        <div class="col s12 m6">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                    <span class="card-title">Code Contributions</span>
-                    <ol>
-                        <li>Visit our <a href="https://github.com/Houses-on-The-Air/" rel="nofollow" class="white-text" style="text-decoration: underline;">GitHub Organisation</a> to find our projects</li>
-                        <li>Fork the repository and make your changes</li>
-                        <li>Submit a pull request with a description of your changes</li>
-                        <li>Engage in the code review process</li>
-                    </ol>
+            <div class="card-panel blue-grey lighten-5 mt-3">
+                <div class="row valign-wrapper">
+                    <div class="col s2 m1 center-align">
+                        <i class="material-icons medium">star</i>
+                    </div>
+                    <div class="col s10 m11">
+                        <p class="no-margin-top">If you find our project useful, please consider giving us a star on GitHub. It helps increase our visibility and encourages more contributors to join.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col s12 m6">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                    <span class="card-title">Other Contributions</span>
-                    <ul>
-                        <li>Report bugs and issues on our issue trackers</li>
-                        <li>Suggest new features or improvements</li>
-                        <li>Improve documentation and examples</li>
-                        <li>Help test new releases and features</li>
-                        <li>Join our community discussions</li>
+    </div>
+
+    <!-- Technologies We Use -->
+    <div class="card mt-4">
+        <div class="card-content">
+            <span class="card-title"><i class="material-icons left">build</i>Technologies We Use</span>
+
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <h4>PHP</h4>
+                    <p>Our primary backend language, powering dynamic functionality and database interactions.</p>
+                </div>
+                <div class="tech-item">
+                    <h4>MariaDB/MySQL</h4>
+                    <p>Open source database management system for storing and retrieving member and operation data.</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Materialize CSS</h4>
+                    <p>A responsive front-end framework based on Material Design principles for modern UI elements.</p>
+                </div>
+                <div class="tech-item">
+                    <h4>JavaScript</h4>
+                    <p>Client-side scripting for interactive functionality and enhanced user experience.</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Leaflet.js</h4>
+                    <p>Open source JavaScript library for mobile-friendly interactive maps showing HOTA activations.</p>
+                </div>
+                <div class="tech-item">
+                    <h4>ADIF Parser</h4>
+                    <p>Custom open source library for parsing and processing amateur radio log files.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How to Contribute -->
+    <div class="card mt-4">
+        <div class="card-content">
+            <span class="card-title"><i class="material-icons left">group_add</i>How to Contribute</span>
+
+            <p>We welcome contributions from developers of all skill levels! Here's how you can get involved:</p>
+
+            <div class="row">
+                <div class="col s12 m6">
+                    <h4>For Developers</h4>
+                    <ol>
+                        <li>Fork our repository on GitHub</li>
+                        <li>Create a new branch for your feature or bugfix</li>
+                        <li>Make your changes following our coding standards</li>
+                        <li>Submit a pull request with a clear description of your changes</li>
+                        <li>Participate in the code review process</li>
+                    </ol>
+                    <p>Check our <a href="https://github.com/Houses-on-The-Air/hota.org.uk/blob/master/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a> file for detailed guidelines.</p>
+                </div>
+                <div class="col s12 m6">
+                    <h4>Non-Coding Contributions</h4>
+                    <p>Even if you're not a developer, you can still contribute:</p>
+                    <ul class="browser-default">
+                        <li>Report bugs and issues you find</li>
+                        <li>Suggest features or improvements</li>
+                        <li>Improve documentation</li>
+                        <li>Help with translations</li>
+                        <li>Provide feedback on design and usability</li>
+                        <li>Spread the word about HOTA</li>
                     </ul>
                 </div>
             </div>
+
+            <div class="card-panel light-blue lighten-5 mt-3">
+                <div class="row valign-wrapper">
+                    <div class="col s2 m1 center-align">
+                        <i class="material-icons medium">emoji_events</i>
+                    </div>
+                    <div class="col s10 m11">
+                        <p class="no-margin-top">All contributors are recognized on our <a href="?page=contributors">Contributors Page</a> and in our repository. We value every contribution, big or small!</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <h3>Step 5: Growing the Community</h3>
-    <p>By embracing open source, we aim to grow a vibrant community around HoTA. This community can:</p>
-    <ul>
-        <li>Organise new events using the software.</li>
-        <li>Share experiences and best practices.</li>
-        <li>Collaborate on new features and improvements.</li>
-        <li>Support each other in using and developing the software.</li>
-        <li>Create a sustainable ecosystem around amateur radio activities.</li>
-    </ul>
+    <!-- License Information -->
+    <div class="card mt-4">
+        <div class="card-content">
+            <span class="card-title"><i class="material-icons left">gavel</i>License Information</span>
 
-    <h3>Our Open Source Projects</h3>
-    <div class="collection">
-    <a href="https://github.com/Houses-on-The-Air/hota.org.uk" class="collection-item" rel="nofollow">HOTA Website - The main website codebase</a>
-    <a href="https://github.com/Houses-on-The-Air/adif-parser-service" class="collection-item" rel="nofollow">ADIF Parser Service - A Python FastAPI webservice designed to run in Kubernetes</a>
-    <a href="https://github.com/Houses-on-The-Air/Azure-Infra" class="collection-item" rel="nofollow">Azure Infra - Terraform for our Azure infrastructure</a>
-    <a href="https://github.com/Houses-on-The-Air/adif-combiner" class="collection-item" rel="nofollow">ADIF Combiner - Combine multiple ADIF files into one</a>
-    <a href="https://github.com/Houses-on-The-Air/ADIF-to-SQL-Parser" class="collection-item" rel="nofollow">ADIF to SQL Parser - Import ADIF files to a SQL Database (MariaDB, Oracle, Postgres, and MSSQL supported)</a>
+            <p>The HOTA codebase is released under the MIT License, which allows for maximum freedom in both open source and commercial contexts:</p>
 
+            <div class="license-text card-panel grey lighten-4">
+                <p>Copyright (c) 2025 Houses on The Air</p>
+                <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+                <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+                <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+            </div>
+
+            <p class="mt-3">This means you can freely use our code in your own projects, both open source and commercial, as long as you include the original copyright notice.</p>
+        </div>
     </div>
 
-    <h3>Open Source licence</h3>
-    <p>Our projects are released under the MIT licence, which allows you to:</p>
-    <ul>
-        <li>Use the code freely for personal and commercial purposes</li>
-        <li>Modify the code to suit your needs</li>
-        <li>Distribute modified versions</li>
-        <li>Include the code in your own projects</li>
-    </ul>
-    <p>All we ask is that you include the original copyright notice and licence text.</p>
+    <!-- Open Source Projects We Support -->
+    <div class="card mt-4">
+        <div class="card-content">
+            <span class="card-title"><i class="material-icons left">favorite</i>Open Source Projects We Support</span>
 
-    <div class="card-panel blue-grey lighten-4">
-        <p class="center-align">
-            <strong>Join us in our mission to make amateur radio more accessible and enjoyable through open source software!</strong>
-        </p>
+            <p>We're proud to support these open source amateur radio projects:</p>
+
+            <ul class="collection">
+                <li class="collection-item avatar">
+                    <i class="material-icons circle blue-grey">code</i>
+                    <span class="title"><strong>HAMRS</strong></span>
+                    <p>Modern amateur radio logging software that runs on Windows, macOS, Linux, iOS and Android.</p>
+                    <a href="https://hamrs.app" class="secondary-content" target="_blank" rel="noopener"><i class="material-icons">launch</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle blue-grey">code</i>
+                    <span class="title"><strong>JS8Call</strong></span>
+                    <p>Weak signal HF digital mode supporting messaging, store-and-forward messaging, and network relay.</p>
+                    <a href="http://js8call.com/" class="secondary-content" target="_blank" rel="noopener"><i class="material-icons">launch</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle blue-grey">code</i>
+                    <span class="title"><strong>WSJT-X</strong></span>
+                    <p>Weak signal communications software implementing JT65, FT8, FT4, and other digital modes.</p>
+                    <a href="https://physics.princeton.edu/pulsar/k1jt/wsjtx.html" class="secondary-content" target="_blank" rel="noopener"><i class="material-icons">launch</i></a>
+                </li>
+            </ul>
+        </div>
     </div>
-</section>
+
+    <!-- Contact About Open Source -->
+    <div class="card-panel deep-purple lighten-5 center-align mt-4">
+        <h3>Questions About Our Open Source Projects?</h3>
+        <p class="flow-text">We'd love to hear from you if you have questions, ideas, or want to get involved.</p>
+        <div class="row">
+            <div class="col s12 m6">
+                <a href="?page=contact" class="btn-large blue-grey darken-1 waves-effect waves-light full-width-btn">
+                    <i class="material-icons left">email</i>Contact Us
+                </a>
+            </div>
+            <div class="col s12 m6">
+                <a href="https://github.com/Houses-on-The-Air/hota.org.uk/discussions" target="_blank" rel="noopener" class="btn-large deep-purple waves-effect waves-light full-width-btn">
+                    <i class="material-icons left">forum</i>GitHub Discussions
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.tech-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: #f5f5f5;
+}
+
+.tech-item h4 {
+    color: #455a64;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.license-text {
+    font-size: 0.9rem;
+    font-family: monospace;
+    padding: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.mt-3 {
+    margin-top: 1.5rem;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.full-width-btn {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>

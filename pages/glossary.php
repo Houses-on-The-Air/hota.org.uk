@@ -1,359 +1,443 @@
-<section class="container">
-    <h2>Glossary of Amateur Radio Terms</h2>
-    <p>Last updated: <?= date('F j, Y'); ?></p>
-    <p>Expand your knowledge of amateur radio with this comprehensive glossary of common terms and acronyms used in the hobby.</p>
+<?php
+$pageTitle = "Amateur Radio Glossary - HOTA";
+$pageDescription = "Comprehensive glossary of amateur radio terms, abbreviations, and Q-codes used in Houses on the Air (HOTA) and general ham radio operations.";
 
-    <div class="row">
-        <div class="col s12">
-            <div class="card-panel blue-grey lighten-4">
-                <p><strong>Quick navigation:</strong></p>
-                <div class="glossary-navigation">
-                    <?php
-                        $alphabet = range('A', 'Z');
-                        foreach ($alphabet as $letter) {
-                            echo "<a href=\"#letter-$letter\" class=\"btn-small blue-grey darken-2 white-text m-1\">$letter</a>";
-                        }
-                    ?>
+// Build category lists
+$categories = [
+    'general' => 'General Ham Radio',
+    'hota' => 'HOTA Specific',
+    'modes' => 'Operating Modes',
+    'technical' => 'Technical Terms',
+    'abbreviation' => 'Abbreviations',
+    'q-code' => 'Q-Codes'
+];
+
+// Term of the Day - simplified implementation
+$terms = [
+    ['HOTA', 'Houses on The Air', 'hota'],
+    ['QSO', 'A conversation or contact between amateur radio operators', 'q-code'],
+    ['Activator', 'An operator who sets up and operates from a residential location for HOTA purposes', 'hota'],
+    ['ADIF', 'Amateur Data Interchange Format - standardized format for exchanging amateur radio logs', 'technical'],
+    ['QRP', 'Low power operation, typically 5W or less', 'q-code']
+];
+$termIndex = date('z') % count($terms); // Day of year mod number of terms
+$todaysTerm = $terms[$termIndex];
+?>
+
+<div class="container">
+    <h1>Amateur Radio Glossary</h1>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumb-wrapper">
+        <ul class="breadcrumbs">
+            <li><a href="/">Home</a></li>
+            <li><a href="?page=resources">Resources</a></li>
+            <li>Glossary</li>
+        </ul>
+    </div>
+
+    <p class="flow-text">This glossary provides definitions for common amateur radio terms, abbreviations, and Q-codes used in HOTA operations.</p>
+
+    <!-- Term of the Day -->
+    <div class="card blue-grey lighten-5">
+        <div class="card-content">
+            <div class="row valign-wrapper">
+                <div class="col s12 m9">
+                    <span class="card-title"><i class="material-icons left">auto_stories</i>Term of the Day</span>
+                    <h4><?= htmlspecialchars($todaysTerm[0]) ?></h4>
+                    <p class="flow-text"><?= htmlspecialchars($todaysTerm[1]) ?></p>
+                </div>
+                <div class="col s12 m3 center-align hide-on-small-only">
+                    <i class="material-icons term-of-day-icon"><?= $todaysTerm[2] == 'hota' ? 'home' : 'radio' ?></i>
                 </div>
             </div>
         </div>
     </div>
 
-    <h3 id="letter-A">A</h3>
-    <dl>
-        <dt>ADIF</dt>
-        <dd>Amateur Data Interchange Format - A standard format for exchanging amateur radio contact information between different logging programs and services.</dd>
+    <!-- Search and Filter -->
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title"><i class="material-icons left">search</i>Find a Term</span>
 
-        <dt>APRS</dt>
-        <dd>Automatic Packet Reporting System - A digital communications system used for transmitting data such as position information, weather data, and short messages over radio.</dd>
-
-        <dt>ARRL</dt>
-        <dd>American Radio Relay League - The largest organisation of amateur radio operators in the United States.</dd>
-
-        <dt>ARES</dt>
-        <dd>Amateur Radio Emergency Service - A group of licenced amateurs who volunteer their time and equipment to serve in the public interest during emergencies and disasters.</dd>
-
-        <dt>Amateur Radio</dt>
-        <dd>Amateur radio, also known as ham radio, is a popular hobby and service that allows licenced operators to communicate with each other using various radio frequencies. Amateur radio operators use a variety of modes and bands to communicate locally, regionally, and globally.</dd>
-        <dt>Antenna</dt>
-        <dd>An antenna is a device used to transmit and receive radio waves. It is an essential component of any radio communication system.</dd>
-        <dt>ARRL (American Radio Relay League)</dt>
-        <dd>The ARRL is the national association for amateur radio in the United States. It provides resources, support, and advocacy for amateur radio operators and enthusiasts.</dd>
-        <dt>Amplitude Modulation (AM)</dt>
-        <dd>Amplitude modulation is a method of transmitting information by varying the amplitude of a carrier signal. AM is commonly used for broadcasting and long-distance communication.</dd>
-        <dt>Amateur Radio Operator</dt>
-        <dd>An amateur radio operator is an individual who has been licenced by a government authority to operate an amateur radio station. Operators use their licences to communicate with other operators around the world.</dd>
-        <dt>Antenna Tuner</dt>
-        <dd>An antenna tuner is a device used to match the impedance of an antenna system to the impedance of a transmitter or receiver. It helps optimize the performance of the antenna system and reduce standing wave ratio (SWR).</dd>
-        <dt>Amateur Radio Band Plan</dt>
-        <dd>An amateur radio band plan is a set of guidelines and rules that define how different frequency bands are used by amateur radio operators. Band plans help organize and coordinate radio communication to minimize interference and maximize efficiency.</dd>
-        <dt>Amateur Radio Emergency Service (ARES)</dt>
-        <dd>The Amateur Radio Emergency Service is a volunteer organization of licenced amateur radio operators who provide emergency communication support during disasters and other emergencies. ARES operators work closely with local agencies to ensure reliable communication when other systems fail.</dd>
-        <dt>Amateur Radio Satellite</dt>
-        <dd>An amateur radio satellite is an artificial satellite designed to enable communication between amateur radio operators. Satellites provide a unique platform for long-distance communication and experimentation in the hobby.</dd>
-        <dt>Amateur Radio Contest</dt>
-        <dd>An amateur radio contest is an event in which operators compete to make as many contacts as possible within a specified time frame. Contests are popular among operators and provide an opportunity to test their skills and equipment.</dd>
-        <dt>Amateur Radio licence</dt>
-        <dd>An amateur radio licence is an authorization granted by a government authority that allows an individual to operate amateur radio equipment. licences are granted at different levels, each with its own set of operating privileges.</dd>
-        <dt>Amateur Radio Relay</dt>
-        <dd>An amateur radio relay is a station that receives a signal from one station and retransmits it to another station. Relays are used to extend the range of communication and facilitate contacts between operators.</dd>
-        <dt>Amateur Radio Repeater</dt>
-        <dd>An amateur radio repeater is a station that receives a signal on one frequency and retransmits it on another frequency. Repeaters are commonly used to extend the range of communication and improve signal quality.</dd>
-        <dt>Amateur Radio Technician Class licence</dt>
-        <dd>The Technician Class licence is the entry-level licence in amateur radio in the United States of America. It grants operators access to certain VHF and UHF frequencies and limited HF privileges.</dd>
-        <dt>Amateur Radio Q Codes</dt>
-        <dd>Q codes are a set of three-letter codes used in amateur radio communication to convey common messages and questions. Q codes help operators communicate quickly and efficiently, especially in Morse code.</dd>
-        <dt>Amateur Radio DXing</dt>
-        <dd>DXing is the hobby of making long-distance contacts with other amateur radio operators around the world. DXers use specialized equipment and techniques to communicate with stations in distant locations.</dd>
-        <dt>Amateur Radio QRP Operation</dt>
-        <dd>QRP operation refers to low-power operation in amateur radio, typically using 5 watts or less. QRP operators enjoy the challenge of making long-distance contacts with minimal power.</dd>
-        <dt>Amateur Radio QSL Card</dt>
-        <dd>A QSL card is a written confirmation of a radio contact between two amateur radio operators. QSL cards are often exchanged as a form of acknowledgment and as a collectible item.</dd>
-        <dt>Amateur Radio QSO</dt>
-        <dd>A QSO is a radio contact or conversation between two amateur radio operators. QSOs can be brief exchanges or longer conversations, depending on the operators' interests and goals.</dd>
-        <dt>Amateur Radio SWR Meter</dt>
-        <dd>An SWR meter is a device used to measure the standing wave ratio (SWR) of an antenna system. SWR meters help operators optimize their antenna systems for efficient power transfer and minimal signal loss.</dd>
-        <dt>Amateur Radio VHF/UHF Bands</dt>
-        <dd>The VHF (Very High Frequency) and UHF (Ultra High Frequency) bands are portions of the radio spectrum used by amateur radio operators for local and regional communication. VHF and UHF bands are popular for repeater operation and satellite communication.</dd>
-        <dt>Amateur Radio HF Bands</dt>
-        <dd>The HF (High Frequency) bands are portions of the radio spectrum used by amateur radio operators for long-distance communication. HF bands are known for their ability to reflect off the ionosphere and travel great distances.</dd>
-        <dt>Amateur Radio Digital Modes</dt>
-        <dd>Digital modes are methods of transmitting data over radio waves using digital signals. Digital modes allow for more efficient and reliable communication compared to traditional analog modes.</dd>
-    </dl>
-
-    <h3 id="letter-B">B</h3>
-    <dl>
-        <dt>Band</dt>
-        <dd>In amateur radio, a band refers to a range of frequencies that are allocated for specific types of communication. Different bands are used for different modes of communication, such as voice, Morse code, and data.</dd>
-        <dt>Beacon</dt>
-        <dd>A beacon is a radio transmitter that sends out a continuous or periodic signal for the purpose of navigation or location finding.</dd>
-        <dt>BPSK31</dt>
-        <dd>BPSK31 is a digital mode used for weak signal communication in amateur radio. It is popular for its efficiency and ability to decode signals under poor conditions.</dd>
-        <dt>Balun</dt>
-        <dd>A balun is a device used to balance unbalanced transmission lines and antennas. It helps prevent common-mode currents and improve the performance of the antenna system.</dd>
-        <dt>Bandwidth</dt>
-        <dd>Bandwidth refers to the range of frequencies over which a radio signal is transmitted. It is an important factor in determining the quality and efficiency of communication.</dd>
-        <dt>Beacon Frequency</dt>
-        <dd>A beacon frequency is a specific frequency used by amateur radio operators to transmit automated signals for propagation testing and monitoring.</dd>
-        <dt>Battery Backup</dt>
-        <dd>Battery backup is a system that provides emergency power to amateur radio equipment in the event of a power outage. It ensures that operators can continue to communicate during emergencies.</dd>
-        <dt>Break</dt>
-        <dd>Break is a term used in amateur radio to interrupt ongoing communication and request permission to join the conversation. It is commonly used during nets and group discussions.</dd>
-        <dt>Band Plan</dt>
-        <dd>A band plan is a set of guidelines and rules that define how different frequency bands are used by amateur radio operators. Band plans help organize and coordinate radio communication to minimize interference and maximize efficiency.</dd>
-        <dt>Beacon Station</dt>
-        <dd>A beacon station is a radio transmitter that sends out a continuous or periodic signal for the purpose of navigation or location finding. Beacon stations are used for propagation testing and monitoring.</dd>
-        <dt>BFO (Beat Frequency Oscillator)</dt>
-        <dd>A BFO is an oscillator used in radio receivers to generate an audio tone that allows operators to hear Morse code and single sideband (SSB) signals.</dd>
-        <dt>BPSK (Binary Phase Shift Keying)</dt>
-        <dd>BPSK is a digital modulation scheme used in amateur radio to transmit data by shifting the phase of the carrier signal. BPSK is popular for its simplicity and robustness.</dd>
-        <dt>Band Edge</dt>
-        <dd>The band edge is the boundary between two adjacent frequency bands. Operators must be aware of band edges to avoid interference and comply with band plan regulations.</dd>
-        <dt>Band Noise</dt>
-        <dd>Band noise is the background noise present in a radio band due to natural and man made interference. It can affect the quality of communication and signal reception.</dd>
-        <dt>Band Plan Coordinator</dt>
-        <dd>A band plan coordinator is an individual or group responsible for developing and maintaining a band plan for amateur radio operators. Band plan coordinators work to ensure efficient and interference-free communication on the airwaves.</dd>
-        <dt>Bandwidth Efficiency</dt>
-        <dd>Bandwidth efficiency is a measure of how efficiently a radio signal uses the available frequency spectrum. Efficient use of bandwidth is important for maximizing communication capacity and minimizing interference.</dd>
-        <dt>Base Station</dt>
-        <dd>A base station is a fixed amateur radio station located at a specific location, such as a home or office. Base stations are typically equipped with more powerful transmitters and antennas than portable or mobile stations.</dd>
-        <dt>Beacon Signal</dt>
-        <dd>A beacon signal is a continuous or periodic radio signal transmitted by a beacon station for the purpose of propagation testing and monitoring. Beacon signals help operators assess radio conditions and plan their communication strategies.</dd>
-        <dt>Band Plan Frequency</dt>
-        <dd>A band plan frequency is a specific frequency within an amateur radio band that is designated for a particular mode of communication or activity. Band plan frequencies help operators organize and coordinate their contacts on the airwaves.</dd>
-        <dt>Bandwidth Allocation</dt>
-        <dd>Bandwidth allocation is the process of assigning specific frequency ranges to different types of communication within an amateur radio band. Bandwidth allocation helps operators avoid interference and make efficient use of the available spectrum.</dd>
-        <dt>Base Load</dt>
-        <dd>Base load is the minimum power required to maintain communication between two amateur radio stations. It is an important consideration when operating under low-power conditions or during poor propagation conditions.</dd>
-        <dt>Beacon Transmission</dt>
-        <dd>Beacon transmission is the process of sending out a continuous or periodic radio signal from a beacon station. Beacon transmissions are used for propagation testing, monitoring, and navigation.</dd>
-        <dt>Band Plan Segment</dt>
-        <dd>A band plan segment is a specific portion of an amateur radio band that is allocated for a particular mode of communication or activity. Band plan segments help operators organize their contacts and avoid interference.</dd>
-        <dt>Bandwidth Limit</dt>
-        <dd>Bandwidth limit is the maximum frequency range over which a radio signal is transmitted. Bandwidth limits are set by regulatory authorities to prevent interference and ensure efficient use of the radio spectrum.</dd>
-        <dt>Base Station Antenna</dt>
-        <dd>A base station antenna is a fixed antenna used at a specific location, such as a home or office. Base station antennas are typically larger and more powerful than portable or mobile antennas.</dd>
-        <dt>Beacon Frequency List</dt>
-        <dd>A beacon frequency list is a compilation of specific frequencies used by amateur radio operators for propagation testing and monitoring. Beacon frequency lists help operators identify and tune into beacon signals for assessing radio conditions.</dd>
-        <dt>Band Plan Update</dt>
-        <dd>A band plan update is a revision or modification to the guidelines and rules that define how different frequency bands are used by amateur radio operators. Band plan updates are made to accommodate changes in technology and operating practices.</dd>
-        <dt>Bandwidth Management</dt>
-        <dd>Bandwidth management is the process of optimizing the use of available frequency spectrum for efficient and interference-free communication. Bandwidth management is essential for maximizing communication capacity and minimizing signal loss.</dd>
-        <dt>Base Station Operation</dt>
-        <dd>Base station operation is the use of a fixed amateur radio station located at a specific location, such as a home or office. Base station operators enjoy the benefits of more powerful transmitters and antennas for long-distance communication.</dd>
-        <dt>Beacon Signal Strength</dt>
-        <dd>Beacon signal strength is the power level of a beacon signal received by an amateur radio operator. Beacon signal strength is an important factor in assessing radio conditions and planning communication strategies.</dd>
-        <dt>Band Plan Frequency Range</dt>
-        <dd>A band plan frequency range is a specific range of frequencies within an amateur radio band that is designated for a particular mode of communication or activity. Band plan frequency ranges help operators organize and coordinate their contacts on the airwaves.</dd>
-        <dt>Bandwidth Optimization</dt>
-        <dd>Bandwidth optimization is the process of maximizing the efficiency of a radio signal within the available frequency spectrum. Bandwidth optimization helps operators achieve reliable communication and minimize interference.</dd>
-        <dt>Base Station Equipment</dt>
-        <dd>Base station equipment is the radio transmitters, receivers, antennas, and accessories used at a fixed amateur radio station located at a specific location, such as a home or office.</dd>
-        <dt>Beacon Signal Monitoring</dt>
-        <dd>Beacon signal monitoring is the practice of listening for and analyzing beacon signals transmitted by beacon stations. Beacon signal monitoring helps operators assess radio conditions and plan their communication strategies.</dd>
-        <dt>Band Plan Frequency Allocation</dt>
-        <dd>A band plan frequency allocation is the assignment of specific frequencies within an amateur radio band for different types of communication or activities. Band plan frequency allocations help operators avoid interference and make efficient use of the available spectrum.</dd>
-        <dt>Bandwidth Requirements</dt>
-        <dd>Bandwidth requirements are the specific frequency ranges needed for different types of communication within an amateur radio band. Bandwidth requirements help operators plan their contacts and avoid interference.</dd>
-        <dt>Base Station Location</dt>
-        <dd>Base station location is the physical site of a fixed amateur radio station, such as a home or office. Base station operators choose their locations carefully to optimize antenna performance and minimize interference.</dd>
-        <dt>Beacon Signal Propagation</dt>
-        <dd>Beacon signal propagation is the transmission of a beacon signal through the Earth's atmosphere. Beacon signal propagation is affected by factors such as ionospheric conditions, weather, and terrain.</dd>
-        <dt>Band Plan Frequency Chart</dt>
-        <dd>A band plan frequency chart is a visual representation of the frequency allocations within an amateur radio band. Band plan frequency charts help operators identify and tune into specific frequencies for different modes of communication.</dd>
-        <dt>Bandwidth Allocation Policy</dt>
-        <dd>Bandwidth allocation policy is a set of rules and guidelines that define how different frequency ranges are assigned for specific types of communication within an amateur radio band. Bandwidth allocation policies help operators organize their contacts and avoid interference.</dd>
-        <dt>Base Station Operation Mode</dt>
-        <dd>Base station operation mode is the method of communication used by a fixed amateur radio station located at a specific location, such as a home or office. Base station operators can choose from a variety of modes, including voice, Morse code, and digital.</dd>
-        <dt>Beacon Signal Reception</dt>
-        <dd>Beacon signal reception is the process of receiving and decoding a beacon signal transmitted by a beacon station. Beacon signal reception helps operators assess radio conditions and plan their communication strategies.</dd>
-        <dt>Band Plan Frequency Coordination</dt>
-        <dd>Band plan frequency coordination is the process of organizing and assigning specific frequencies within an amateur radio band for different types of communication or activities. Band plan frequency coordination helps operators avoid interference and make efficient use of the available spectrum.</dd>
-        <dt>Bandwidth Utilization</dt>
-        <dd>Bandwidth utilization is the efficient use of available frequency spectrum for communication within an amateur radio band. Bandwidth utilization helps operators maximize communication capacity and minimize interference.</dd>
-        <dt>Base Station Antenna Installation</dt>
-        <dd>A base station antenna installation is the process of setting up and configuring antennas at a fixed amateur radio station located at a specific location, such as a home or office. Base station antenna installations are critical for optimizing performance and minimizing interference.</dd>
-        <dt>Beacon Signal Propagation Characteristics</dt>
-        <dd>Beacon signal propagation characteristics are the properties of how beacon signals are transmitted through the Earth's atmosphere. Beacon signal propagation characteristics help operators assess radio conditions and plan their communication strategies.</dd>
-        <dt>Band Plan Frequency Coordination Process</dt>
-        <dd>Band plan frequency coordination process is the procedure for organizing and assigning specific frequencies within an amateur radio band for different types of communication or activities. Band plan frequency coordination processes help operators avoid interference and make efficient use of the available spectrum.</dd>
-        <dt>Bandwidth Utilization Optimization</dt>
-        <dd>Bandwidth utilization optimization is the process of maximizing the efficiency of a radio signal within the available frequency spectrum. Bandwidth utilization optimization helps operators achieve reliable communication and minimize interference.</dd>
-        <dt>Base Station Antenna Configuration</dt>
-        <dd>A base station antenna configuration is the arrangement of antennas used at a fixed amateur radio station located at a specific location, such as a home or office. Base station antenna configurations are designed to optimize performance and minimize interference.</dd>
-    </dl>
-
-    <h3 id="letter-C">C</h3>
-    <dl>
-        <dt>Callsign</dt>
-        <dd>A callsign is a unique identifier assigned to an amateur radio operator by the licensing authority. Callsigns are used to identify operators during radio communications and are typically a combination of letters and numbers.</dd>
-        <dt>CQ</dt>
-        <dd>CQ is a general call to all amateur radio operators, indicating that the sender is seeking any station to respond.</dd>
-        <dt>Contest</dt>
-        <dd>An amateur radio contest is an event in which operators compete to make as many contacts as possible within a specified time frame. Contests are popular among operators and provide an opportunity to test their skills and equipment.</dd>
-        <dt>Coaxial Cable</dt>
-        <dd>Coaxial cable is a type of electrical cable consisting of an inner conductor surrounded by a tubular insulating layer and a conducting shield. Coaxial cable is commonly used in amateur radio for transmitting radio signals between equipment.</dd>
-        <dt>CW (Continuous Wave)</dt>
-        <dd>CW is a mode of communication in amateur radio that uses Morse code. CW is popular for its simplicity and efficiency, especially for long-distance communication.</dd>
-        <dt>Contest Exchange</dt>
-        <dd>A contest exchange is the information exchanged between operators during an amateur radio contest. The exchange typically includes callsigns, signal reports, and other relevant details.</dd>
-        <dt>Contest Logging Software</dt>
-        <dd>Contest logging software is a computer program used by amateur radio operators to log contacts during contests. Logging software helps operators track their progress, manage contacts, and submit contest entries.</dd>
-        <dt>Contest QSO</dt>
-        <dd>A contest QSO is a radio contact made between two amateur radio operators during a contest. Contest QSOs are typically brief exchanges of information to confirm the contact.</dd>
-        <dt>Contest Rules</dt>
-        <dd>Contest rules are the guidelines and regulations that govern amateur radio contests. Rules specify the duration, operating bands, exchange information, and scoring criteria for each contest.</dd>
-        <dt>Contest Software</dt>
-        <dd>Contest software is a computer program used by amateur radio operators to assist with contesting activities. Contest software may include logging, scoring, and station automation features.</dd>
-        <dt>Contest Station</dt>
-        <dd>A contest station is a specialized amateur radio station designed for contesting activities. Contest stations are equipped with high-performance transceivers, antennas, and accessories to maximize contact rates and scores.</dd>
-        <dt>Contest Strategy</dt>
-        <dd>Contest strategy is the plan of action developed by amateur radio operators to maximize their performance during a contest. Strategies may include band selection, operating times, and contact priorities.</dd>
-        <dt>Contest Time</dt>
-        <dd>Contest time is the duration of an amateur radio contest, typically ranging from a few hours to several days. Contest time is used to determine the start and end times of the event.</dd>
-        <dt>Contestant</dt>
-        <dd>A contestant is an amateur radio operator who participates in a contest. Contestants compete against each other to make as many contacts as possible and earn points based on specific criteria.</dd>
-        <dt>Contest Exchange Information</dt>
-        <dd>Contest exchange information is the data exchanged between operators during an amateur radio contest. Exchange information typically includes callsigns, signal reports, and other relevant details.</dd>
-        <dt>Contest Logging Program</dt>
-        <dd>Contest logging program is a computer program used by amateur radio operators to log contacts during contests. Logging programs help operators track their progress, manage contacts, and submit contest entries.</dd>
-        <dt>Contest QSO Confirmation</dt>
-        <dd>A contest QSO confirmation is the acknowledgment of a radio contact made between two amateur radio operators during a contest. Confirmation may include signal reports, callsigns, and other relevant details.</dd>
-        <dt>Contest Rules Compliance</dt>
-        <dd>Contest rules compliance is the adherence to the guidelines and regulations that govern amateur radio contests. Compliance ensures fair play and accurate scoring for all participants.</dd>
-        <dt>Contest Software Features</dt>
-        <dd>Contest software features are the functions and capabilities of computer programs used by amateur radio operators to assist with contesting activities. Features may include logging, scoring, and station automation.</dd>
-        <dt>Contest Station Equipment</dt>
-        <dd>Contest station equipment is the radio transmitters, receivers, antennas, and accessories used at a specialized amateur radio station designed for contesting activities. Contest stations are equipped with high-performance gear to maximize contact rates and scores.</dd>
-        <dt>Contest Strategy Development</dt>
-        <dd>Contest strategy development is the process of creating a plan of action to maximize performance during an amateur radio contest. Strategies may include band selection, operating times, and contact priorities.</dd>
-        <dt>Contest Time Frame</dt>
-        <dd>Contest time frame is the duration of an amateur radio contest, typically ranging from a few hours to several days. Contest time frame is used to determine the start and end times of the event.</dd>
-        <dt>Contestant Participation</dt>
-        <dd>Contestant participation is the involvement of amateur radio operators in a contest. Contestants compete against each other to make as many contacts as possible and earn points based on specific criteria.</dd>
-        <dt>Contest Exchange Protocol</dt>
-        <dd>Contest exchange protocol is the procedure for exchanging information between operators during an amateur radio contest. Exchange protocols ensure accurate and efficient communication between participants.</dd>
-        <dt>Contest Logging Software Features</dt>
-        <dd>Contest logging software features are the functions and capabilities of computer programs used by amateur radio operators to log contacts during contests. Features may include logging, scoring, and station automation.</dd>
-        <dt>Contest QSO Confirmation Process</dt>
-        <dd>A contest QSO confirmation process is the acknowledgment of a radio contact made between two amateur radio operators during a contest. Confirmation may include signal reports, callsigns, and other relevant details.</dd>
-        <dt>Contest Rules Enforcement</dt>
-        <dd>Contest rules enforcement is the application of guidelines and regulations that govern amateur radio contests. Enforcement ensures fair play and accurate scoring for all participants.</dd>
-        <dt>Contest Software Functionality</dt>
-        <dd>Contest software functionality is the set of functions and capabilities of computer programs used by amateur radio operators to assist with contesting activities. Functionality may include logging, scoring, and station automation.</dd>
-        <dt>Contest Station Configuration</dt>
-        <dd>Contest station configuration is the arrangement of radio transmitters, receivers, antennas, and accessories used at a specialized amateur radio station designed for contesting activities. Configurations are optimized for high-performance operation.</dd>
-        <dt>Contest Strategy Implementation</dt>
-        <dd>Contest strategy implementation is the execution of a plan of action to maximize performance during an amateur radio contest. Strategies may include band selection, operating times, and contact priorities.</dd>
-        <dt>Contest Time Management</dt>
-        <dd>Contest time management is the effective use of time during an amateur radio contest to maximize contact rates and scores. Time management is critical for achieving success in competitive events.</dd>
-        <dt>Contestant Performance Evaluation</dt>
-        <dd>Contestant performance evaluation is the assessment of an amateur radio operator's performance during a contest. Evaluations may include contact rates, scores, and adherence to contest rules.</dd>
-        <dt>Contest Exchange Information Protocol</dt>
-        <dd>Contest exchange information protocol is the procedure for exchanging data between operators during an amateur radio contest. Exchange protocols ensure accurate and efficient communication between participants.</dd>
-        <dt>Contest Logging Software Functionality</dt>
-        <dd>Contest logging software functionality is the set of functions and capabilities of computer programs used by amateur radio operators to log contacts during contests. Functionality may include logging, scoring, and station automation.</dd>
-        <dt>Contest QSO Confirmation Procedure</dt>
-        <dd>A contest QSO confirmation procedure is the acknowledgment of a radio contact made between two amateur radio operators during a contest. Confirmation may include signal reports, callsigns, and other relevant details.</dd>
-        <dt>Contest Rules Interpretation</dt>
-        <dd>Contest rules interpretation is the understanding and application of guidelines and regulations that govern amateur radio contests. Interpretation ensures fair play and accurate scoring for all participants.</dd>
-    </dl>
-
-    <h3 id="letter-H">H</h3>
-    <dl>
-        <dt>HOTA</dt>
-        <dd>Houses on the Air - An amateur radio activity that encourages operators to set up and operate from various house locations.</dd>
-
-        <dt>HF</dt>
-        <dd>High Frequency - Radio frequencies between 3 and 30 MHz, commonly used for long-distance communication in amateur radio.</dd>
-
-        <dt>Halyard</dt>
-        <dd>A rope used to raise and lower antennas on a mast or tower.</dd>
-
-        <dt>HF (High Frequency)</dt>
-        <dd>HF refers to the range of radio frequencies from 3 to 30 MHz. HF bands are commonly used for long-distance communication because they can reflect off the ionosphere and travel great distances.</dd>
-        <dt>Hamfest</dt>
-        <dd>A hamfest is a gathering of amateur radio enthusiasts, typically featuring swap meets, vendor exhibits, and educational sessions.</dd>
-        <dt>Handheld Transceiver</dt>
-        <dd>A handheld transceiver is a portable radio transceiver that can be carried and operated by hand. Handheld transceivers are popular for their compact size and versatility.</dd>
-        <dt>HF Band</dt>
-        <dd>An HF band is a range of radio frequencies from 3 to 30 MHz allocated for long-distance communication. HF bands are used for voice, Morse code, and digital communication.</dd>
-        <dt>Ham Radio</dt>
-        <dd>Ham radio is a popular term for amateur radio, a hobby and service that allows licenced operators to communicate with each other using radio waves.</dd>
-        <dt>Half-Wave Dipole Antenna</dt>
-        <dd>A half-wave dipole antenna is a simple antenna consisting of two conductive elements that are each half the wavelength of the desired operating frequency. Half-wave dipoles are popular for their simplicity and efficiency.</dd>
-        <dt>HF Propagation</dt>
-        <dd>HF propagation is the behavior of radio waves in the high-frequency range as they travel through the Earth's atmosphere. Understanding HF propagation is essential for predicting how radio signals will travel and where they will be received.</dd>
-        <dt>Ham Radio licence</dt>
-        <dd>A ham radio licence is an authorization granted by a government authority that allows an individual to operate amateur radio equipment. Different licence classes grant different operating privileges.</dd>
-        <dt>Handheld Transceiver Operation</dt>
-        <dd>Handheld transceiver operation is the use of a portable radio transceiver that can be carried and operated by hand. Handheld transceivers are popular for their compact size and versatility.</dd>
-        <dt>HF Band Allocation</dt>
-        <dd>An HF band allocation is the assignment of specific frequency ranges from 3 to 30 MHz for long-distance communication. HF bands are used for voice, Morse code, and digital communication.</dd>
-        <dt>Ham Radio Operator</dt>
-        <dd>A ham radio operator is an individual who holds a licence to operate amateur radio equipment. Ham radio operators communicate with each other using radio waves for personal, recreational, and emergency communication purposes.</dd>
-        <dt>Half-Wave Dipole Antenna Design</dt>
-        <dd>A half-wave dipole antenna design is a simple antenna configuration consisting of two conductive elements that are each half the wavelength of the desired operating frequency. Half-wave dipoles are popular for their simplicity and efficiency.</dd>
-        <dt>HF Propagation Prediction</dt>
-        <dd>HF propagation prediction is the process of forecasting how radio waves in the high-frequency range will travel through the Earth's atmosphere. Prediction helps operators optimize their communication systems for reliable and efficient operation.</dd>
-        <dt>Ham Radio licence Class</dt>
-        <dd>A ham radio licence class is a classification that determines an operator's operating privileges and responsibilities. licence classes range from entry-level Technician to advanced Extra, each granting different privileges.</dd>
-        <dt>Handheld Transceiver Features</dt>
-        <dd>Handheld transceiver features are the functions and capabilities of a portable radio transceiver that can be carried and operated by hand. Features may include frequency coverage, power output, and modulation modes.</dd>
-        <dt>HF Band Operation</dt>
-        <dd>An HF band operation is the use of specific frequency ranges from 3 to 30 MHz for long-distance communication. HF bands are used for voice, Morse code, and digital communication.</dd>
-        <dt>Ham Radio Operator Responsibilities</dt>
-        <dd>Ham radio operator responsibilities are the duties and obligations that operators must follow when using amateur radio equipment. Responsibilities include following operating practices, regulations, and good amateur radio etiquette.</dd>
-        <dt>Half-Wave Dipole Antenna Performance</dt>
-        <dd>A half-wave dipole antenna performance is the ability of a simple antenna configuration consisting of two conductive elements that are each half the wavelength of the desired operating frequency. Half-wave dipoles are popular for their simplicity and efficiency.</dd>
-        <dt>HF Propagation Forecasting</dt>
-        <dd>HF propagation forecasting is the process of predicting how radio waves in the high-frequency range will travel through the Earth's atmosphere. Forecasting helps operators optimize their communication systems for reliable and efficient operation.</dd>
-        <dt>Ham Radio licence Examination</dt>
-        <dd>A ham radio licence examination is a written test that operators must pass to obtain a licence to operate amateur radio equipment. The exam covers operating practices, regulations, and technical topics.</dd>
-    </dl>
-
-    <!-- Related Pages Section - Adding deep linking -->
-    <div class="card-panel blue-grey lighten-4 mt-4">
-        <h3>Related Pages</h3>
-        <div class="row">
-            <div class="col s12 m6">
-                <h4>Learn More About Amateur Radio</h4>
-                <ul class="browser-default">
-                    <li><a href="?page=get-licenced">How to Get licenced in Amateur Radio</a></li>
-                    <li><a href="?page=band-plans">Understanding Band Plans</a></li>
-                    <li><a href="?page=operating-guidelines">Operating Guidelines</a></li>
-                </ul>
+            <div class="row">
+                <div class="input-field col s12 m8">
+                    <i class="material-icons prefix">search</i>
+                    <input type="text" id="glossary-search" class="autocomplete" placeholder="Type to search...">
+                    <label for="glossary-search">Search</label>
+                </div>
+                <div class="input-field col s12 m4">
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <?php foreach($categories as $value => $label): ?>
+                            <option value="<?= $value ?>"><?= $label ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                    <label>Filter by Category</label>
+                </div>
             </div>
-            <div class="col s12 m6">
-                <h4>Get Involved with HOTA</h4>
-                <ul class="browser-default">
-                    <li><a href="?page=participate">How to Participate in HOTA</a></li>
-                    <li><a href="?page=house-activations">House Activation Guide</a></li>
-                    <li><a href="?page=discord">Join Our Discord Community</a></li>
-                </ul>
+
+            <!-- Alphabet Index -->
+            <div class="alphabet-index center-align">
+                <div class="alphabet-letter active" data-letter="all">ALL</div>
+                <?php foreach(range('A', 'Z') as $letter): ?>
+                    <div class="alphabet-letter" data-letter="<?= strtolower($letter) ?>"><?= $letter ?></div>
+                <?php endforeach; ?>
+                <div class="alphabet-letter" data-letter="num">#</div>
             </div>
         </div>
     </div>
-</section>
+
+    <!-- Glossary Content -->
+    <div class="glossary-container">
+        <!-- General Ham Radio Terms -->
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title"><i class="material-icons left">radio</i>Ham Radio Terminology</span>
+
+                <dl class="glossary-list">
+                    <dt id="amateur-radio" data-letter="a">Amateur Radio <span class="category-tag general">General</span></dt>
+                    <dd>A radio service for self-training, intercommunication and technical investigations carried out by licensed individuals interested in radio technique solely with a personal aim and without pecuniary interest.</dd>
+
+                    <dt id="band" data-letter="b">Band <span class="category-tag general">General</span></dt>
+                    <dd>A range of radio frequencies allocated for a specific purpose. Amateur radio operators are licensed to transmit on various bands.</dd>
+
+                    <dt id="callsign" data-letter="c">Callsign <span class="category-tag general">General</span></dt>
+                    <dd>A unique identifier assigned to licensed amateur radio operators typically consisting of a prefix indicating the country, followed by a number and additional letters.</dd>
+
+                    <dt id="dx" data-letter="d">DX <span class="category-tag general">General</span></dt>
+                    <dd>Distance or distant station. "Working DX" refers to making contacts with stations in far-away countries.</dd>
+
+                    <dt id="field-day" data-letter="f">Field Day <span class="category-tag general">General</span></dt>
+                    <dd>An annual amateur radio exercise where operators set up temporary stations in outdoor locations to practice emergency communications.</dd>
+
+                    <dt id="hota" data-letter="h">HOTA <span class="category-tag hota">HOTA</span></dt>
+                    <dd>Houses on The Air. An amateur radio activity where operators activate from or make contact with stations operating from residential locations.</dd>
+
+                    <dt id="activator" data-letter="a">Activator <span class="category-tag hota">HOTA</span></dt>
+                    <dd>An amateur radio operator who sets up and operates from a residential location for HOTA purposes.</dd>
+
+                    <dt id="hunter" data-letter="h">Hunter <span class="category-tag hota">HOTA</span></dt>
+                    <dd>An amateur radio operator who makes contacts with HOTA activators and collects addresses for award purposes.</dd>
+
+                    <dt id="qrm" data-letter="q">QRM <span class="category-tag q-code">Q-Code</span></dt>
+                    <dd>Interference from other stations. Used to indicate man-made interference is affecting communications.</dd>
+
+                    <dt id="qrn" data-letter="q">QRN <span class="category-tag q-code">Q-Code</span></dt>
+                    <dd>Natural interference. Used to indicate that natural atmospheric noise is affecting communications.</dd>
+
+                    <dt id="qrp" data-letter="q">QRP <span class="category-tag q-code">Q-Code</span></dt>
+                    <dd>Low power operation, typically defined as 5 watts or less for CW (Morse code) and 10 watts or less for voice modes.</dd>
+
+                    <dt id="qsl" data-letter="q">QSL <span class="category-tag q-code">Q-Code</span></dt>
+                    <dd>Confirmation of receipt. QSL cards are physical cards exchanged between operators to confirm a contact.</dd>
+
+                    <dt id="qso" data-letter="q">QSO <span class="category-tag q-code">Q-Code</span></dt>
+                    <dd>A conversation or contact between amateur radio operators.</dd>
+
+                    <dt id="qth" data-letter="q">QTH <span class="category-tag q-code">Q-Code</span></dt>
+                    <dd>Location or station location. "My QTH is London" means "I am located in London".</dd>
+
+                    <dt id="ssb" data-letter="s">SSB <span class="category-tag abbreviation">Abbreviation</span></dt>
+                    <dd>Single Sideband. An efficient form of amplitude modulation where only one sideband is transmitted.</dd>
+
+                    <dt id="cw" data-letter="c">CW <span class="category-tag abbreviation">Abbreviation</span></dt>
+                    <dd>Continuous Wave. Refers to Morse code transmissions using on-off keying of a carrier wave.</dd>
+
+                    <dt id="ft8" data-letter="f">FT8 <span class="category-tag modes">Mode</span></dt>
+                    <dd>A digital mode developed by Joe Taylor (K1JT) for weak-signal communication with 15-second transmit/receive cycles.</dd>
+
+                    <dt id="adif" data-letter="a">ADIF <span class="category-tag technical">Technical</span></dt>
+                    <dd>Amateur Data Interchange Format. A standardized format for exchanging amateur radio logbook information between different software applications.</dd>
+
+                    <dt id="antenna" data-letter="a">Antenna <span class="category-tag technical">Technical</span></dt>
+                    <dd>A device that converts radio frequency (RF) electrical signals to electromagnetic waves for transmission, or vice versa for reception.</dd>
+
+                    <dt id="swr" data-letter="s">SWR <span class="category-tag abbreviation">Abbreviation</span></dt>
+                    <dd>Standing Wave Ratio. A measure of how efficiently RF power is transmitted from the source through a transmission line to a load.</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- Suggest a Term -->
+    <div class="card-panel deep-purple lighten-5 mt-4">
+        <div class="row valign-wrapper">
+            <div class="col s12 m8">
+                <h3><i class="material-icons left">add_circle</i>Missing a Term?</h3>
+                <p class="flow-text">We're always expanding our glossary. If you know a term that should be included, please let us know!</p>
+            </div>
+            <div class="col s12 m4 center-align">
+                <a href="#suggest-term-modal" class="btn-large deep-purple modal-trigger waves-effect waves-light">
+                    <i class="material-icons left">edit</i>Suggest a Term
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Suggest Term Modal -->
+    <div id="suggest-term-modal" class="modal">
+        <div class="modal-content">
+            <h4>Suggest a Term</h4>
+            <p>Fill out this form to suggest a new term for inclusion in our glossary.</p>
+
+            <div class="row">
+                <form class="col s12" id="suggest-term-form" data-ajax="true" data-result-container="#suggest-result">
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <input id="suggest-name" name="suggest-name" type="text" class="validate" required>
+                            <label for="suggest-name">Your Name</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="suggest-email" name="suggest-email" type="email" class="validate" required>
+                            <label for="suggest-email">Your Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="suggest-term" name="suggest-term" type="text" class="validate" required>
+                            <label for="suggest-term">Term or Abbreviation</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <select id="suggest-category" name="suggest-category" required>
+                                <option value="" disabled selected>Select Category</option>
+                                <?php foreach($categories as $value => $label): ?>
+                                    <option value="<?= $value ?>"><?= $label ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                            <label>Term Category</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="suggest-callsign" name="suggest-callsign" type="text">
+                            <label for="suggest-callsign">Your Callsign (optional)</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="suggest-definition" name="suggest-definition" class="materialize-textarea validate" required></textarea>
+                            <label for="suggest-definition">Definition or Explanation</label>
+                        </div>
+                    </div>
+                    <div id="suggest-result"></div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-light btn-flat">Cancel</a>
+            <button type="submit" form="suggest-term-form" class="waves-effect waves-light btn blue-grey darken-1">Submit</button>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <div class="fixed-action-btn">
+        <a href="#top" class="btn-floating btn-large blue-grey darken-1" id="back-to-top">
+            <i class="large material-icons">arrow_upward</i>
+        </a>
+    </div>
+</div>
+
+<style>
+/* Alphabetical Index */
+.alphabet-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 3px;
+}
+.alphabet-letter {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eceff1;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+.alphabet-letter:hover { background-color: #cfd8dc; }
+.alphabet-letter.active {
+    background-color: #607d8b;
+    color: white;
+}
+
+/* Glossary List */
+.glossary-list dt {
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #eceff1;
+    padding: 10px 0 5px;
+    color: #455a64;
+    scroll-margin-top: 100px;
+}
+.glossary-list dd {
+    margin: 0 0 20px 0;
+    padding: 5px 0 15px 20px;
+    line-height: 1.5;
+}
+
+/* Category Tags */
+.category-tag {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-left: 8px;
+    color: white;
+    vertical-align: middle;
+}
+.category-tag.general { background-color: #546e7a; }
+.category-tag.hota { background-color: #00897b; }
+.category-tag.q-code { background-color: #7e57c2; }
+.category-tag.modes { background-color: #f57c00; }
+.category-tag.technical { background-color: #0288d1; }
+.category-tag.abbreviation { background-color: #689f38; }
+
+/* Other Styles */
+.term-of-day-icon {
+    font-size: 6rem;
+    color: #607d8b;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+.mt-4 { margin-top: 2rem; }
+#back-to-top {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+#back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.highlight-term {
+    background-color: #ffecb3;
+    padding: 0 3px;
+}
+
+@media only screen and (max-width: 600px) {
+    .alphabet-letter {
+        width: 30px;
+        height: 30px;
+        font-size: 0.85rem;
+    }
+    #back-to-top {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+</style>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Add smooth scrolling for glossary navigation
-        document.querySelectorAll('.glossary-navigation a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Materialize components
+    M.FormSelect.init(document.querySelectorAll('select'));
+    M.Modal.init(document.querySelectorAll('.modal'));
 
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
+    // Back to top button
+    const backToTopButton = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    });
 
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 100,
-                        behavior: 'smooth'
-                    });
+    // Glossary filtering
+    const glossaryTerms = document.querySelectorAll('dt');
+    const searchInput = document.getElementById('glossary-search');
+    const categoryFilter = document.getElementById('category-filter');
+    const alphabetLetters = document.querySelectorAll('.alphabet-letter');
+
+    // Search and category filter
+    function filterGlossary() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const category = categoryFilter.value;
+
+        // Reset alphabet filter visual state
+        alphabetLetters.forEach(l => l.classList.remove('active'));
+        document.querySelector('.alphabet-letter[data-letter="all"]').classList.add('active');
+
+        glossaryTerms.forEach(term => {
+            const termText = term.textContent.toLowerCase();
+            const termCategory = term.querySelector('.category-tag').classList[1];
+            const termDef = term.nextElementSibling.textContent.toLowerCase();
+
+            // Category and search filter
+            const categoryMatch = (category === 'all' || termCategory === category);
+            const searchMatch = !searchTerm || (termText.includes(searchTerm) || termDef.includes(searchTerm));
+
+            if (categoryMatch && searchMatch) {
+                term.style.display = 'block';
+                term.nextElementSibling.style.display = 'block';
+
+                // Highlight search terms
+                if (searchTerm) {
+                    highlightSearchTerm(term, searchTerm);
+                    highlightSearchTerm(term.nextElementSibling, searchTerm);
+                } else {
+                    removeHighlights(term);
+                    removeHighlights(term.nextElementSibling);
+                }
+            } else {
+                term.style.display = 'none';
+                term.nextElementSibling.style.display = 'none';
+            }
+        });
+    }
+
+    // Apply event listeners
+    searchInput.addEventListener('keyup', filterGlossary);
+    categoryFilter.addEventListener('change', filterGlossary);
+
+    // Alphabet filter functionality
+    alphabetLetters.forEach(letter => {
+        letter.addEventListener('click', function() {
+            // Reset other filters
+            searchInput.value = '';
+            categoryFilter.value = 'all';
+            M.FormSelect.init(categoryFilter);
+
+            // Update active state
+            alphabetLetters.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+
+            const filterLetter = this.getAttribute('data-letter');
+
+            glossaryTerms.forEach(term => {
+                const termLetter = term.getAttribute('data-letter');
+
+                if (filterLetter === 'all') {
+                    term.style.display = 'block';
+                    term.nextElementSibling.style.display = 'block';
+                } else if (filterLetter === 'num' && !isNaN(termLetter.charAt(0))) {
+                    term.style.display = 'block';
+                    term.nextElementSibling.style.display = 'block';
+                } else if (termLetter === filterLetter) {
+                    term.style.display = 'block';
+                    term.nextElementSibling.style.display = 'block';
+                } else {
+                    term.style.display = 'none';
+                    term.nextElementSibling.style.display = 'none';
                 }
             });
         });
     });
+
+    function highlightSearchTerm(element, searchTerm) {
+        removeHighlights(element);
+        let html = element.innerHTML;
+        const regex = new RegExp(`(${searchTerm})`, 'gi');
+        html = html.replace(regex, '<span class="highlight-term">$1</span>');
+        element.innerHTML = html;
+    }
+
+    function removeHighlights(element) {
+        element.innerHTML = element.innerHTML.replace(/<span class="highlight-term">(.*?)<\/span>/g, '$1');
+    }
+});
 </script>
-</section>

@@ -333,10 +333,10 @@ $pageDescription = "Join the Houses on the Air community events including field 
             <p>Keep track of all HOTA events using your favorite calendar application.</p>
 
             <div class="calendar-btns center-align">
-                <a href="https://calendar.google.com/calendar/ical/123abc%40group.calendar.google.com/public/basic.ics" class="btn waves-effect waves-light blue-grey darken-1 m-1">
+                <a href="https://calendar.google.com/calendar/ical/123abc%40group.calendar.google.com/public/basic.ics" class="btn waves-effect waves-light blue-grey darken-1 m-1" rel="nofollow">
                     <i class="material-icons left">add</i>Google Calendar
                 </a>
-                <a href="webcal://hota.org.uk/calendar/hota-events.ics" class="btn waves-effect waves-light blue-grey darken-1 m-1">
+                <a href="webcal://hota.org.uk/calendar/hota-events.ics" class="btn waves-effect waves-light blue-grey darken-1 m-1" rel="nofollow">
                     <i class="material-icons left">add</i>Apple/Outlook
                 </a>
                 <a href="/calendar/hota-events.ics" class="btn waves-effect waves-light blue-grey darken-1 m-1">

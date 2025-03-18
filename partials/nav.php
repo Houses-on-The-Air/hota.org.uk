@@ -57,5 +57,10 @@
     <li><div class="divider"></div></li>
     <li><a href="?page=discord"><i class="material-icons">forum</i>Join our Discord</a></li>
     <li><a href="?page=support-us"><i class="material-icons">favorite</i>Support Us</a></li>
+    <li><a href="https://www.facebook.com/HOTARADIO" target="_blank" rel="nofollow">Facebook</a></li>
+    <li><a href="https://www.x.com/housesontheair" target="_blank" rel="nofollow">Twitter</a></li>
+    <li><a href="https://bsky.app/profile/hotaradio.bsky.social" target="_blank" rel="nofollow">Bluesky</a></li>
+    <li><a href="https://www.reddit.com/r/housesontheair" target="_blank" rel="nofollow">Reddit</a></li>
+    <li><a href="https://patreon.com/HousesonTheAir" target="_blank" rel="nofollow">Patreon</a></li>
   </ul>
 </header>

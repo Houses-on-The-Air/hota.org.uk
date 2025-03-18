@@ -81,7 +81,7 @@ $pageDescription = "Information about advertising opportunities on the Houses on
                     <h4>Contact Information</h4>
                     <p>To discuss advertising opportunities, please contact our advertising team:</p>
                     <ul class="contact-details">
-                        <li><i class="material-icons left tiny">email</i> <a href="mailto:<?= ConfigManager::get('email.advertising'); ?>"><?= ConfigManager::get('email.advertising'); ?></a></li>
+                        <li><i class="material-icons left tiny">email</i> <a href="mailto:<?= ConfigManager::get('email.advertising'); ?>" rel="nofollow"><?= ConfigManager::get('email.advertising'); ?></a></li>
                         <li><i class="material-icons left tiny">schedule</i> Response time: 1-2 business days</li>
                     </ul>
 

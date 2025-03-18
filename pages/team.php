@@ -25,7 +25,7 @@ $pageDescription = "Meet the passionate team behind Houses on the Air (HOTA), th
                     <p>Our team brings together diverse skills and backgrounds with one common passion - amateur radio and the unique stories of houses around the world.</p>
                 </div>
                 <div class="col s12 m4 center-align hide-on-small-only">
-                    <img src="/images/team-collaboration.svg" alt="Team Collaboration" class="responsive-img" style="max-width: 180px;">
+                    <img src="/images/team-collaboration.jpg" alt="Team Collaboration" class="responsive-img" style="max-width: 180px;">
                 </div>
             </div>
         </div>

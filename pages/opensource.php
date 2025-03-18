@@ -142,7 +142,7 @@ $pageDescription = "Learn about the open source technologies behind Houses on th
                         <i class="material-icons medium">emoji_events</i>
                     </div>
                     <div class="col s10 m11">
-                        <p class="no-margin-top">All contributors are recognized on our <a href="?page=contributors">Contributors Page</a> and in our repository. We value every contribution, big or small!</p>
+                        <p class="no-margin-top">All contributors are recognised on our repository. We value every contribution, big or small!</p>
                     </div>
                 </div>
             </div>
@@ -179,19 +179,19 @@ $pageDescription = "Learn about the open source technologies behind Houses on th
                     <i class="material-icons circle blue-grey">code</i>
                     <span class="title"><strong>HAMRS</strong></span>
                     <p>Modern amateur radio logging software that runs on Windows, macOS, Linux, iOS and Android.</p>
-                    <a href="https://hamrs.app" class="secondary-content" target="_blank" rel="noopener"><i class="material-icons">launch</i></a>
+                    <a href="https://hamrs.app" class="secondary-content" target="_blank" rel="noopener nofollow"><i class="material-icons">launch</i></a>
                 </li>
                 <li class="collection-item avatar">
                     <i class="material-icons circle blue-grey">code</i>
                     <span class="title"><strong>JS8Call</strong></span>
                     <p>Weak signal HF digital mode supporting messaging, store-and-forward messaging, and network relay.</p>
-                    <a href="http://js8call.com/" class="secondary-content" target="_blank" rel="noopener"><i class="material-icons">launch</i></a>
+                    <a href="http://js8call.com/" class="secondary-content" target="_blank" rel="noopener nofollow"><i class="material-icons">launch</i></a>
                 </li>
                 <li class="collection-item avatar">
                     <i class="material-icons circle blue-grey">code</i>
                     <span class="title"><strong>WSJT-X</strong></span>
                     <p>Weak signal communications software implementing JT65, FT8, FT4, and other digital modes.</p>
-                    <a href="https://physics.princeton.edu/pulsar/k1jt/wsjtx.html" class="secondary-content" target="_blank" rel="noopener"><i class="material-icons">launch</i></a>
+                    <a href="https://wsjt.sourceforge.io/wsjtx.html" class="secondary-content" target="_blank" rel="noopener nofollow"><i class="material-icons">launch</i></a>
                 </li>
             </ul>
         </div>
@@ -208,7 +208,7 @@ $pageDescription = "Learn about the open source technologies behind Houses on th
                 </a>
             </div>
             <div class="col s12 m6">
-                <a href="https://github.com/Houses-on-The-Air/hota.org.uk/discussions" target="_blank" rel="noopener" class="btn-large deep-purple waves-effect waves-light full-width-btn">
+                <a href="https://github.com/Houses-on-The-Air/hota.org.uk/discussions" target="_blank" rel="noopener nofollow" class="btn-large deep-purple waves-effect waves-light full-width-btn">
                     <i class="material-icons left">forum</i>GitHub Discussions
                 </a>
             </div>

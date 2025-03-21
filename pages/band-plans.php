@@ -492,6 +492,65 @@ include_once('../includes/header.php');
         </div>
     </div>
 
+    <div id="hf-30m" class="card band-card mt-4">
+        <div class="card-content">
+            <span class="card-title">30m Band (10.1-10.15 MHz)</span>
+
+            <div class="row">
+                <div class="col s12 m8">
+                    <h4>Band Characteristics</h4>
+                    <p>The 30m band is a WARC (World Administrative Radio Conference) band that offers excellent propagation characteristics between 20m and 40m. It's a relatively narrow band with no voice allocations.</p>
+
+                    <h5>Propagation</h5>
+                    <ul class="browser-default">
+                        <li>Often open 24 hours a day</li>
+                        <li>Suffers less from daytime D-layer absorption than 40m</li>
+                        <li>Less affected by nighttime attenuation than 20m</li>
+                        <li>Generally less crowded than contest bands</li>
+                        <li>Reliable for medium to long distance communications</li>
+                    </ul>
+
+                    <h5>Recommended Sub-bands</h5>
+                    <table class="striped">
+                        <thead>
+                            <tr>
+                                <th>Frequency Range</th>
+                                <th>Mode</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10.100-10.130 MHz</td>
+                                <td>CW</td>
+                                <td>HOTA activity: 10.117 MHz</td>
+                            </tr>
+                            <tr>
+                                <td>10.130-10.150 MHz</td>
+                                <td>Digital</td>
+                                <td>FT8: 10.136 MHz</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="note"><strong>Important:</strong> SSB operation is not permitted on this band. CW and narrow-band digital modes only.</p>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel antenna-panel">
+                        <h5><i class="material-icons left">settings_input_antenna</i>Antenna Considerations</h5>
+                        <p>30m offers good compromise for antenna size:</p>
+                        <ul class="browser-default">
+                            <li>Half-wave dipole: ~14m (46ft)</li>
+                            <li>Vertical: ~7m (23ft) with radials</li>
+                            <li>Shortened loaded antennas work well</li>
+                            <li>Off-center fed dipoles with 40m/20m tuning</li>
+                        </ul>
+                        <p>For portable: End-fed wires with a matching unit or a 40m dipole with an antenna tuner work well.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="hf-20m" class="card band-card mt-4">
         <div class="card-content">
             <span class="card-title">20m Band (14.0-14.35 MHz)</span>
@@ -554,6 +613,210 @@ include_once('../includes/header.php');
                             <li>End-fed wire: Great for portable</li>
                         </ul>
                         <p>For portable: Even simple wire antennas perform well on this band.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hf-17m" class="card band-card mt-4">
+        <div class="card-content">
+            <span class="card-title">17m Band (18.068-18.168 MHz)</span>
+
+            <div class="row">
+                <div class="col s12 m8">
+                    <h4>Band Characteristics</h4>
+                    <p>The 17m band is another WARC band that provides excellent DX opportunities. It offers characteristics between 20m and 15m, and often provides good propagation when 20m is overcrowded or 15m hasn't opened yet.</p>
+
+                    <h5>Propagation</h5>
+                    <ul class="browser-default">
+                        <li>Primarily a daytime band</li>
+                        <li>Often open when higher bands (15m, 12m, 10m) are closed</li>
+                        <li>Less crowded than 20m</li>
+                        <li>Good DX potential with moderate solar activity</li>
+                        <li>Tends to close after sunset but can remain open on long paths</li>
+                    </ul>
+
+                    <h5>Recommended Sub-bands</h5>
+                    <table class="striped">
+                        <thead>
+                            <tr>
+                                <th>Frequency Range</th>
+                                <th>Mode</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>18.068-18.095 MHz</td>
+                                <td>CW</td>
+                                <td>HOTA activity: 18.085 MHz</td>
+                            </tr>
+                            <tr>
+                                <td>18.095-18.109 MHz</td>
+                                <td>Digital</td>
+                                <td>FT8: 18.100 MHz</td>
+                            </tr>
+                            <tr>
+                                <td>18.109-18.111 MHz</td>
+                                <td>Beacons</td>
+                                <td>International beacon network</td>
+                            </tr>
+                            <tr>
+                                <td>18.111-18.168 MHz</td>
+                                <td>SSB, Digital</td>
+                                <td>HOTA voice activity: 18.135 MHz</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel antenna-panel">
+                        <h5><i class="material-icons left">settings_input_antenna</i>Antenna Considerations</h5>
+                        <p>17m allows reasonably sized effective antennas:</p>
+                        <ul class="browser-default">
+                            <li>Half-wave dipole: ~8m (26ft)</li>
+                            <li>Vertical: ~4m (13ft) with radials</li>
+                            <li>Small Yagi antennas provide excellent gain</li>
+                            <li>Works well with multi-band trap verticals</li>
+                        </ul>
+                        <p>For portable: Wire dipoles and end-fed wires are very effective and easily deployable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hf-15m" class="card band-card mt-4">
+        <div class="card-content">
+            <span class="card-title">15m Band (21.0-21.45 MHz)</span>
+
+            <div class="row">
+                <div class="col s12 m8">
+                    <h4>Band Characteristics</h4>
+                    <p>The 15m band is an excellent daytime DX band that comes alive during solar cycle peaks. It offers outstanding long-distance communication capabilities with modest antenna systems.</p>
+
+                    <h5>Propagation</h5>
+                    <ul class="browser-default">
+                        <li>Primarily a daytime band</li>
+                        <li>Highly dependent on solar activity</li>
+                        <li>Excellent long-distance propagation during solar maximum</li>
+                        <li>Can support multiple propagation hops worldwide</li>
+                        <li>Often closes after sunset except during peak solar activity</li>
+                    </ul>
+
+                    <h5>Recommended Sub-bands</h5>
+                    <table class="striped">
+                        <thead>
+                            <tr>
+                                <th>Frequency Range</th>
+                                <th>Mode</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>21.000-21.070 MHz</td>
+                                <td>CW</td>
+                                <td>HOTA activity: 21.030 MHz</td>
+                            </tr>
+                            <tr>
+                                <td>21.070-21.110 MHz</td>
+                                <td>Digital</td>
+                                <td>FT8: 21.074 MHz, RTTY: 21.080 MHz</td>
+                            </tr>
+                            <tr>
+                                <td>21.110-21.150 MHz</td>
+                                <td>Digital, CW</td>
+                                <td>Mixed narrow-band modes</td>
+                            </tr>
+                            <tr>
+                                <td>21.150-21.450 MHz</td>
+                                <td>SSB, Digital</td>
+                                <td>HOTA voice activity: 21.255 MHz</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel antenna-panel">
+                        <h5><i class="material-icons left">settings_input_antenna</i>Antenna Considerations</h5>
+                        <p>15m offers very manageable antenna sizes:</p>
+                        <ul class="browser-default">
+                            <li>Half-wave dipole: ~6.7m (22ft)</li>
+                            <li>Vertical: ~3.3m (11ft) with radials</li>
+                            <li>2 or 3 element Yagi: Easily supported on lightweight masts</li>
+                            <li>Effective with multi-band verticals and trap dipoles</li>
+                        </ul>
+                        <p>For portable: Simple wire antennas at reasonable heights perform very effectively on this band.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hf-12m" class="card band-card mt-4">
+        <div class="card-content">
+            <span class="card-title">12m Band (24.89-24.99 MHz)</span>
+
+            <div class="row">
+                <div class="col s12 m8">
+                    <h4>Band Characteristics</h4>
+                    <p>The 12m band is a WARC band that offers propagation characteristics between 10m and 15m. It can provide excellent DX opportunities, especially around solar maximum periods.</p>
+
+                    <h5>Propagation</h5>
+                    <ul class="browser-default">
+                        <li>Strictly a daytime band</li>
+                        <li>Highly dependent on solar activity</li>
+                        <li>Can produce exceptional DX during solar maximum</li>
+                        <li>Often supports long-path propagation</li>
+                        <li>Can experience Sporadic-E propagation in summer months</li>
+                    </ul>
+
+                    <h5>Recommended Sub-bands</h5>
+                    <table class="striped">
+                        <thead>
+                            <tr>
+                                <th>Frequency Range</th>
+                                <th>Mode</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>24.890-24.915 MHz</td>
+                                <td>CW</td>
+                                <td>HOTA activity: 24.905 MHz</td>
+                            </tr>
+                            <tr>
+                                <td>24.915-24.929 MHz</td>
+                                <td>Digital</td>
+                                <td>FT8: 24.915 MHz</td>
+                            </tr>
+                            <tr>
+                                <td>24.929-24.931 MHz</td>
+                                <td>Beacons</td>
+                                <td>International beacon network</td>
+                            </tr>
+                            <tr>
+                                <td>24.931-24.990 MHz</td>
+                                <td>SSB, Digital</td>
+                                <td>HOTA voice activity: 24.955 MHz</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel antenna-panel">
+                        <h5><i class="material-icons left">settings_input_antenna</i>Antenna Considerations</h5>
+                        <p>12m offers compact, efficient antenna options:</p>
+                        <ul class="browser-default">
+                            <li>Half-wave dipole: ~5.9m (19.5ft)</li>
+                            <li>Vertical: ~3m (9.8ft) with radials</li>
+                            <li>Small directional antennas very effective</li>
+                            <li>Often works with 10m antennas using a tuner</li>
+                        </ul>
+                        <p>For portable: Simple wire antennas perform exceptionally well and are easily deployed due to their compact size.</p>
                     </div>
                 </div>
             </div>
@@ -633,6 +896,87 @@ include_once('../includes/header.php');
         </div>
     </div>
 
+    <div id="vhf-6m" class="card band-card mt-4">
+        <div class="card-content">
+            <span class="card-title">6m Band (50-54 MHz)</span>
+
+            <div class="row">
+                <div class="col s12 m8">
+                    <h4>Band Characteristics</h4>
+                    <p>The 6m band is known as the "Magic Band" due to its unpredictable and sometimes spectacular propagation. It exhibits characteristics of both HF and VHF bands, making it unique for HOTA activities.</p>
+
+                    <h5>Propagation</h5>
+                    <ul class="browser-default">
+                        <li>Multiple propagation modes available</li>
+                        <li>Sporadic-E: Common in summer months, offering sudden openings</li>
+                        <li>F2 layer: During solar maximum, worldwide propagation</li>
+                        <li>Meteor scatter: Brief contacts via meteor trails</li>
+                        <li>Tropospheric enhancement: During specific weather conditions</li>
+                        <li>Aurora: In high latitudes during geomagnetic storms</li>
+                    </ul>
+
+                    <h5>Recommended Sub-bands</h5>
+                    <table class="striped">
+                        <thead>
+                            <tr>
+                                <th>Frequency Range</th>
+                                <th>Mode</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>50.000-50.100 MHz</td>
+                                <td>CW, Beacons</td>
+                                <td>International beacons present</td>
+                            </tr>
+                            <tr>
+                                <td>50.100-50.300 MHz</td>
+                                <td>SSB, CW</td>
+                                <td>HOTA activity: 50.150 MHz</td>
+                            </tr>
+                            <tr>
+                                <td>50.300-50.400 MHz</td>
+                                <td>Digital</td>
+                                <td>FT8: 50.313 MHz, FT4: 50.318 MHz</td>
+                            </tr>
+                            <tr>
+                                <td>50.400-50.800 MHz</td>
+                                <td>All modes</td>
+                                <td>Mixed mode segment</td>
+                            </tr>
+                            <tr>
+                                <td>50.800-51.000 MHz</td>
+                                <td>Digital, Experimental</td>
+                                <td>Digital voice, experimental modes</td>
+                            </tr>
+                            <tr>
+                                <td>51.000-54.000 MHz</td>
+                                <td>FM, All modes</td>
+                                <td>FM repeaters in some countries</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="note"><strong>Important:</strong> Band allocations vary by region - check your local regulations.</p>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel antenna-panel">
+                        <h5><i class="material-icons left">settings_input_antenna</i>Antenna Considerations</h5>
+                        <p>6m antennas are reasonably sized and effective:</p>
+                        <ul class="browser-default">
+                            <li>Half-wave dipole: ~3m (9.8ft)</li>
+                            <li>3-element Yagi: Very effective with ~2m boom</li>
+                            <li>Quarter-wave vertical: ~1.5m (5ft) with 4+ radials</li>
+                            <li>Halo: Omni-directional horizontally polarized</li>
+                            <li>Moxon: Compact 2-element directional</li>
+                        </ul>
+                        <p>For portable: Simple dipoles are very effective. Even mobile whips can work well during band openings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="vhf-2m" class="card band-card mt-4">
         <div class="card-content">
             <span class="card-title">2m Band (144-148 MHz)</span>
@@ -701,6 +1045,93 @@ include_once('../includes/header.php');
                             <li>Slim Jim: Good portable roll-up design</li>
                         </ul>
                         <p>For portable: Small handheld antennas or roll-up J-poles work well. Height is more important than antenna gain for increased range.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="uhf-70cm" class="card band-card mt-4">
+        <div class="card-content">
+            <span class="card-title">70cm Band (430-440 MHz)</span>
+
+            <div class="row">
+                <div class="col s12 m8">
+                    <h4>Band Characteristics</h4>
+                    <p>The 70cm band is a versatile UHF band that offers reliable local communications for HOTA operations. It works well in urban environments and can provide excellent building penetration compared to higher frequencies.</p>
+
+                    <h5>Propagation</h5>
+                    <ul class="browser-default">
+                        <li>Primarily line-of-sight</li>
+                        <li>Urban range: Typically 3-10 km with handheld radios</li>
+                        <li>Enhanced range with elevated antennas</li>
+                        <li>Tropospheric ducting possible during specific weather conditions</li>
+                        <li>Good building penetration for indoor operations</li>
+                        <li>Less susceptible to urban noise than VHF</li>
+                    </ul>
+
+                    <h5>Recommended Sub-bands</h5>
+                    <table class="striped">
+                        <thead>
+                            <tr>
+                                <th>Frequency Range</th>
+                                <th>Mode</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>430.000-432.000 MHz</td>
+                                <td>CW, SSB, Digital</td>
+                                <td>HOTA CW activity: 432.050 MHz</td>
+                            </tr>
+                            <tr>
+                                <td>432.000-432.100 MHz</td>
+                                <td>CW</td>
+                                <td>DX window</td>
+                            </tr>
+                            <tr>
+                                <td>432.100-432.400 MHz</td>
+                                <td>SSB, CW</td>
+                                <td>SSB calling frequency: 432.200 MHz</td>
+                            </tr>
+                            <tr>
+                                <td>432.400-433.000 MHz</td>
+                                <td>Digital</td>
+                                <td>FT8: 432.174 MHz</td>
+                            </tr>
+                            <tr>
+                                <td>433.000-435.000 MHz</td>
+                                <td>FM simplex</td>
+                                <td>HOTA activity: 433.500 MHz</td>
+                            </tr>
+                            <tr>
+                                <td>435.000-438.000 MHz</td>
+                                <td>Satellite</td>
+                                <td>Shared with amateur satellites</td>
+                            </tr>
+                            <tr>
+                                <td>438.000-440.000 MHz</td>
+                                <td>FM repeaters</td>
+                                <td>Digital voice systems like DMR, D-STAR</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="note"><strong>Important:</strong> 70cm privileges vary significantly by country, with some having narrower allocations or sharing with other services.</p>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel antenna-panel">
+                        <h5><i class="material-icons left">settings_input_antenna</i>Antenna Considerations</h5>
+                        <p>70cm offers very compact, efficient antenna options:</p>
+                        <ul class="browser-default">
+                            <li>Half-wave dipole: Just 33cm (13 inches)</li>
+                            <li>5/8 wave vertical: 43cm (17 inches)</li>
+                            <li>Yagi antennas: Compact with excellent gain</li>
+                            <li>Collinear: High gain omnidirectional</li>
+                            <li>Log periodic: Wideband directional</li>
+                            <li>Slim Jim: Compact roll-up portable</li>
+                        </ul>
+                        <p>For portable: Hand-held radio stock antennas can work, but even a small Slim Jim or J-pole dramatically improves performance.</p>
                     </div>
                 </div>
             </div>

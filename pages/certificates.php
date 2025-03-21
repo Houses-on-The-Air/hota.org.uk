@@ -38,7 +38,7 @@ $pageDescription = "View sample certificates and award designs for the Houses on
                 <div class="col s12 m6 l4">
                     <div class="card hoverable">
                         <div class="card-image cert-card-image">
-                            <img src="/images/certificates/mansion-activator.jpg" alt="Mansion Tier Certificate">
+                            <img src="/images/certificates/mansion-activator.png" alt="Mansion Tier Certificate">
                             <div class="cert-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -51,7 +51,7 @@ $pageDescription = "View sample certificates and award designs for the Houses on
                 <div class="col s12 m6 l4">
                     <div class="card hoverable">
                         <div class="card-image cert-card-image">
-                            <img src="/images/certificates/detached-house-activator.jpg" alt="Detached House Tier Certificate">
+                            <img src="/images/certificates/detached-house-activator.png" alt="Detached House Tier Certificate">
                             <div class="cert-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -64,7 +64,7 @@ $pageDescription = "View sample certificates and award designs for the Houses on
                 <div class="col s12 m6 l4">
                     <div class="card hoverable">
                         <div class="card-image cert-card-image">
-                            <img src="/images/certificates/cardboard-box-activator.jpg" alt="Cardboard Box Tier Certificate">
+                            <img src="/images/certificates/cardboard-box-activator.png" alt="Cardboard Box Tier Certificate">
                             <div class="cert-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -87,7 +87,7 @@ $pageDescription = "View sample certificates and award designs for the Houses on
                 <div class="col s12 m6 l4">
                     <div class="card hoverable">
                         <div class="card-image cert-card-image">
-                            <img src="/images/certificates/mansion-hunter.jpg" alt="Mansion Tier Hunter Certificate">
+                            <img src="/images/certificates/mansion-hunter.png" alt="Mansion Tier Hunter Certificate">
                             <div class="cert-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -100,7 +100,7 @@ $pageDescription = "View sample certificates and award designs for the Houses on
                 <div class="col s12 m6 l4">
                     <div class="card hoverable">
                         <div class="card-image cert-card-image">
-                            <img src="/images/certificates/detached-house-hunter.jpg" alt="Detached House Tier Hunter Certificate">
+                            <img src="/images/certificates/detached-house-hunter.png" alt="Detached House Tier Hunter Certificate">
                             <div class="cert-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -113,7 +113,7 @@ $pageDescription = "View sample certificates and award designs for the Houses on
                 <div class="col s12 m6 l4">
                     <div class="card hoverable">
                         <div class="card-image cert-card-image">
-                            <img src="/images/certificates/cardboard-box-hunter.jpg" alt="Cardboard Box Tier Hunter Certificate">
+                            <img src="/images/certificates/cardboard-box-hunter.png" alt="Cardboard Box Tier Hunter Certificate">
                             <div class="cert-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -136,7 +136,7 @@ $pageDescription = "View sample certificates and award designs for the Houses on
                 <div class="col s12 m6 l4">
                     <div class="card hoverable">
                         <div class="card-image cert-card-image">
-                            <img src="/images/certificates/contest-winner.jpg" alt="Contest Winner Certificate">
+                            <img src="/images/certificates/contest-winner.png" alt="Contest Winner Certificate">
                             <div class="cert-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -149,7 +149,7 @@ $pageDescription = "View sample certificates and award designs for the Houses on
                 <div class="col s12 m6 l4">
                     <div class="card hoverable">
                         <div class="card-image cert-card-image">
-                            <img src="/images/certificates/annual-achievement.jpg" alt="Annual Achievement Certificate">
+                            <img src="/images/certificates/annual-achievement.png" alt="Annual Achievement Certificate">
                             <div class="cert-overlay"></div>
                         </div>
                         <div class="card-content">
@@ -162,7 +162,7 @@ $pageDescription = "View sample certificates and award designs for the Houses on
                 <div class="col s12 m6 l4">
                     <div class="card hoverable">
                         <div class="card-image cert-card-image">
-                            <img src="/images/certificates/innovation-award.jpg" alt="Innovation Award Certificate">
+                            <img src="/images/certificates/innovation-award.png" alt="Innovation Award Certificate">
                             <div class="cert-overlay"></div>
                         </div>
                         <div class="card-content">

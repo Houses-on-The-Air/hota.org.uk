@@ -23,7 +23,7 @@ include_once('../includes/header.php');
                     <p class="flow-text hero-text">Our progressive awards program celebrates both activators and hunters with certificates, digital badges, and recognition based on the number of unique house addresses.</p>
                 </div>
                 <div class="col s12 m4 center-align hide-on-small-only">
-                    <img src="/images/awards/certificate-icon.svg" alt="HOTA Award Certificate" class="responsive-img" style="max-width: 150px;">
+                    <img src="/images/certificate.jpg" alt="HOTA Award Certificate" class="responsive-img" style="max-width: 150px;">
                 </div>
             </div>
         </div>

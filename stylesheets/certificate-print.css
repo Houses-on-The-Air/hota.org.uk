@@ -1,0 +1,57 @@
+@media print {
+    /* Hide non-certificate elements when printing */
+    header, footer, nav, .certificate-actions, .tabs, .container > h1,
+    .btn, .card-panel, form {
+        display: none !important;
+    }
+
+    body {
+        background-color: white !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .certificate-container {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .certificate {
+        box-shadow: none !important;
+        border-width: 10px !important;
+        page-break-inside: avoid !important;
+    }
+
+    .certificate:before {
+        opacity: 0.08 !important; /* Make watermark slightly more visible in print */
+    }
+
+    /* Improve typography for print */
+    .certificate-header h2 {
+        font-size: 24pt !important;
+    }
+
+    .certificate-header h3 {
+        font-size: 20pt !important;
+    }
+
+    .certificate-content h4 {
+        font-size: 28pt !important;
+    }
+
+    .certificate-content p {
+        font-size: 14pt !important;
+    }
+
+    .certificate-footer p {
+        font-size: 10pt !important;
+    }
+}

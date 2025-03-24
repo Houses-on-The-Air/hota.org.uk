@@ -1,347 +1,441 @@
 <?php
-$pageTitle = "Sitemap - Houses on The Air";
-$pageDescription = "Complete sitemap of the Houses on The Air (HOTA) website. Find all pages organized by category for easy navigation.";
+$pageTitle = "Site Map - HOTA";
+$pageDescription = "Complete site map and navigation guide for Houses on the Air (HOTA) website.";
 ?>
 
 <div class="container">
-    <h1>Website Sitemap</h1>
+    <h1>HOTA Site Map</h1>
 
     <!-- Breadcrumbs -->
     <div class="breadcrumb-wrapper">
         <ul class="breadcrumbs">
             <li><a href="/">Home</a></li>
-            <li>Sitemap</li>
+            <li>Site Map</li>
         </ul>
     </div>
 
-    <p class="flow-text">This sitemap provides an overview of all pages available on the Houses on The Air website, organized by category for easy navigation.</p>
-
     <div class="row">
-        <!-- Search box -->
         <div class="col s12">
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title"><i class="material-icons left">search</i>Find a Page</span>
-                    <div class="input-field">
-                        <input type="text" id="sitemap-search" placeholder="Type to search pages...">
-                        <label for="sitemap-search">Search</label>
-                        <span class="helper-text">Type any keyword to filter pages</span>
+            <div class="card-panel">
+                <p class="flow-text">Use this page to find specific information or navigate to any part of the HOTA website.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visual Site Map -->
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title"><i class="material-icons left">account_tree</i>Visual Site Map</span>
+
+            <div class="sitemap-diagram">
+                <div class="sitemap-node main-node">
+                    <a href="/" class="btn blue-grey darken-1">Home</a>
+
+                    <div class="sitemap-branches">
+                        <!-- Main branches -->
+                        <div class="sitemap-branch">
+                            <div class="sitemap-node">
+                                <a href="?page=about" class="btn blue lighten-1">About</a>
+                                <div class="sitemap-subnodes">
+                                    <a href="?page=team" class="btn-small blue lighten-2">Team</a>
+                                    <a href="?page=faq" class="btn-small blue lighten-2">FAQ</a>
+                                    <a href="?page=contact" class="btn-small blue lighten-2">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sitemap-branch">
+                            <div class="sitemap-node">
+                                <a href="?page=participate" class="btn green darken-1">Participate</a>
+                                <div class="sitemap-subnodes">
+                                    <a href="?page=house-activations" class="btn-small green lighten-1">House Activations</a>
+                                    <a href="?page=log-entry" class="btn-small green lighten-1">Log Entry</a>
+                                    <a href="?page=operating-guidelines" class="btn-small green lighten-1">Guidelines</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sitemap-branch">
+                            <div class="sitemap-node">
+                                <a href="?page=awards" class="btn amber darken-2">Awards</a>
+                                <div class="sitemap-subnodes">
+                                    <a href="?page=award-tiers" class="btn-small amber darken-1">Award Tiers</a>
+                                    <a href="?page=certificates" class="btn-small amber darken-1">Certificates</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sitemap-branch">
+                            <div class="sitemap-node">
+                                <a href="?page=resources" class="btn purple lighten-1">Resources</a>
+                                <div class="sitemap-subnodes">
+                                    <a href="?page=band-plans" class="btn-small purple lighten-2">Band Plans</a>
+                                    <a href="?page=glossary" class="btn-small purple lighten-2">Glossary</a>
+                                    <a href="?page=adif-guide" class="btn-small purple lighten-2">ADIF Guide</a>
+                                    <a href="?page=online-training" class="btn-small purple lighten-2">Training</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sitemap-branch">
+                            <div class="sitemap-node">
+                                <a href="?page=community" class="btn red lighten-1">Community</a>
+                                <div class="sitemap-subnodes">
+                                    <a href="?page=discord" class="btn-small red lighten-2">Discord</a>
+                                    <a href="?page=nets" class="btn-small red lighten-2">Nets</a>
+                                    <a href="?page=community-events" class="btn-small red lighten-2">Events</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="sitemap-content">
-        <!-- Main Pages -->
-        <div class="card sitemap-section" id="main-pages">
-            <div class="card-content">
-                <span class="card-title"><i class="material-icons left">home</i>Main Pages</span>
-                <div class="collection">
-                    <a href="/" class="collection-item">
-                        <div class="sitemap-link-title">Home</div>
-                        <div class="sitemap-link-desc">The main landing page with latest news and featured content.</div>
-                    </a>
-                    <a href="?page=about" class="collection-item">
-                        <div class="sitemap-link-title">About HOTA</div>
-                        <div class="sitemap-link-desc">Learn about Houses on The Air, our mission, and history.</div>
-                    </a>
-                    <a href="?page=participate" class="collection-item">
-                        <div class="sitemap-link-title">Participate</div>
-                        <div class="sitemap-link-desc">Information on how to get involved with HOTA activities.</div>
-                    </a>
-                    <a href="?page=awards" class="collection-item">
-                        <div class="sitemap-link-title">Awards</div>
-                        <div class="sitemap-link-desc">Details about our award tiers and how to earn them.</div>
-                    </a>
-                    <a href="?page=resources" class="collection-item">
-                        <div class="sitemap-link-title">Resources</div>
-                        <div class="sitemap-link-desc">Guides, tools, and resources for amateur radio operators.</div>
-                    </a>
-                    <a href="?page=contact" class="collection-item">
-                        <div class="sitemap-link-title">Contact</div>
-                        <div class="sitemap-link-desc">Get in touch with the HOTA team.</div>
-                    </a>
-                    <a href="?page=faq" class="collection-item">
-                        <div class="sitemap-link-title">FAQ</div>
-                        <div class="sitemap-link-desc">Frequently Asked Questions about HOTA.</div>
-                    </a>
+    <!-- Complete Site Index -->
+    <div class="row">
+        <div class="col s12 m6 l4">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Main Sections</span>
+                    <ul class="collection">
+                        <li class="collection-item"><a href="/">Home</a></li>
+                        <li class="collection-item"><a href="?page=about">About HOTA</a></li>
+                        <li class="collection-item"><a href="?page=participate">How to Participate</a></li>
+                        <li class="collection-item"><a href="?page=awards">Awards Program</a></li>
+                        <li class="collection-item"><a href="?page=resources">Resources</a></li>
+                        <li class="collection-item"><a href="?page=community-events">Community & Events</a></li>
+                        <li class="collection-item"><a href="?page=contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">About HOTA</span>
+                    <ul class="collection">
+                        <li class="collection-item"><a href="?page=about">About the Program</a></li>
+                        <li class="collection-item"><a href="?page=team">Meet the Team</a></li>
+                        <li class="collection-item"><a href="?page=faq">Frequently Asked Questions</a></li>
+                        <li class="collection-item"><a href="?page=rules">Official Rules</a></li>
+                        <li class="collection-item"><a href="?page=join-our-team">Join Our Team</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Participation Pages -->
-        <div class="card sitemap-section" id="participation">
-            <div class="card-content">
-                <span class="card-title"><i class="material-icons left">people</i>Participation</span>
-                <div class="collection">
-                    <a href="?page=house-activations" class="collection-item">
-                        <div class="sitemap-link-title">House Activations</div>
-                        <div class="sitemap-link-desc">Guide to activating houses for HOTA.</div>
-                    </a>
-                    <a href="?page=contests" class="collection-item">
-                        <div class="sitemap-link-title">Contests & Events</div>
-                        <div class="sitemap-link-desc">Information on HOTA contests and upcoming events.</div>
-                    </a>
-                    <a href="?page=community-events" class="collection-item">
-                        <div class="sitemap-link-title">Community Events</div>
-                        <div class="sitemap-link-desc">Community-organized HOTA events and activities.</div>
-                    </a>
-                    <a href="?page=log-entry" class="collection-item">
-                        <div class="sitemap-link-title">Log Entry</div>
-                        <div class="sitemap-link-desc">Submit your HOTA contact logs for award credit.</div>
-                    </a>
-                    <a href="?page=nets" class="collection-item">
-                        <div class="sitemap-link-title">HOTA Nets</div>
-                        <div class="sitemap-link-desc">Regular on-air meeting schedules for HOTA operators.</div>
-                    </a>
-                    <a href="?page=get-licenced" class="collection-item">
-                        <div class="sitemap-link-title">Get Licensed</div>
-                        <div class="sitemap-link-desc">Information for newcomers to amateur radio.</div>
-                    </a>
-                    <a href="?page=operating-guidelines" class="collection-item">
-                        <div class="sitemap-link-title">Operating Guidelines</div>
-                        <div class="sitemap-link-desc">Best practices for HOTA operations.</div>
-                    </a>
+        <div class="col s12 m6 l4">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Participation</span>
+                    <ul class="collection">
+                        <li class="collection-item"><a href="?page=participate">Participation Guide</a></li>
+                        <li class="collection-item"><a href="?page=get-licenced">Get Licenced</a></li>
+                        <li class="collection-item"><a href="?page=house-activations">House Activation Guide</a></li>
+                        <li class="collection-item"><a href="?page=log-entry">Log Submission</a></li>
+                        <li class="collection-item"><a href="?page=operating-guidelines">Operating Guidelines</a></li>
+                        <li class="collection-item"><a href="?page=portable-antennas">Portable Antennas</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Awards & Certificates</span>
+                    <ul class="collection">
+                        <li class="collection-item"><a href="?page=awards">Awards Overview</a></li>
+                        <li class="collection-item"><a href="?page=award-tiers">Award Tiers</a></li>
+                        <li class="collection-item"><a href="?page=certificates">Certificates Gallery</a></li>
+                        <li class="collection-item"><a href="?page=certificates-result">Your Certificates</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Awards & Recognition -->
-        <div class="card sitemap-section" id="awards">
-            <div class="card-content">
-                <span class="card-title"><i class="material-icons left">emoji_events</i>Awards & Recognition</span>
-                <div class="collection">
-                    <a href="?page=awards" class="collection-item">
-                        <div class="sitemap-link-title">Awards Program</div>
-                        <div class="sitemap-link-desc">Overview of the HOTA awards program.</div>
-                    </a>
-                    <a href="?page=award-tiers" class="collection-item">
-                        <div class="sitemap-link-title">Award Tiers</div>
-                        <div class="sitemap-link-desc">Detailed information about award levels and requirements.</div>
-                    </a>
-                    <a href="?page=certificates" class="collection-item">
-                        <div class="sitemap-link-title">Certificates</div>
-                        <div class="sitemap-link-desc">Gallery of HOTA award certificates.</div>
-                    </a>
+        <div class="col s12 m6 l4">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Resources</span>
+                    <ul class="collection">
+                        <li class="collection-item"><a href="?page=resources">Resource Centre</a></li>
+                        <li class="collection-item"><a href="?page=band-plans">Band Plans</a></li>
+                        <li class="collection-item"><a href="?page=glossary">Glossary</a></li>
+                        <li class="collection-item"><a href="?page=adif-guide">ADIF Guide</a></li>
+                        <li class="collection-item"><a href="?page=logging-software">Logging Software</a></li>
+                        <li class="collection-item"><a href="?page=online-training">Amateur Radio Training</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
 
-        <!-- Technical Resources -->
-        <div class="card sitemap-section" id="technical">
-            <div class="card-content">
-                <span class="card-title"><i class="material-icons left">build</i>Technical Resources</span>
-                <div class="collection">
-                    <a href="?page=band-plans" class="collection-item">
-                        <div class="sitemap-link-title">Band Plans</div>
-                        <div class="sitemap-link-desc">Radio frequency allocations and recommended operating frequencies.</div>
-                    </a>
-                    <a href="?page=portable-antennas" class="collection-item">
-                        <div class="sitemap-link-title">Portable Antennas</div>
-                        <div class="sitemap-link-desc">Guide to antenna options for portable operations.</div>
-                    </a>
-                    <a href="?page=adif-guide" class="collection-item">
-                        <div class="sitemap-link-title">ADIF Guide</div>
-                        <div class="sitemap-link-desc">Information about the Amateur Data Interchange Format for logs.</div>
-                    </a>
-                    <a href="?page=logging-software" class="collection-item">
-                        <div class="sitemap-link-title">Logging Software</div>
-                        <div class="sitemap-link-desc">Recommended software for logging HOTA contacts.</div>
-                    </a>
-                    <a href="?page=appicons" class="collection-item">
-                        <div class="sitemap-link-title">App Icons & Assets</div>
-                        <div class="sitemap-link-desc">Download HOTA logos and icons for applications.</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Community -->
-        <div class="card sitemap-section" id="community">
-            <div class="card-content">
-                <span class="card-title"><i class="material-icons left">forum</i>Community</span>
-                <div class="collection">
-                    <a href="?page=discord" class="collection-item">
-                        <div class="sitemap-link-title">Discord Community</div>
-                        <div class="sitemap-link-desc">Join our Discord server for real-time discussions.</div>
-                    </a>
-                    <a href="?page=team" class="collection-item">
-                        <div class="sitemap-link-title">HOTA Team</div>
-                        <div class="sitemap-link-desc">Meet the volunteers running Houses on The Air.</div>
-                    </a>
-                    <a href="?page=support-us" class="collection-item">
-                        <div class="sitemap-link-title">Support HOTA</div>
-                        <div class="sitemap-link-desc">Ways you can support the HOTA program.</div>
-                    </a>
-                    <a href="?page=join-our-team" class="collection-item">
-                        <div class="sitemap-link-title">Join Our Team</div>
-                        <div class="sitemap-link-desc">Volunteer opportunities with HOTA.</div>
-                    </a>
-                    <a href="?page=mailing-list" class="collection-item">
-                        <div class="sitemap-link-title">Mailing List</div>
-                        <div class="sitemap-link-desc">Subscribe to our newsletter for updates.</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Reference & Tools -->
-        <div class="card sitemap-section" id="reference">
-            <div class="card-content">
-                <span class="card-title"><i class="material-icons left">library_books</i>Reference & Tools</span>
-                <div class="collection">
-                    <a href="?page=glossary" class="collection-item">
-                        <div class="sitemap-link-title">Glossary</div>
-                        <div class="sitemap-link-desc">Amateur radio and HOTA terminology explained.</div>
-                    </a>
-                    <a href="?page=rules" class="collection-item">
-                        <div class="sitemap-link-title">Rules</div>
-                        <div class="sitemap-link-desc">Official rules for the HOTA program.</div>
-                    </a>
-                    <a href="?page=opensource" class="collection-item">
-                        <div class="sitemap-link-title">Open Source</div>
-                        <div class="sitemap-link-desc">Information about our open source software.</div>
-                    </a>
-                    <a href="?page=tgif" class="collection-item">
-                        <div class="sitemap-link-title">TGIF Network</div>
-                        <div class="sitemap-link-desc">Information about HOTA on the TGIF DMR network.</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Legal & Policies -->
-        <div class="card sitemap-section" id="legal">
-            <div class="card-content">
-                <span class="card-title"><i class="material-icons left">gavel</i>Legal & Policies</span>
-                <div class="collection">
-                    <a href="?page=terms" class="collection-item">
-                        <div class="sitemap-link-title">Terms of Service</div>
-                        <div class="sitemap-link-desc">Terms and conditions for using the HOTA website.</div>
-                    </a>
-                    <a href="?page=privacy" class="collection-item">
-                        <div class="sitemap-link-title">Privacy Policy</div>
-                        <div class="sitemap-link-desc">How we collect and use your data.</div>
-                    </a>
-                    <a href="?page=cookies" class="collection-item">
-                        <div class="sitemap-link-title">Cookie Policy</div>
-                        <div class="sitemap-link-desc">Information about our use of cookies.</div>
-                    </a>
-                    <a href="?page=gdpr" class="collection-item">
-                        <div class="sitemap-link-title">GDPR Compliance</div>
-                        <div class="sitemap-link-desc">Our compliance with data protection regulations.</div>
-                    </a>
-                    <a href="?page=modern-slavery" class="collection-item">
-                        <div class="sitemap-link-title">Modern Slavery Statement</div>
-                        <div class="sitemap-link-desc">Our commitment against modern slavery.</div>
-                    </a>
-                    <a href="?page=advertising" class="collection-item">
-                        <div class="sitemap-link-title">Advertising</div>
-                        <div class="sitemap-link-desc">Information about advertising on our platform.</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Store -->
-        <div class="card sitemap-section" id="store">
-            <div class="card-content">
-                <span class="card-title"><i class="material-icons left">shopping_cart</i>Store</span>
-                <div class="collection">
-                    <a href="?page=store" class="collection-item">
-                        <div class="sitemap-link-title">HOTA Store</div>
-                        <div class="sitemap-link-desc">Purchase HOTA merchandise and gear.</div>
-                    </a>
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Community</span>
+                    <ul class="collection">
+                        <li class="collection-item"><a href="?page=discord">Discord Community</a></li>
+                        <li class="collection-item"><a href="?page=nets">Net Schedule</a></li>
+                        <li class="collection-item"><a href="?page=community-events">Events Calendar</a></li>
+                        <li class="collection-item"><a href="?page=contests">HOTA Contests</a></li>
+                        <li class="collection-item"><a href="?page=mailing-list">Mailing List</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Information about the sitemap -->
-    <div class="card-panel blue-grey lighten-5 mt-4">
-        <div class="row valign-wrapper">
-            <div class="col s12 m2 center-align">
-                <i class="material-icons large">language</i>
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Technical Resources</span>
+                    <ul class="collection">
+                        <li class="collection-item"><a href="?page=band-plans">Amateur Radio Band Plans</a></li>
+                        <li class="collection-item"><a href="?page=adif-guide">ADIF Format Guide</a></li>
+                        <li class="collection-item"><a href="?page=portable-antennas">Portable Antenna Guide</a></li>
+                        <li class="collection-item"><a href="?page=logging-software">Logging Software Guide</a></li>
+                        <li class="collection-item">
+                            <a href="https://www.qrz.com/db" target="_blank" rel="nofollow noopener">QRZ.com Callsign Database</a>
+                            <span class="badge blue white-text">External</span>
+                        </li>
+                        <li class="collection-item">
+                            <a href="https://rsgb.org/main/operating/licensing-novs-visitors/online-nov-form/" target="_blank" rel="nofollow noopener">RSGB Notice of Variation</a>
+                            <span class="badge blue white-text">External</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col s12 m10">
-                <h3 class="no-margin-top">About This Sitemap</h3>
-                <p>This sitemap was last updated on <?php echo date('F j, Y'); ?>. If you cannot find what you're looking for, please <a href="?page=contact">contact us</a> for assistance.</p>
-                <p>For developers and search engines, we also provide an <a href="/sitemap.xml">XML sitemap</a> that includes all pages on our website.</p>
+        </div>
+
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Policies & Info</span>
+                    <ul class="collection">
+                        <li class="collection-item"><a href="?page=privacy">Privacy Policy</a></li>
+                        <li class="collection-item"><a href="?page=terms">Terms of Service</a></li>
+                        <li class="collection-item"><a href="?page=cookies">Cookie Policy</a></li>
+                        <li class="collection-item"><a href="?page=gdpr">GDPR Compliance</a></li>
+                        <li class="collection-item"><a href="?page=sitemap">Site Map</a></li>
+                        <li class="collection-item"><a href="?page=support-us">Support HOTA</a></li>
+                        <li class="collection-item"><a href="?page=contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Functionality -->
+    <div class="card-panel blue-grey lighten-5">
+        <div class="row">
+            <div class="col s12 m8 offset-m2">
+                <h5 class="center-align"><i class="material-icons tiny">search</i> Can't find what you're looking for?</h5>
+                <div class="input-field">
+                    <i class="material-icons prefix">search</i>
+                    <input type="text" id="site-search" class="autocomplete">
+                    <label for="site-search">Search the HOTA website</label>
+                </div>
+                <div class="center-align">
+                    <button id="search-button" class="btn blue-grey">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- External Resources -->
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title"><i class="material-icons left">language</i>External Amateur Radio Resources</span>
+
+            <p class="mb-2">These external sites provide additional information and services for amateur radio operators.</p>
+
+            <div class="row">
+                <div class="col s12 m6">
+                    <h5>Organisations</h5>
+                    <ul class="collection">
+                        <li class="collection-item">
+                            <a href="https://rsgb.org/" target="_blank" rel="nofollow noopener">Radio Society of Great Britain (RSGB)</a>
+                        </li>
+                        <li class="collection-item">
+                            <a href="https://www.arrl.org/" target="_blank" rel="nofollow noopener">American Radio Relay League (ARRL)</a>
+                        </li>
+                        <li class="collection-item">
+                            <a href="https://www.iaru.org/" target="_blank" rel="nofollow noopener">International Amateur Radio Union (IARU)</a>
+                        </li>
+                        <li class="collection-item">
+                            <a href="https://www.sota.org.uk/" target="_blank" rel="nofollow noopener">Summits on the Air (SOTA)</a>
+                        </li>
+                        <li class="collection-item">
+                            <a href="https://parksontheair.com/" target="_blank" rel="nofollow noopener">Parks on the Air (POTA)</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col s12 m6">
+                    <h5>Useful Tools</h5>
+                    <ul class="collection">
+                        <li class="collection-item">
+                            <a href="https://www.qrz.com" target="_blank" rel="nofollow noopener">QRZ.com</a> - Callsign database and forum
+                        </li>
+                        <li class="collection-item">
+                            <a href="https://pskreporter.info/" target="_blank" rel="nofollow noopener">PSK Reporter</a> - Signal reporting network
+                        </li>
+                        <li class="collection-item">
+                            <a href="https://www.dxmaps.com/" target="_blank" rel="nofollow noopener">DX Maps</a> - Propagation and spotting maps
+                        </li>
+                        <li class="collection-item">
+                            <a href="https://www.hamqth.com/" target="_blank" rel="nofollow noopener">HamQTH</a> - Amateur radio community and callsign lookup
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <style>
-.sitemap-section {
-    margin-bottom: 20px;
+/* Sitemap diagram styling */
+.sitemap-diagram {
+    padding: 20px;
+    overflow-x: auto;
 }
 
-.sitemap-link-title {
-    font-weight: 500;
-    font-size: 1.1rem;
+.sitemap-node {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 10px;
+    min-width: 150px;
 }
 
-.sitemap-link-desc {
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 3px;
+.main-node {
+    margin-bottom: 30px;
 }
 
-.collection .collection-item {
-    transition: background-color 0.2s ease;
+.sitemap-branches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
 }
 
-.collection .collection-item:hover {
-    background-color: #f5f5f5;
+.sitemap-branch {
+    position: relative;
+    padding-top: 20px;
 }
 
-.mt-4 {
-    margin-top: 2rem;
+.sitemap-branches:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background: #90a4ae;
 }
 
-/* Hide section if it doesn't contain any visible items due to search */
-.sitemap-section:not(:has(.collection-item:not(.hide))) {
-    display: none;
+.sitemap-branch:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background: #90a4ae;
 }
 
-.large {
-    font-size: 4rem;
+.sitemap-subnodes {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
 }
 
-.no-margin-top {
-    margin-top: 0;
+.sitemap-subnodes a {
+    margin: 0 3px;
 }
 
-.hidden {
-    display: none;
+/* Badge styling */
+.collection-item .badge {
+    float: right;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 0.8rem;
+}
+
+/* Utilities */
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 992px) {
+    .sitemap-branch {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sitemap-diagram {
+        min-width: 600px;
+    }
 }
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Search functionality
-    const searchInput = document.getElementById('sitemap-search');
+    // Initialize autocomplete with potential search terms
+    var searchTerms = {
+        "Awards": null,
+        "Activator Awards": null,
+        "Hunter Awards": null,
+        "Specialist Awards": null,
+        "Band Plans": null,
+        "Certificates": null,
+        "Contact Us": null,
+        "Discord": null,
+        "FAQ": null,
+        "Glossary": null,
+        "ADIF Guide": null,
+        "House Activation": null,
+        "Log Entry": null,
+        "Nets": null,
+        "Operating Guidelines": null,
+        "Participate": null,
+        "Portable Antennas": null,
+        "Resources": null,
+        "Rules": null,
+        "Team": null
+    };
 
-    searchInput.addEventListener('keyup', function() {
-        const searchTerm = this.value.toLowerCase();
-
-        // Get all sitemap links
-        const links = document.querySelectorAll('.collection-item');
-
-        links.forEach(function(link) {
-            const title = link.querySelector('.sitemap-link-title').textContent.toLowerCase();
-            const desc = link.querySelector('.sitemap-link-desc').textContent.toLowerCase();
-
-            // Show/hide based on search term
-            if (title.includes(searchTerm) || desc.includes(searchTerm)) {
-                link.classList.remove('hide');
-            } else {
-                link.classList.add('hide');
-            }
-        });
+    var autocompleteElems = document.querySelectorAll('.autocomplete');
+    var autocompleteInstances = M.Autocomplete.init(autocompleteElems, {
+        data: searchTerms,
+        onAutocomplete: function(text) {
+            searchSite(text);
+        }
     });
+
+    // Handle search button click
+    document.getElementById('search-button').addEventListener('click', function() {
+        var searchText = document.getElementById('site-search').value;
+        searchSite(searchText);
+    });
+
+    // Handle pressing Enter in the search field
+    document.getElementById('site-search').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            var searchText = document.getElementById('site-search').value;
+            searchSite(searchText);
+        }
+    });
+
+    function searchSite(searchText) {
+        if (searchText) {
+            // Redirect to search results page with query
+            window.location.href = '?page=search&q=' + encodeURIComponent(searchText);
+        }
+    }
 });
 </script>

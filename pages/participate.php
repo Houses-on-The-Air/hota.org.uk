@@ -14,7 +14,7 @@ $pageDescription = "Learn how to participate in Houses on the Air (HOTA) as a hu
         </ul>
     </div>
 
-    <p class="flow-text">Houses on the Air (HOTA) is an award program where amateur radio operators make contacts with stations operating from various house locations. You can participate as either a hunter, an activator, or both!</p>
+    <p class="flow-text">Houses on the Air (HOTA) is an award programme where amateur radio operators make contacts with stations operating from various house locations. You can participate as either a hunter, an activator, or both!</p>
 
     <!-- Quick Start Guide -->
     <div class="card blue-grey lighten-5">
@@ -45,6 +45,22 @@ $pageDescription = "Learn how to participate in Houses on the Air (HOTA) as a hu
                         </ol>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Getting Started with HOTA After Licensing -->
+    <div class="card-panel blue-grey lighten-5">
+        <h4><i class="material-icons left">home</i>Ready for HOTA After Getting Licenced?</h4>
+        <div class="row">
+            <div class="col s12 m6">
+                <h5>Next Steps for New Licensees</h5>
+                <ol class="browser-default">
+                    <li>Set up your first station (at home or portable)</li>
+                    <li>Log your first QSOs with complete address information</li>
+                    <li>Submit your logs to claim your first HOTA awards</li>
+                    <li>Join our community to connect with other HOTA operators</li>
+                </ol>
             </div>
         </div>
     </div>
@@ -127,7 +143,7 @@ $pageDescription = "Learn how to participate in Houses on the Air (HOTA) as a hu
                 <!-- Awards Tab -->
                 <div id="awards" class="col s12 mt-4">
                     <h4>Available Awards</h4>
-                    <p>HOTA offers multiple award categories to recognize your achievements:</p>
+                    <p>HOTA offers multiple award categories to recognise your achievements:</p>
 
                     <h5 class="blue-grey-text">Hunter Awards</h5>
                     <p>Based on the number of unique house addresses contacted:</p>
@@ -232,7 +248,7 @@ $pageDescription = "Learn how to participate in Houses on the Air (HOTA) as a hu
                 <li>
                     <div class="collapsible-header">What counts as a "house" for HOTA?</div>
                     <div class="collapsible-body">
-                        <p>Any residential dwelling with a postal address qualifies as a house for HOTA. This includes single-family homes, apartments, condos, duplexes, and other residential structures. The key requirement is that the location must have a valid postal address that includes a house or building number and street name.</p>
+                        <p>Any residential dwelling with a postal address qualifies as a house for HOTA. This includes single-family homes, apartments, flats, terraced houses, semi-detached homes, and other residential structures. The key requirement is that the location must have a valid postal address that includes a house or building number and street name.</p>
                     </div>
                 </li>
                 <li>

@@ -155,10 +155,10 @@ unset($_SESSION['processed_callsign']);
             <div class="col s12 m8 offset-m2">
                 <p>Let others know about your HOTA accomplishments by sharing on social media or in your radio club!</p>
                 <div class="share-buttons">
-                    <a href="https://twitter.com/intent/tweet?text=I%20just%20earned%20my%20HOTA%20certificates!%20Check%20out%20Houses%20on%20the%20Air%20at%20https%3A%2F%2Fhota.org.uk" target="_blank" class="btn blue waves-effect waves-light">
+                    <a href="https://twitter.com/intent/tweet?text=I%20just%20earned%20my%20HOTA%20certificates!%20Check%20out%20Houses%20on%20the%20Air%20at%20https%3A%2F%2Fhota.org.uk" target="_blank" rel="nofollow noopener" class="btn blue waves-effect waves-light">
                         <i class="material-icons left">share</i>Tweet
                     </a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhota.org.uk" target="_blank" class="btn indigo waves-effect waves-light">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhota.org.uk" target="_blank" rel="nofollow noopener" class="btn indigo waves-effect waves-light">
                         <i class="material-icons left">share</i>Facebook
                     </a>
                 </div>

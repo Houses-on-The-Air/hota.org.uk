@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Portable Antenna Solutions for HOTA - Houses on the Air";
-$pageDescription = "Discover portable antenna options perfect for Houses on the Air activations. From quick-deploy dipoles to compact verticals, find the right antenna for your HOTA operations.";
+$pageDescription = "Discover practical antenna solutions for Houses on the Air activations, with options for different locations, bands, and operating conditions.";
 ?>
 
 <div class="container">
@@ -15,295 +15,438 @@ $pageDescription = "Discover portable antenna options perfect for Houses on the 
         </ul>
     </div>
 
-    <p class="flow-text">Choosing the right portable antenna is crucial for successful HOTA activations. Here are some recommended options for different situations and band preferences.</p>
+    <div class="row">
+        <div class="col s12">
+            <div class="card-panel">
+                <p class="flow-text">Selecting the right portable antenna can make a significant difference in your HOTA activations. This guide covers practical options for different locations and operating styles.</p>
+                <p>Remember that effective HOTA activations can be accomplished with simple antenna systems—you don't need complex or expensive setups to participate!</p>
+            </div>
+        </div>
+    </div>
 
-    <!-- Introduction -->
+    <!-- Antenna Selection Overview -->
     <div class="card">
         <div class="card-content">
-            <span class="card-title">Antenna Considerations for HOTA</span>
+            <span class="card-title"><i class="material-icons left">settings</i>Antenna Selection Considerations</span>
 
-            <p>When selecting antennas for HOTA activations, consider these key factors:</p>
-
-            <div class="row">
+            <div class="row mt-3">
                 <div class="col s12 m6">
-                    <h4>Practical Considerations</h4>
+                    <h5>Location Factors</h5>
                     <ul class="browser-default">
-                        <li><strong>Quick deployment</strong> - Easy to set up and take down</li>
-                        <li><strong>Portability</strong> - Lightweight and compact for transport</li>
-                        <li><strong>Versatility</strong> - Works in various environments</li>
-                        <li><strong>Low profile</strong> - Less conspicuous in residential areas</li>
-                        <li><strong>Minimal support requirements</strong> - Less dependence on trees or tall structures</li>
+                        <li><strong>Space available:</strong> Garden size, nearby trees, height restrictions</li>
+                        <li><strong>Access to supports:</strong> Trees, fences, temporary masts</li>
+                        <li><strong>Ground quality:</strong> For vertical antennas and radials</li>
+                        <li><strong>Nearby structures:</strong> Buildings, power lines, metal objects</li>
                     </ul>
                 </div>
                 <div class="col s12 m6">
-                    <h4>Performance Considerations</h4>
+                    <h5>Operating Preferences</h5>
                     <ul class="browser-default">
-                        <li><strong>Multi-band operation</strong> - Cover more bands without antenna changes</li>
-                        <li><strong>Efficiency</strong> - Make the most of your transmitter power</li>
-                        <li><strong>Noise rejection</strong> - Important in residential areas</li>
-                        <li><strong>Radiation pattern</strong> - Suitable for your target contacts</li>
-                        <li><strong>Power handling</strong> - Compatible with your operating power</li>
+                        <li><strong>Bands of interest:</strong> HF, VHF, UHF, specific bands</li>
+                        <li><strong>Modes:</strong> SSB, CW, digital modes</li>
+                        <li><strong>Setup time:</strong> Quick deployment vs. performance</li>
+                        <li><strong>Transport requirements:</strong> Size, weight, complexity</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Popular Portable Antenna Options -->
-    <div class="card mt-4">
-        <div class="card-content">
-            <span class="card-title">Popular Portable Antenna Options</span>
+    <!-- Popular Portable Antennas - Start with HF -->
+    <h3>HF Portable Antennas</h3>
 
-            <!-- Wire Antennas -->
-            <h4 class="header">Wire Antennas</h4>
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="card horizontal">
-                        <div class="card-image valign-wrapper">
-                            <img src="/images/antennas/dipole.jpg" alt="Dipole Antenna" class="responsive-img">
-                        </div>
-                        <div class="card-stacked">
-                            <div class="card-content">
-                                <span class="card-title">Portable Dipoles</span>
-                                <p><strong>Difficulty:</strong> Easy</p>
-                                <p>Simple, effective, and quick to deploy. Can be hung between trees, buildings, or portable supports.</p>
-                                <p><strong>Pros:</strong> Excellent performance, lightweight, inexpensive</p>
-                                <p><strong>Cons:</strong> Requires supports at both ends, band-specific</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6">
-                    <div class="card horizontal">
-                        <div class="card-image valign-wrapper">
-                            <img src="/images/antennas/efhw.jpg" alt="EFHW Antenna" class="responsive-img">
-                        </div>
-                        <div class="card-stacked">
-                            <div class="card-content">
-                                <span class="card-title">End-Fed Half-Wave</span>
-                                <p><strong>Difficulty:</strong> Easy to Moderate</p>
-                                <p>Popular for portable operations due to requiring support at only one end. Works on multiple bands with a matching transformer.</p>
-                                <p><strong>Pros:</strong> Single-point suspension, multi-band with transformer</p>
-                                <p><strong>Cons:</strong> Might need counterpoise, can have RF feedback</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="row">
+        <!-- Wire Antennas -->
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Wire Antennas</span>
+                    <p>Simple, effective, and lightweight options for many situations.</p>
 
-            <!-- Vertical Antennas -->
-            <h4 class="header mt-4">Vertical Antennas</h4>
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="card horizontal">
-                        <div class="card-image valign-wrapper">
-                            <img src="/images/antennas/vertical.jpg" alt="Vertical Antenna" class="responsive-img">
-                        </div>
-                        <div class="card-stacked">
-                            <div class="card-content">
-                                <span class="card-title">Portable Verticals</span>
-                                <p><strong>Difficulty:</strong> Moderate</p>
-                                <p>Self-supporting antennas with low take-off angles for good DX potential.</p>
-                                <p><strong>Pros:</strong> Good for DX, small footprint, no high supports needed</p>
-                                <p><strong>Cons:</strong> Requires radials/counterpoises, lower efficiency on lower bands</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6">
-                    <div class="card horizontal">
-                        <div class="card-image valign-wrapper">
-                            <img src="/images/antennas/mag-loop.jpg" alt="Magnetic Loop Antenna" class="responsive-img">
-                        </div>
-                        <div class="card-stacked">
-                            <div class="card-content">
-                                <span class="card-title">Magnetic Loops</span>
-                                <p><strong>Difficulty:</strong> Moderate to Advanced</p>
-                                <p>Small, efficient antennas with very small footprint. Excellent for space-restricted locations.</p>
-                                <p><strong>Pros:</strong> Very small, good reception, low noise pickup</p>
-                                <p><strong>Cons:</strong> Narrow bandwidth, requires retuning when changing frequencies</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Commercial Options -->
-            <h4 class="header mt-4">Commercial Portable Antennas</h4>
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="card-panel">
-                        <h5>Chameleon Antenna MPAS Lite</h5>
-                        <p>A versatile, multi-band portable antenna system that can be configured as a vertical or end-fed wire antenna.</p>
-                        <p><strong>Bands:</strong> 160m-6m</p>
-                        <p><strong>Power:</strong> 100W SSB</p>
-                        <p><strong>Setup time:</strong> 5-10 minutes</p>
-                    </div>
-                </div>
-                <div class="col s12 m6">
-                    <div class="card-panel">
-                        <h5>Packtenna Mini</h5>
-                        <p>Ultra-portable end-fed half-wave antenna that packs into a tiny pouch.</p>
-                        <p><strong>Bands:</strong> 40m-10m (model dependent)</p>
-                        <p><strong>Power:</strong> 25W SSB</p>
-                        <p><strong>Setup time:</strong> 3-5 minutes</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="card-panel">
-                        <h5>SOTAbeams Bandhopper</h5>
-                        <p>Lightweight linked dipole system for multiple bands.</p>
-                        <p><strong>Bands:</strong> 40m-15m</p>
-                        <p><strong>Power:</strong> 100W SSB</p>
-                        <p><strong>Setup time:</strong> 5-10 minutes</p>
-                    </div>
-                </div>
-                <div class="col s12 m6">
-                    <div class="card-panel">
-                        <h5>MFJ-1899T</h5>
-                        <p>Collapsible whip antenna for portable work.</p>
-                        <p><strong>Bands:</strong> 40m-10m</p>
-                        <p><strong>Power:</strong> 25W SSB</p>
-                        <p><strong>Setup time:</strong> 2-3 minutes</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- DIY Antenna Projects -->
-    <div class="card mt-4">
-        <div class="card-content">
-            <span class="card-title">DIY Antenna Projects</span>
-
-            <p>Building your own antenna can be rewarding and cost-effective. Here are some simple DIY antenna projects perfect for HOTA activations:</p>
-
-            <div class="row">
-                <div class="col s12 m6">
-                    <h5>Simple Dipole Antenna</h5>
-                    <div class="card-panel">
-                        <p><strong>Materials needed:</strong></p>
+                    <div class="antenna-type">
+                        <h5>Dipole</h5>
                         <ul class="browser-default">
-                            <li>Wire (stranded, insulated, or bare copper)</li>
-                            <li>Coax cable (RG-58 or similar)</li>
-                            <li>Centre insulator (can be made from PVC)</li>
-                            <li>End insulators (plastic or ceramic)</li>
-                            <li>Rope for hanging</li>
+                            <li><strong>Pros:</strong> Simple, effective, inexpensive</li>
+                            <li><strong>Cons:</strong> Requires two supports, band-specific</li>
+                            <li><strong>Length:</strong> ~5m per side for 20m band</li>
                         </ul>
-                        <p><strong>Construction:</strong> Cut two wires to quarter wavelength of your target frequency, attach to centre insulator with coax connection, and add end insulators.</p>
+                        <p>Perfect for situations with available trees or supports about 10-30m apart.</p>
+                    </div>
+
+                    <div class="antenna-type">
+                        <h5>End-Fed Half-Wave (EFHW)</h5>
+                        <ul class="browser-default">
+                            <li><strong>Pros:</strong> Single support point, multi-band options</li>
+                            <li><strong>Cons:</strong> Requires matching transformer</li>
+                            <li><strong>Length:</strong> ~10m for 20m band</li>
+                        </ul>
+                        <p>Excellent for sloping configurations from a single support.</p>
+                    </div>
+
+                    <div class="antenna-type">
+                        <h5>Random Wire</h5>
+                        <ul class="browser-default">
+                            <li><strong>Pros:</strong> Flexible length, multi-band with tuner</li>
+                            <li><strong>Cons:</strong> Requires good ATU, counterpoise</li>
+                            <li><strong>Length:</strong> ~10-20m</li>
+                        </ul>
+                        <p>Works in a variety of configurations but requires a good antenna tuner.</p>
                     </div>
                 </div>
-                <div class="col s12 m6">
-                    <h5>Portable 49:1 EFHW</h5>
-                    <div class="card-panel">
-                        <p><strong>Materials needed:</strong></p>
-                        <ul class="browser-default">
-                            <li>FT140-43 ferrite toroid</li>
-                            <li>Enamelled copper wire (0.5-1mm)</li>
-                            <li>Antenna wire (stranded or solid)</li>
-                            <li>Small box for enclosure</li>
-                            <li>SO-239 connector</li>
-                        </ul>
-                        <p><strong>Construction:</strong> Wind primary (2 turns) and secondary (14 turns) on the toroid, connect to antenna wire and SO-239 connector, house in waterproof box.</p>
-                    </div>
+                <div class="card-action">
+                    <a href="?page=wire-antennas">Wire Antenna Examples</a>
                 </div>
             </div>
+        </div>
 
-            <div class="card-panel light-blue lighten-5 mt-3">
-                <h5><i class="material-icons left">lightbulb</i>Pro Tip: Wire Length Calculator</h5>
-                <p>For a dipole, each leg should be approximately 468/f feet long (where f is frequency in MHz). For example, for 20m (14.175 MHz), each leg should be about 33 feet long.</p>
-                <p>For an EFHW, the wire should be approximately 468/f feet long for the entire wire.</p>
+        <!-- Vertical Antennas -->
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Vertical Antennas</span>
+                    <p>Excellent for limited space or when you need a low visual profile.</p>
+
+                    <div class="antenna-type">
+                        <h5>Quarter-Wave Vertical</h5>
+                        <ul class="browser-default">
+                            <li><strong>Pros:</strong> Omnidirectional, compact footprint</li>
+                            <li><strong>Cons:</strong> Requires radials for efficiency</li>
+                            <li><strong>Height:</strong> ~5m for 20m band</li>
+                        </ul>
+                        <p>Good performance with modest space requirements when radials can be deployed.</p>
+                    </div>
+
+                    <div class="antenna-type">
+                        <h5>Multi-band Vertical</h5>
+                        <ul class="browser-default">
+                            <li><strong>Pros:</strong> Works on multiple bands, single support</li>
+                            <li><strong>Cons:</strong> Heavier, more complex setup</li>
+                            <li><strong>Height:</strong> Usually 5-8m</li>
+                        </ul>
+                        <p>Commercial options like the Cushcraft R9, Hustler 6BTV, or DIY designs.</p>
+                    </div>
+
+                    <div class="antenna-type">
+                        <h5>Portable Vertical (e.g., MP1, Superantenna)</h5>
+                        <ul class="browser-default">
+                            <li><strong>Pros:</strong> Very compact, quick setup</li>
+                            <li><strong>Cons:</strong> Limited efficiency, reduced performance</li>
+                            <li><strong>Height:</strong> 1-3m typically</li>
+                        </ul>
+                        <p>Great for ultra-portable operations where space is severely limited.</p>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <a href="?page=vertical-antennas">Vertical Antenna Examples</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Antenna Deployment Tips -->
-    <div class="card mt-4">
+    <div class="row">
+        <!-- Loop Antennas -->
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Loop Antennas</span>
+                    <p>Suitable for smaller spaces and quieter reception.</p>
+
+                    <div class="antenna-type">
+                        <h5>Magnetic Loop</h5>
+                        <ul class="browser-default">
+                            <li><strong>Pros:</strong> Very compact, less noise</li>
+                            <li><strong>Cons:</strong> Narrow bandwidth, high voltages, expensive</li>
+                            <li><strong>Size:</strong> ~1-2m diameter</li>
+                        </ul>
+                        <p>Excellent for balconies, small gardens, or indoors where space is severely restricted.</p>
+                    </div>
+
+                    <div class="antenna-type">
+                        <h5>Full-Wave Loop</h5>
+                        <ul class="browser-default">
+                            <li><strong>Pros:</strong> Good performance, quiet reception</li>
+                            <li><strong>Cons:</strong> Requires larger space in all dimensions</li>
+                            <li><strong>Size:</strong> ~20m circumference for 20m</li>
+                        </ul>
+                        <p>Can be configured in various shapes: square, triangle, or circle as available supports allow.</p>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <a href="?page=loop-antennas">Loop Antenna Examples</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special & Multi-band Solutions -->
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Multi-band & Special Solutions</span>
+                    <p>Options for covering multiple bands efficiently.</p>
+
+                    <div class="antenna-type">
+                        <h5>Linked Dipole</h5>
+                        <ul class="browser-default">
+                            <li><strong>Pros:</strong> Multi-band without a tuner, good efficiency</li>
+                            <li><strong>Cons:</strong> Requires manual reconfiguration</li>
+                            <li><strong>Size:</strong> Length of lowest frequency band</li>
+                        </ul>
+                        <p>Uses links (connectors) to change electrical length for different bands.</p>
+                    </div>
+
+                    <div class="antenna-type">
+                        <h5>Fan Dipole</h5>
+                        <ul class="browser-default">
+                            <li><strong>Pros:</strong> Multi-band without adjustment</li>
+                            <li><strong>Cons:</strong> Wider, more wind load, interaction between elements</li>
+                            <li><strong>Size:</strong> Length of longest element</li>
+                        </ul>
+                        <p>Multiple dipole elements fed at the same point for different bands.</p>
+                    </div>
+
+                    <div class="antenna-type">
+                        <h5>Portable Yagi/Beam</h5>
+                        <ul class="browser-default">
+                            <li><strong>Pros:</strong> Directional gain, excellent performance</li>
+                            <li><strong>Cons:</strong> More complex, heavier, requires rotator or manual turning</li>
+                            <li><strong>Size:</strong> Depends on band, typically 2-6m boom length</li>
+                        </ul>
+                        <p>Options include portable hex beams and lightweight Yagis.</p>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <a href="?page=multiband-antennas">Multiband Antenna Examples</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VHF/UHF Antennas -->
+    <h3>VHF & UHF Portable Antennas</h3>
+
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">VHF/UHF Options</span>
+                    <p>Compact antennas for the higher frequency bands.</p>
+
+                    <div class="antenna-type">
+                        <h5>J-Pole & Slim Jim</h5>
+                        <ul class="browser-default">
+                            <li><strong>Pros:</strong> Good gain, no radials needed</li>
+                            <li><strong>Cons:</strong> Single band (typically)</li>
+                            <li><strong>Size:</strong> ~1.5m for 2m band</li>
+                        </ul>
+                        <p>Can be made from ladder line or rigid materials; rolls up for transport.</p>
+                    </div>
+
+                    <div class="antenna-type">
+                        <h5>Yagi Antennas</h5>
+                        <ul class="browser-default">
+                            <li><strong>Pros:</strong> High gain, directional</li>
+                            <li><strong>Cons:</strong> Larger, needs pointing, single band</li>
+                            <li><strong>Size:</strong> ~1m boom for basic 3-element VHF</li>
+                        </ul>
+                        <p>Excellent for maximising range in a specific direction. Many collapsible designs available.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Specialty VHF/UHF Antennas</span>
+                    <p>For specific portable operations.</p>
+
+                    <div class="antenna-type">
+                        <h5>Roll-up J-Pole</h5>
+                        <ul class="browser-default">
+                            <li><strong>Pros:</strong> Extremely portable, hangs anywhere</li>
+                            <li><strong>Cons:</strong> Moderate gain</li>
+                            <li><strong>Size:</strong> Rolls to pocket size</li>
+                        </ul>
+                        <p>Made from ladder line, can be hung from any convenient support.</p>
+                    </div>
+
+                    <div class="antenna-type">
+                        <h5>Arrow Antenna & Similar</h5>
+                        <ul class="browser-default">
+                            <li><strong>Pros:</strong> Dual-band (2m/70cm), portable</li>
+                            <li><strong>Cons:</strong> Needs manual aiming</li>
+                            <li><strong>Size:</strong> Breaks down to ~60cm sections</li>
+                        </ul>
+                        <p>Popular for satellite work, can also be excellent for terrestrial VHF/UHF.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Support Structures -->
+    <h3>Antenna Supports</h3>
+
+    <div class="card">
         <div class="card-content">
-            <span class="card-title">Antenna Deployment Tips</span>
+            <span class="card-title"><i class="material-icons left">vertical_align_top</i>Portable Mast Options</span>
+            <p>Successful portable operation often depends on getting your antenna to a reasonable height.</p>
 
             <div class="row">
-                <div class="col s12 m6">
-                    <h5>Height and Orientation</h5>
+                <div class="col s12 m4">
+                    <h5>Telescopic Fibreglass Poles</h5>
                     <ul class="browser-default">
-                        <li>Try to get wire antennas at least 5-6 metres above ground for better performance</li>
-                        <li>Orient dipoles broadside to your desired communication direction</li>
-                        <li>For verticals, ensure good ground or counterpoise connections</li>
-                        <li>Keep antennas away from metal objects, gutters, and power lines</li>
+                        <li><strong>Pros:</strong> Lightweight, non-conductive</li>
+                        <li><strong>Cons:</strong> Less rigid in high winds</li>
+                        <li><strong>Height:</strong> Typically 6-12m</li>
+                        <li><strong>Example:</strong> Spiderbeam, SOTAbeams</li>
                     </ul>
                 </div>
-                <div class="col s12 m6">
-                    <h5>Quick Deployment Methods</h5>
+
+                <div class="col s12 m4">
+                    <h5>Telescopic Aluminium Masts</h5>
                     <ul class="browser-default">
-                        <li>Use fishing line and small weights to throw ropes over trees</li>
-                        <li>Portable telescoping masts make excellent supports</li>
-                        <li>Bungee cords and carabiners enable fast setup and takedown</li>
-                        <li>Consider using "dog bone" insulators for quick wire adjustments</li>
+                        <li><strong>Pros:</strong> Stronger, more rigid</li>
+                        <li><strong>Cons:</strong> Heavier, conductive</li>
+                        <li><strong>Height:</strong> Typically 3-10m</li>
+                        <li><strong>Example:</strong> Military surplus masts</li>
+                    </ul>
+                </div>
+
+                <div class="col s12 m4">
+                    <h5>Fishing Poles</h5>
+                    <ul class="browser-default">
+                        <li><strong>Pros:</strong> Very inexpensive, lightweight</li>
+                        <li><strong>Cons:</strong> Less durable, limited height</li>
+                        <li><strong>Height:</strong> Typically 4-8m</li>
+                        <li><strong>Example:</strong> Any telescopic fishing pole</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="card-panel deep-orange lighten-5 mt-3">
-                <h5><i class="material-icons left">warning</i>Safety First</h5>
-                <p>Always check for power lines before deploying any antenna. Never install antennas where they could come in contact with electrical lines, even under failure conditions. Keep antenna wires away from pedestrian areas where people could walk into them.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Related Links -->
-    <div class="card-panel blue-grey lighten-5 mt-4">
-        <h3>Related Resources</h3>
-        <div class="row">
-            <div class="col s12 m6">
-                <h4>HOTA Operations</h4>
+            <div class="card-panel blue-grey lighten-5 mt-4">
+                <h5>Mast Mounting Tips</h5>
                 <ul class="browser-default">
-                    <li><a href="?page=house-activations">House Activation Guide</a></li>
-                    <li><a href="?page=operating-guidelines">Operating Guidelines</a></li>
-                    <li><a href="?page=contests">HOTA Contests</a></li>
+                    <li>Use tent pegs and guy lines for stability in windy conditions</li>
+                    <li>A tripod base provides excellent free-standing support</li>
+                    <li>Fence posts, garden furniture, or car tyre bases can all serve as mast supports</li>
+                    <li>Always be aware of overhead power lines and maintain safe distances</li>
                 </ul>
             </div>
-            <div class="col s12 m6">
-                <h4>Technical Resources</h4>
+        </div>
+    </div>
+
+    <!-- Antenna Building & Resources -->
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title"><i class="material-icons left">build</i>DIY Antenna Resources</span>
+            <p>Building your own antennas can be rewarding and cost-effective.</p>
+
+            <div class="row">
+                <div class="col s12 m6">
+                    <h5>Basic Antenna Construction Materials</h5>
+                    <ul class="browser-default">
+                        <li>Stranded copper wire (various gauges)</li>
+                        <li>Baluns and 1:1 chokes</li>
+                        <li>75-ohm TV twin lead for 300-ohm feedline</li>
+                        <li>PVC pipe for structural elements</li>
+                        <li>Nylon cord for supports and guy lines</li>
+                        <li>Egg insulators for wire ends</li>
+                    </ul>
+                </div>
+
+                <div class="col s12 m6">
+                    <h5>Tools You'll Need</h5>
+                    <ul class="browser-default">
+                        <li>Wire cutters and strippers</li>
+                        <li>Soldering iron and solder</li>
+                        <li>Multimeter for continuity checks</li>
+                        <li>Antenna analyser (helpful but not essential)</li>
+                        <li>SWR meter for tuning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card-panel green lighten-4 mt-4">
+                <h5>Recommended DIY Antenna Plans</h5>
                 <ul class="browser-default">
-                    <li><a href="?page=band-plans">Band Plans</a></li>
-                    <li><a href="?page=logging-software">Logging Software</a></li>
-                    <li><a href="?page=discord">Get Help on Discord</a></li>
+                    <li><a href="https://www.sotabeams.co.uk/linked-dipole-kit/" target="_blank" rel="nofollow noopener">SOTA Beams Linked Dipole Instructions</a></li>
+                    <li><a href="https://www.nonstopsystems.com/radio/frank_radio_antenna_homebrew.htm" target="_blank" rel="nofollow noopener">Frank's Antenna Projects</a></li>
+                    <li><a href="https://www.qrz.com/db/k4abt" target="_blank" rel="nofollow noopener">K4ABT Portable Antenna Designs</a></li>
                 </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Power Sources -->
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title"><i class="material-icons left">battery_charging_full</i>Power Sources for Portable Operation</span>
+            <p>Reliable power is essential for successful HOTA activations away from mains electricity.</p>
+
+            <div class="row">
+                <div class="col s12 m4">
+                    <h5>LiFePO4 Batteries</h5>
+                    <ul class="browser-default">
+                        <li><strong>Pros:</strong> Lightweight, long life, fast charging</li>
+                        <li><strong>Cons:</strong> Higher initial cost</li>
+                        <li><strong>Typical capacity:</strong> 12-20Ah</li>
+                        <li>Perfect for portable operations due to weight savings</li>
+                    </ul>
+                </div>
+
+                <div class="col s12 m4">
+                    <h5>Sealed Lead Acid (SLA)</h5>
+                    <ul class="browser-default">
+                        <li><strong>Pros:</strong> Inexpensive, readily available</li>
+                        <li><strong>Cons:</strong> Heavy, shorter cycle life</li>
+                        <li><strong>Typical capacity:</strong> 7-18Ah</li>
+                        <li>Good budget option when weight is less critical</li>
+                    </ul>
+                </div>
+
+                <div class="col s12 m4">
+                    <h5>Solar Power</h5>
+                    <ul class="browser-default">
+                        <li><strong>Pros:</strong> Renewable, silent operation</li>
+                        <li><strong>Cons:</strong> Weather dependent, needs battery backup</li>
+                        <li><strong>Typical setup:</strong> 50-100W panel with charge controller</li>
+                        <li>Great for extended operations with sufficient sunlight</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <style>
-.card-image {
-    padding: 10px;
-    max-width: 120px;
+.antenna-type {
+    border-left: 3px solid #607d8b;
+    padding-left: 15px;
+    margin-bottom: 20px;
 }
 
-.card-image img {
-    max-height: 100px;
-    object-fit: contain;
+.antenna-type h5 {
+    color: #455a64;
+    margin-top: 0;
+    font-size: 1.2rem;
 }
 
-.card.horizontal {
-    display: flex;
-    height: 100%;
+.antenna-type ul {
+    margin-top: 5px;
 }
 
-.card.horizontal .card-stacked {
-    flex: 1;
+.mt-3 {
+    margin-top: 1.5rem;
 }
 
-@media only screen and (max-width: 600px) {
-    .card.horizontal {
-        display: block;
-    }
-
-    .card-image {
-        max-width: 100%;
-        text-align: center;
-    }
+.mt-4 {
+    margin-top: 2rem;
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize any potential Materialize components
+});
+</script>

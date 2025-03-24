@@ -8,7 +8,7 @@ $pageDescription = "Sorry, we couldn't find the page you were looking for on the
         <h1>404 - Page Not Found</h1>
 
         <div class="error-img">
-            <img src="/images/errors/404-house.svg" alt="House Not Found Illustration" class="responsive-img" style="max-width: 300px;">
+            <img src="/images/404-house.jpg" alt="House Not Found Illustration" class="responsive-img" style="max-width: 300px;">
         </div>
 
         <p class="flow-text">Sorry, we couldn't find the address you were looking for.</p>

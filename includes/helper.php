@@ -115,6 +115,7 @@ function format_uk_date($date, $includeTime = false, $longMonth = false) {
  */
 function convert_to_uk_spelling($text) {
     $usToUk = [
+        // Basic -ize to -ise conversions
         'organize' => 'organise',
         'organizing' => 'organising',
         'organized' => 'organised',
@@ -122,6 +123,14 @@ function convert_to_uk_spelling($text) {
         'analyze' => 'analyse',
         'analyzing' => 'analysing',
         'analyzed' => 'analysed',
+        'recognize' => 'recognise',
+        'recognizing' => 'recognising',
+        'recognized' => 'recognised',
+        'standardize' => 'standardise',
+        'standardizing' => 'standardising',
+        'standardized' => 'standardised',
+
+        // Other common US/UK spelling differences
         'color' => 'colour',
         'colorize' => 'colourise',
         'colorizing' => 'colourising',
@@ -132,8 +141,8 @@ function convert_to_uk_spelling($text) {
         'center' => 'centre',
         'centered' => 'centred',
         'fiber' => 'fibre',
-        'program' => 'programme',
-        'license' => 'licence',
+        'program' => 'programme', // Except computer program
+        'license' => 'licence', // When used as a noun
         'practice' => 'practise', // When used as a verb
         'dialog' => 'dialogue',
         'catalog' => 'catalogue',
@@ -148,6 +157,21 @@ function convert_to_uk_spelling($text) {
         'canceling' => 'cancelling',
         'fulfill' => 'fulfil',
         'fulfillment' => 'fulfilment',
+        'skillful' => 'skilful',
+        'defense' => 'defence',
+        'offense' => 'offence',
+        'apologize' => 'apologise',
+        'apologizing' => 'apologising',
+        'apologized' => 'apologised',
+        'authorized' => 'authorised',
+        'authorizing' => 'authorising',
+        'authorize' => 'authorise',
+        'customized' => 'customised',
+        'customizing' => 'customising',
+        'customize' => 'customise',
+        'digitize' => 'digitise',
+        'digitized' => 'digitised',
+        'digitizing' => 'digitising',
     ];
 
     // Case-insensitive replacement
@@ -161,6 +185,14 @@ function convert_to_uk_spelling($text) {
         // Replace all uppercase
         $text = str_ireplace(strtoupper($us), strtoupper($uk), $text);
     }
+
+    // Special case for 'license' as a verb vs 'licence' as a noun
+    // In British English, 'license' is the verb form, while 'licence' is the noun
+    // This needs context that simple find/replace can't handle
+
+    // Computer-specific exceptions (these stay American spelling)
+    $text = str_replace('computer programme', 'computer program', $text);
+    $text = str_replace('software programme', 'software program', $text);
 
     return $text;
 }

@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "HOTA Award Tiers";
-$pageDescription = "Explore the different tiers of awards available in the Houses on the Air (HOTA) amateur radio award program, from Cardboard Box to Mansion.";
+$pageDescription = "Explore the different tiers of awards available in the Houses on the Air (HOTA) amateur radio award programme, from Cardboard Box to Mansion.";
 ?>
 
 <div class="container">
@@ -199,7 +199,7 @@ $pageDescription = "Explore the different tiers of awards available in the House
     <div class="card mt-4">
         <div class="card-content">
             <span class="card-title"><i class="material-icons left">cell_tower</i>Activator Award Tiers</span>
-            <p>Recognition for stations who operate from different house locations, creating activity for the HOTA program.</p>
+            <p>Recognition for stations who operate from different house locations, creating activity for the HOTA programme.</p>
 
             <div class="award-tier-comparison">
                 <div class="timeline timeline-activator">

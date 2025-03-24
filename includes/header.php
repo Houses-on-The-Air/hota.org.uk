@@ -84,7 +84,7 @@ if (!isset($pageTitle)) {
                         <li><a href="?page=appicons">App Icons</a></li>
                     </ul>
 
-                    <li><a href="?page=store">Store</a></li>
+                    <li><a href="?page=store">Shop</a></li>
                     <li><a href="?page=contact">Contact</a></li>
                 </ul>
             </div>
@@ -126,7 +126,7 @@ if (!isset($pageTitle)) {
             <li class="pl-4"><a href="?page=appicons">App Icons</a></li>
             <li class="divider"></li>
 
-            <li><a href="?page=store">Store</a></li>
+            <li><a href="?page=store">Shop</a></li>
             <li><a href="?page=contact">Contact</a></li>
         </ul>
     </header>

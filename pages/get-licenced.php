@@ -1,10 +1,10 @@
 <?php
-$pageTitle = "Get Licenced as a Radio Amateur - HOTA";
-$pageDescription = "Learn how to get your amateur radio licence in the UK and around the world. Find resources, study guides, and information on licence examinations.";
+$pageTitle = "How to Get Licenced - HOTA";
+$pageDescription = "A guide to obtaining your amateur radio licence in the UK and internationally to participate in Houses on the Air (HOTA).";
 ?>
 
 <div class="container">
-    <h1>Get Your Amateur Radio Licence</h1>
+    <h1>How to Get Licenced</h1>
 
     <!-- Breadcrumbs -->
     <div class="breadcrumb-wrapper">
@@ -15,168 +15,222 @@ $pageDescription = "Learn how to get your amateur radio licence in the UK and ar
         </ul>
     </div>
 
-    <p class="flow-text">Obtaining your amateur radio licence is the first step to participating fully in HOTA. Here's how to get started.</p>
+    <div class="row">
+        <div class="col s12 l8">
+            <div class="card-panel">
+                <h4>Becoming a Licenced Amateur Radio Operator</h4>
+                <p class="flow-text">To fully participate in Houses on the Air, you'll need your own amateur radio licence. This page provides an overview of the licencing process in the UK and links to resources for other countries.</p>
+            </div>
 
-    <!-- UK Licensing -->
-    <div class="card">
-        <div class="card-content">
-            <span class="card-title">UK Amateur Radio Licensing</span>
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title"><i class="material-icons left">school</i>The UK Amateur Radio Licence</span>
 
-            <p>In the United Kingdom, amateur radio licences are issued by Ofcom and administered through the Radio Society of Great Britain (RSGB). There are three progressive licence levels:</p>
+                    <p>In the United Kingdom, amateur radio licences are issued by Ofcom and are structured in three progressive levels:</p>
 
-            <div class="row">
-                <div class="col s12 m4">
-                    <div class="card-panel">
-                        <h4>Foundation Licence</h4>
-                        <ul class="browser-default">
-                            <li>Entry-level licence</li>
-                            <li>25W power limit</li>
-                            <li>Simple exam with no practical assessments</li>
-                            <li>Perfect for beginners</li>
-                            <li>Foundation callsign (e.g., M7ABC)</li>
-                        </ul>
+                    <div class="row">
+                        <div class="col s12">
+                            <!-- UK License Table -->
+                            <table class="striped responsive-table">
+                                <thead>
+                                    <tr>
+                                        <th>Licence Level</th>
+                                        <th>Callsign Prefix</th>
+                                        <th>Power Limit</th>
+                                        <th>Exam Difficulty</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Foundation</td>
+                                        <td>M7</td>
+                                        <td>25 watts</td>
+                                        <td>Basic entry level</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Intermediate</td>
+                                        <td>2E0/2E1</td>
+                                        <td>400 watts</td>
+                                        <td>Medium difficulty</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Full</td>
+                                        <td>M0/M1</td>
+                                        <td>1,000 watts</td>
+                                        <td>Advanced technical knowledge</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <h5 class="mt-4">Steps to Get Licenced in the UK</h5>
+                    <ol class="browser-default">
+                        <li><strong>Study for the appropriate exam</strong> - Start with the Foundation level</li>
+                        <li><strong>Find an exam session</strong> - Through a local radio club or online with the RSGB</li>
+                        <li><strong>Pass your exam</strong> - Complete the written and practical assessments</li>
+                        <li><strong>Apply for your licence</strong> - Through the Ofcom website once you've passed</li>
+                        <li><strong>Receive your callsign</strong> - Usually within a few days of application</li>
+                    </ol>
+
+                    <div class="card-panel blue lighten-5 mt-3">
+                        <h5>RSGB Examination Support</h5>
+                        <p>The Radio Society of Great Britain (RSGB) administers amateur radio examinations in the UK and provides excellent study materials and support:</p>
+                        <div class="center-align">
+                            <a href="https://rsgb.org/main/clubs-training/getting-started-in-amateur-radio/" class="btn blue darken-1 waves-effect waves-light" target="_blank" rel="nofollow noopener">RSGB Getting Started Guide</a>
+                            <a href="?page=online-training" class="btn blue darken-1 waves-effect waves-light">HOTA Training Resources</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col s12 m4">
-                    <div class="card-panel">
-                        <h4>Intermediate Licence</h4>
-                        <ul class="browser-default">
-                            <li>Mid-level licence</li>
-                            <li>400W power limit</li>
-                            <li>More complex theory exam</li>
-                            <li>No additional practical assessments</li>
-                            <li>Intermediate callsign (e.g., 2E0ABC)</li>
-                        </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title"><i class="material-icons left">public</i>Getting Licenced Outside the UK</span>
+
+                    <p>Amateur radio licencing requirements vary by country, but most follow a similar examination and authorisation process:</p>
+
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <h5>United States</h5>
+                            <p>The FCC issues licences with three levels: Technician, General, and Extra.</p>
+                            <a href="https://www.arrl.org/getting-your-technician-license" target="_blank" rel="nofollow noopener" class="btn-small blue-grey waves-effect waves-light">ARRL Licensing Info</a>
+                        </div>
+
+                        <div class="col s12 m6">
+                            <h5>Canada</h5>
+                            <p>Innovation, Science and Economic Development Canada (ISED) issues Basic and Advanced licences.</p>
+                            <a href="https://www.rac.ca/how-to-begin/" target="_blank" rel="nofollow noopener" class="btn-small blue-grey waves-effect waves-light">RAC Licensing Info</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col s12 m4">
-                    <div class="card-panel">
-                        <h4>Full Licence</h4>
-                        <ul class="browser-default">
-                            <li>Advanced level licence</li>
-                            <li>1,000W power limit</li>
-                            <li>Comprehensive written examination</li>
-                            <li>Full amateur radio privileges</li>
-                            <li>Full callsign (e.g., M0ABC)</li>
-                        </ul>
+
+                    <div class="row mt-3">
+                        <div class="col s12 m6">
+                            <h5>Australia</h5>
+                            <p>The Australian Communications and Media Authority (ACMA) issues Foundation, Standard, and Advanced licences.</p>
+                            <a href="https://www.wia.org.au/licenses/foundation/about/" target="_blank" rel="nofollow noopener" class="btn-small blue-grey waves-effect waves-light">WIA Licensing Info</a>
+                        </div>
+
+                        <div class="col s12 m6">
+                            <h5>European Union</h5>
+                            <p>Most EU countries follow the CEPT system with harmonised HAREC (Harmonised Amateur Radio Examination Certificate).</p>
+                            <a href="https://www.ero.dk/588" target="_blank" rel="nofollow noopener" class="btn-small blue-grey waves-effect waves-light">CEPT Info</a>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="card-panel blue-grey lighten-5 mt-3">
-                <h5><i class="material-icons left">info</i>Examinations During COVID-19</h5>
-                <p>The RSGB has implemented online remote invigilation for all levels of amateur radio examinations during the COVID-19 pandemic. This allows candidates to take exams from home under supervised conditions.</p>
-            </div>
-
-            <h4>Steps to Get Licenced in the UK</h4>
-            <ol>
-                <li>
-                    <strong>Study for the exam:</strong> Obtain study materials from the RSGB or join a local club offering training courses.
-                </li>
-                <li>
-                    <strong>Register for the examination:</strong> Contact the RSGB to schedule your exam or find a local examination session.
-                </li>
-                <li>
-                    <strong>Pass the examination:</strong> Complete both the theory and practical components (if applicable).
-                </li>
-                <li>
-                    <strong>Apply for your licence:</strong> Once you've passed, apply to Ofcom for your amateur radio licence.
-                </li>
-                <li>
-                    <strong>Receive your callsign:</strong> Ofcom will issue your unique callsign, which you'll use on the air.
-                </li>
-            </ol>
-
-        </div>
-    </div>
-
-    <!-- International Licensing -->
-    <div class="card mt-4">
-        <div class="card-content">
-            <span class="card-title">International Amateur Radio Licensing</span>
-
-            <p>Amateur radio licensing varies by country, but many nations have reciprocal agreements that recognise licences from other countries.</p>
-
-            <div class="row">
-                <div class="col s12 m6">
-                    <h4>United States (FCC)</h4>
-                    <ul class="browser-default">
-                        <li><strong>Technician Class:</strong> Entry-level licence with VHF/UHF privileges and some HF</li>
-                        <li><strong>General Class:</strong> Intermediate licence with most HF privileges</li>
-                        <li><strong>Amateur Extra:</strong> Full privileges across all amateur bands</li>
-                    </ul>
-                    <p><a href="http://www.arrl.org/getting-licensed" target="_blank" rel="nofollow noopener">ARRL Licensing Information</a></p>
-                </div>
-                <div class="col s12 m6">
-                    <h4>European Union (CEPT)</h4>
-                    <ul class="browser-default">
-                        <li><strong>HAREC:</strong> Harmonised Amateur Radio Examination Certificate</li>
-                        <li><strong>CEPT Licence:</strong> Recognised across participating countries</li>
-                        <li><strong>Novice Licence:</strong> Entry-level licence in some countries</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card-panel light-blue lighten-5 mt-3">
-                <h5><i class="material-icons left">flight</i>Operating While Travelling</h5>
-                <p>If you plan to operate while visiting another country, you'll need to understand that country's reciprocal licensing agreements. Many countries honour foreign licences, but you may need to apply for a visitor's permit or use a specific callsign prefix.</p>
-                <p>The CEPT agreement allows UK licencees to operate in many European countries without additional paperwork, and similar arrangements exist worldwide.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Learning Resources -->
-    <div class="card mt-4">
-        <div class="card-content">
-            <span class="card-title">Learning Resources</span>
-
-            <div class="row">
-                <div class="col s12 m6">
-                    <h4>Study Materials</h4>
-                    <ul class="browser-default">
-                        <li><strong>RSGB Publications:</strong> Official study guides for all UK licence levels</li>
-                        <li><strong>Online Training:</strong> Video courses and interactive learning materials</li>
-                        <li><strong>Practice Exams:</strong> Sample questions to test your knowledge</li>
-                        <li><strong>Local Clubs:</strong> Many amateur radio clubs offer training courses</li>
-                    </ul>
-                </div>
-                <div class="col s12 m6">
-                    <h4>Recommended Books</h4>
-                    <ul class="browser-default">
-                        <li>"Foundation Licence Now!" by Alan Betts</li>
-                        <li>"Intermediate Licence: Building on the Foundation" by RSGB</li>
-                        <li>"Advanced Licence Manual" by RSGB</li>
-                        <li>"The Radio Amateur's Handbook" by ARRL (general reference)</li>
-                    </ul>
+                    <div class="card-panel amber lighten-5 mt-4">
+                        <h5>Operating While Travelling</h5>
+                        <p>If you plan to operate while visiting another country, you'll need to understand reciprocal licensing agreements and visitor permissions:</p>
+                        <ul class="browser-default">
+                            <li>CEPT agreements allow operation in many European countries without additional paperwork</li>
+                            <li>Some countries require advance notice or temporary permits</li>
+                            <li>Check requirements before travelling with radio equipment</li>
+                        </ul>
+                        <p>Visit the <a href="https://rsgb.org/main/operating/licensing-novs-visitors/" target="_blank" rel="nofollow noopener">RSGB Visitors Information</a> page for more details.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Local Support -->
-    <div class="card-panel blue-grey lighten-5 mt-4">
-        <h3>Find Local Support</h3>
-        <p>One of the best ways to prepare for your licence examination is to connect with experienced radio amateurs in your area:</p>
+        <div class="col s12 l4">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Training Resources</span>
+                    <p>Find training materials and courses to prepare for your amateur radio exams:</p>
 
-        <div class="row">
-            <div class="col s12 m6">
-                <h4>Local Radio Clubs</h4>
-                <p>Many clubs offer training courses and examination sessions:</p>
-                <div class="center-align">
-                    <a href="https://rsgb.org/main/clubs/uk-club-finder/" target="_blank" rel="nofollow noopener" class="btn blue-grey darken-1 waves-effect waves-light">
-                        <i class="material-icons left">search</i>Find a Club Near You
-                    </a>
+                    <ul class="collection">
+                        <li class="collection-item">
+                            <a href="?page=online-training">HOTA Online Training Resources</a>
+                        </li>
+                        <li class="collection-item">
+                            <a href="https://rsgb.org/main/clubs-training/online-training/courses/" target="_blank" rel="nofollow noopener">RSGB Online Courses</a>
+                        </li>
+                        <li class="collection-item">
+                            <a href="https://www.essexham.co.uk/train/" target="_blank" rel="nofollow noopener">Essex Ham Training</a>
+                        </li>
+                        <li class="collection-item">
+                            <a href="https://www.hamtrain.co.uk/" target="_blank" rel="nofollow noopener">HamTrain Courses</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="col s12 m6">
-                <h4>Online Communities</h4>
-                <p>Connect with others studying for their exams:</p>
-                <div class="center-align">
-                    <a href="?page=discord" class="btn blue-grey darken-1 waves-effect waves-light">
-                        <i class="material-icons left">forum</i>Join HOTA Discord
-                    </a>
+
+            <div class="card-panel purple lighten-5">
+                <h5><i class="material-icons left">help_outline</i>Licence FAQs</h5>
+                <div class="collapsible-container">
+                    <ul class="collapsible expandable">
+                        <li>
+                            <div class="collapsible-header">How much does a licence cost?</div>
+                            <div class="collapsible-body">
+                                <p>In the UK, the amateur radio licence itself is free, but there are exam fees:</p>
+                                <ul class="browser-default">
+                                    <li>Foundation: £27.50</li>
+                                    <li>Intermediate: £32.50</li>
+                                    <li>Full/Advanced: £37.50</li>
+                                </ul>
+                                <p>Study materials may cost additional amounts (approximately £15-30 per level).</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">How long does the licencing process take?</div>
+                            <div class="collapsible-body">
+                                <p>From starting your studies to receiving your licence:</p>
+                                <ul class="browser-default">
+                                    <li>Foundation: 3-6 weeks</li>
+                                    <li>Intermediate: 2-3 months after Foundation</li>
+                                    <li>Full: 3-6 months after Intermediate</li>
+                                </ul>
+                                <p>These timeframes can vary based on your study pace and exam availability.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Do I need to know Morse code?</div>
+                            <div class="collapsible-body">
+                                <p>No, Morse code is no longer required for any amateur radio licence level in the UK or most other countries. It was removed as a mandatory requirement in the early 2000s.</p>
+                                <p>However, many operators still learn and use Morse code as it's an effective and traditional mode of communication.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">How often do I need to renew my licence?</div>
+                            <div class="collapsible-body">
+                                <p>UK amateur radio licences are valid for life, but you must confirm your details with Ofcom every 5 years to keep your licence active. This validation process is simple and free.</p>
+                                <p>Other countries have different renewal periods and may charge renewal fees.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="/images/radio-equipment.jpg" alt="Amateur Radio Equipment">
+                    <span class="card-title">Ready to Get Started?</span>
+                </div>
+                <div class="card-content">
+                    <p>Once licenced, you'll be able to operate on amateur radio bands and participate fully in HOTA activities.</p>
+                </div>
+                <div class="card-action">
+                    <a href="?page=online-training">View Training Resources</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<style>
+.mt-3 {
+    margin-top: 1.5rem;
+}
+.mt-4 {
+    margin-top: 2rem;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible.expandable');
+    var instances = M.Collapsible.init(elems, {
+        accordion: false
+    });
+});
+</script>

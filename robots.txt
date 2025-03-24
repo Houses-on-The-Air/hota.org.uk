@@ -1,13 +1,13 @@
 User-agent: *
 Allow: /
 
-# Disallow server directories
+# Disallow certain directories
 Disallow: /includes/
 Disallow: /classes/
-Disallow: /templates/
-Disallow: /partials/
 Disallow: /cache/
 Disallow: /logs/
+Disallow: /templates/
+Disallow: /partials/
 
 # Allow uploads directory for award certificates
 Allow: /uploads/certificates/
@@ -24,4 +24,5 @@ Allow: /BingSiteAuth.xml
 # Add delay between crawls
 Crawl-delay: 10
 
+# Sitemap
 Sitemap: https://hota.org.uk/sitemap.xml

@@ -69,7 +69,7 @@ $pageDescription = "Access a comprehensive collection of Houses on the Air resou
                 <div class="card-content">
                     <span class="card-title"><i class="material-icons left">school</i>Getting Started</span>
                     <ul class="browser-default">
-                        <li><a href="?page=get-licenced">Getting Your Amateur Radio licence</a></li>
+                        <li><a href="?page=get-licenced">Getting Your Amateur Radio Licence</a></li>
                         <li><a href="?page=house-activations">House Activation Guide</a></li>
                         <li><a href="?page=portable-antennas">Portable Antenna Solutions</a></li>
                         <li><a href="?page=log-entry">Log Submission Guide</a></li>
@@ -126,6 +126,23 @@ $pageDescription = "Access a comprehensive collection of Houses on the Air resou
         </div>
     </div>
 
+    <!-- Training & Educational Resources -->
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title"><i class="material-icons left">school</i>Training & Educational Resources</span>
+            <p>Learn about amateur radio and improve your skills with these educational resources.</p>
+
+            <div class="collection">
+                <a href="?page=online-training" class="collection-item waves-effect">
+                    <i class="material-icons left">laptop</i>Online Training for RSGB Amateur Radio Exams
+                    <span class="secondary-content"><i class="material-icons">chevron_right</i></span>
+                </a>
+
+                <!-- ...existing links... -->
+            </div>
+        </div>
+    </div>
+
     <!-- Video Resources -->
     <div class="card mt-4">
         <div class="card-content">
@@ -162,7 +179,7 @@ $pageDescription = "Access a comprehensive collection of Houses on the Air resou
                 <p>Understand what HOTA is and how it works</p>
             </li>
             <li>
-                <h4><a href="?page=get-licenced">Get licenced</a></h4>
+                <h4><a href="?page=get-licenced">Get Licenced</a></h4>
                 <p>Ensure you have your amateur radio licence</p>
             </li>
             <li>

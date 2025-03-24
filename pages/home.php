@@ -105,8 +105,9 @@ $pageDescription = "Houses on the Air (HOTA) is an amateur radio activity that e
                         <div class="card-content">
                             <span class="card-title">Getting Started</span>
                             <ul class="browser-default">
-                                <li><a href="?page=get-licenced">How to Get licenced</a></li>
-                                <li><a href="?page=house-activations">House Activations Guide</a></li>
+                                <li><a href="?page=online-training">Amateur Radio Exam Training</a></li>
+                                <li><a href="?page=get-licenced">How to Get Licenced</a></li>
+                                <li><a href="?page=house-activations">House Activations Guide</li>
                                 <li><a href="?page=log-entry">Log Submission</a></li>
                                 <li><a href="?page=band-plans">Band Plans</a></li>
                                 <li><a href="?page=operating-guidelines">Operating Guidelines</a></li>

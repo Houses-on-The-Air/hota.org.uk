@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Amateur Radio Band Plans - HOTA";
-$pageDescription = "Reference guide to amateur radio band plans for Houses on the Air (HOTA) activities. Find recommended frequencies for HOTA operations across different bands.";
+$pageDescription = "HOTA recommended frequencies and amateur radio band plan information for Houses on the Air operations.";
 include_once('../includes/header.php');
 ?>
 
@@ -16,7 +16,7 @@ include_once('../includes/header.php');
         </ul>
     </div>
 
-    <p class="flow-text">Navigating the amateur radio bands effectively is crucial for successful HOTA operations. This guide provides information on recommended frequency ranges and HOTA activity centers.</p>
+    <p class="flow-text">Navigating the amateur radio bands effectively is crucial for successful HOTA operations. This guide provides information on recommended frequency ranges and HOTA activity centres.</p>
 
     <!-- Band Selection -->
     <div class="card-panel">
@@ -66,11 +66,11 @@ include_once('../includes/header.php');
         </div>
     </div>
 
-    <!-- HOTA Preferred Frequencies -->
-    <div class="card mt-4">
+    <!-- HOTA Recommended Frequencies -->
+    <div class="card">
         <div class="card-content">
-            <span class="card-title"><i class="material-icons left">star</i>HOTA Preferred Frequencies</span>
-            <p>These are the recommended calling frequencies for HOTA activities. Listen around these frequencies to find active stations or announce your own operations.</p>
+            <span class="card-title"><i class="material-icons left">radio</i>HOTA Recommended Frequencies</span>
+            <p>While HOTA activity can take place on any amateur band and frequency permitted by your licence, the following frequencies are where you're most likely to find or generate HOTA activity:</p>
 
             <table class="striped highlight responsive-table">
                 <thead>
@@ -127,7 +127,7 @@ include_once('../includes/header.php');
                 </tbody>
             </table>
 
-            <p class="note mt-3"><strong>Note:</strong> Always follow your local band plans and regulations, as they may vary by country or region. If the preferred frequency is in use, move up or down slightly to find a clear frequency.</p>
+            <p class="mt-3 note"><strong>Note:</strong> Always check that the frequency is clear before calling CQ, and be mindful of band plans and licence conditions for your location.</p>
         </div>
     </div>
 
@@ -235,7 +235,7 @@ include_once('../includes/header.php');
                     </div>
 
                     <div class="card-panel deep-orange lighten-5">
-                        <p><strong>Remember:</strong> These calculations provide theoretical lengths. Fine-tuning with an antenna analyzer will give the best results, as environmental factors can affect the resonant frequency.</p>
+                        <p><strong>Remember:</strong> These calculations provide theoretical lengths. Fine-tuning with an antenna analyser will give the best results, as environmental factors can affect the resonant frequency.</p>
                     </div>
                 </div>
             </div>
@@ -448,7 +448,7 @@ include_once('../includes/header.php');
             <div class="row">
                 <div class="col s12 m8">
                     <h4>Band Characteristics</h4>
-                    <p>The 40m band is one of the most versatile HF bands, offering good propagation both day and night. It's excellent for HOTA operations and a favorite for many portable activations.</p>
+                    <p>The 40m band is one of the most versatile HF bands, offering good propagation both day and night. It's excellent for HOTA operations and a favourite for many portable activations.</p>
 
                     <h5>Propagation</h5>
                     <ul class="browser-default">
@@ -1192,7 +1192,7 @@ include_once('../includes/header.php');
                             </tr>
                             <tr>
                                 <td>Inverted-V</td>
-                                <td>Single center support, more compact</td>
+                                <td>Single centre support, more compact</td>
                                 <td>Some performance compromise vs dipole</td>
                                 <td>Limited space setups</td>
                             </tr>
@@ -1280,7 +1280,7 @@ include_once('../includes/header.php');
                         <div class="center-align">
                             <i class="material-icons medium">architecture</i>
                             <h5>Linked Dipole</h5>
-                            <p>Multi-band operation without a tuner, customizable for your preferred bands.</p>
+                            <p>Multi-band operation without a tuner, customisable for your preferred bands.</p>
                         </div>
                     </div>
                     <div class="col s12 m4">
@@ -1322,7 +1322,7 @@ include_once('../includes/header.php');
                     <li>Listen first before calling on a frequency</li>
                     <li>For best results, spot yourself on cluster services</li>
                     <li>Announce your HOTA activity on our <a href="?page=discord">Discord</a> channel</li>
-                    <li>Try multiple bands to maximize your contacts</li>
+                    <li>Try multiple bands to maximise your contacts</li>
                     <li>Consider band selection based on your antenna limitations</li>
                     <li>Digital modes can be effective with minimal power/antennas</li>
                 </ul>

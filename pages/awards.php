@@ -1,10 +1,10 @@
 <?php
-$pageTitle = "HOTA Awards Program";
-$pageDescription = "Earn certificates and awards in the Houses on the Air (HOTA) program by contacting and activating houses around the world.";
+$pageTitle = "HOTA Awards Programme";
+$pageDescription = "Earn certificates and awards in the Houses on the Air (HOTA) programme by contacting and activating houses around the world.";
 ?>
 
 <div class="container">
-    <h1>HOTA Awards Program</h1>
+    <h1>HOTA Awards Programme</h1>
 
     <!-- Breadcrumbs -->
     <div class="breadcrumb-wrapper">
@@ -14,7 +14,7 @@ $pageDescription = "Earn certificates and awards in the Houses on the Air (HOTA)
         </ul>
     </div>
 
-    <p class="flow-text">The HOTA Awards Program recognizes participation at all levels. Whether you're a casual operator making a few contacts or a dedicated enthusiast with thousands of QSOs, there's an award for you.</p>
+    <p class="flow-text">The HOTA Awards Programme recognises participation at all levels. Whether you're a casual operator making a few contacts or a dedicated enthusiast with thousands of QSOs, there's an award for you.</p>
 
     <div class="row">
         <div class="col s12 m3">
@@ -111,7 +111,7 @@ $pageDescription = "Earn certificates and awards in the Houses on the Air (HOTA)
                 <div class="card">
                     <div class="card-content">
                         <span class="card-title"><i class="material-icons left">cell_tower</i>Activator Awards</span>
-                        <p>Activator awards recognize operators who set up and transmit from different house locations. Each unique house address you activate counts toward your total.</p>
+                        <p>Activator awards recognise operators who set up and transmit from different house locations. Each unique house address you activate counts toward your total.</p>
 
                         <div class="row award-tiers">
                             <!-- Activator Award Tiers -->
@@ -169,7 +169,7 @@ $pageDescription = "Earn certificates and awards in the Houses on the Air (HOTA)
                 <div class="card">
                     <div class="card-content">
                         <span class="card-title"><i class="material-icons left">star</i>Specialist Awards</span>
-                        <p>Specialist awards are endorsements for contacting specific types of houses. These awards recognize specialized collection efforts.</p>
+                        <p>Specialist awards are endorsements for contacting specific types of houses. These awards recognise specialised collection efforts.</p>
 
                         <div class="row award-tiers">
                             <!-- Specialist Award Types -->

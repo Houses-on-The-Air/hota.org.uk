@@ -1,3 +1,126 @@
+/* Certificate styles */
+.certificate {
+    background-color: #f9f9f9;
+    font-family: "Times New Roman", Times, serif;
+    color: #333;
+    padding: 20px;
+}
+
+.certificate-container {
+    width: 210mm;  /* A4 width */
+    height: 297mm; /* A4 height */
+    margin: 0 auto;
+    padding: 20mm;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    background-image: url('/images/certificate-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.certificate-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #607d8b;
+    padding-bottom: 20px;
+}
+
+.certificate-logo {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.certificate-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #455a64;
+    margin: 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.certificate-body {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.award-title {
+    font-size: 28px;
+    color: #455a64;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.certificate-text {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.callsign {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #d32f2f;
+    border-bottom: 1px solid #d32f2f;
+    display: inline-block;
+    padding: 0 20px 5px;
+}
+
+.certificate-validity {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 30px;
+    color: #666;
+}
+
+.certificate-footer {
+    position: absolute;
+    bottom: 20mm;
+    left: 20mm;
+    right: 20mm;
+    text-align: center;
+    border-top: 1px solid #607d8b;
+    padding-top: 20px;
+}
+
+.certificate-id, .issue-date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.signature {
+    margin-top: 20px;
+}
+
+.signature img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.signature-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Watermark */
+.certificate-container::after {
+    content: "HOTA";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 120px;
+    color: rgba(200, 200, 200, 0.1);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Print-specific styles */
 @media print {
     /* Hide non-certificate elements when printing */
     header, footer, nav, .certificate-actions, .tabs, .container > h1,
@@ -20,6 +143,9 @@
 
     .certificate-container {
         width: 100% !important;
+        height: 100%;
+        border: none;
+        box-shadow: none;
         padding: 0 !important;
         margin: 0 !important;
     }
@@ -54,4 +180,18 @@
     .certificate-footer p {
         font-size: 10pt !important;
     }
+
+    .no-print {
+        display: none;
+    }
+}
+
+/* Controls that only display on screen, not when printing */
+.print-controls {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.print-controls .btn {
+    margin: 0 10px;
 }

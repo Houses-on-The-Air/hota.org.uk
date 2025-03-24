@@ -169,6 +169,116 @@ $pageDescription = "Houses on the Air (HOTA) is an amateur radio activity that e
             </div>
         </div>
     </section>
+
+    <!-- How It Works Section -->
+    <div class="section blue-grey lighten-5">
+        <div class="container">
+            <h2 class="center-align">How HOTA Works</h2>
+
+            <div class="row">
+                <div class="col s12 m6 l3">
+                    <div class="card-panel center-align hoverable">
+                        <i class="material-icons large blue-grey-text">radio</i>
+                        <h5>Make Contacts</h5>
+                        <p>Contact amateur radio stations operating from house locations or activate houses yourself.</p>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card-panel center-align hoverable">
+                        <i class="material-icons large blue-grey-text">home</i>
+                        <h5>Record Addresses</h5>
+                        <p>Note the full address information from each HOTA contact in your logbook.</p>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card-panel center-align hoverable">
+                        <i class="material-icons large blue-grey-text">upload_file</i>
+                        <h5>Submit Logs</h5>
+                        <p>Upload your ADIF logs to our system for automatic processing and verification.</p>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card-panel center-align hoverable">
+                        <i class="material-icons large blue-grey-text">emoji_events</i>
+                        <h5>Earn Awards</h5>
+                        <p>Receive certificates as you progress from Cardboard Box to Mansion level.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center-align">
+                <a href="?page=participate" class="btn-large blue-grey darken-1 waves-effect waves-light">
+                    <i class="material-icons left">play_arrow</i>Start Participating
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Awards Section -->
+    <div class="section">
+        <div class="container">
+            <h2 class="center-align">Awards & Achievement Levels</h2>
+            <p class="center-align flow-text">HOTA offers a progressive achievement system with distinct award tiers</p>
+
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title"><i class="material-icons left">search</i>Hunter Awards</span>
+                            <p>For contacting unique house addresses:</p>
+                            <ul class="browser-default">
+                                <li>Cardboard Box (10 houses)</li>
+                                <li>Bedsit (100 houses)</li>
+                                <li>Terraced House (500 houses)</li>
+                                <li>Semi-Detached (1,000 houses)</li>
+                                <li>Detached House (10,000 houses)</li>
+                                <li>And higher tiers up to Mansion level!</li>
+                            </ul>
+                        </div>
+                        <div class="card-action">
+                            <a href="?page=awards">View Hunter Awards</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title"><i class="material-icons left">home</i>Activator Awards</span>
+                            <p>For operating from unique locations:</p>
+                            <ul class="browser-default">
+                                <li>Novice Activator (5 activations)</li>
+                                <li>Experienced Activator (25 activations)</li>
+                                <li>Expert Activator (100 activations)</li>
+                                <li>Master Activator (500 activations)</li>
+                            </ul>
+                        </div>
+                        <div class="card-action">
+                            <a href="?page=awards#activator-awards">View Activator Awards</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title"><i class="material-icons left">star</i>Specialist Awards</span>
+                            <p>For collecting special house types:</p>
+                            <ul class="browser-default">
+                                <li>School Scholar (School Houses)</li>
+                                <li>Miller (Mill Houses)</li>
+                                <li>Stone Mason (Stone Houses)</li>
+                                <li>And many more special categories!</li>
+                            </ul>
+                        </div>
+                        <div class="card-action">
+                            <a href="?page=awards#specialist-awards">View Specialist Awards</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Add these important styles inline to ensure they're always available -->

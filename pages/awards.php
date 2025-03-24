@@ -1,9 +1,9 @@
 <?php
-$pageTitle = "Awards Program - HOTA";
-$pageDescription = "Learn about the Houses on the Air awards program, tiers, and how to qualify for certificates by activating or contacting houses.";
-include_once('../includes/header.php');
+$pageTitle = "HOTA Awards Program";
+$pageDescription = "Earn certificates and awards in the Houses on the Air (HOTA) program by contacting and activating houses around the world.";
 ?>
-<section class="container">
+
+<div class="container">
     <h1>HOTA Awards Program</h1>
 
     <!-- Breadcrumbs -->
@@ -14,275 +14,367 @@ include_once('../includes/header.php');
         </ul>
     </div>
 
-    <!-- Hero Section -->
-    <div class="card hero-card">
-        <div class="hero-content">
-            <div class="row valign-wrapper">
-                <div class="col s12 m8">
-                    <h2 class="hero-heading">Earn Recognition for Your HOTA Activity</h2>
-                    <p class="flow-text hero-text">Our progressive awards program celebrates both activators and hunters with certificates, digital badges, and recognition based on the number of unique house addresses.</p>
-                </div>
-                <div class="col s12 m4 center-align hide-on-small-only">
-                    <img src="/images/certificate.jpg" alt="HOTA Award Certificate" class="responsive-img" style="max-width: 150px;">
-                </div>
-            </div>
-        </div>
-    </div>
+    <p class="flow-text">The HOTA Awards Program recognizes participation at all levels. Whether you're a casual operator making a few contacts or a dedicated enthusiast with thousands of QSOs, there's an award for you.</p>
 
-    <!-- Award Tabs -->
     <div class="row">
-        <div class="col s12">
-            <ul class="tabs">
-                <li class="tab col s6"><a class="active" href="#award-tiers"><i class="material-icons left">view_list</i>Award Tiers</a></li>
-                <li class="tab col s6"><a href="#how-to-earn"><i class="material-icons left">help_outline</i>How to Earn</a></li>
-            </ul>
+        <div class="col s12 m3">
+            <!-- Navigation sidebar -->
+            <div class="card sticky-nav">
+                <div class="card-content">
+                    <span class="card-title">Award Categories</span>
+                    <div class="collection">
+                        <a href="#hunter-awards" class="collection-item">Hunter Awards</a>
+                        <a href="#activator-awards" class="collection-item">Activator Awards</a>
+                        <a href="#specialist-awards" class="collection-item">Specialist Awards</a>
+                        <a href="#house-types" class="collection-item">Special House Types</a>
+                        <a href="#claim-awards" class="collection-item">How to Claim</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m9">
+            <!-- Hunter Awards Section -->
+            <section id="hunter-awards" class="scrollspy">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title"><i class="material-icons left">search</i>Hunter Awards</span>
+                        <p>Hunter awards are issued for contacting stations operating from different house addresses. Every unique address counts once toward your total.</p>
+
+                        <div class="row award-tiers">
+                            <!-- Hunter Award Tiers -->
+                            <div class="col s12">
+                                <table class="striped highlight responsive-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Award Level</th>
+                                            <th>Required Unique Addresses</th>
+                                            <th>Certificate</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Cardboard Box</td>
+                                            <td>10+</td>
+                                            <td>Basic certificate</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bedsit</td>
+                                            <td>100+</td>
+                                            <td>Bronze level</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Terraced House</td>
+                                            <td>500+</td>
+                                            <td>Silver level</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Semi-Detached House</td>
+                                            <td>1,000+</td>
+                                            <td>Gold level</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Detached House</td>
+                                            <td>10,000+</td>
+                                            <td>Platinum level</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Townhouse</td>
+                                            <td>100,000+</td>
+                                            <td>Diamond level</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Country Cottage</td>
+                                            <td>250,000+</td>
+                                            <td>Sapphire level</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Victorian Villa</td>
+                                            <td>500,000+</td>
+                                            <td>Emerald level</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mansion</td>
+                                            <td>1,000,000+</td>
+                                            <td>Ultimate level</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activator Awards Section -->
+            <section id="activator-awards" class="scrollspy">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title"><i class="material-icons left">cell_tower</i>Activator Awards</span>
+                        <p>Activator awards recognize operators who set up and transmit from different house locations. Each unique house address you activate counts toward your total.</p>
+
+                        <div class="row award-tiers">
+                            <!-- Activator Award Tiers -->
+                            <div class="col s12">
+                                <table class="striped highlight responsive-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Award Level</th>
+                                            <th>Required Unique Activations</th>
+                                            <th>Certificate</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Novice Activator</td>
+                                            <td>5+</td>
+                                            <td>Bronze level</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Experienced Activator</td>
+                                            <td>25+</td>
+                                            <td>Silver level</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Expert Activator</td>
+                                            <td>100+</td>
+                                            <td>Gold level</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Master Activator</td>
+                                            <td>500+</td>
+                                            <td>Platinum level</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="card-panel blue-grey lighten-5 mt-3">
+                            <h5>Activation Requirements</h5>
+                            <p>For an activation to qualify:</p>
+                            <ul class="browser-default">
+                                <li>You must operate from the house address</li>
+                                <li>You must make at least 10 valid QSOs</li>
+                                <li>You must provide the complete address in your log</li>
+                                <li>Mark your QSOs as "HOTA Activation" in your logging software</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Specialist Awards Section -->
+            <section id="specialist-awards" class="scrollspy">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title"><i class="material-icons left">star</i>Specialist Awards</span>
+                        <p>Specialist awards are endorsements for contacting specific types of houses. These awards recognize specialized collection efforts.</p>
+
+                        <div class="row award-tiers">
+                            <!-- Specialist Award Types -->
+                            <div class="col s12">
+                                <table class="striped highlight responsive-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Award Name</th>
+                                            <th>House Type</th>
+                                            <th>Required Count</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>School Scholar</td>
+                                            <td>School House</td>
+                                            <td>10+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Miller</td>
+                                            <td>Mill House</td>
+                                            <td>10+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Historian</td>
+                                            <td>Old House</td>
+                                            <td>20+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>White Collector</td>
+                                            <td>White House</td>
+                                            <td>15+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Stone Mason</td>
+                                            <td>Stone House</td>
+                                            <td>10+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Time Keeper</td>
+                                            <td>Clock House</td>
+                                            <td>5+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Farmer</td>
+                                            <td>Farm House</td>
+                                            <td>25+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hall Monitor</td>
+                                            <td>Hall House</td>
+                                            <td>15+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lord of the Manor</td>
+                                            <td>Manor House</td>
+                                            <td>10+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Light Keeper</td>
+                                            <td>Lighthouse House</td>
+                                            <td>5+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Royal Visitor</td>
+                                            <td>Royal House</td>
+                                            <td>10+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gardener</td>
+                                            <td>Garden House</td>
+                                            <td>10+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gatekeeper</td>
+                                            <td>Gate House</td>
+                                            <td>5+</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Special House Types Section -->
+            <section id="house-types" class="scrollspy">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title"><i class="material-icons left">home</i>Special House Types</span>
+                        <p>The following house types qualify for specialist awards. Look for these keywords in addresses:</p>
+
+                        <div class="row">
+                            <div class="col s12 m6">
+                                <div class="collection">
+                                    <div class="collection-item">School House</div>
+                                    <div class="collection-item">Mill House</div>
+                                    <div class="collection-item">Old House / The Old House</div>
+                                    <div class="collection-item">White House</div>
+                                    <div class="collection-item">Stone House</div>
+                                    <div class="collection-item">Clock House</div>
+                                    <div class="collection-item">Farm House</div>
+                                    <div class="collection-item">Hall House</div>
+                                    <div class="collection-item">Manor House</div>
+                                    <div class="collection-item">Lighthouse House</div>
+                                    <div class="collection-item">Corner House</div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6">
+                                <div class="collection">
+                                    <div class="collection-item">Bridge House</div>
+                                    <div class="collection-item">Royal House / Palace</div>
+                                    <div class="collection-item">Garden House</div>
+                                    <div class="collection-item">Gate House</div>
+                                    <div class="collection-item">Ferry House</div>
+                                    <div class="collection-item">Water House</div>
+                                    <div class="collection-item">Valley House</div>
+                                    <div class="collection-item">Lake House</div>
+                                    <div class="collection-item">River House</div>
+                                    <div class="collection-item">Round House</div>
+                                    <div class="collection-item">Island House</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="mt-3">These are just some examples of special house types. Many other house designations can qualify for special endorsements, particularly houses with historical significance. See our <a href="?page=glossary">glossary</a> for a more complete list.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How to Claim Section -->
+            <section id="claim-awards" class="scrollspy">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title"><i class="material-icons left">card_giftcard</i>How to Claim Your Awards</span>
+                        <p>Claiming your HOTA awards is simple and automated:</p>
+
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="card-panel blue-grey lighten-5">
+                                    <h5>Certificate Application Process</h5>
+                                    <ol>
+                                        <li>Export your log in ADIF format from your logging software</li>
+                                        <li>Ensure your log includes complete address information in either the ADDRESS or QTH field</li>
+                                        <li>Upload your ADIF file through our <a href="?page=log-entry">Log Entry</a> page</li>
+                                        <li>Our system will automatically process your log, identify qualifying addresses, and generate appropriate certificates</li>
+                                        <li>You can download and print your certificates immediately</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="center-align mt-3">
+                            <a href="?page=log-entry" class="btn-large blue-grey darken-1 waves-effect waves-light">
+                                <i class="material-icons left">upload_file</i>Upload Your Log
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
-
-    <!-- Award Tiers Tab -->
-    <div id="award-tiers" class="col s12">
-        <div class="card-panel blue-grey lighten-5">
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="award-path-card">
-                        <i class="material-icons medium">settings_input_antenna</i>
-                        <h3>Activator Awards</h3>
-                        <p>For operators who set up and transmit from various house locations</p>
-                    </div>
-                </div>
-                <div class="col s12 m6">
-                    <div class="award-path-card">
-                        <i class="material-icons medium">search</i>
-                        <h3>Hunter Awards</h3>
-                        <p>For operators who make contacts with stations at various house locations</p>
-                    </div>
-                </div>
-            </div>
-            <p class="center-align">Both paths follow the same tier structure but are tracked separately.</p>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <span class="card-title">Award Tiers</span>
-                <div class="tier-table-wrapper">
-                    <table class="striped highlight responsive-table">
-                        <thead>
-                            <tr>
-                                <th>Tier</th>
-                                <th>Required Addresses</th>
-                                <th>Certificate</th>
-                                <th>Difficulty</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                            $tiers = [
-                                ['Mansion', '1,000,000+', 'Digital + Premium Physical', 5],
-                                ['Victorian Villa', '500,000+', 'Digital + Premium Physical', 4],
-                                ['Country Cottage', '250,000+', 'Digital + Physical', 3],
-                                ['Townhouse', '100,000+', 'Digital + Physical', 3],
-                                ['Detached House', '10,000+', 'Digital + Physical', 2],
-                                ['Semi-Detached House', '1,000+', 'Digital + Physical', 2],
-                                ['Terraced House', '500+', 'Digital', 1],
-                                ['Bedsit', '100+', 'Digital', 1],
-                                ['Cardboard Box', 'Any participation', 'Digital', 1]
-                            ];
-
-                            foreach ($tiers as $tier) {
-                                echo '<tr>';
-                                echo '<td><div class="tier-name"><i class="material-icons left">home</i>' . $tier[0] . '</div></td>';
-                                echo '<td>' . $tier[1] . '</td>';
-                                echo '<td>' . $tier[2] . '</td>';
-                                echo '<td><div class="difficulty-meter">';
-                                for ($i = 1; $i <= 5; $i++) {
-                                    $active = $i <= $tier[3] ? 'active' : '';
-                                    echo '<span class="difficulty-dot ' . $active . '"></span>';
-                                }
-                                echo '</div></td>';
-                                echo '</tr>';
-                            }
-                            ?>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <!-- Special Endorsements Preview -->
-        <div class="card">
-            <div class="card-content">
-                <span class="card-title">Special Endorsements</span>
-                <div class="row endorsements-preview">
-                    <div class="col s12 m4">
-                        <div class="center-align">
-                            <i class="material-icons medium">public</i>
-                            <h4>Continental Explorer</h4>
-                            <p>For houses on all continents</p>
-                        </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="center-align">
-                            <i class="material-icons medium">history_edu</i>
-                            <h4>Heritage Specialist</h4>
-                            <p>For historic houses</p>
-                        </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="center-align">
-                            <i class="material-icons medium">language</i>
-                            <h4>International Ambassador</h4>
-                            <p>For houses in 10+ countries</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="center-align mt-3">
-                    <a href="?page=award-tiers" class="btn blue-grey darken-1 waves-effect waves-light">
-                        <i class="material-icons left">more_horiz</i>View All Endorsements
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- How to Earn Tab -->
-    <div id="how-to-earn" class="col s12">
-        <div class="card">
-            <div class="card-content">
-                <span class="card-title">How to Earn Awards</span>
-                <div class="row">
-                    <div class="col s12 m6">
-                        <div class="path-card">
-                            <div class="path-header activator-header">
-                                <i class="material-icons">settings_input_antenna</i>
-                                <h3>Activator Path</h3>
-                            </div>
-                            <ol class="browser-default">
-                                <li>Set up your station at unique house locations</li>
-                                <li>Make contacts with other operators</li>
-                                <li>Record complete address information</li>
-                                <li>Export your logs in ADIF format</li>
-                                <li>Submit through our <a href="?page=log-entry">log system</a></li>
-                            </ol>
-                            <div class="card-panel deep-orange lighten-5">
-                                <p><strong>Note:</strong> A minimum of 10 QSOs must be made from each location to count as an activation.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6">
-                        <div class="path-card">
-                            <div class="path-header hunter-header">
-                                <i class="material-icons">search</i>
-                                <h3>Hunter Path</h3>
-                            </div>
-                            <ol class="browser-default">
-                                <li>Contact stations operating from houses</li>
-                                <li>Request and record their complete address</li>
-                                <li>Save contacts with ADDRESS field populated</li>
-                                <li>Export your logs in ADIF format</li>
-                                <li>Submit through our <a href="?page=log-entry">log system</a></li>
-                            </ol>
-                            <div class="card-panel deep-orange lighten-5">
-                                <p><strong>Critical:</strong> The ADDRESS field must be properly populated in your ADIF logs.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card-action">
-                <a href="?page=log-entry" class="btn blue-grey darken-1">
-                    <i class="material-icons left">file_upload</i>Submit Logs
-                </a>
-                <a href="?page=adif-guide" class="btn blue-grey lighten-1">
-                    <i class="material-icons left">help_outline</i>ADIF Guide
-                </a>
-                <a href="?page=certificates" class="btn blue-grey lighten-1">
-                    <i class="material-icons left">card_membership</i>View Certificates
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+</div>
 
 <style>
-/* Hero styling */
-.hero-card {
-    background-color: #455a64;
-    background-image: linear-gradient(135deg, #455a64 0%, #263238 100%);
-    color: white;
-    margin-bottom: 20px;
-}
-.hero-content { padding: 30px; }
-.hero-heading {
-    color: white;
-    font-size: 2rem;
-    margin-bottom: 15px;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
-}
-.hero-text { color: rgba(255,255,255,0.95); }
-
-/* Path cards */
-.award-path-card, .path-card {
-    text-align: center;
-    padding: 20px;
-    height: 100%;
-}
-.path-header {
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #e0e0e0;
-}
-.activator-header { color: #546e7a; }
-.hunter-header { color: #795548; }
-.path-header i { font-size: 2.5rem; }
-.path-header h3 { margin: 10px 0 0; }
-
-/* Tier table */
-.tier-name {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-}
-.difficulty-meter {
-    display: flex;
-    align-items: center;
-}
-.difficulty-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #e0e0e0;
-    margin: 0 2px;
-}
-.difficulty-dot.active { background-color: #546e7a; }
-
-/* Endorsements */
-.endorsements-preview i { color: #546e7a; }
-.endorsements-preview h4 { font-size: 1.2rem; }
-
-/* Certificate carousel */
-.certificate-carousel {
-    height: 200px !important;
-}
-.certificate-carousel .carousel-item {
-    width: 200px !important;
-    opacity: 1 !important;
+/* Sticky sidebar navigation */
+.sticky-nav {
+    position: sticky;
+    top: 80px;
 }
 
-/* Utilities */
-.mt-3 { margin-top: 15px; }
+/* Award tiers styling */
+.award-tiers .collection-item {
+    line-height: 1.6;
+}
+
+.house-type-badge {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.mt-3 {
+    margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .sticky-nav {
+        position: relative;
+        top: 0;
+        margin-bottom: 1rem;
+    }
+}
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    var tabs = document.querySelectorAll('.tabs');
-    M.Tabs.init(tabs);
-
-    var carousel = document.querySelectorAll('.carousel');
-    M.Carousel.init(carousel, {
-        indicators: true,
-        numVisible: 3
+    // Initialize scrollspy
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems, {
+        scrollOffset: 100
     });
+
+    // Initialize select dropdowns
+    var selectElems = document.querySelectorAll('select');
+    var selectInstances = M.FormSelect.init(selectElems);
 });
 </script>
-
-<?php include_once('../includes/footer.php'); ?>

@@ -152,6 +152,12 @@ include_once('../includes/header.php');
                             <option value="fullwave">Full-wave Loop</option>
                             <option value="j-pole">J-Pole</option>
                             <option value="groundplane">Ground Plane</option>
+                            <option value="extended-double-zepp">Extended Double Zepp</option>
+                            <option value="g5rv">G5RV</option>
+                            <option value="zs6bkw">ZS6BKW / G0GSF</option>
+                            <option value="bobtail">Bobtail Curtain</option>
+                            <option value="delta-loop">Delta Loop</option>
+                            <option value="magnetic-loop">Magnetic Loop</option>
                         </select>
                         <label>Antenna Type</label>
                     </div>
@@ -199,6 +205,26 @@ include_once('../includes/header.php');
                                 <tr id="radials-row" style="display: none;">
                                     <td><strong>Radials (each):</strong></td>
                                     <td id="radials-length">Calculate to see results</td>
+                                </tr>
+                                <tr id="circumference-row" style="display: none;">
+                                    <td><strong>Circumference:</strong></td>
+                                    <td id="circumference-length">Calculate to see results</td>
+                                </tr>
+                                <tr id="side-length-row" style="display: none;">
+                                    <td><strong>Side Length:</strong></td>
+                                    <td id="side-length">Calculate to see results</td>
+                                </tr>
+                                <tr id="element-spacing-row" style="display: none;">
+                                    <td><strong>Element Spacing:</strong></td>
+                                    <td id="element-spacing">Calculate to see results</td>
+                                </tr>
+                                <tr id="reflector-row" style="display: none;">
+                                    <td><strong>Reflector Length:</strong></td>
+                                    <td id="reflector-length">Calculate to see results</td>
+                                </tr>
+                                <tr id="director-row" style="display: none;">
+                                    <td><strong>Director Length:</strong></td>
+                                    <td id="director-length">Calculate to see results</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Wavelength:</strong></td>
@@ -1447,6 +1473,11 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('radiator-row').style.display = 'none';
         document.getElementById('stub-row').style.display = 'none';
         document.getElementById('radials-row').style.display = 'none';
+        document.getElementById('circumference-row') ? document.getElementById('circumference-row').style.display = 'none' : createExtraRow('circumference-row', 'Circumference:');
+        document.getElementById('side-length-row') ? document.getElementById('side-length-row').style.display = 'none' : createExtraRow('side-length-row', 'Side Length:');
+        document.getElementById('element-spacing-row') ? document.getElementById('element-spacing-row').style.display = 'none' : createExtraRow('element-spacing-row', 'Element Spacing:');
+        document.getElementById('reflector-row') ? document.getElementById('reflector-row').style.display = 'none' : createExtraRow('reflector-row', 'Reflector Length:');
+        document.getElementById('director-row') ? document.getElementById('director-row').style.display = 'none' : createExtraRow('director-row', 'Director Length:');
 
         // Calculate specific dimensions based on antenna type
         let totalLengthMeters, totalLengthFeet;
@@ -1501,6 +1532,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('total-length').textContent =
                     totalLengthMeters.toFixed(2) + ' meters (' +
                     totalLengthFeet.toFixed(2) + ' feet)';
+
+                document.getElementById('circumference-row').textContent =
+                    totalLengthMeters.toFixed(2) + ' meters (' +
+                    totalLengthFeet.toFixed(2) + ' feet)';
+                document.getElementById('circumference-row').style.display = '';
                 break;
 
             case 'j-pole':
@@ -1540,11 +1576,155 @@ document.addEventListener('DOMContentLoaded', function() {
                     (totalLengthFeet * 1.05).toFixed(2) + ' feet)';
                 document.getElementById('radials-row').style.display = '';
                 break;
+
+            case 'extended-double-zepp':
+                // Extended Double Zepp is 1.28 wavelengths long (0.64λ per leg)
+                totalLengthMeters = adjustedWavelengthMeters * 1.28;
+                totalLengthFeet = adjustedWavelengthFeet * 1.28;
+
+                document.getElementById('total-length').textContent =
+                    totalLengthMeters.toFixed(2) + ' meters (' +
+                    totalLengthFeet.toFixed(2) + ' feet)';
+
+                document.getElementById('each-leg').textContent =
+                    (adjustedWavelengthMeters * 0.64).toFixed(2) + ' meters (' +
+                    (adjustedWavelengthFeet * 0.64).toFixed(2) + ' feet)';
+                document.getElementById('each-leg-row').style.display = '';
+                break;
+
+            case 'g5rv':
+                // G5RV has specific dimensions regardless of frequency
+                // Standard G5RV is 102' top, 31' matching section
+                // We'll still scale it for different frequencies as a reference
+                totalLengthMeters = 31.1; // ~102 feet top section
+                const matchingSectionMeters = 9.45; // ~31 feet
+
+                // Scale based on relationship to 14MHz (original design freq)
+                const scaleFactor = 14 / frequency;
+                totalLengthMeters *= scaleFactor;
+                const matchingSectionMeters_scaled = matchingSectionMeters * scaleFactor;
+
+                document.getElementById('total-length').textContent =
+                    totalLengthMeters.toFixed(2) + ' meters (' +
+                    (totalLengthMeters * 3.28084).toFixed(2) + ' feet)';
+
+                document.getElementById('each-leg').textContent =
+                    (totalLengthMeters / 2).toFixed(2) + ' meters (' +
+                    (totalLengthMeters * 3.28084 / 2).toFixed(2) + ' feet)';
+                document.getElementById('each-leg-row').style.display = '';
+
+                document.getElementById('stub-length').textContent =
+                    matchingSectionMeters_scaled.toFixed(2) + ' meters (' +
+                    (matchingSectionMeters_scaled * 3.28084).toFixed(2) + ' feet)';
+                document.getElementById('stub-row').style.display = '';
+                break;
+
+            case 'zs6bkw':
+                // ZS6BKW/G0GSF is an optimized G5RV
+                totalLengthMeters = 28.4; // Reference length for 14MHz
+                const matchingSectionMetersZS = 12.2; // Reference matching section
+
+                // Scale based on relationship to 14MHz (original design freq)
+                const scaleFactorZS = 14 / frequency;
+                totalLengthMeters *= scaleFactorZS;
+                const matchingSectionMetersZS_scaled = matchingSectionMetersZS * scaleFactorZS;
+
+                document.getElementById('total-length').textContent =
+                    totalLengthMeters.toFixed(2) + ' meters (' +
+                    (totalLengthMeters * 3.28084).toFixed(2) + ' feet)';
+
+                document.getElementById('each-leg').textContent =
+                    (totalLengthMeters / 2).toFixed(2) + ' meters (' +
+                    (totalLengthMeters * 3.28084 / 2).toFixed(2) + ' feet)';
+                document.getElementById('each-leg-row').style.display = '';
+
+                document.getElementById('stub-length').textContent =
+                    matchingSectionMetersZS_scaled.toFixed(2) + ' meters (' +
+                    (matchingSectionMetersZS_scaled * 3.28084).toFixed(2) + ' feet)';
+                document.getElementById('stub-row').style.display = '';
+                break;
+
+            case 'bobtail':
+                // Bobtail curtain - Three vertical radiators spaced 1/4λ with top connecting wire
+                const verticalHeight = adjustedWavelengthMeters * 0.25; // 1/4λ verticals
+                const horizontalTop = adjustedWavelengthMeters * 0.5; // 1/2λ total (1/4λ between elements)
+
+                document.getElementById('total-length').textContent =
+                    (verticalHeight * 3 + horizontalTop).toFixed(2) + ' meters (' +
+                    ((verticalHeight * 3 + horizontalTop) * 3.28084).toFixed(2) + ' feet)';
+
+                document.getElementById('radiator-length').textContent =
+                    verticalHeight.toFixed(2) + ' meters (' +
+                    (verticalHeight * 3.28084).toFixed(2) + ' feet) x3';
+                document.getElementById('radiator-row').style.display = '';
+
+                document.getElementById('element-spacing-row').textContent =
+                    (adjustedWavelengthMeters * 0.25).toFixed(2) + ' meters (' +
+                    (adjustedWavelengthFeet * 0.25).toFixed(2) + ' feet)';
+                document.getElementById('element-spacing-row').style.display = '';
+                break;
+
+            case 'delta-loop':
+                // Delta Loop - Full wavelength triangle
+                totalLengthMeters = adjustedWavelengthMeters * 1.05; // 5% longer for end effect
+                totalLengthFeet = adjustedWavelengthFeet * 1.05;
+
+                document.getElementById('total-length').textContent =
+                    totalLengthMeters.toFixed(2) + ' meters (' +
+                    totalLengthFeet.toFixed(2) + ' feet) perimeter';
+
+                document.getElementById('side-length-row').textContent =
+                    (totalLengthMeters / 3).toFixed(2) + ' meters (' +
+                    (totalLengthFeet / 3).toFixed(2) + ' feet) for equilateral';
+                document.getElementById('side-length-row').style.display = '';
+                break;
+
+            case 'magnetic-loop':
+                // Magnetic Loop - Typically 1/10λ to 1/5λ in circumference
+                const circumferenceSmall = adjustedWavelengthMeters * 0.1;
+                const circumferenceLarge = adjustedWavelengthMeters * 0.2;
+                const diameterSmall = circumferenceSmall / Math.PI;
+                const diameterLarge = circumferenceLarge / Math.PI;
+
+                document.getElementById('total-length').textContent =
+                    "Diameter: " + diameterSmall.toFixed(2) + " - " + diameterLarge.toFixed(2) + " meters";
+
+                document.getElementById('circumference-row').textContent =
+                    circumferenceSmall.toFixed(2) + " - " + circumferenceLarge.toFixed(2) + " meters (circumference)";
+                document.getElementById('circumference-row').style.display = '';
+                break;
         }
+    }
+
+    // Helper function to create additional rows dynamically if they don't exist
+    function createExtraRow(rowId, label) {
+        if (!document.getElementById(rowId)) {
+            const table = document.querySelector('.results-table');
+            const newRow = document.createElement('tr');
+            newRow.id = rowId;
+            newRow.style.display = 'none';
+
+            const labelCell = document.createElement('td');
+            labelCell.innerHTML = `<strong>${label}</strong>`;
+
+            const valueCell = document.createElement('td');
+            valueCell.id = rowId;
+
+            newRow.appendChild(labelCell);
+            newRow.appendChild(valueCell);
+            table.appendChild(newRow);
+            return valueCell;
+        }
+        return document.getElementById(rowId);
     }
 
     // Calculate initial values
     calculateAntennaLength();
+
+    // Add an event listener to recalculate when antenna type changes
+    document.getElementById('antenna-type').addEventListener('change', calculateAntennaLength);
+    document.getElementById('frequency').addEventListener('input', calculateAntennaLength);
+    document.getElementById('velocity-factor').addEventListener('change', calculateAntennaLength);
 });
 </script>
 

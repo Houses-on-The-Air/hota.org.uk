@@ -43,37 +43,10 @@ $pageDescription = "Join Houses on the Air community events, contests, and speci
             <div class="event-date">First Sunday of each month, 20:00 GMT/BST</div>
             <p>Join our monthly net on 80 metres where HOTA participants can check in, share experiences, and coordinate future activations. All licenced operators welcome!</p>
             <p><strong>Frequency:</strong> 3.760 MHz ±QRM, LSB</p>
-            <p><strong>Net Controller:</strong> G1ABC</p>
+            <p><strong>Net Controller:</strong> M7JXZ</p>
         </div>
         <div class="card-action">
             <a href="?page=nets">Net Schedule</a>
-        </div>
-    </div>
-
-    <!-- Past Events -->
-    <h3>Past Events</h3>
-
-    <div class="card event-card past-event">
-        <div class="card-content">
-            <span class="card-title">HOTA Summer Sprint</span>
-            <div class="event-date">15 July 2023</div>
-            <p>Our annual four-hour sprint contest challenged operators to make as many HOTA contacts as possible in the limited timeframe.</p>
-            <p><strong>Results:</strong> 78 participants, 1,230 QSOs logged</p>
-        </div>
-        <div class="card-action">
-            <a href="?page=past-events&id=summer-sprint-2023">View Results</a>
-        </div>
-    </div>
-
-    <div class="card event-card past-event">
-        <div class="card-content">
-            <span class="card-title">Special Activation: Victorian House Weekend</span>
-            <div class="event-date">22-23 April 2023</div>
-            <p>A themed weekend focused on activating Victorian-era houses and buildings across the UK. This event highlighted historical architecture while promoting HOTA contacts.</p>
-            <p><strong>Results:</strong> 45 unique Victorian houses activated</p>
-        </div>
-        <div class="card-action">
-            <a href="?page=past-events&id=victorian-weekend-2023">View Gallery</a>
         </div>
     </div>
 

@@ -49,6 +49,7 @@ $pageDescription = "Information about the annual award cycle and year-based cert
                     </ol>
                 </div>
             </div>
+        </div>
 
         <div class="col s12 m4">
             <div class="card blue-grey lighten-5">
@@ -99,6 +100,51 @@ $pageDescription = "Information about the annual award cycle and year-based cert
                         <a href="?page=log-entry" class="btn blue-grey darken-1 waves-effect waves-light">
                             Submit Your Logs
                         </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card amber lighten-5">
+                <div class="card-content">
+                    <span class="card-title"><i class="material-icons left">lightbulb</i>Activity Tip</span>
+                    <p>Keep track of your contacts throughout the year rather than submitting them all at once. This way you'll always know how close you are to the next award level.</p>
+                    <p>Our <a href="?page=logging-software">recommended logging software</a> makes it easy to export ADIF files regularly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title"><i class="material-icons left">star_border</i>Special Annual Events</span>
+                    <p>Throughout the year, HOTA organizes special events that count toward annual totals:</p>
+
+                    <div class="row mt-3">
+                        <div class="col s12 m4">
+                            <div class="card-panel blue lighten-4">
+                                <h5>Winter Activity Weekend</h5>
+                                <p>March each year</p>
+                                <a href="?page=activity-weekend" class="btn blue darken-1 waves-effect waves-light">Details</a>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="card-panel green lighten-4">
+                                <h5>Spring House Sprint</h5>
+                                <p>May each year</p>
+                                <a href="?page=contests" class="btn green darken-1 waves-effect waves-light">Details</a>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="card-panel amber lighten-4">
+                                <h5>Autumn House Marathon</h5>
+                                <p>October each year</p>
+                                <a href="?page=contests" class="btn amber darken-2 waves-effect waves-light">Details</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

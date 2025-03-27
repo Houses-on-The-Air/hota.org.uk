@@ -149,7 +149,7 @@ $pageDescription = "Houses on the Air (HOTA) statement on modern slavery and hum
 
             <div class="card-panel amber lighten-5 mt-3">
                 <h5><i class="material-icons left small">priority_high</i>Reporting Concerns</h5>
-                <p>If you have any concerns or suspicions about modern slavery in our organization or supply chain, please contact us immediately at <a href="mailto:ethics@hota.org.uk">ethics@hota.org.uk</a> or use our <a href="?ref=contact" target="_blank">contact form</a>.</p>
+                <p>If you have any concerns or suspicions about modern slavery in our organization or supply chain, please contact us immediately at <a href="mailto:ethics@hota.org.uk">ethics@hota.org.uk</a> or use our <a href="?page=contact" target="_blank">contact form</a>.</p>
             </div>
         </div>
     </div>

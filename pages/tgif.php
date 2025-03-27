@@ -176,21 +176,21 @@ $pageDescription = "Learn about the Houses on the Air (HOTA) TGIF Talkgroup for 
                                 <td>Wednesday</td>
                                 <td>19:00</td>
                                 <td>HOTA Midweek Chat</td>
-                                <td>M7ABC</td>
+                                <td>M7JXZ</td>
                                 <td>General discussion, activation planning</td>
                             </tr>
                             <tr>
                                 <td>Saturday</td>
                                 <td>14:00</td>
                                 <td>HOTA Weekend Roundup</td>
-                                <td>G3XYZ</td>
+                                <td>M7JXZ</td>
                                 <td>Activity reports, upcoming events</td>
                             </tr>
                             <tr class="highlighted-row">
                                 <td>Sunday</td>
                                 <td>10:00</td>
                                 <td>HOTA Newcomers Net</td>
-                                <td>2E0DEF</td>
+                                <td>M7JXZ</td>
                                 <td>Focus on helping new participants</td>
                             </tr>
                         </tbody>

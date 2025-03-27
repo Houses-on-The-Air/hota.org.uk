@@ -1137,7 +1137,7 @@ $pageDescription = "A comprehensive glossary of amateur radio and Houses on the 
                 <p>For more detailed information on amateur radio terminology, we recommend the following resources:</p>
                 <ul class="browser-default">
                     <li><a href="http://www.arrl.org/ham-radio-glossary" target="_blank" rel="nofollow noopener">ARRL Ham Radio Glossary</a></li>
-                    <li><a href="https://rsgb.org/main/get-started-in-amateur-radio/operating-your-new-station/abbreviations/" target="_blank" rel="nofollow noopener">RSGB Operating Abbreviations</a></li>
+                    <li><a href="https://rsgb.org/main/publications-archives/radcom/supplementary-information/abbreviations-and-acronyms/" target="_blank" rel="nofollow noopener">RSGB Operating Abbreviations</a></li>
                     <li><a href="http://www.ac6v.com/jargon.htm" target="_blank" rel="nofollow noopener">AC6V's Amateur Radio And DX Reference Guide</a></li>
                     <li><a href="?page=operating-guidelines">HOTA Operating Guidelines</a></li>
                 </ul>

@@ -245,17 +245,18 @@ $pageDescription = "Houses on the Air (HOTA) is an amateur radio activity that e
                 <div class="col s12 m4">
                     <div class="card">
                         <div class="card-content">
-                            <span class="card-title"><i class="material-icons left">home</i>Activator Awards</span>
-                            <p>For operating from unique locations:</p>
-                            <ul class="browser-default">
-                                <li>Novice Activator (5 activations)</li>
-                                <li>Experienced Activator (25 activations)</li>
-                                <li>Expert Activator (100 activations)</li>
-                                <li>Master Activator (500 activations)</li>
+                            <span class="card-title"><i class="material-icons left">cell_tower</i>Activator Awards</span>
+                            <p>Awards for operators who activate house locations:</p>
+                            <ul class="collection">
+                                <li class="collection-item">House Explorer - 5+ activations</li>
+                                <li class="collection-item">House Keeper - 25+ activations</li>
+                                <li class="collection-item">House Steward - 100+ activations</li>
+                                <li class="collection-item">Estate Manager - 500+ activations</li>
                             </ul>
+                            <p>Each house counts once, regardless of how many times you operate from it.</p>
                         </div>
                         <div class="card-action">
-                            <a href="?page=awards#activator-awards">View Activator Awards</a>
+                            <a href="?page=awards">Learn More</a>
                         </div>
                     </div>
                 </div>

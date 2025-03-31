@@ -206,25 +206,25 @@ $pageDescription = "Explore the different tiers of awards available in the House
                     <div class="timeline-item" style="left: 0%">
                         <div class="milestone">
                             <span class="count">5</span>
-                            <span class="tier">Novice Activator</span>
+                            <span class="tier">House Explorer</span>
                         </div>
                     </div>
                     <div class="timeline-item" style="left: 30%">
                         <div class="milestone">
                             <span class="count">25</span>
-                            <span class="tier">Experienced Activator</span>
+                            <span class="tier">House Keeper</span>
                         </div>
                     </div>
                     <div class="timeline-item" style="left: 60%">
                         <div class="milestone">
                             <span class="count">100</span>
-                            <span class="tier">Expert Activator</span>
+                            <span class="tier">House Steward</span>
                         </div>
                     </div>
                     <div class="timeline-item" style="left: 100%">
                         <div class="milestone">
                             <span class="count">500</span>
-                            <span class="tier">Master Activator</span>
+                            <span class="tier">Estate Manager</span>
                         </div>
                     </div>
                 </div>
@@ -235,7 +235,7 @@ $pageDescription = "Explore the different tiers of awards available in the House
                 <div class="col s12 m6 l3">
                     <div class="card tier-card small hoverable activator-card">
                         <div class="card-content">
-                            <span class="card-title">Novice Activator</span>
+                            <span class="card-title">House Explorer</span>
                             <div class="tier-details">
                                 <div class="tier-requirement">5 activations</div>
                                 <div class="tier-description">Beginning your journey as a HOTA activator.</div>
@@ -247,7 +247,7 @@ $pageDescription = "Explore the different tiers of awards available in the House
                 <div class="col s12 m6 l3">
                     <div class="card tier-card small hoverable activator-card">
                         <div class="card-content">
-                            <span class="card-title">Experienced Activator</span>
+                            <span class="card-title">House Keeper</span>
                             <div class="tier-details">
                                 <div class="tier-requirement">25 activations</div>
                                 <div class="tier-description">Showing dedication to providing HOTA contacts.</div>
@@ -259,7 +259,7 @@ $pageDescription = "Explore the different tiers of awards available in the House
                 <div class="col s12 m6 l3">
                     <div class="card tier-card small hoverable activator-card">
                         <div class="card-content">
-                            <span class="card-title">Expert Activator</span>
+                            <span class="card-title">House Steward</span>
                             <div class="tier-details">
                                 <div class="tier-requirement">100 activations</div>
                                 <div class="tier-description">A significant milestone of HOTA activations.</div>
@@ -271,7 +271,7 @@ $pageDescription = "Explore the different tiers of awards available in the House
                 <div class="col s12 m6 l3">
                     <div class="card tier-card small hoverable activator-card">
                         <div class="card-content">
-                            <span class="card-title">Master Activator</span>
+                            <span class="card-title">Estate Manager</span>
                             <div class="tier-details">
                                 <div class="tier-requirement">500 activations</div>
                                 <div class="tier-description">Elite status as one of HOTA's most active operators.</div>

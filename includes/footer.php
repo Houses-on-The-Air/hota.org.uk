@@ -65,7 +65,7 @@
                             <i class="material-icons">facebook</i>
                         </a>
                         <a href="<?= ConfigManager::get('social.twitter') ?>" target="_blank" rel="nofollow" class="btn-floating blue-grey lighten-1 m-1" aria-label="Twitter/X">
-                            <i class="material-icons">X</i>
+                            <i class="material-icons">alternate_email</i>
                         </a>
                         <a href="<?= ConfigManager::get('social.reddit') ?>" target="_blank" rel="nofollow" class="btn-floating blue-grey lighten-1 m-1" aria-label="Reddit">
                             <i class="material-icons">forum</i>

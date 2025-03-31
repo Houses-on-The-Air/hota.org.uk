@@ -102,8 +102,8 @@ $pageDescription = "Join the Houses on the Air Winter Activity Weekend on Januar
                     <p>Participants in the Winter Activity Weekend can earn special certificates:</p>
 
                     <ul class="browser-default">
-                        <li><strong>Weekend Activator</strong> - For activating 3 or more houses during the weekend</li>
-                        <li><strong>Super Activator</strong> - For activating 5 or more houses during the weekend</li>
+                        <li><strong>Weekend House Explorer</strong> - For activating 3 or more houses during the weekend</li>
+                        <li><strong>Super House Explorer</strong> - For activating 5 or more houses during the weekend</li>
                         <li><strong>Weekend Hunter</strong> - For contacting 10 or more HOTA stations during the weekend</li>
                         <li><strong>Super Hunter</strong> - For contacting 25 or more HOTA stations during the weekend</li>
                         <li><strong>Weekend Warrior</strong> - For both activating at least one house AND contacting at least 10 other houses</li>

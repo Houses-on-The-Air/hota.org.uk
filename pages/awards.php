@@ -126,22 +126,22 @@ $pageDescription = "Earn certificates and awards in the Houses on the Air (HOTA)
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Novice Activator</td>
+                                            <td>House Explorer</td>
                                             <td>5+</td>
                                             <td>Bronze level</td>
                                         </tr>
                                         <tr>
-                                            <td>Experienced Activator</td>
+                                            <td>House Keeper</td>
                                             <td>25+</td>
                                             <td>Silver level</td>
                                         </tr>
                                         <tr>
-                                            <td>Expert Activator</td>
+                                            <td>House Steward</td>
                                             <td>100+</td>
                                             <td>Gold level</td>
                                         </tr>
                                         <tr>
-                                            <td>Master Activator</td>
+                                            <td>Estate Manager</td>
                                             <td>500+</td>
                                             <td>Platinum level</td>
                                         </tr>

@@ -305,10 +305,10 @@ function calculateAwards($addressCount, $specialHouses, $activations) {
 
     // Activator awards based on number of different locations activated
     $activatorTiers = [
-        'Novice Activator' => 5,
-        'Experienced Activator' => 25,
-        'Expert Activator' => 100,
-        'Master Activator' => 500
+        'House Explorer' => 5,
+        'House Keeper' => 25,
+        'House Steward' => 100,
+        'Estate Manager' => 500
     ];
 
     $activationCount = count($activations);

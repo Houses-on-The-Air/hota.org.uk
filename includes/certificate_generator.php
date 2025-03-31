@@ -26,6 +26,14 @@ function generateCertificates($awardsData, $callsign, $dateRange) {
     $certificateId = uniqid('HOTA-' . $callsign . '-');
     $issueDate = date('Y-m-d');
 
+    // Define activator tier images
+    $activatorTierImages = [
+        'House Explorer' => 'activator-bronze.jpg',
+        'House Keeper' => 'activator-silver.jpg',
+        'House Steward' => 'activator-gold.jpg',
+        'Estate Manager' => 'activator-platinum.jpg'
+    ];
+
     // Create certificates based on award types
     if (isset($awardsData['certificates']) && is_array($awardsData['certificates'])) {
         foreach ($awardsData['certificates'] as $cert) {

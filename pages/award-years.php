@@ -33,7 +33,7 @@ $pageDescription = "Information about the annual award cycle and year-based cert
                     <h5 class="mt-3">Annual Awards Available</h5>
                     <ul class="browser-default">
                         <li><strong>Annual Hunter Certificate</strong> - For participants who contact at least 50 different houses in a calendar year</li>
-                        <li><strong>Annual Activator Certificate</strong> - For operators who activate at least 10 different houses in a calendar year</li>
+                        <li><strong>Annual House Explorer</strong> - For operators who activate at least 10 different houses in a calendar year</li>
                         <li><strong>Most Active Activator</strong> - Awarded to the operator who activates the most unique houses during the calendar year</li>
                         <li><strong>Top Hunter</strong> - Awarded to the operator who contacts the most unique houses during the calendar year</li>
                         <li><strong>Regional Recognition</strong> - Special recognition for high activity levels within specific geographic regions</li>

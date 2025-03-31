@@ -96,8 +96,8 @@ $pageDescription = "View examples of Houses on the Air (HOTA) award certificates
             <div class="col s12 m6 l4">
                 <div class="card">
                     <div class="card-image">
-                        <img src="/images/certs/novice-activator-cert.jpg" alt="Novice Activator Certificate">
-                        <span class="card-title">Novice Activator</span>
+                        <img src="/images/certs/novice-activator-cert.jpg" alt="House Explorer Certificate">
+                        <span class="card-title">House Explorer</span>
                     </div>
                     <div class="card-content">
                         <p>Awarded for activating 5 unique house addresses. The first step as a HOTA activator.</p>
@@ -108,8 +108,8 @@ $pageDescription = "View examples of Houses on the Air (HOTA) award certificates
             <div class="col s12 m6 l4">
                 <div class="card">
                     <div class="card-image">
-                        <img src="/images/certs/experienced-activator-cert.jpg" alt="Experienced Activator Certificate">
-                        <span class="card-title">Experienced Activator</span>
+                        <img src="/images/certs/experienced-activator-cert.jpg" alt="House Keeper Certificate">
+                        <span class="card-title">House Keeper</span>
                     </div>
                     <div class="card-content">
                         <p>Awarded for activating 25 unique house addresses. Shows significant commitment to activating.</p>
@@ -120,8 +120,8 @@ $pageDescription = "View examples of Houses on the Air (HOTA) award certificates
             <div class="col s12 m6 l4">
                 <div class="card">
                     <div class="card-image">
-                        <img src="/images/certs/expert-activator-cert.jpg" alt="Expert Activator Certificate">
-                        <span class="card-title">Expert Activator</span>
+                        <img src="/images/certs/expert-activator-cert.jpg" alt="House Steward Certificate">
+                        <span class="card-title">House Steward</span>
                     </div>
                     <div class="card-content">
                         <p>Awarded for activating 100 unique house addresses. A major achievement in the HOTA programme.</p>

@@ -1,174 +1,229 @@
 <?php
-$pageTitle = "Sitemap - HOTA";
-$pageDescription = "Complete sitemap of the Houses on the Air (HOTA) website, providing easy access to all pages and resources.";
+$pageTitle = "Site Map - HOTA";
+$pageDescription = "A comprehensive listing of all pages on the Houses on the Air website to help you find what you're looking for.";
+
+// Function to get all available pages
+function getAllPages() {
+    $pages = [];
+    $pagesDir = __DIR__;
+    $files = scandir($pagesDir);
+
+    foreach ($files as $file) {
+        if (pathinfo($file, PATHINFO_EXTENSION) == 'php') {
+            $pageId = pathinfo($file, PATHINFO_FILENAME);
+
+            // Skip certain utility pages
+            if (in_array($pageId, ['404', '500'])) {
+                continue;
+            }
+
+            // Get page title
+            $content = file_get_contents($pagesDir . '/' . $file);
+            $title = 'Untitled Page';
+
+            if (preg_match('/\$pageTitle\s*=\s*["\'](.+?)["\']/i', $content, $matches)) {
+                $title = $matches[1];
+            } else {
+                // Use formatted page ID as fallback
+                $title = ucwords(str_replace('-', ' ', $pageId));
+            }
+
+            $pages[$pageId] = [
+                'id' => $pageId,
+                'title' => $title,
+                'url' => '?page=' . $pageId
+            ];
+        }
+    }
+
+    return $pages;
+}
+
+// Get all pages and organize them by category
+$allPages = getAllPages();
+
+// Define page categories
+$categories = [
+    'main' => [
+        'title' => 'Main Pages',
+        'pages' => ['home', 'about', 'participate', 'awards', 'resources', 'store', 'contact']
+    ],
+    'about' => [
+        'title' => 'About HOTA',
+        'pages' => ['about', 'team', 'join-our-team', 'rules', 'faq', 'glossary']
+    ],
+    'participate' => [
+        'title' => 'Participation',
+        'pages' => ['participate', 'get-licenced', 'house-activations', 'operating-guidelines', 'log-entry', 'contests', 'community-events', 'nets']
+    ],
+    'awards' => [
+        'title' => 'Awards & Certificates',
+        'pages' => ['awards', 'award-tiers', 'award-years', 'certificates', 'certificate-gallery']
+    ],
+    'resources' => [
+        'title' => 'Resources',
+        'pages' => ['resources', 'band-plans', 'discord', 'tgif', 'logging-software', 'appicons']
+    ],
+    'antennas' => [
+        'title' => 'Antenna Guides',
+        'pages' => ['wire-antennas', 'vertical-antennas', 'loop-antennas', 'multiband-antennas', 'portable-antennas', 'mobile-antennas']
+    ],
+    'technical' => [
+        'title' => 'Technical Guides',
+        'pages' => ['adif-format', 'adif-guide', 'portable-power', 'online-training']
+    ],
+    'community' => [
+        'title' => 'Community',
+        'pages' => ['discord', 'activity-weekend', 'support-us', 'mailing-list']
+    ],
+    'legal' => [
+        'title' => 'Legal & Information',
+        'pages' => ['privacy', 'cookies', 'gdpr', 'terms', 'modern-slavery', 'opensource', 'advertising']
+    ]
+];
+
+// Function to render page link if it exists
+function pageLink($pageId, $allPages) {
+    if (array_key_exists($pageId, $allPages)) {
+        return '<a href="' . $allPages[$pageId]['url'] . '">' . $allPages[$pageId]['title'] . '</a>';
+    }
+    return '';
+}
 ?>
 
 <div class="container">
-    <h1>Sitemap</h1>
+    <h1>Site Map</h1>
 
     <!-- Breadcrumbs -->
     <div class="breadcrumb-wrapper">
         <ul class="breadcrumbs">
             <li><a href="/">Home</a></li>
-            <li>Sitemap</li>
+            <li>Site Map</li>
         </ul>
-    </div>
-
-    <div class="card-panel">
-        <p class="flow-text">
-            Welcome to the Houses on the Air (HOTA) sitemap. This page provides a complete overview of our website structure
-            to help you quickly find the information you need.
-        </p>
-    </div>
-
-    <div class="row">
-        <!-- Main Navigation Sections -->
-        <div class="col s12 m6 l4">
-            <div class="card blue-grey lighten-5">
-                <div class="card-content">
-                    <span class="card-title">Main Sections</span>
-                    <ul class="browser-default">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="?page=about">About HOTA</a></li>
-                        <li><a href="?page=participate">How to Participate</a></li>
-                        <li><a href="?page=awards">Awards Programme</a></li>
-                        <li><a href="?page=resources">Resources</a></li>
-                        <li><a href="?page=store">Store</a></li>
-                        <li><a href="?page=contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title">About HOTA</span>
-                    <ul class="browser-default">
-                        <li><a href="?page=about">About the Programme</a></li>
-                        <li><a href="?page=team">Our Team</a></li>
-                        <li><a href="?page=join-our-team">Join Our Team</a></li>
-                        <li><a href="?page=rules">Rules</a></li>
-                        <li><a href="?page=faq">Frequently Asked Questions</a></li>
-                        <li><a href="?page=glossary">Glossary of Terms</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Participation Pages -->
-        <div class="col s12 m6 l4">
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title">Participation</span>
-                    <ul class="browser-default">
-                        <li><a href="?page=participate">How to Participate</a></li>
-                        <li><a href="?page=get-licenced">Get Licenced</a></li>
-                        <li><a href="?page=house-activations">House Activations Guide</a></li>
-                        <li><a href="?page=operating-guidelines">Operating Guidelines</a></li>
-                        <li><a href="?page=log-entry">Log Entry & Submission</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title">Community & Events</span>
-                    <ul class="browser-default">
-                        <li><a href="?page=community-events">Community Events</a></li>
-                        <li><a href="?page=activity-weekend">Activity Weekend</a></li>
-                        <li><a href="?page=contests">Contests</a></li>
-                        <li><a href="?page=nets">Net Schedule</a></li>
-                        <li><a href="?page=discord">Discord Community</a></li>
-                        <li><a href="?page=tgif">TGIF Talkgroup</a></li>
-                        <li><a href="?page=mailing-list">Mailing List</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title">Awards</span>
-                    <ul class="browser-default">
-                        <li><a href="?page=awards">Awards Programme</a></li>
-                        <li><a href="?page=award-tiers">Award Tiers</a></li>
-                        <li><a href="?page=award-years">Annual Awards</a></li>
-                        <li><a href="?page=certificate-gallery">Certificate Gallery</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Resources and Technical Content -->
-        <div class="col s12 m6 l4">
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title">Resources & Technical Guides</span>
-                    <ul class="browser-default">
-                        <li><a href="?page=resources">Resource Library</a></li>
-                        <li><a href="?page=band-plans">Band Plans</a></li>
-                        <li><a href="?page=adif-format">ADIF Format Guide</a></li>
-                        <li><a href="?page=logging-software">Logging Software Guide</a></li>
-                        <li><a href="?page=appicons">App Icons</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title">Antenna Resources</span>
-                    <ul class="browser-default">
-                        <li><a href="?page=wire-antennas">Wire Antennas</a></li>
-                        <li><a href="?page=vertical-antennas">Vertical Antennas</a></li>
-                        <li><a href="?page=portable-antennas">Portable Antennas</a></li>
-                        <li><a href="?page=mobile-antennas">Mobile Antennas</a></li>
-                        <li><a href="?page=loop-antennas">Loop Antennas</a></li>
-                        <li><a href="?page=multiband-antennas">Multiband Antennas</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title">Legal & Site Information</span>
-                    <ul class="browser-default">
-                        <li><a href="?page=privacy">Privacy Policy</a></li>
-                        <li><a href="?page=cookies">Cookie Policy</a></li>
-                        <li><a href="?page=terms">Terms of Service</a></li>
-                        <li><a href="?page=gdpr">GDPR Compliance</a></li>
-                        <li><a href="?page=modern-slavery">Modern Slavery Statement</a></li>
-                        <li><a href="?page=advertising">Advertising</a></li>
-                        <li><a href="?page=opensource">Open Source Acknowledgements</a></li>
-                        <li><a href="?page=sitemap">Sitemap</a> (this page)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
 
     <div class="row">
         <div class="col s12">
+            <div class="card-panel">
+                <p class="flow-text">This page provides a complete list of all content available on the HOTA website, organized by section.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Pages -->
+    <div class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Main Pages</span>
+                    <div class="collection">
+                        <?php foreach($categories['main']['pages'] as $pageId): ?>
+                            <?php if ($link = pageLink($pageId, $allPages)): ?>
+                                <a href="<?= $allPages[$pageId]['url'] ?>" class="collection-item"><?= $allPages[$pageId]['title'] ?></a>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categorized Pages -->
+    <div class="row">
+        <?php
+        // Skip 'main' as it's already displayed
+        $categoriesToDisplay = array_filter($categories, function($key) {
+            return $key != 'main';
+        }, ARRAY_FILTER_USE_KEY);
+
+        foreach($categoriesToDisplay as $categoryId => $category):
+        ?>
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title"><?= $category['title'] ?></span>
+                        <ul class="collection">
+                            <?php foreach($category['pages'] as $pageId): ?>
+                                <?php if (array_key_exists($pageId, $allPages)): ?>
+                                    <a href="<?= $allPages[$pageId]['url'] ?>" class="collection-item"><?= $allPages[$pageId]['title'] ?></a>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+
+    <!-- Uncategorized Pages -->
+    <?php
+    $categorizedPages = [];
+    foreach($categories as $category) {
+        $categorizedPages = array_merge($categorizedPages, $category['pages']);
+    }
+
+    $uncategorizedPages = array_filter($allPages, function($page) use ($categorizedPages) {
+        return !in_array($page['id'], $categorizedPages);
+    });
+
+    if (!empty($uncategorizedPages)):
+    ?>
+    <div class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Other Pages</span>
+                    <div class="row">
+                        <?php
+                        $chunkedPages = array_chunk($uncategorizedPages, ceil(count($uncategorizedPages) / 3), true);
+                        foreach($chunkedPages as $chunk):
+                        ?>
+                            <div class="col s12 m4">
+                                <ul class="collection">
+                                    <?php foreach($chunk as $page): ?>
+                                        <a href="<?= $page['url'] ?>" class="collection-item"><?= $page['title'] ?></a>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php endif; ?>
+
+    <!-- Special Links -->
+    <div class="row">
+        <div class="col s12">
             <div class="card blue-grey lighten-5">
                 <div class="card-content">
-                    <span class="card-title center-align">Support & Stay Connected</span>
-                    <div class="row center-align">
+                    <span class="card-title">Special Links</span>
+                    <div class="row">
                         <div class="col s12 m4">
-                            <div class="contact-box">
-                                <i class="material-icons large">support</i>
+                            <div class="center-align">
+                                <i class="material-icons medium">search</i>
+                                <h5>Search</h5>
+                                <p>Looking for something specific? Try our search feature.</p>
+                                <a href="?page=search-results" class="btn blue-grey waves-effect waves-light">Search Site</a>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="center-align">
+                                <i class="material-icons medium">send</i>
                                 <h5>Contact Us</h5>
-                                <a href="?page=contact" class="btn blue-grey darken-1 waves-effect waves-light">Get In Touch</a>
+                                <p>Questions, suggestions, or need help? Get in touch.</p>
+                                <a href="?page=contact" class="btn blue-grey waves-effect waves-light">Contact</a>
                             </div>
                         </div>
+
                         <div class="col s12 m4">
-                            <div class="contact-box">
-                                <i class="material-icons large">forum</i>
-                                <h5>Join Discord</h5>
-                                <a href="?page=discord" class="btn blue-grey darken-1 waves-effect waves-light">Join Community</a>
-                            </div>
-                        </div>
-                        <div class="col s12 m4">
-                            <div class="contact-box">
-                                <i class="material-icons large">favorite</i>
-                                <h5>Support HOTA</h5>
-                                <a href="?page=support-us" class="btn blue-grey darken-1 waves-effect waves-light">Support Us</a>
+                            <div class="center-align">
+                                <i class="material-icons medium">help</i>
+                                <h5>FAQ</h5>
+                                <p>Find answers to frequently asked questions.</p>
+                                <a href="?page=faq" class="btn blue-grey waves-effect waves-light">View FAQ</a>
                             </div>
                         </div>
                     </div>

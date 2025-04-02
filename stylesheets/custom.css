@@ -591,3 +591,52 @@ dl dd {
     font-size: 4rem;
     margin-bottom: 15px;
 }
+
+/* Search form styling */
+.search-form {
+    margin-right: 15px;
+}
+
+nav .input-field {
+    margin-top: 0;
+}
+
+nav .input-field input[type=search] {
+    height: 64px;
+    width: 300px;
+    padding-left: 2rem;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+nav .input-field input[type=search]:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav .input-field input[type=search]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+nav .input-field label {
+    color: #fff;
+    top: 1.2rem;
+}
+
+nav .input-field label i {
+    font-size: 1.5rem;
+}
+
+nav .input-field input[type=search]:focus + label i,
+nav .input-field input[type=search]:focus ~ .material-icons {
+    color: #fff;
+}
+
+/* Make sure the close icon is visible on filled search input */
+nav .input-field .material-icons {
+    top: 1.2rem;
+}
+
+/* Modal search styling for mobile */
+#search-modal .input-field {
+    margin-bottom: 30px;
+}

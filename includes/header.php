@@ -87,6 +87,29 @@ if (!isset($pageTitle)) {
                     <li><a href="?page=store">Shop</a></li>
                     <li><a href="?page=contact">Contact</a></li>
                 </ul>
+
+                <!-- Add search icon to the right side of the navbar for mobile -->
+                <ul class="right hide-on-med-and-up">
+                    <li>
+                        <a href="#" data-target="search-modal" class="modal-trigger">
+                            <i class="material-icons">search</i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <!-- Add search form for desktop -->
+                    <li>
+                        <form action="?page=search-results" method="get" class="search-form">
+                            <div class="input-field">
+                                <input id="search" type="search" name="query" placeholder="Search..." required>
+                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                                <input type="hidden" name="page" value="search-results">
+                            </div>
+                        </form>
+                    </li>
+                </ul>
             </div>
         </nav>
 
@@ -149,5 +172,22 @@ if (!isset($pageTitle)) {
         });
     });
     </script>
+
+    <!-- Add search modal for mobile -->
+    <div id="search-modal" class="modal bottom-sheet">
+        <div class="modal-content">
+            <h4>Search HOTA</h4>
+            <form action="?page=search-results" method="get">
+                <div class="input-field">
+                    <input id="mobile-search" type="search" name="query" placeholder="Enter search terms..." required>
+                    <label for="mobile-search">Search</label>
+                    <input type="hidden" name="page" value="search-results">
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="modal-close waves-effect waves-green btn-flat">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

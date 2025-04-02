@@ -22,6 +22,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialise Materialize components
     initMaterializeComponents();
+
+    // Initialize sidenav
+    var sidenavElems = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(sidenavElems);
+
+    // Initialize dropdowns with proper options
+    var dropdownElems = document.querySelectorAll('.dropdown-trigger');
+    M.Dropdown.init(dropdownElems, {
+        coverTrigger: false,
+        constrainWidth: false,
+        hover: true
+    });
+
+    // Initialize modals
+    var modalElems = document.querySelectorAll('.modal');
+    M.Modal.init(modalElems);
 });
 
 /**

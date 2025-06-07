@@ -16,7 +16,7 @@ RUN find . -name "*.html" -exec html-minifier --collapse-whitespace --remove-com
 RUN find . -name "*.css" -exec cleancss -o {} {} \;
 
 # Stage 2: Production
-FROM php:8.4.7-zts-alpine3.21
+FROM php:8.4.8-zts-alpine3.21
 
 WORKDIR /usr/src/hota
 
